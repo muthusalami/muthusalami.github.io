@@ -7,7 +7,7 @@ tags: [intro, beginner, jekyll]
 comments: false
 pinned: true
 image:
-  feature: sample-image-2.jpg
+  feature:
 ---
 
 # Hello World!
