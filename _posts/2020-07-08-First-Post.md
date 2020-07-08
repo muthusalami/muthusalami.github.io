@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Sweet success
-excerpt: "First post!"
+title: Hello World!
+excerpt: "I've beaten procrastination!"
 modified: 2020-07-08
-tags: [intro, beginner, jekyll]
+tags: [jekyll]
 comments: false
 pinned: true
+share: true
 image:
   feature:
 ---
