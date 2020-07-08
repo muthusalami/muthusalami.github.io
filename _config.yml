@@ -6,7 +6,7 @@
 title: Matthew Yang
 email: matthewyangjiefeng@gmail.com
 description: #description
-url: http://www.muthusalami.com
+url: # the base hostname & protocol for your site
 keywords: ["blog", "jekyll"]
 
 #
