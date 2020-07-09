@@ -18,7 +18,7 @@ I've been meaning to create a work site for awhile now and I've finally taken up
 
 So here it is!
 
-I initially considered Wordpress for its wide usage but ultimately chose a static site generator like **Jekyll** for its quick deployment and little complexity. Furthermore, static sites can be hosted directly on **GitHub** through [GitHub pages](https://pages.github.com/). That means no hosting fees and easy management of edits, thanks to versioning (which I'm still discovering).
+I initially considered Wordpress for its wide usage but ultimately chose a static site generator like **Jekyll** for its quick deployment and little complexity. Static sites can be hosted directly on **GitHub** through [GitHub pages](https://pages.github.com/). That means no hosting fees (!!!) and easy management of edits, thanks to versioning (which I'm still discovering).
 
 ### Things I've learned and done so far
 
