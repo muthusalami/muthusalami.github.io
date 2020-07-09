@@ -27,4 +27,4 @@ I initially considered Wordpress for its wide usage but ultimately chose a stati
 * How to host the site locally for testing
 * How to maintain the entire project on **Atom**
 
-There were some issues along the way, so I wouldn't say it was an **easy** ride. But nothing is too difficult for Google & Stack Overflow. I've learned plenty so far but there is still much to do and learn. I'll update this page as I go along.
+There were some issues along the way, so I wouldn't say it was an easy ride. Fortunately, nothing is too difficult for Google & Stack Overflow. I've learned plenty so far but there is still much to do and learn. I'll update this page as I go along.
