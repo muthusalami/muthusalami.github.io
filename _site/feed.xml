@@ -6,7 +6,7 @@
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>2020-07-09</pubDate>
-    <lastBuildDate>Thu, 09 Jul 2020 11:06:52 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 11:14:14 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -20,7 +20,7 @@
 &lt;h3 id=&quot;things-ive-learned-and-done-so-far&quot;&gt;Things I’ve learned and done so far&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;How to purchase a domain and pointing it to the host &lt;a href=&quot;https://namecheap.com/&quot;&gt;(namecheap)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;How to purchase a domain &lt;a href=&quot;https://namecheap.com/&quot;&gt;(namecheap)&lt;/a&gt; and pointing it to the host&lt;/li&gt;
   &lt;li&gt;Discovered &lt;strong&gt;GitHub&lt;/strong&gt; Desktop&lt;/li&gt;
   &lt;li&gt;Better understand &lt;strong&gt;GitHub&lt;/strong&gt; as a platform and its functions&lt;/li&gt;
   &lt;li&gt;Set-up and create a simple &lt;strong&gt;Jekyll&lt;/strong&gt; site&lt;/li&gt;

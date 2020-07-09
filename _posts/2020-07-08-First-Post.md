@@ -20,7 +20,7 @@ I initially considered Wordpress for its wide usage but ultimately chose a stati
 
 ### Things I've learned and done so far
 
-* How to purchase a domain and pointing it to the host [(namecheap)](https://namecheap.com/)
+* How to purchase a domain [(namecheap)](https://namecheap.com/) and pointing it to the host
 * Discovered **GitHub** Desktop
 * Better understand **GitHub** as a platform and its functions
 * Set-up and create a simple **Jekyll** site
