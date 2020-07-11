@@ -5,32 +5,34 @@
     <description>Jekyll website project</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>2020-07-09</pubDate>
-    <lastBuildDate>Thu, 09 Jul 2020 11:14:14 +0800</lastBuildDate>
+    <pubDate>2020-07-11</pubDate>
+    <lastBuildDate>Sat, 11 Jul 2020 18:21:54 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
         <title>Hello World!</title>
         <description>&lt;p&gt;The website is &lt;em&gt;finally&lt;/em&gt; up and here is my first post!&lt;/p&gt;
 
-&lt;p&gt;I’ve been meaning to create a work site for awhile now and I’ve finally taken up the challenge after attending GA’s Intro to Coding: HTML &amp;amp; CSS Workshop. It was a short webinar that covered the fundamentals, which taught me enough to take the plunge. So here it is!&lt;/p&gt;
+&lt;p&gt;I’ve been meaning to create a work site for awhile now and I’ve finally taken up the challenge after attending GA’s Intro to Coding: HTML &amp;amp; CSS Workshop. It was a short webinar that covered the fundamentals, which taught me enough to take the plunge.&lt;/p&gt;
 
-&lt;p&gt;I initially considered Wordpress for its wide usage but ultimately chose a static site generator like &lt;strong&gt;Jekyll&lt;/strong&gt;, for its quick deployment and little complexity. Furthermore, static sites can be hosted directly on &lt;strong&gt;GitHub&lt;/strong&gt; through &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub pages&lt;/a&gt;. That means 0 hosting fees and edits can be easily managed through versioning (which I’m still discovering).&lt;/p&gt;
+&lt;p&gt;So here it is!&lt;/p&gt;
+
+&lt;p&gt;I initially considered Wordpress for its wide usage but ultimately chose a static site generator like &lt;strong&gt;Jekyll&lt;/strong&gt; for its quick deployment and little complexity. Static sites can be hosted directly on &lt;strong&gt;GitHub&lt;/strong&gt; through &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub pages&lt;/a&gt;. That means no hosting fees (!!!) and easy management of edits, thanks to versioning (which I’m still discovering).&lt;/p&gt;
 
 &lt;h3 id=&quot;things-ive-learned-and-done-so-far&quot;&gt;Things I’ve learned and done so far&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;How to purchase a domain &lt;a href=&quot;https://namecheap.com/&quot;&gt;(namecheap)&lt;/a&gt; and pointing it to the host&lt;/li&gt;
+  &lt;li&gt;How to purchase a domain &lt;a href=&quot;https://namecheap.com/&quot;&gt;(namecheap)&lt;/a&gt; and point it to the host (&lt;strong&gt;GitHub&lt;/strong&gt;)&lt;/li&gt;
   &lt;li&gt;Discovered &lt;strong&gt;GitHub&lt;/strong&gt; Desktop&lt;/li&gt;
   &lt;li&gt;Better understand &lt;strong&gt;GitHub&lt;/strong&gt; as a platform and its functions&lt;/li&gt;
-  &lt;li&gt;Set-up and create a simple &lt;strong&gt;Jekyll&lt;/strong&gt; site&lt;/li&gt;
+  &lt;li&gt;Set-up and create a simple &lt;strong&gt;Jekyll&lt;/strong&gt; site and host it on &lt;strong&gt;GitHub&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;How to host the site locally for testing&lt;/li&gt;
   &lt;li&gt;How to maintain the entire project on &lt;strong&gt;Atom&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;There were some issues along the way, so I wouldn’t say it was an &lt;strong&gt;easy&lt;/strong&gt; ride. But nothing is too difficult for Google &amp;amp; Stack Overflow. I’ve learned plenty so far but there is still much to do and learn. I’ll update this page as I go along.&lt;/p&gt;
+&lt;p&gt;There were some issues along the way, so I wouldn’t say it was an easy ride. Fortunately, nothing is too difficult for Google &amp;amp; Stack Overflow. I’ve learned plenty so far but there is still much to do and learn. I’ll update this page as I go along.&lt;/p&gt;
 </description>
-        <pubDate>2020-07-09</pubDate>
+        <pubDate>2020-07-11</pubDate>
         <link>http://localhost:4000/articles/2020-07/First-Post</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-07/First-Post</guid>
         
