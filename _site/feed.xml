@@ -6,20 +6,18 @@
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>2020-09-15</pubDate>
-    <lastBuildDate>Tue, 15 Sep 2020 00:42:31 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 00:57:55 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
         <title>Part 1&amp;#58; My home network journal</title>
         <description>&lt;p&gt;This post will be part of a series documenting the network component of my upcoming renovation of my new apartment. The apartment is over 20 years old hence a major overhaul is required and the renovation is a great opportunity to lay CAT6 to all the rooms in the house for the 1Gbps/10Gbps network 🤓.&lt;/p&gt;
 
-&lt;p&gt;My research began with &lt;a href=&quot;https://www.patnotebook.com/bto-networking-singapore/&quot; target=&quot;_ blank&quot;&gt;this&lt;/a&gt; article on patnotebook.com detailing the conversion of telephone points to RJ45 data points in newer BTO (Build to Order) flats in Singapore. Newer flats in Singapore have CAT6 cables already nicely laid in the house, however, many of the points are terminated with a telephone jack instead of RJ45. Based on the article, it seems that BTO flats only have one point terminated as RJ45, which is definitely not enough 😁.&lt;/p&gt;
+&lt;p&gt;My research began with &lt;a href=&quot;https://www.patnotebook.com/bto-networking-singapore/&quot; target=&quot;_ blank&quot;&gt;this&lt;/a&gt; article on &lt;a href=&quot;https://patnotebook.com&quot; target=&quot;_ blank&quot;&gt;patnotebook.com&lt;/a&gt; detailing the conversion of telephone points to RJ45 data points in newer BTO (Build to Order) flats in Singapore. Newer flats in Singapore have CAT6 cables already nicely laid in the house, however many of the points are terminated with a telephone jack instead of RJ45. Based on the article, it seems that BTO flats only have one point terminated as RJ45, which is definitely not enough 😁.&lt;/p&gt;
 
 &lt;p&gt;That being said, I will have to lay my own cables and design my own network infrastructure since my flat is a legacy model.&lt;/p&gt;
 
-&lt;p&gt;A great networking and Ubiquiti resource is Evan McCann’s tech blog - &lt;a href=&quot;https://evanmccann.net/&quot; target=&quot;_ blank&quot;&gt;McCann Tech&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!&lt;/p&gt;
+&lt;p&gt;A great networking and Ubiquiti resource is Evan McCann’s tech blog - &lt;a href=&quot;https://evanmccann.net/&quot; target=&quot;_ blank&quot;&gt;McCann Tech&lt;/a&gt;. There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!&lt;/p&gt;
 
 &lt;h3 id=&quot;recommended-mccann-reading-list&quot;&gt;Recommended McCann reading list&lt;/h3&gt;
 
@@ -36,7 +34,7 @@
 
 &lt;h3 id=&quot;the-hardware-diagram&quot;&gt;The hardware diagram&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/originals/Network_diagram.jpg&quot; alt=&quot;Network diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Network_diagram.jpg&quot; alt=&quot;Network diagram&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>2020-09-15</pubDate>
         <link>http://localhost:4000/articles/2020-09/Home-Network</link>
@@ -92,8 +90,14 @@
         
         <category>atom</category>
         
+        <category>webhosting</category>
+        
+        <category>domain</category>
+        
         
         <category>blog</category>
+        
+        <category>website</category>
         
       </item>
     

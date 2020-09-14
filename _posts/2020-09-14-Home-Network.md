@@ -14,13 +14,11 @@ image:
 
 This post will be part of a series documenting the network component of my upcoming renovation of my new apartment. The apartment is over 20 years old hence a major overhaul is required and the renovation is a great opportunity to lay CAT6 to all the rooms in the house for the 1Gbps/10Gbps network 🤓.
 
-My research began with [this](https://www.patnotebook.com/bto-networking-singapore/){:target="_ blank"} article on patnotebook.com detailing the conversion of telephone points to RJ45 data points in newer BTO (Build to Order) flats in Singapore. Newer flats in Singapore have CAT6 cables already nicely laid in the house, however, many of the points are terminated with a telephone jack instead of RJ45. Based on the article, it seems that BTO flats only have one point terminated as RJ45, which is definitely not enough 😁.
+My research began with [this](https://www.patnotebook.com/bto-networking-singapore/){:target="_ blank"} article on [patnotebook.com](https://patnotebook.com){:target="_ blank"} detailing the conversion of telephone points to RJ45 data points in newer BTO (Build to Order) flats in Singapore. Newer flats in Singapore have CAT6 cables already nicely laid in the house, however many of the points are terminated with a telephone jack instead of RJ45. Based on the article, it seems that BTO flats only have one point terminated as RJ45, which is definitely not enough 😁.
 
 That being said, I will have to lay my own cables and design my own network infrastructure since my flat is a legacy model.
 
-A great networking and Ubiquiti resource is Evan McCann's tech blog - [McCann Tech](https://evanmccann.net/){:target="_ blank"}.
-
-There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!
+A great networking and Ubiquiti resource is Evan McCann's tech blog - [McCann Tech](https://evanmccann.net/){:target="_ blank"}. There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!
 
 ### Recommended McCann reading list
 
@@ -35,4 +33,4 @@ I plan to update with subsequent posts, but for now I've made a simple diagram d
 
 ### The hardware diagram
 
-![Network diagram](/assets/originals/Network_diagram.jpg)
+![Network diagram]({{ site.url }}/assets/originals/Network_diagram.jpg)
