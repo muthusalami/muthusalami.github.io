@@ -3,13 +3,13 @@ layout: post
 title: Part 1&#58; My home network journal
 excerpt: "Documenting my Ubiquiti setup for my home network"
 modified: 2020-09-13
-tags: [jekyll, github, website, atom]
-categories: blog
+tags: [network, ubiquiti, unifi, edgemax, wifi]
+categories: network
 comments: true
 pinned: true
 share: true
 image:
-  feature:
+  feature: 
 ---
 
 This post will be part of a series documenting the network component of my upcoming renovation of my new apartment. The apartment is over 20 years old hence a major overhaul is required and the renovation is a great opportunity to lay CAT6 to all the rooms in the house for the 1Gbps/10Gbps network 🤓.
@@ -33,6 +33,6 @@ There are many nice articles that explain networking jargon in simple terms and 
 
 I will update with subsequent posts but for now I've made a simple diagram detailing the essential hardware required for the network setup. I've decided to go full Ubiquiti for my first setup because it seems easy to put together for an 'enterprise' grade solution and is well regarded in the networking community. I won't deny that it is overkill for a home environment but this project is too exciting to pass.
 
-![Network diagram](/assets/Network_diagram.jpg)
+![Network diagram](/assets/originals/Network_diagram.jpg)
 
 I would like to thank Evan McCann for the taking time to advice me on my setup!

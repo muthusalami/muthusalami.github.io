@@ -5,8 +5,8 @@
     <description>Jekyll website project</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>2020-09-14</pubDate>
-    <lastBuildDate>Mon, 14 Sep 2020 23:52:10 +0800</lastBuildDate>
+    <pubDate>2020-09-15</pubDate>
+    <lastBuildDate>Tue, 15 Sep 2020 00:20:39 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -34,24 +34,26 @@
 
 &lt;p&gt;I will update with subsequent posts but for now I’ve made a simple diagram detailing the essential hardware required for the network setup. I’ve decided to go full Ubiquiti for my first setup because it seems easy to put together for an ‘enterprise’ grade solution and is well regarded in the networking community. I won’t deny that it is overkill for a home environment but this project is too exciting to pass.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/Network_diagram.jpg&quot; alt=&quot;Network diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/originals/Network_diagram.jpg&quot; alt=&quot;Network diagram&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I would like to thank Evan McCann for the taking time to advice me on my setup!&lt;/p&gt;
 </description>
-        <pubDate>2020-09-14</pubDate>
+        <pubDate>2020-09-15</pubDate>
         <link>http://localhost:4000/articles/2020-09/Home-Network</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Home-Network</guid>
         
-        <category>jekyll</category>
+        <category>network</category>
         
-        <category>github</category>
+        <category>ubiquiti</category>
         
-        <category>website</category>
+        <category>unifi</category>
         
-        <category>atom</category>
+        <category>edgemax</category>
+        
+        <category>wifi</category>
         
         
-        <category>blog</category>
+        <category>network</category>
         
       </item>
     
@@ -78,7 +80,7 @@
 
 &lt;p&gt;There were some issues along the way, so I wouldn’t say it was an easy ride. Fortunately, nothing is too difficult for Google &amp;amp; Stack Overflow. I’ve learned plenty so far but there is still much to do and learn. I’ll update this page as I go along.&lt;/p&gt;
 </description>
-        <pubDate>2020-09-14</pubDate>
+        <pubDate>2020-09-15</pubDate>
         <link>http://localhost:4000/articles/2020-07/First-Post</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-07/First-Post</guid>
         
