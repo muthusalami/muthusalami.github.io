@@ -3,7 +3,7 @@ layout: post
 title: Hello World!
 excerpt: "I've beaten tutorial land and created this website!"
 modified: 2020-07-08
-tags: [jekyll, github, website, atom, webhosting, domain]
+tags: [jekyll, github, website, atom, web hosting, domain]
 categories: blog website
 comments: true
 pinned: true
