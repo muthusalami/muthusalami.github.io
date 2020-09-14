@@ -35,4 +35,4 @@ I will update with subsequent posts but for now I've made a simple diagram detai
 
 ![Network diagram](/assets/Network_diagram.jpg)
 
-I would like to thank Evan McCann for the taking time advice me on my setup!
+I would like to thank Evan McCann for the taking time to advice me on my setup!
