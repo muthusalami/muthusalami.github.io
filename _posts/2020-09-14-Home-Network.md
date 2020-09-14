@@ -31,8 +31,8 @@ There are many nice articles that explain networking jargon in simple terms and 
 * [Wi-fi&#58; Isn't Magic Some Tips For Planning A Home Network](https://evanmccann.net/blog/home-network-tips){:target="_ blank"}
 * [Ubiquiti FAQ](https://evanmccann.net/blog/2020/6/ubiquiti-faq){:target="_ blank"}
 
-I will update with subsequent posts but for now I've made a simple diagram detailing the essential hardware required for the network setup. I've decided to go full Ubiquiti for my first setup because it seems easy to put together for an 'enterprise' grade solution and is well regarded in the networking community. I won't deny that it is overkill for a home environment but this project is too exciting to pass.
+I plan to update with subsequent posts, but for now I've made a simple diagram detailing the essential hardware required for the network setup. I've decided to go full Ubiquiti for my first setup because it seems easy to put together for an 'enterprise' grade solution and is well regarded in the networking community. I won't deny that it is overkill for a home environment but this project is too exciting to pass.
+
+### The hardware diagram
 
 ![Network diagram](/assets/originals/Network_diagram.jpg)
-
-I would like to thank Evan McCann for the taking time to advice me on my setup!
