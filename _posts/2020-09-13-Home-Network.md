@@ -31,6 +31,6 @@ A great networking and Ubiquiti resource is Evan McCann's tech blog - [McCann Te
 
 I will update with subsequent posts but for now I've made a simple diagram detailing the essential hardware required for the network setup. I've decided to go full Ubiquiti for my first setup because it seems easy to put together for an 'enterprise' grade solution and is well regarded in the networking community. I won't deny that it is overkill for a home environment but this project is too exciting to pass.
 
-![My initial diagram](/assets/Network Diagram.jpg)
+[My initial diagram](/assets/Network Diagram.jpg)
 
 I would like to thank Evan McCann for the taking time advice me on my setup!
