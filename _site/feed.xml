@@ -6,8 +6,54 @@
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>2020-09-14</pubDate>
-    <lastBuildDate>Mon, 14 Sep 2020 23:15:54 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2020 23:50:36 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>Part 1&amp;#58; My home network journal</title>
+        <description>&lt;p&gt;This post will be part of a series documenting the network component of my upcoming renovation of my new apartment. The apartment is over 20 years old hence a major overhaul is required and the renovation is a great opportunity to lay CAT6 to all the rooms in the house for the 1Gbps/10Gbps network 🤓.&lt;/p&gt;
+
+&lt;p&gt;My research began with &lt;a href=&quot;https://www.patnotebook.com/bto-networking-singapore/&quot; target=&quot;_ blank&quot;&gt;this&lt;/a&gt; article on patnotebook.com detailing the conversion of telephone points to RJ45 data points in newer BTO (Build to Order) flats in Singapore. Newer flats in Singapore have CAT6 cables already nicely laid in the house, however, many of the points are terminated with a telephone jack instead of RJ45. Based on the article, it seems that BTO flats only have one point terminated as RJ45, which is definitely not enough 😁.&lt;/p&gt;
+
+&lt;p&gt;That being said, I will have to lay my own cables and design my own network infrastructure since my flat is a legacy model.&lt;/p&gt;
+
+&lt;p&gt;A great networking and Ubiquiti resource is Evan McCann’s tech blog - &lt;a href=&quot;https://evanmccann.net/&quot; target=&quot;_ blank&quot;&gt;McCann Tech&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!&lt;/p&gt;
+
+&lt;h3 id=&quot;recommended-mccann-reading-list&quot;&gt;Recommended McCann reading list&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://evanmccann.net/blog/unifi-ecosystem-overview&quot; target=&quot;_ blank&quot;&gt;Ubiquiti’s UniFi Ecosystem Explained&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://evanmccann.net/blog/2020/6/unifi-switches-explained&quot; target=&quot;_ blank&quot;&gt;UniFi Switches Explained&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://evanmccann.net/blog/2020/6/unifi-switches-buyers-guide&quot; target=&quot;_ blank&quot;&gt;UniFi Switch Comparison and Buyer’s Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://evanmccann.net/blog/unifi-ap-breakdown&quot; target=&quot;_ blank&quot;&gt;UniFi Wireless Access Point Buyer’s Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://evanmccann.net/blog/home-network-tips&quot; target=&quot;_ blank&quot;&gt;Wi-fi Isn’t Magic Some Tips For Planning A Home Network&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://evanmccann.net/blog/2020/6/ubiquiti-faq&quot; target=&quot;_ blank&quot;&gt;Ubiquiti FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I will update with subsequent posts but for now I’ve made a simple diagram detailing the essential hardware required for the network setup. I’ve decided to go full Ubiquiti for my first setup because it seems easy to put together for an ‘enterprise’ grade solution and is well regarded in the networking community. I won’t deny that it is overkill for a home environment but this project is too exciting to pass.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/Network_diagram.jpg&quot; alt=&quot;Network diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I would like to thank Evan McCann for the taking time advice me on my setup!&lt;/p&gt;
+</description>
+        <pubDate>2020-09-14</pubDate>
+        <link>http://localhost:4000/articles/2020-09/Home-Network</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Home-Network</guid>
+        
+        <category>jekyll</category>
+        
+        <category>github</category>
+        
+        <category>website</category>
+        
+        <category>atom</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Hello World!</title>
