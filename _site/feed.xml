@@ -5,9 +5,48 @@
     <description>Jekyll website project</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>2020-09-15</pubDate>
-    <lastBuildDate>Tue, 15 Sep 2020 01:19:30 +0800</lastBuildDate>
+    <pubDate>2020-09-30</pubDate>
+    <lastBuildDate>Wed, 30 Sep 2020 23:29:21 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>Python basics</title>
+        <description>&lt;h2 id=&quot;install-python&quot;&gt;Install Python&lt;/h2&gt;
+
+&lt;p&gt;For Windows, Python 3 can be installed and managed using &lt;a href=&quot;https://anaconda.com/&quot; target=&quot;_ blank&quot;&gt;&lt;strong&gt;Anaconda&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For Mac, Python 3 can be installed and managed using &lt;a href=&quot;https://brew.sh/&quot; target=&quot;_ blank&quot;&gt;&lt;strong&gt;Homebrew&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;choosing-an-ide-to-write-and-run-the-scripts&quot;&gt;Choosing an IDE to write and run the scripts&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://repl.it/&quot; target=&quot;_ blank&quot;&gt;&lt;strong&gt;repl.it&lt;/strong&gt;&lt;/a&gt; (Online in-browser IDE)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://atom.io/&quot; target=&quot;_ blank&quot;&gt;&lt;strong&gt;Atom IDE&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.jetbrains.com/pycharm/&quot; target=&quot;_ blank&quot;&gt;&lt;strong&gt;PyCharm IDE&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Running the terminal (Atom): &lt;strong&gt;⌘ + I&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>2020-09-30</pubDate>
+        <link>http://localhost:4000/articles/2020-09/Python-Basics</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Python-Basics</guid>
+        
+        <category>python</category>
+        
+        <category>Homebrew</category>
+        
+        <category>Anaconda</category>
+        
+        <category>Atom</category>
+        
+        <category>PyCharm</category>
+        
+        <category>repl.it</category>
+        
+        
+        <category>Python</category>
+        
+      </item>
     
       <item>
         <title>Part 1&amp;#58; My home network journal</title>
@@ -30,13 +69,17 @@
   &lt;li&gt;&lt;a href=&quot;https://evanmccann.net/blog/2020/6/ubiquiti-faq&quot; target=&quot;_ blank&quot;&gt;Ubiquiti FAQ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I plan to update with subsequent posts, but for now I’ve made a simple diagram detailing the essential hardware required for the network setup. I’ve decided to go full Ubiquiti for my first setup because it seems easy to put together for an ‘enterprise’ grade solution and is well regarded in the networking community. I won’t deny that it is overkill for a home environment but this project is too exciting to pass.&lt;/p&gt;
+&lt;p&gt;I plan to update my progress with subsequent posts, but for now I’ve made a simple diagram detailing the essential hardware required for the network setup. I’ve decided to go full Ubiquiti for my first setup because it is well documented ‘enterprise’ solution and it seems easy to put together. I won’t deny that it is overkill for a home environment but this project is too exciting to pass.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-hardware-diagram&quot;&gt;The hardware diagram&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Network_diagram.jpg&quot; alt=&quot;Network diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-breakdown-and-costs&quot;&gt;The breakdown and costs&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;to be updated&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>2020-09-15</pubDate>
+        <pubDate>2020-09-30</pubDate>
         <link>http://localhost:4000/articles/2020-09/Home-Network</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Home-Network</guid>
         
@@ -79,8 +122,13 @@
 &lt;/ul&gt;
 
 &lt;p&gt;There were some issues along the way, so I wouldn’t say it was an easy ride. Fortunately, nothing is too difficult for Google &amp;amp; Stack Overflow. I’ve learned plenty so far but there is still much to do and learn. I’ll update this page as I go along.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 </description>
-        <pubDate>2020-09-15</pubDate>
+        <pubDate>2020-09-30</pubDate>
         <link>http://localhost:4000/articles/2020-07/First-Post</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-07/First-Post</guid>
         

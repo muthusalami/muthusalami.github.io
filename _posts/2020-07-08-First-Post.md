@@ -30,3 +30,8 @@ I initially considered Wordpress for its wide usage but ultimately chose a stati
 * How to maintain the entire project on **Atom**
 
 There were some issues along the way, so I wouldn't say it was an easy ride. Fortunately, nothing is too difficult for Google & Stack Overflow. I've learned plenty so far but there is still much to do and learn. I'll update this page as I go along.
+
+**Note:**
+{% highlight css %}
+bundle exec jekyll serve
+{% endhighlight %}
