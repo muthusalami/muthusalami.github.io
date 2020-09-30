@@ -8,7 +8,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Key concepts in Python">
+  <meta name="description" content="Basic concepts in Python">
   <meta name="keywords" content="blog, digital preservation, film preservation, and film restoration">
   <meta name="author" content="Python basics | Matthew Yang | Singapore">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
   <!-- Twitter Tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Python basics | Matthew Yang | Singapore">
-  <meta name="twitter:description" content="Key concepts in Python">
+  <meta name="twitter:description" content="Basic concepts in Python">
   
     <meta property="twitter:image" content="http://localhost:4000/img/leonids-logo.png">
   
@@ -26,7 +26,7 @@
   <meta property="og:type" content="blog">
   <meta property="og:url" content="http://localhost:4000/articles/2020-09/Python-Basics">
   <meta property="og:title" content="Python basics | Matthew Yang | Singapore">
-  <meta property="og:description" content="Key concepts in Python">
+  <meta property="og:description" content="Basic concepts in Python">
   
     <meta property="og:image" content="http://localhost:4000/img/leonids-logo.png">
   
@@ -57,7 +57,7 @@
   
   <a href="http://localhost:4000/" class="author_name">Matthew Yang</a>
   <span class="author_job"></span>
-  <span class="author_bio mbm">Filmmaker & Moving Image Archivist</span>
+  <span class="author_bio mbm">filmmaker & moving image archivist</span>
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
@@ -160,21 +160,72 @@
   </header>
 
   <article class="post-content">
-    <h2 id="install-python">Install Python</h2>
+    <p>This post purely serves as a journal as I progress towards learning Python and will be updated as I go along.</p>
+
+<h2 id="0-set-up---installing-python">0) Set up - Installing Python</h2>
 
 <p>For Windows, Python 3 can be installed and managed using <a href="https://anaconda.com/" target="_ blank"><strong>Anaconda</strong></a></p>
 
 <p>For Mac, Python 3 can be installed and managed using <a href="https://brew.sh/" target="_ blank"><strong>Homebrew</strong></a>.</p>
 
-<h2 id="choosing-an-ide-to-write-and-run-the-scripts">Choosing an IDE to write and run the scripts</h2>
+<h2 id="0-set-up---choosing-an-ide-to-write-and-run-the-scripts">0) Set up - Choosing an IDE to write and run the scripts</h2>
 
 <p><a href="https://repl.it/" target="_ blank"><strong>repl.it</strong></a> (Online in-browser IDE)</p>
 
 <p><a href="https://atom.io/" target="_ blank"><strong>Atom IDE</strong></a></p>
 
+<p>Running the terminal in Atom: <strong>⌘ + I</strong></p>
+
 <p><a href="https://www.jetbrains.com/pycharm/" target="_ blank"><strong>PyCharm IDE</strong></a></p>
 
-<p>Running the terminal (Atom): <strong>⌘ + I</strong></p>
+<h2 id="1-variables--strings">1) Variables &amp; Strings</h2>
+<p><strong>Variables</strong> store information; it can be text or numbers.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">first</span><span class="nc">.name</span> <span class="o">=</span> <span class="s2">'matthew'</span>
+<span class="nt">last</span><span class="nc">.name</span> <span class="o">=</span> <span class="s2">'yang'</span></code></pre></figure>
+
+<p>first.name &amp; last.name are <strong>variables</strong>.
+‘matthew’ &amp; ‘yang’ are the <strong>values</strong>.</p>
+
+<p><strong>Strings</strong> are text or are a combination of text within quotes. They include:</p>
+<ul>
+  <li>Letters</li>
+  <li>Numbers</li>
+  <li>Punctuation</li>
+  <li>Special characters</li>
+</ul>
+
+<p>It can be either in single or double quotes. Do note to use double quotes if your string is a quote.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="s2">'like this'</span>
+<span class="s1">"like this"</span></code></pre></figure>
+
+<p>The <strong>len()</strong> command in Python provides the length of something. For example, it tells you the number of characters when used in strings.</p>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">name</span><span class="nc">.count</span> <span class="o">=</span> <span class="nt">len</span><span class="o">(</span><span class="nt">first</span><span class="nc">.name</span><span class="o">)</span>
+<span class="nt">print</span><span class="o">(</span><span class="nt">name</span><span class="nc">.count</span><span class="o">)</span></code></pre></figure>
+
+<p>The result will be <em>7</em> since ‘matthew’ has seven characters.</p>
+
+<p><strong>Slicing</strong> will index or sequence strings by their character[s]. The first character in the string will be indexed as 0.</p>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">name</span> <span class="o">=</span> <span class="s2">'matthew'</span>
+<span class="nt">print</span><span class="o">(</span><span class="nt">name</span><span class="o">[</span><span class="nt">0</span><span class="o">])</span></code></pre></figure>
+
+<p>The result will be <em>m</em>.</p>
+
+<p>A range of characters can be called using ‘:’.</p>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">name</span> <span class="o">=</span> <span class="s2">'matthew'</span>
+<span class="nt">print</span><span class="o">(</span><span class="nt">name</span><span class="o">[</span><span class="nt">0</span><span class="nd">:4</span><span class="o">])</span></code></pre></figure>
+
+<p>The result will be <em>matt</em>.</p>
 
   </article>
 </div>

@@ -5,29 +5,80 @@
     <description>Jekyll website project</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>2020-09-30</pubDate>
-    <lastBuildDate>Wed, 30 Sep 2020 23:29:21 +0800</lastBuildDate>
+    <pubDate>2020-10-01</pubDate>
+    <lastBuildDate>Thu, 01 Oct 2020 00:10:50 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
         <title>Python basics</title>
-        <description>&lt;h2 id=&quot;install-python&quot;&gt;Install Python&lt;/h2&gt;
+        <description>&lt;p&gt;This post purely serves as a journal as I progress towards learning Python and will be updated as I go along.&lt;/p&gt;
+
+&lt;h2 id=&quot;0-set-up---installing-python&quot;&gt;0) Set up - Installing Python&lt;/h2&gt;
 
 &lt;p&gt;For Windows, Python 3 can be installed and managed using &lt;a href=&quot;https://anaconda.com/&quot; target=&quot;_ blank&quot;&gt;&lt;strong&gt;Anaconda&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;For Mac, Python 3 can be installed and managed using &lt;a href=&quot;https://brew.sh/&quot; target=&quot;_ blank&quot;&gt;&lt;strong&gt;Homebrew&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;choosing-an-ide-to-write-and-run-the-scripts&quot;&gt;Choosing an IDE to write and run the scripts&lt;/h2&gt;
+&lt;h2 id=&quot;0-set-up---choosing-an-ide-to-write-and-run-the-scripts&quot;&gt;0) Set up - Choosing an IDE to write and run the scripts&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://repl.it/&quot; target=&quot;_ blank&quot;&gt;&lt;strong&gt;repl.it&lt;/strong&gt;&lt;/a&gt; (Online in-browser IDE)&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://atom.io/&quot; target=&quot;_ blank&quot;&gt;&lt;strong&gt;Atom IDE&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;Running the terminal in Atom: &lt;strong&gt;⌘ + I&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;a href=&quot;https://www.jetbrains.com/pycharm/&quot; target=&quot;_ blank&quot;&gt;&lt;strong&gt;PyCharm IDE&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Running the terminal (Atom): &lt;strong&gt;⌘ + I&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-variables--strings&quot;&gt;1) Variables &amp;amp; Strings&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Variables&lt;/strong&gt; store information; it can be text or numbers.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'matthew'&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'yang'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;first.name &amp;amp; last.name are &lt;strong&gt;variables&lt;/strong&gt;.
+‘matthew’ &amp;amp; ‘yang’ are the &lt;strong&gt;values&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Strings&lt;/strong&gt; are text or are a combination of text within quotes. They include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Letters&lt;/li&gt;
+  &lt;li&gt;Numbers&lt;/li&gt;
+  &lt;li&gt;Punctuation&lt;/li&gt;
+  &lt;li&gt;Special characters&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It can be either in single or double quotes. Do note to use double quotes if your string is a quote.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;s2&quot;&gt;'like this'&lt;/span&gt;
+&lt;span class=&quot;s1&quot;&gt;&quot;like this&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The &lt;strong&gt;len()&lt;/strong&gt; command in Python provides the length of something. For example, it tells you the number of characters when used in strings.&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The result will be &lt;em&gt;7&lt;/em&gt; since ‘matthew’ has seven characters.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Slicing&lt;/strong&gt; will index or sequence strings by their character[s]. The first character in the string will be indexed as 0.&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'matthew'&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The result will be &lt;em&gt;m&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;A range of characters can be called using ‘:’.&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'matthew'&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The result will be &lt;em&gt;matt&lt;/em&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2020-09-30</pubDate>
+        <pubDate>2020-10-01</pubDate>
         <link>http://localhost:4000/articles/2020-09/Python-Basics</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Python-Basics</guid>
         
@@ -79,7 +130,7 @@
 
 &lt;p&gt;&lt;em&gt;to be updated&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>2020-09-30</pubDate>
+        <pubDate>2020-10-01</pubDate>
         <link>http://localhost:4000/articles/2020-09/Home-Network</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Home-Network</guid>
         
@@ -128,7 +179,7 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>2020-09-30</pubDate>
+        <pubDate>2020-10-01</pubDate>
         <link>http://localhost:4000/articles/2020-07/First-Post</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-07/First-Post</guid>
         
