@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Python basics
-excerpt: Basic concepts in Python
+title: Python&#58; the basics
+excerpt: These are some basic concepts I've picked up in my Python journey!
 modified: 2020-09-13
 tags: [python, Homebrew, Anaconda, Atom, PyCharm, repl.it]
 categories: Python
@@ -12,7 +12,7 @@ image:
   feature:
 ---
 
-This post purely serves as a journal as I progress towards learning Python and will be updated as I go along.
+This post purely serves as a journal and a collection of personal references to a range of basic concepts in Python. I intend to update this page as I progress towards learning the language.
 
 ## 0) Set up - Installing Python
 
