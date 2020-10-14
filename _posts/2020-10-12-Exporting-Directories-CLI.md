@@ -16,6 +16,14 @@ I recently had to provide a list of files in a USB thumbdrive/stick and managed 
 
 ## Basic command structure
 
+Syntax:
+
+{% highlight css %}
+DIR [pathname(s)] [display_format] [file_attributes] [sorted] [time] [options]
+{% endhighlight %}
+
+Example:
+
 {% highlight css %}
 dir /s > output.doc
 {% endhighlight %}
@@ -36,12 +44,12 @@ dir /s *.pdf > output_pdf.doc
 
 * *.pdf* is a wildcard function that will only select *.pdf* files.
 
-## Include size and date of creation
+## List bare format (no heading, sizes or summary)
 
-The switch */b* will include information about the file's size and date of creation.
+The switch */b* will list file names, however when displaying subfolders with dir /b /s, the command will return a full pathname.
 
 {% highlight css %}
-dir /s/b *.pdf > output_pdf.doc
+dir /s /b *.pdf > output_pdf.doc
 {% endhighlight %}
 
 ## Using the *tree* command instead of *dir*
