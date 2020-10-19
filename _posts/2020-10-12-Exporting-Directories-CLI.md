@@ -42,14 +42,14 @@ The command will be:
 dir /s *.pdf > output_pdf.doc
 {% endhighlight %}
 
-* *.pdf* is a wildcard function that will only select *.pdf* files.
+(*.pdf)* is a wildcard function that will only select *.pdf* files.
 
 ## List bare format (no heading, sizes or summary)
 
 The switch */b* will list file names, however when displaying subfolders with dir /b /s, the command will return a full pathname.
 
 {% highlight css %}
-dir /s /b *.pdf > output_pdf.doc
+dir /b /s > output_pdf.doc
 {% endhighlight %}
 
 ## Using the *tree* command instead of *dir*
