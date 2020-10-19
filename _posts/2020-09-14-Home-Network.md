@@ -37,9 +37,9 @@ I plan to update my progress with subsequent posts, but for now I've made a simp
 
 ### The breakdown and costs
 
-Commscope CAT6A CS44Z1 WHT C6A 4/23 F/UTP RL 500M
-12U Server Rack
-CAT6A Patch Panel
-Ubiquiti EdgeRouter X
-Unifi Switch 16 150W Gen 1
-Unifi Cloud Key Gen2
+* Commscope CAT6A CS44Z1 WHT C6A 4/23 F/UTP RL 500M
+* 12U Server Rack
+* CAT6A Patch Panel
+* Ubiquiti EdgeRouter X
+* Unifi Switch 16 150W Gen 1
+* Unifi Cloud Key Gen2
