@@ -39,7 +39,8 @@ I plan to update my progress with subsequent posts, but for now I've made a simp
 
 * Commscope CAT6A CS44Z1 WHT C6A 4/23 F/UTP RL 500M
 * 12U Server Rack
-* CAT6A Patch Panel
+* [24-Port Keystone Patch Panel](https://www.amazon.com/Cable-Matters-Mount-24-Port-Keystone/dp/B0072JVT02/ref=sr_1_1_sspa?dchild=1&keywords=cat6a+patch+panel+keystone&qid=1603105533&refinements=p_72%3A2661618011&rnid=2661617011&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExUFlKWTlRTzVHSjhJJmVuY3J5cHRlZElkPUEwOTk3OTg4QkEzTzJQQlo3RzcmZW5jcnlwdGVkQWRJZD1BMDU4NjUwMTJDM0lVUklFQTFCVlUmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl){:target="_ blank"}
+* [CAT6A Unshielded Keystone Jack](https://www.amazon.com/LINKOMM-Cat6A-Profile-Keystone-Orange/dp/B07R3Z93NN/ref=sr_1_13?dchild=1&keywords=cat6a%2Bunshielded&qid=1603116313&sr=8-13&th=1){:target="_ blank"}
 * Ubiquiti EdgeRouter X
 * Unifi Switch 16 150W Gen 1
 * Unifi Cloud Key Gen2
