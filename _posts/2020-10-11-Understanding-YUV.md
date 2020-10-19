@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding the YUV format
+title: Understanding the YUV (YCbCr) format
 excerpt: A brief summary and explanation of the YUV format
 modified: 2020-10-19
 tags: [Video, YUV, Colour]
