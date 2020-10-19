@@ -41,6 +41,7 @@ I plan to update my progress with subsequent posts, but for now I've made a simp
 * 12U Server Rack
 * [24-Port Keystone Patch Panel](https://www.amazon.com/dp/B0072JVT02/ref=emc_b_5_i){:target="_ blank"}
 * [CAT6A Shielded Keystone Jack](https://www.amazon.com/Listed-Cable-Matters-Shielded-Keystone/dp/B00CLVAJCK/ref=sr_1_1_sspa?dchild=1&keywords=cat6a+shielded+keystone&qid=1603117867&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTkRGQjNVTjQ0NzBFJmVuY3J5cHRlZElkPUEwNTE2NDAwMjRWNkVCN1FBWVZPJmVuY3J5cHRlZEFkSWQ9QVVOT0wxRFNZUEJMNSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=){:target="_ blank"}
+* [Crimp tool](https://www.amazon.com/Cable-Matters-Crimp-Shielded-Keystone/dp/B074HLYJ4J/ref=pd_bxgy_2/142-1063064-5847132?_encoding=UTF8&pd_rd_i=B074HLYJ4J&pd_rd_r=d478e5fb-1a04-43ae-9e2c-8cd2b635284a&pd_rd_w=iPFhI&pd_rd_wg=EIqkr&pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&pf_rd_r=N3R06Y826ATAWEF8R2KP&psc=1&refRID=N3R06Y826ATAWEF8R2KP){:target="_ blank"}
 * Ubiquiti EdgeRouter X
 * Unifi Switch 16 150W Gen 1
 * Unifi Cloud Key Gen2
