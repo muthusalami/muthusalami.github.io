@@ -14,6 +14,8 @@ image:
 
 ![YUV chart]({{ site.url }}/assets/originals/YUV.png)
 
+## What is YUV?
+
 In a YUV data structure scheme, the 'Y' represents the luma value, and the 'U' & 'V' represents two chroma values. In contrast to RGB, the values represent the intensities of red, green and blue channels in the pixel.
 
 Each unique 'Y', 'U' and 'V' value comprises of 8-bits (or one byte) of data.
