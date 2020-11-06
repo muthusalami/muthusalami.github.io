@@ -5,13 +5,385 @@
     <description>Jekyll website project</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>2020-10-01</pubDate>
-    <lastBuildDate>Thu, 01 Oct 2020 00:21:57 +0800</lastBuildDate>
+    <pubDate>2020-11-06</pubDate>
+    <lastBuildDate>Fri, 06 Nov 2020 15:08:36 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
-        <title>Python basics</title>
-        <description>&lt;p&gt;This post purely serves as a journal as I progress towards learning Python and will be updated as I go along.&lt;/p&gt;
+        <title>Practical tips on how to care for your files and data</title>
+        <description>&lt;p&gt;Managing digital data has become increasingly challenging and can be a daunting experience with the sheer volume of what can build up in a short period.  Digital data is vulnerable and can be easily lost if not properly cared for. Hard drives fail, files get plagued by bit-rot, or it can get deleted by accident. Data loss is painful, and recovery (if even possible) is an expensive and stressful process. With the advancement of born-digital filmmaking technologies, we are generating more data than ever before and this poses a huge risk to the loss of our films if we do not start taking steps to care for the physical longevity of a work as it is being created.&lt;/p&gt;
+
+&lt;p&gt;In the film archive, many of the titles we receive in born-digital formats require our staff hours to sieve through and sort out the clutter. This is usually because the data is not properly organised or lacks sufficient documentation (for instance, poor file-naming conventions) making it difficult to know what is being filed.&lt;/p&gt;
+
+&lt;p&gt;Since many people are working from home as a result of COVID-19, it is a great opportunity to take stock and review the backup of your files and check if you are still able to access your digital films and related materials. No one else knows your work better than you. So ensuring the integrity of your materials is a task best done by you.&lt;/p&gt;
+
+&lt;p&gt;We have compiled some practical tips and basic data management concepts that is easy for anyone who is planning to organise and backup their personal files at home. There is no right way to do this and you may find other solutions that might better suit your needs.&lt;/p&gt;
+
+&lt;p&gt;For the long-term preservation of your film works, consider sending it to the Asian Film Archive. We will assess if it falls within our acquisition policy. Click here to provide us with some information.&lt;/p&gt;
+
+&lt;p&gt;Let’s start!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Consolidate your files&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tracking and managing your files gets challenging when they are kept on multiple and different devices. It’s easy to lose track of its location if some are sitting on hard drives and others are on online platforms, such as Dropbox, Google Drive and OneDrive. Identifying where the files are is the first step in taking stock of what you have.&lt;/p&gt;
+
+&lt;p&gt;You could centralise the files on your computer or an external hard drive once you have done locating your files. Remember to select a suitably sized media to do all of this.&lt;/p&gt;
+
+&lt;p&gt;At this stage, everything will look like a huge mess.  Take the time to survey what you have because this will inform you on how to organise and name them later.&lt;/p&gt;
+
+&lt;p&gt;By the end of this process, you will  have a good sense of how much data you have and knowing this will help you allocate the necessary memory for your backup strategy.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Keep only what you need&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Select what you need and delete whatever that is unimportant. For example, you might encounter multiple copies of a file and it could be worth considering what is sufficient to keep, for instance, keeping only the latest version.&lt;/p&gt;
+
+&lt;p&gt;This quality check process will free space, keeping your data volume to a minimum. Working with a smaller volume will keep costs low and allow an easier migration and backup process down the road.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Organise your files&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Organise the files that you have selected by creating a file directory structure and a file naming convention that makes sense to you and others accessing the files. Whatever system you decide upon should be easily understood by you and others to ensure easy accessibility and quick identification.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;File Directory Structure&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is an example of how files can be organised and structured:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Folder_Structure_Example.png&quot; alt=&quot;Folder Structure&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;find it useful to first determine the top-level folder. I used [YEAR] in this example, and branch into sub-directories by [CATEGORY]. In the screenshot above, we see Year 2020 and the categories are AFA Work, External Projects and Personal Documents. The later directories might be projects/events based but try to keep them as consistent as possible.&lt;/p&gt;
+
+&lt;p&gt;There is no ‘perfect’ format and this example gives you an idea on how you can start. Your directory should be intuitive and logical and should be guided by how you work.&lt;/p&gt;
+
+&lt;p&gt;Here are some tips on designing your own directory.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Draw it out!
+    &lt;ul&gt;
+      &lt;li&gt;Draw your directory out on a piece of paper before implementation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Keep it simple
+    &lt;ul&gt;
+      &lt;li&gt;Avoid complex and deep-layered designs&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Consistency
+    &lt;ul&gt;
+      &lt;li&gt;Keep a consistent structure across folders&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Be precise
+    &lt;ul&gt;
+      &lt;li&gt;se plain language and keep it short&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Avoid spaces, punctuations and symbols
+    &lt;ul&gt;
+      &lt;li&gt;Some operating systems do not recognise spaces so avoid spaces in a mixed operating system environment&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;File Naming Convention&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Descriptive file names are imperative to quick identification and retrieval of files. Poor naming conventions are frustrating and wastes a lot of time  since they do not give useful information (“Best practices for file naming”, 2020).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Naming_Convention_Example.png&quot; alt=&quot;File Naming Convention&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A guiding principle for filenames is to include basic information such as object type, dates, and important remarks. These indicators can be crucial in distinguishing one file from another in the event that there are multiple variations of a given file. In essence, an effective file name should tell you what the file is without you having to open it (Antin, 2020).&lt;/p&gt;
+
+&lt;p&gt;In the screenshot above, assets of a project are organised by their folders: Logos, Mock_Up_Thumbnail and Watermarked_Stills. The name of the three files clearly indicates that there are three image stills (Still) from the film Sunshine Singapore (SS) watermarked (WM) in .png format.&lt;/p&gt;
+
+&lt;p&gt;Here are some tips on File Naming:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Make it human-readable
+    &lt;ul&gt;
+      &lt;li&gt;Use concise and plain language&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Avoid abbreviations that are not common knowledge
+    &lt;ul&gt;
+      &lt;li&gt;Keep it short&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Avoid long words and sentences
+    &lt;ul&gt;
+      &lt;li&gt;Use indicative descriptions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Is it a report or a still image? Be clear
+    &lt;ul&gt;
+      &lt;li&gt;Is it the latest version? Put an indicative date&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;More on File Naming:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://records-express.blogs.archives.gov/2017/08/22/best-practices-for-file-naming/&quot; target=&quot;_ blank&quot;&gt;Best Practices for File Naming&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.bulkrenameutility.co.uk/&quot; target=&quot;_ blank&quot;&gt;Bulk Rename Utility Tool&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create Backups&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now that your files are all in place and organised, it is time to back them up! You can consider the classic 3-2-1 data protection strategy which is a model widely adopted by professionals in content and media production&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The 3-2-1 strategy&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Diagram-1440x1018.png&quot; alt=&quot;3-2-1 Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Keep 3 copies of your data&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The 3-2-1 strategy encourages the back up of three copies of data because one copy is simply not enough. Having one copy is dangerous and the more copies you have, the lesser the chance of complete data loss.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Store 2 copies on 2 different storage devices&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Drives will eventually fail because of mechanical failure or wear and tear. Hence the 3-2-1 strategy recommends keeping your first two backups on two separate storage devices at your primary location. Storing the two copies differently will provide an added insurance for data restoration in the event that one source fails.&lt;/p&gt;
+
+&lt;p&gt;There are various backup storage solutions available, but which do you choose? Here are two solutions you can consider.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A) External hard drive (SATA &amp;amp; SSD)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the most common solution  because it is affordable, easy to use and widely available. An external hard drive requires little set-up, just plug it into your computer via USB and it is ready to use. They usually come in two variants: &lt;a href=&quot;https://www.pluralsight.com/blog/it-ops/types-of-hard-drives-sata-ssd-nvme&quot; target=&quot;_ blank&quot;&gt;SATA&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://www.youtube.com/watch?v=YQEjGKYXjw8&quot; target=&quot;_ blank&quot;&gt;SSD&lt;/a&gt; and their differences are in the links provided.  SATA drives are much cheaper but SSD’s are faster and less prone to failure since there are no moving parts in it. However it is important to note that SSDs have limited write cycles, even though it is less susceptible to physical wear (“SATA vs SSD vs NVMe: Types of Hard Drives”, 2020).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Pros&lt;/em&gt;: Easy to use, portable, affordable, widely available&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Cons&lt;/em&gt;: Can’t easily share files&lt;/p&gt;
+
+&lt;p&gt;You can consider deploying multiple hard drives and rely on tools/software to help duplicate data from one drive to another.&lt;/p&gt;
+
+&lt;p&gt;Here are some suggested tools:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://freefilesync.org/&quot; target=&quot;_ blank&quot;&gt;FreeFileSync&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.goodsync.com/&quot; target=&quot;_ blank&quot;&gt;GoodSync&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://bvckup2.com/&quot; target=&quot;_ blank&quot;&gt;Bvckup 2&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;B) &lt;em&gt;Network Attached Storage (NAS)&lt;/em&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A NAS storage device is connected over a computer network and acts as a central location for multiple users to write and access data (“What is NAS (Network Attached Storage) and Why is NAS Important for Small Businesses?&lt;/td&gt;
+      &lt;td&gt;Seagate UK”, 2020). Depending on the model, multiple hard drives are housed within a NAS for storage and can be scaled for increased capacity depending on its number of available bays. You can think of NAS as an array of hard drives put together to form a larger storage unit.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;It can be set up to use a RAID configuration to ‘create’ multiple units of storage within the NAS but still behaving as one cohesive storage. This allows you to manage storage redundancy and performance according to your needs. There are many NAS solutions available but Synology and QNAP are two popular brands.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Pros&lt;/em&gt;: Allows multiple users to access, scalable, allows customization, status monitoring&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Cons&lt;/em&gt;: High upfront cost, requires basic technical knowledge&lt;/p&gt;
+
+&lt;p&gt;More on NAS storage:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=DnxW2qxCiO0&quot; target=&quot;_ blank&quot;&gt;What is a NAS Device?&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Keep 1 copy off-site&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The last component of the 3-2-1 strategy is to have 1 copy of your data stored off-site away from your primary location. This is a key component in designing a robust back up strategy as on-site file storage can be  compromised by hardware failure, theft or a fire. You can consider cloud storage as your off-site solution where your files will be hosted on a cloud service for a cost (“Backup Strategies: Why the 3-2-1 Backup Strategy is the Best”, 2020).&lt;/p&gt;
+
+&lt;p&gt;There are many cloud solutions plans you can consider that can cost as low as USD6 per month for unlimited file storage. Most of these solutions keep data restoration straightforward as well. For example, they can restore your data in different ways: direct download, USB flash drive or external hard drive. Whichever method you pick will depend on the volume of data you are retrieving.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Conclusion&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is no one way to manage and backup your data since it will depend on your data volume and importantly, your budget. When it comes to designing your backup system, a general rule of thumb is to have multiple copies and diversify them on different storage solutions. If one source fails, you can rely on others for data restoration.&lt;/p&gt;
+
+&lt;p&gt;Managing your data requires continuous effort and it is easy to overlook it with competing responsibilities. Hence you can consider a backup regime or simply backup as you go. By doing so, you not only reduce the risk of data loss but also have peace of mind that your files are safe and are readily accessible when needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reference List&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Antin, K. (2020). File naming conventions: why you want them and how to create them. HURIDOCS. Retrieved 11 October 2020, from https://www.huridocs.org/2016/07/file-naming-conventions-why-you-want-them-and-how-to-create-them/.&lt;/p&gt;
+
+&lt;p&gt;Backup Strategies: Why the 3-2-1 Backup Strategy is the Best. Backblaze Blog Cloud Storage &amp;amp; Cloud Backup. (2020). Retrieved 11 October 2020, from https://www.backblaze.com/blog/the-3-2-1-backup-strategy/.&lt;/p&gt;
+
+&lt;p&gt;Best practices for file naming. Stanford Libraries. (2020). Retrieved 10 October 2020, from https://library.stanford.edu/research/data-management-services/data-best-practices/best-practices-file-naming.&lt;/p&gt;
+
+&lt;p&gt;SATA vs SSD vs NVMe: Types of Hard Drives. Pluralsight.com. (2020). Retrieved 11 October 2020, from https://www.pluralsight.com/blog/it-ops/types-of-hard-drives-sata-ssd-nvme.&lt;/p&gt;
+
+&lt;p&gt;What is NAS (Network Attached Storage) and Why is NAS Important for Small Businesses?, Seagate UK. Seagate.com. (2020). Retrieved 10 October 2020, from https://www.seagate.com/sg/en/tech-insights/what-is-nas-master-ti/.&lt;/p&gt;
+</description>
+        <pubDate>2020-11-06</pubDate>
+        <link>http://localhost:4000/articles/2020-11/Practical-Tips</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2020-11/Practical-Tips</guid>
+        
+        <category>NAS</category>
+        
+        <category>SSD</category>
+        
+        <category>HDD</category>
+        
+        <category>File Management</category>
+        
+        <category>Digital Preservation</category>
+        
+        <category>Guide</category>
+        
+        
+        <category>blog</category>
+        
+        <category>website</category>
+        
+      </item>
+    
+      <item>
+        <title>How to export a list of files in CLI</title>
+        <description>&lt;p&gt;I recently had to provide a list of files in a USB thumbdrive/stick and managed to learn a sweet trick via CLI. This method provides a text, &lt;em&gt;Word&lt;/em&gt; or &lt;em&gt;Excel&lt;/em&gt; file that lists all the files and folders inside a specific directory within your computer.&lt;/p&gt;
+
+&lt;h2 id=&quot;basic-command-structure&quot;&gt;Basic command structure&lt;/h2&gt;
+
+&lt;p&gt;Syntax:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;DIR&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;pathname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;display_format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;file_attributes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.doc&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;dir&lt;/em&gt; lists all the files and folders contained in the folder&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;/s&lt;/em&gt; will list all the files in the subfolders as well&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Output.doc&lt;/em&gt; is the document file containing the entire directory and the details. It may be in another format such as a simple &lt;em&gt;.txt&lt;/em&gt; file which can be edited on Notepad.&lt;/p&gt;
+
+&lt;h2 id=&quot;listing-only-certain-types-of-files&quot;&gt;Listing only certain types of files&lt;/h2&gt;
+
+&lt;p&gt;The command will be:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.pdf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;output_pdf&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.doc&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;(&lt;em&gt;.pdf)&lt;/em&gt; is a wildcard function that will only select &lt;em&gt;.pdf&lt;/em&gt; files.&lt;/p&gt;
+
+&lt;h2 id=&quot;list-bare-format-no-heading-sizes-or-summary&quot;&gt;List bare format (no heading, sizes or summary)&lt;/h2&gt;
+
+&lt;p&gt;The switch &lt;em&gt;/b&lt;/em&gt; will list file names, however when displaying subfolders with dir /b /s, the command will return a full pathname.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;output_pdf&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.doc&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;using-the-tree-command-instead-of-dir&quot;&gt;Using the &lt;em&gt;tree&lt;/em&gt; command instead of &lt;em&gt;dir&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;This command will produce a tree listing of the current directory&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;tree&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.txt&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;/f&lt;/em&gt; displays the names of the files within each directory listed.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;/a&lt;/em&gt; may be used to specify alternative (&lt;em&gt;ascii&lt;/em&gt;) characters to be used to draw the tree diagram so that it can be printed by printers that do not support the line and box drawing characters.&lt;/p&gt;
+</description>
+        <pubDate>2020-11-06</pubDate>
+        <link>http://localhost:4000/articles/2020-10/Exporting-Directories-CLI</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Exporting-Directories-CLI</guid>
+        
+        <category>Command-line</category>
+        
+        <category>Command Prompt</category>
+        
+        <category>Windows</category>
+        
+        <category>Excel</category>
+        
+        <category>Word</category>
+        
+        <category>Manifest</category>
+        
+        
+        <category>Command-line</category>
+        
+        <category>Windows</category>
+        
+      </item>
+    
+      <item>
+        <title>Understanding the YUV (YCbCr) colour encoding system</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/YUV.png&quot; alt=&quot;YUV chart&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-yuv&quot;&gt;What is YUV?&lt;/h2&gt;
+
+&lt;p&gt;In a YUV data structure scheme, the ‘Y’ represents the luma value, and the ‘U’ &amp;amp; ‘V’ represents two chroma values. In contrast to RGB, the values represent the intensities of red, green and blue channels in the pixel.&lt;/p&gt;
+
+&lt;p&gt;Each unique ‘Y’, ‘U’ and ‘V’ value comprises of 8-bits (or one byte) of data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Y value&lt;/strong&gt; = Luminance value
+Overall brightness of the pixel. It is a grayscale value.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;U (CB) value&lt;/strong&gt;  = Chrominance value
+Specifically the Blue&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;V (CR) value&lt;/strong&gt;  = Chrominance value
+Specifically the Red&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;U &amp;amp; V values&lt;/strong&gt;  are coordinates instead of brightness values with positive and negative values.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-not-stick-to-rgb&quot;&gt;Why not stick to RGB?&lt;/h2&gt;
+
+&lt;p&gt;Colour and brightness information and combined within the three channels in RGB. i.e. Increasing the &lt;strong&gt;R&lt;/strong&gt; channel will increase both the colour and brightness value in tandem. In simpler terms, both properties are combined in the same value.&lt;/p&gt;
+
+&lt;p&gt;In a YUV system, the brightness information is completely separated from the colour information. In other words, more control is afforded.&lt;/p&gt;
+
+&lt;h2 id=&quot;practical-application&quot;&gt;Practical application&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Backward compatibility&lt;/strong&gt; - Black and White TVs can’t take RGB signals since the brightness value is baked into the colour values which it doesn’t understand. Whereas YUV has the Y value which can be processed by the television set, by ignoring the colour components.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Chroma sub-sampling&lt;/strong&gt; - YUV allows the user to remove information specifically from the colour values without affecting the overall luminance of it. This is particularly useful during image compression and an effective means in processing images.&lt;/p&gt;
+</description>
+        <pubDate>2020-11-06</pubDate>
+        <link>http://localhost:4000/articles/2020-10/Understanding-YUV</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Understanding-YUV</guid>
+        
+        <category>Video</category>
+        
+        <category>YUV</category>
+        
+        <category>Colour</category>
+        
+        
+        <category>Video</category>
+        
+      </item>
+    
+      <item>
+        <title>Python in imaging workflows</title>
+        <description>
+</description>
+        <pubDate>2020-11-06</pubDate>
+        <link>http://localhost:4000/articles/2020-10/Python-Pipeline-Functions</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Python-Pipeline-Functions</guid>
+        
+        <category>Python</category>
+        
+        
+        <category>Python</category>
+        
+      </item>
+    
+      <item>
+        <title>Python&amp;#58; the basics</title>
+        <description>&lt;p&gt;This post purely serves as a journal and a collection of personal references to a range of basic concepts in Python. I intend to update this page as I progress towards learning the language.&lt;/p&gt;
 
 &lt;h2 id=&quot;0-set-up---installing-python&quot;&gt;0) Set up - Installing Python&lt;/h2&gt;
 
@@ -78,7 +450,7 @@
 
 &lt;p&gt;The result will be &lt;em&gt;matt&lt;/em&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2020-10-01</pubDate>
+        <pubDate>2020-11-06</pubDate>
         <link>http://localhost:4000/articles/2020-09/Python-Basics</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Python-Basics</guid>
         
@@ -128,9 +500,21 @@
 
 &lt;h3 id=&quot;the-breakdown-and-costs&quot;&gt;The breakdown and costs&lt;/h3&gt;
 
-&lt;p&gt;&lt;em&gt;to be updated&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Commscope CAT6A CS44Z1 WHT C6A 4/23 F/UTP RL 500M&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://catalog.belden.com/techdata/EN/10GXE01_techdata.pdf&quot; target=&quot;_ blank&quot;&gt;Belden 10GXE01&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf&quot; target=&quot;_ blank&quot;&gt;Belden 10GXE02&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;12U Server Rack&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B0072JVT02/ref=emc_b_5_i&quot; target=&quot;_ blank&quot;&gt;24-Port Keystone Patch Panel&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Listed-Cable-Matters-Shielded-Keystone/dp/B00CLVAJCK/ref=sr_1_1_sspa?dchild=1&amp;amp;keywords=cat6a+shielded+keystone&amp;amp;qid=1603117867&amp;amp;sr=8-1-spons&amp;amp;psc=1&amp;amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTkRGQjNVTjQ0NzBFJmVuY3J5cHRlZElkPUEwNTE2NDAwMjRWNkVCN1FBWVZPJmVuY3J5cHRlZEFkSWQ9QVVOT0wxRFNZUEJMNSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=&quot; target=&quot;_ blank&quot;&gt;CAT6A Shielded Keystone Jack&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Cable-Matters-50-Pack-Shielded-Modular/dp/B00E4OCOUW/ref=pd_bxgy_img_3/142-1063064-5847132?_encoding=UTF8&amp;amp;pd_rd_i=B00E4OCOUW&amp;amp;pd_rd_r=c0dcf1bd-29a1-4ee7-94f5-e4b70786cc6f&amp;amp;pd_rd_w=4BiTh&amp;amp;pd_rd_wg=JWIZa&amp;amp;pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&amp;amp;pf_rd_r=H2TX043ZN9JE83VTSM5E&amp;amp;psc=1&amp;amp;refRID=H2TX043ZN9JE83VTSM5E&quot; target=&quot;_ blank&quot;&gt;RJ45 Shielded Modular Plugs w strain relief boots&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Cable-Matters-Crimp-Shielded-Keystone/dp/B074HLYJ4J/ref=pd_bxgy_2/142-1063064-5847132?_encoding=UTF8&amp;amp;pd_rd_i=B074HLYJ4J&amp;amp;pd_rd_r=d478e5fb-1a04-43ae-9e2c-8cd2b635284a&amp;amp;pd_rd_w=iPFhI&amp;amp;pd_rd_wg=EIqkr&amp;amp;pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&amp;amp;pf_rd_r=N3R06Y826ATAWEF8R2KP&amp;amp;psc=1&amp;amp;refRID=N3R06Y826ATAWEF8R2KP&quot; target=&quot;_ blank&quot;&gt;Crimp tool&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Ubiquiti EdgeRouter X&lt;/li&gt;
+  &lt;li&gt;Unifi Switch 16 150W Gen 1&lt;/li&gt;
+  &lt;li&gt;Unifi Cloud Key Gen2&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>2020-10-01</pubDate>
+        <pubDate>2020-11-06</pubDate>
         <link>http://localhost:4000/articles/2020-09/Home-Network</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Home-Network</guid>
         
@@ -179,7 +563,7 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>2020-10-01</pubDate>
+        <pubDate>2020-11-06</pubDate>
         <link>http://localhost:4000/articles/2020-07/First-Post</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-07/First-Post</guid>
         

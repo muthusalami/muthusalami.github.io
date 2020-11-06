@@ -2,7 +2,7 @@
 layout: post
 title: Part 1&#58; My home network journal
 excerpt: "Laying out my network plan for my future Ubiquiti setup"
-modified: 2020-09-19
+modified: 2020-11-06
 tags: [network, ubiquiti, unifi, edgemax, wifi]
 categories: network renovation
 comments: true
@@ -38,6 +38,8 @@ I plan to update my progress with subsequent posts, but for now I've made a simp
 ### The breakdown and costs
 
 * Commscope CAT6A CS44Z1 WHT C6A 4/23 F/UTP RL 500M
+* [Belden 10GXE01](https://catalog.belden.com/techdata/EN/10GXE01_techdata.pdf){:target="_ blank"}
+* [Belden 10GXE02](https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf){:target="_ blank"}
 * 12U Server Rack
 * [24-Port Keystone Patch Panel](https://www.amazon.com/dp/B0072JVT02/ref=emc_b_5_i){:target="_ blank"}
 * [CAT6A Shielded Keystone Jack](https://www.amazon.com/Listed-Cable-Matters-Shielded-Keystone/dp/B00CLVAJCK/ref=sr_1_1_sspa?dchild=1&keywords=cat6a+shielded+keystone&qid=1603117867&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTkRGQjNVTjQ0NzBFJmVuY3J5cHRlZElkPUEwNTE2NDAwMjRWNkVCN1FBWVZPJmVuY3J5cHRlZEFkSWQ9QVVOT0wxRFNZUEJMNSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=){:target="_ blank"}
