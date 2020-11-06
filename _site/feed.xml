@@ -6,7 +6,7 @@
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>2020-11-06</pubDate>
-    <lastBuildDate>Fri, 06 Nov 2020 15:55:17 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 15:59:22 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -358,7 +358,80 @@ Specifically the Red&lt;/p&gt;
     
       <item>
         <title>Python in imaging workflows</title>
-        <description>
+        <description>&lt;h3 id=&quot;basic-python&quot;&gt;Basic Python&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;«copy a file»&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;shut.copyfile( “C:\path\file1.ext”, “C:\path\file2.ext” )&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;«rename a file»&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;import os&lt;/p&gt;
+
+&lt;p&gt;os.system( “move \server\path\file1.ext C:\path\file2.ext” )&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;«re-sequence files»&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;import os&lt;/p&gt;
+
+&lt;p&gt;for x in xrange ( 1, 101, 1 ):
+	os.system( “move C:\file.%s.ext C:\path\file.%04d.ext” % ( x, x ) )&lt;/p&gt;
+
+&lt;h3 id=&quot;intermediate-python&quot;&gt;Intermediate Python&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;«scan directories and apply an operation on specific file types»&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;«converting image from file format A to file format B»&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;«scanning for an image with specific metadata» (geotag, exifinfo)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;«modify Image Metadata» (delete / edit /add)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;«resize all images above a specific resolution»&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;modules&quot;&gt;Modules&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;argparse&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;PIL -python image library&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;OpenImageIO -image processing (create slates)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;PySide / PyQt -&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Custom Python Classes
+Advanced User Interface
+  -Custom widgets and dialogs
+  -QT applications
+  -special drag-and-drop handling&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Multi-threading
+Modules: multithreading thread, queue&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Process control and communication
+Modules: process, subprocess, xmlrpc, reds&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;advanced-python&quot;&gt;Advanced Python&lt;/h3&gt;
+&lt;p&gt;Modules: OpenimageIO, OpenEXR, PythonMagick
+Modules: OpenColorIO, ColorPy&lt;/p&gt;
 </description>
         <pubDate>2020-11-06</pubDate>
         <link>http://localhost:4000/articles/2020-10/Python-Pipeline-Functions</link>

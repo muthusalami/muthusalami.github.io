@@ -160,7 +160,80 @@
   </header>
 
   <article class="post-content">
-    
+    <h3 id="basic-python">Basic Python</h3>
+
+<p><em>«copy a file»</em></p>
+
+<p>shut.copyfile( “C:\path\file1.ext”, “C:\path\file2.ext” )</p>
+
+<p><em>«rename a file»</em></p>
+
+<p>import os</p>
+
+<p>os.system( “move \server\path\file1.ext C:\path\file2.ext” )</p>
+
+<p><em>«re-sequence files»</em></p>
+
+<p>import os</p>
+
+<p>for x in xrange ( 1, 101, 1 ):
+	os.system( “move C:\file.%s.ext C:\path\file.%04d.ext” % ( x, x ) )</p>
+
+<h3 id="intermediate-python">Intermediate Python</h3>
+
+<ul>
+  <li>
+    <p>«scan directories and apply an operation on specific file types»</p>
+  </li>
+  <li>
+    <p>«converting image from file format A to file format B»</p>
+  </li>
+  <li>
+    <p>«scanning for an image with specific metadata» (geotag, exifinfo)</p>
+  </li>
+  <li>
+    <p>«modify Image Metadata» (delete / edit /add)</p>
+  </li>
+  <li>
+    <p>«resize all images above a specific resolution»</p>
+  </li>
+</ul>
+
+<h3 id="modules">Modules</h3>
+
+<ul>
+  <li>
+    <p>argparse</p>
+  </li>
+  <li>
+    <p>PIL -python image library</p>
+  </li>
+  <li>
+    <p>OpenImageIO -image processing (create slates)</p>
+  </li>
+  <li>
+    <p>PySide / PyQt -</p>
+  </li>
+  <li>
+    <p>Custom Python Classes
+Advanced User Interface
+  -Custom widgets and dialogs
+  -QT applications
+  -special drag-and-drop handling</p>
+  </li>
+  <li>
+    <p>Multi-threading
+Modules: multithreading thread, queue</p>
+  </li>
+  <li>
+    <p>Process control and communication
+Modules: process, subprocess, xmlrpc, reds</p>
+  </li>
+</ul>
+
+<h3 id="advanced-python">Advanced Python</h3>
+<p>Modules: OpenimageIO, OpenEXR, PythonMagick
+Modules: OpenColorIO, ColorPy</p>
 
   </article>
 </div>

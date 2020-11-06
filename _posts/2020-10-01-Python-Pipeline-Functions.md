@@ -13,17 +13,17 @@ image:
 ---
 ### Basic Python
 
-*<<copy a file>>*
+* <<copy a file>>*
 
 shut.copyfile( “C:\path\file1.ext”, “C:\path\file2.ext” )
 
-*<<rename a file>>*
+* <<rename a file>>*
 
 import os
 
 os.system( “move \\server\path\file1.ext C:\path\file2.ext” )
 
-*<<re-sequence files>>*
+* <<re-sequence files>>*
 
 import os
 
