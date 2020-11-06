@@ -6,7 +6,7 @@
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>2020-11-06</pubDate>
-    <lastBuildDate>Fri, 06 Nov 2020 15:59:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 16:02:46 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -360,17 +360,23 @@ Specifically the Red&lt;/p&gt;
         <title>Python in imaging workflows</title>
         <description>&lt;h3 id=&quot;basic-python&quot;&gt;Basic Python&lt;/h3&gt;
 
-&lt;p&gt;&lt;em&gt;«copy a file»&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;«copy a file»&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;shut.copyfile( “C:\path\file1.ext”, “C:\path\file2.ext” )&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;«rename a file»&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;«rename a file»&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;import os&lt;/p&gt;
 
 &lt;p&gt;os.system( “move \server\path\file1.ext C:\path\file2.ext” )&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;«re-sequence files»&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;«re-sequence files»&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;import os&lt;/p&gt;
 
