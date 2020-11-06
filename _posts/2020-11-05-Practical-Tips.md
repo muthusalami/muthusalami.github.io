@@ -4,7 +4,7 @@ title: Practical tips on how to care for your files and data
 excerpt: "A short beginners guide on file management written for World Digital Preservation Day 2020"
 modified: 2020-11-05
 tags: [NAS, SSD, HDD, File Management, Digital Preservation,Guide]
-categories: blog website
+categories: blog storage
 comments: true
 pinned: true
 share: true
@@ -112,7 +112,7 @@ Drives will eventually fail because of mechanical failure or wear and tear. Henc
 
 There are various backup storage solutions available, but which do you choose? Here are two solutions you can consider.
 
-*A) External hard drive (SATA & SSD)*
+A) *External hard drive (SATA & SSD)*
 
 This is the most common solution  because it is affordable, easy to use and widely available. An external hard drive requires little set-up, just plug it into your computer via USB and it is ready to use. They usually come in two variants: [SATA](https://www.pluralsight.com/blog/it-ops/types-of-hard-drives-sata-ssd-nvme){:target="_ blank"} & [SSD](https://www.youtube.com/watch?v=YQEjGKYXjw8){:target="_ blank"} and their differences are in the links provided.  SATA drives are much cheaper but SSD’s are faster and less prone to failure since there are no moving parts in it. However it is important to note that SSDs have limited write cycles, even though it is less susceptible to physical wear (“SATA vs SSD vs NVMe: Types of Hard Drives”, 2020).
 

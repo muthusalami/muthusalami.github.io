@@ -6,7 +6,7 @@
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>2020-11-06</pubDate>
-    <lastBuildDate>Fri, 06 Nov 2020 15:08:36 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 15:52:11 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -155,7 +155,7 @@
 
 &lt;p&gt;There are various backup storage solutions available, but which do you choose? Here are two solutions you can consider.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;A) External hard drive (SATA &amp;amp; SSD)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A) &lt;em&gt;External hard drive (SATA &amp;amp; SSD)&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;This is the most common solution  because it is affordable, easy to use and widely available. An external hard drive requires little set-up, just plug it into your computer via USB and it is ready to use. They usually come in two variants: &lt;a href=&quot;https://www.pluralsight.com/blog/it-ops/types-of-hard-drives-sata-ssd-nvme&quot; target=&quot;_ blank&quot;&gt;SATA&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://www.youtube.com/watch?v=YQEjGKYXjw8&quot; target=&quot;_ blank&quot;&gt;SSD&lt;/a&gt; and their differences are in the links provided.  SATA drives are much cheaper but SSD’s are faster and less prone to failure since there are no moving parts in it. However it is important to note that SSDs have limited write cycles, even though it is less susceptible to physical wear (“SATA vs SSD vs NVMe: Types of Hard Drives”, 2020).&lt;/p&gt;
 
@@ -247,7 +247,7 @@
         
         <category>blog</category>
         
-        <category>website</category>
+        <category>storage</category>
         
       </item>
     
