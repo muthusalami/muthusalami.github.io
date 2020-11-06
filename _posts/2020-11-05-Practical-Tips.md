@@ -24,7 +24,7 @@ For the long-term preservation of your film works, consider sending it to the As
 
 Let’s start!
 
-* Consolidate your files
+### Consolidate your files
 
 Tracking and managing your files gets challenging when they are kept on multiple and different devices. It’s easy to lose track of its location if some are sitting on hard drives and others are on online platforms, such as Dropbox, Google Drive and OneDrive. Identifying where the files are is the first step in taking stock of what you have.
 
@@ -34,13 +34,13 @@ At this stage, everything will look like a huge mess.  Take the time to survey w
 
 By the end of this process, you will  have a good sense of how much data you have and knowing this will help you allocate the necessary memory for your backup strategy.
 
-* Keep only what you need
+### Keep only what you need
 
 Select what you need and delete whatever that is unimportant. For example, you might encounter multiple copies of a file and it could be worth considering what is sufficient to keep, for instance, keeping only the latest version.
 
 This quality check process will free space, keeping your data volume to a minimum. Working with a smaller volume will keep costs low and allow an easier migration and backup process down the road.
 
-* Organise your files
+### Organise your files
 
 Organise the files that you have selected by creating a file directory structure and a file naming convention that makes sense to you and others accessing the files. Whatever system you decide upon should be easily understood by you and others to ensure easy accessibility and quick identification.
 
@@ -94,7 +94,7 @@ More on File Naming:
 
 2. [Bulk Rename Utility Tool](https://www.bulkrenameutility.co.uk/){:target="_ blank"}
 
-* Create Backups
+### Create Backups
 
 Now that your files are all in place and organised, it is time to back them up! You can consider the classic 3-2-1 data protection strategy which is a model widely adopted by professionals in content and media production
 
@@ -102,17 +102,17 @@ Now that your files are all in place and organised, it is time to back them up! 
 
 ![3-2-1 Diagram]({{ site.url }}/assets/originals/Diagram-1440x1018.png)
 
-*Keep 3 copies of your data*
+**Keep 3 copies of your data**
 
 The 3-2-1 strategy encourages the back up of three copies of data because one copy is simply not enough. Having one copy is dangerous and the more copies you have, the lesser the chance of complete data loss.
 
-*Store 2 copies on 2 different storage devices*
+**Store 2 copies on 2 different storage devices**
 
 Drives will eventually fail because of mechanical failure or wear and tear. Hence the 3-2-1 strategy recommends keeping your first two backups on two separate storage devices at your primary location. Storing the two copies differently will provide an added insurance for data restoration in the event that one source fails.
 
 There are various backup storage solutions available, but which do you choose? Here are two solutions you can consider.
 
-A) *External hard drive (SATA & SSD)*
+A) **External hard drive (SATA & SSD)**
 
 This is the most common solution  because it is affordable, easy to use and widely available. An external hard drive requires little set-up, just plug it into your computer via USB and it is ready to use. They usually come in two variants: [SATA](https://www.pluralsight.com/blog/it-ops/types-of-hard-drives-sata-ssd-nvme){:target="_ blank"} & [SSD](https://www.youtube.com/watch?v=YQEjGKYXjw8){:target="_ blank"} and their differences are in the links provided.  SATA drives are much cheaper but SSD’s are faster and less prone to failure since there are no moving parts in it. However it is important to note that SSDs have limited write cycles, even though it is less susceptible to physical wear (“SATA vs SSD vs NVMe: Types of Hard Drives”, 2020).
 
@@ -130,7 +130,7 @@ Here are some suggested tools:
 
 3. [Bvckup 2](https://bvckup2.com/){:target="_ blank"}
 
-B) *Network Attached Storage (NAS)*
+B) **Network Attached Storage (NAS)**
 
 A NAS storage device is connected over a computer network and acts as a central location for multiple users to write and access data (“What is NAS (Network Attached Storage) and Why is NAS Important for Small Businesses? | Seagate UK”, 2020). Depending on the model, multiple hard drives are housed within a NAS for storage and can be scaled for increased capacity depending on its number of available bays. You can think of NAS as an array of hard drives put together to form a larger storage unit.
 
@@ -150,7 +150,7 @@ The last component of the 3-2-1 strategy is to have 1 copy of your data stored o
 
 There are many cloud solutions plans you can consider that can cost as low as USD6 per month for unlimited file storage. Most of these solutions keep data restoration straightforward as well. For example, they can restore your data in different ways: direct download, USB flash drive or external hard drive. Whichever method you pick will depend on the volume of data you are retrieving.
 
-* Conclusion
+### Conclusion
 
 There is no one way to manage and backup your data since it will depend on your data volume and importantly, your budget. When it comes to designing your backup system, a general rule of thumb is to have multiple copies and diversify them on different storage solutions. If one source fails, you can rely on others for data restoration.
 

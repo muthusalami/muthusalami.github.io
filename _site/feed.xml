@@ -6,7 +6,7 @@
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>2020-11-06</pubDate>
-    <lastBuildDate>Fri, 06 Nov 2020 15:52:11 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 15:55:17 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -23,9 +23,7 @@
 
 &lt;p&gt;Let’s start!&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Consolidate your files&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;consolidate-your-files&quot;&gt;Consolidate your files&lt;/h3&gt;
 
 &lt;p&gt;Tracking and managing your files gets challenging when they are kept on multiple and different devices. It’s easy to lose track of its location if some are sitting on hard drives and others are on online platforms, such as Dropbox, Google Drive and OneDrive. Identifying where the files are is the first step in taking stock of what you have.&lt;/p&gt;
 
@@ -35,17 +33,13 @@
 
 &lt;p&gt;By the end of this process, you will  have a good sense of how much data you have and knowing this will help you allocate the necessary memory for your backup strategy.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Keep only what you need&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;keep-only-what-you-need&quot;&gt;Keep only what you need&lt;/h3&gt;
 
 &lt;p&gt;Select what you need and delete whatever that is unimportant. For example, you might encounter multiple copies of a file and it could be worth considering what is sufficient to keep, for instance, keeping only the latest version.&lt;/p&gt;
 
 &lt;p&gt;This quality check process will free space, keeping your data volume to a minimum. Working with a smaller volume will keep costs low and allow an easier migration and backup process down the road.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Organise your files&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;organise-your-files&quot;&gt;Organise your files&lt;/h3&gt;
 
 &lt;p&gt;Organise the files that you have selected by creating a file directory structure and a file naming convention that makes sense to you and others accessing the files. Whatever system you decide upon should be easily understood by you and others to ensure easy accessibility and quick identification.&lt;/p&gt;
 
@@ -135,9 +129,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Create Backups&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;create-backups&quot;&gt;Create Backups&lt;/h3&gt;
 
 &lt;p&gt;Now that your files are all in place and organised, it is time to back them up! You can consider the classic 3-2-1 data protection strategy which is a model widely adopted by professionals in content and media production&lt;/p&gt;
 
@@ -145,17 +137,17 @@
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Diagram-1440x1018.png&quot; alt=&quot;3-2-1 Diagram&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Keep 3 copies of your data&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keep 3 copies of your data&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The 3-2-1 strategy encourages the back up of three copies of data because one copy is simply not enough. Having one copy is dangerous and the more copies you have, the lesser the chance of complete data loss.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Store 2 copies on 2 different storage devices&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Store 2 copies on 2 different storage devices&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Drives will eventually fail because of mechanical failure or wear and tear. Hence the 3-2-1 strategy recommends keeping your first two backups on two separate storage devices at your primary location. Storing the two copies differently will provide an added insurance for data restoration in the event that one source fails.&lt;/p&gt;
 
 &lt;p&gt;There are various backup storage solutions available, but which do you choose? Here are two solutions you can consider.&lt;/p&gt;
 
-&lt;p&gt;A) &lt;em&gt;External hard drive (SATA &amp;amp; SSD)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A) &lt;strong&gt;External hard drive (SATA &amp;amp; SSD)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;This is the most common solution  because it is affordable, easy to use and widely available. An external hard drive requires little set-up, just plug it into your computer via USB and it is ready to use. They usually come in two variants: &lt;a href=&quot;https://www.pluralsight.com/blog/it-ops/types-of-hard-drives-sata-ssd-nvme&quot; target=&quot;_ blank&quot;&gt;SATA&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://www.youtube.com/watch?v=YQEjGKYXjw8&quot; target=&quot;_ blank&quot;&gt;SSD&lt;/a&gt; and their differences are in the links provided.  SATA drives are much cheaper but SSD’s are faster and less prone to failure since there are no moving parts in it. However it is important to note that SSDs have limited write cycles, even though it is less susceptible to physical wear (“SATA vs SSD vs NVMe: Types of Hard Drives”, 2020).&lt;/p&gt;
 
@@ -179,7 +171,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;B) &lt;em&gt;Network Attached Storage (NAS)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;B) &lt;strong&gt;Network Attached Storage (NAS)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;tbody&gt;
@@ -208,9 +200,7 @@
 
 &lt;p&gt;There are many cloud solutions plans you can consider that can cost as low as USD6 per month for unlimited file storage. Most of these solutions keep data restoration straightforward as well. For example, they can restore your data in different ways: direct download, USB flash drive or external hard drive. Whichever method you pick will depend on the volume of data you are retrieving.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;There is no one way to manage and backup your data since it will depend on your data volume and importantly, your budget. When it comes to designing your backup system, a general rule of thumb is to have multiple copies and diversify them on different storage solutions. If one source fails, you can rely on others for data restoration.&lt;/p&gt;
 
