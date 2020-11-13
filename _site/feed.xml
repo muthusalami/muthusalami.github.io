@@ -5,9 +5,34 @@
     <description>Jekyll website project</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>2020-11-06</pubDate>
-    <lastBuildDate>Fri, 06 Nov 2020 16:02:46 +0800</lastBuildDate>
+    <pubDate>2020-11-13</pubDate>
+    <lastBuildDate>Fri, 13 Nov 2020 18:51:32 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>Playing film scans with FFmpeg</title>
+        <description>&lt;p&gt;I have been trying to figure the best way to play film scans and learned a new trick from &lt;a href=&quot;https://reto.ch/&quot; target=&quot;_ blank&quot;&gt;reto.ch&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;playing-a-scan&quot;&gt;Playing a scan&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;ffplay&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;DIRECTORY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Scan_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;06d&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tif&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The regex %06d matches six digits long numbers, possibly with leading zeroes. This allows to read in ascending order, one image after the other,the full sequence inside one folder. Of course, the command must match the naming convention actually used.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>2020-11-13</pubDate>
+        <link>http://localhost:4000/articles/2020-11/Play-Scans</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2020-11/Play-Scans</guid>
+        
+        <category>ffmpeg ffplay film CLI</category>
+        
+        
+        <category>ffmpeg</category>
+        
+        <category>filmpres</category>
+        
+      </item>
     
       <item>
         <title>Practical tips on how to care for your files and data</title>
@@ -218,7 +243,7 @@
 
 &lt;p&gt;What is NAS (Network Attached Storage) and Why is NAS Important for Small Businesses?, Seagate UK. Seagate.com. (2020). Retrieved 10 October 2020, from https://www.seagate.com/sg/en/tech-insights/what-is-nas-master-ti/.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-06</pubDate>
+        <pubDate>2020-11-13</pubDate>
         <link>http://localhost:4000/articles/2020-11/Practical-Tips</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-11/Practical-Tips</guid>
         
@@ -285,7 +310,7 @@
 
 &lt;p&gt;&lt;em&gt;/a&lt;/em&gt; may be used to specify alternative (&lt;em&gt;ascii&lt;/em&gt;) characters to be used to draw the tree diagram so that it can be printed by printers that do not support the line and box drawing characters.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-06</pubDate>
+        <pubDate>2020-11-13</pubDate>
         <link>http://localhost:4000/articles/2020-10/Exporting-Directories-CLI</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Exporting-Directories-CLI</guid>
         
@@ -341,7 +366,7 @@ Specifically the Red&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Chroma sub-sampling&lt;/strong&gt; - YUV allows the user to remove information specifically from the colour values without affecting the overall luminance of it. This is particularly useful during image compression and an effective means in processing images.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-06</pubDate>
+        <pubDate>2020-11-13</pubDate>
         <link>http://localhost:4000/articles/2020-10/Understanding-YUV</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Understanding-YUV</guid>
         
@@ -439,7 +464,7 @@ Modules: process, subprocess, xmlrpc, reds&lt;/p&gt;
 &lt;p&gt;Modules: OpenimageIO, OpenEXR, PythonMagick
 Modules: OpenColorIO, ColorPy&lt;/p&gt;
 </description>
-        <pubDate>2020-11-06</pubDate>
+        <pubDate>2020-11-13</pubDate>
         <link>http://localhost:4000/articles/2020-10/Python-Pipeline-Functions</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Python-Pipeline-Functions</guid>
         
@@ -519,7 +544,7 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
 
 &lt;p&gt;The result will be &lt;em&gt;matt&lt;/em&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-06</pubDate>
+        <pubDate>2020-11-13</pubDate>
         <link>http://localhost:4000/articles/2020-09/Python-Basics</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Python-Basics</guid>
         
@@ -583,7 +608,7 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
   &lt;li&gt;Unifi Cloud Key Gen2&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>2020-11-06</pubDate>
+        <pubDate>2020-11-13</pubDate>
         <link>http://localhost:4000/articles/2020-09/Home-Network</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Home-Network</guid>
         
@@ -632,7 +657,7 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>2020-11-06</pubDate>
+        <pubDate>2020-11-13</pubDate>
         <link>http://localhost:4000/articles/2020-07/First-Post</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-07/First-Post</guid>
         
