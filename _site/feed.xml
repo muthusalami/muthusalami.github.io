@@ -5,23 +5,99 @@
     <description>Jekyll website project</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>2020-11-13</pubDate>
-    <lastBuildDate>Fri, 13 Nov 2020 18:51:34 +0800</lastBuildDate>
+    <pubDate>2020-11-17</pubDate>
+    <lastBuildDate>Tue, 17 Nov 2020 01:11:20 +0800</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
-        <title>Playing film scans with FFmpeg</title>
-        <description>&lt;p&gt;I have been trying to figure the best way to play film scans and learned a new trick from &lt;a href=&quot;https://reto.ch/&quot; target=&quot;_ blank&quot;&gt;reto.ch&lt;/a&gt;!&lt;/p&gt;
+        <title>Managing film scans with FFmpeg</title>
+        <description>&lt;p&gt;I have been trying to figure the best way to play and manage film scans and learned a bag of new tricks from &lt;a href=&quot;https://reto.ch/&quot; target=&quot;_ blank&quot;&gt;reto.ch&lt;/a&gt;!&lt;/p&gt;
 
-&lt;h2 id=&quot;playing-a-scan&quot;&gt;Playing a scan&lt;/h2&gt;
+&lt;h2 id=&quot;playing-a-dpx-sequence&quot;&gt;Playing a DPX sequence&lt;/h2&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;ffplay&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;DIRECTORY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Scan_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;06d&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tif&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;The regex %06d matches six digits long numbers, possibly with leading zeroes. This allows to read in ascending order, one image after the other,the full sequence inside one folder. Of course, the command must match the naming convention actually used.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;h2 id=&quot;make-a-prores-file-from-the-scan-sequence&quot;&gt;Make a ProRes file from the scan sequence&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;ffmpeg&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;image2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-framerate&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;DIRECTORY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Scan_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;06d&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tif&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;prores_ks&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-profile&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-filter&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;scale=1440:1080:flags=lanczos, pad=1920:1080:240:0&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;ProRes&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mov&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Make a ProRes 422 HQ mezzanine file from the TIFF conservation files.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;-f image2 forces the image file de-muxer for single image files&lt;/li&gt;
+    &lt;li&gt;-framerate sets the frame rate to 24
+NOTE: The previous two parameters must be before the input file, because they are applied to the input file.&lt;/li&gt;
+    &lt;li&gt;-i path, name and extension of the input file
+The regex %06d matches six digits long numbers, possibly with
+leading zeroes. This allows to read in ascending order, one
+image after the other, the full sequence inside one folder.
+The command must of course match the naming convention
+actually used.&lt;/li&gt;
+    &lt;li&gt;-c:v chooses the ProRes video codec&lt;/li&gt;
+    &lt;li&gt;-profile:v the flavour ProRes 422 HQ has the video profile 3&lt;/li&gt;
+    &lt;li&gt;-filter:v filters the video stream:
+      &lt;ul&gt;
+        &lt;li&gt;scaling to the correct size
+[we use the Lanczos scaling algorithm which is slower but
+better than the default bilinear algorithm]&lt;/li&gt;
+        &lt;li&gt;padding the 4:3 format into the 16:9 HD format with pillar box&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;make-a-h264-file-from-the-scan-sequence&quot;&gt;Make a H264 file from the scan sequence&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;ffmpeg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;image2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-framerate&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;DUFAY_TIFF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Dufay_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;06d&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tif&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;libx264&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-preset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;veryslow&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-qp&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-filter&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;scale=1440:1080:flags=lanczos, pad=1920:1080:240:0&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-pix_fmt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;yuv420p&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;Scan_H264_1&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mp4&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Make an access file H.264 directly form the conservation files TIFF.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;-c:v chooses the H.264 codec by using the libx264 library&lt;/li&gt;
+    &lt;li&gt;-preset chooses the very slow preset which gives the best result&lt;/li&gt;
+    &lt;li&gt;-qp a quantisation parameter of 18 means “visually lossless”&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;make-a-h264-file-from-the-prores-file&quot;&gt;Make a H264 file from the ProRes file&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;ffmpeg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ProRes&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mov&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;libx264&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-preset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;veryslow&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-qp&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-pix_fmt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;yuv420p&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-an&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;Scan_H264_2&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mp4&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Make an access file H.264 from the mezzanine file ProRes 422 HQ.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;-an prevents an empty audio track ([a]udio [n]o)&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
 </description>
-        <pubDate>2020-11-13</pubDate>
+        <pubDate>2020-11-17</pubDate>
         <link>http://localhost:4000/articles/2020-11/Play-Scans</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-11/Play-Scans</guid>
         
@@ -243,7 +319,7 @@
 
 &lt;p&gt;What is NAS (Network Attached Storage) and Why is NAS Important for Small Businesses?, Seagate UK. Seagate.com. (2020). Retrieved 10 October 2020, from https://www.seagate.com/sg/en/tech-insights/what-is-nas-master-ti/.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-13</pubDate>
+        <pubDate>2020-11-17</pubDate>
         <link>http://localhost:4000/articles/2020-11/Practical-Tips</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-11/Practical-Tips</guid>
         
@@ -268,7 +344,7 @@
     
       <item>
         <title>How to export a list of files in CLI</title>
-        <description>&lt;p&gt;I recently had to provide a list of files in a USB thumbdrive/stick and managed to learn a sweet trick via CLI. This method provides a text, &lt;em&gt;Word&lt;/em&gt; or &lt;em&gt;Excel&lt;/em&gt; file that lists all the files and folders inside a specific directory within your computer.&lt;/p&gt;
+        <description>&lt;p&gt;I recently had to provide a list of files in a USB thumbdrive/stick and learned a sweet trick via CLI. This method provides a text, &lt;em&gt;Word&lt;/em&gt; or &lt;em&gt;Excel&lt;/em&gt; file that lists all the files and folders inside a specific directory within your computer.&lt;/p&gt;
 
 &lt;h2 id=&quot;basic-command-structure&quot;&gt;Basic command structure&lt;/h2&gt;
 
@@ -310,7 +386,7 @@
 
 &lt;p&gt;&lt;em&gt;/a&lt;/em&gt; may be used to specify alternative (&lt;em&gt;ascii&lt;/em&gt;) characters to be used to draw the tree diagram so that it can be printed by printers that do not support the line and box drawing characters.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-13</pubDate>
+        <pubDate>2020-11-17</pubDate>
         <link>http://localhost:4000/articles/2020-10/Exporting-Directories-CLI</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Exporting-Directories-CLI</guid>
         
@@ -366,7 +442,7 @@ Specifically the Red&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Chroma sub-sampling&lt;/strong&gt; - YUV allows the user to remove information specifically from the colour values without affecting the overall luminance of it. This is particularly useful during image compression and an effective means in processing images.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-13</pubDate>
+        <pubDate>2020-11-17</pubDate>
         <link>http://localhost:4000/articles/2020-10/Understanding-YUV</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Understanding-YUV</guid>
         
@@ -383,7 +459,7 @@ Specifically the Red&lt;/p&gt;
     
       <item>
         <title>Python in imaging workflows</title>
-        <description>&lt;h3 id=&quot;basic-python&quot;&gt;Basic Python&lt;/h3&gt;
+        <description>&lt;h2 id=&quot;basic-python&quot;&gt;Basic Python&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;«copy a file»&lt;/li&gt;
@@ -408,7 +484,7 @@ Specifically the Red&lt;/p&gt;
 &lt;p&gt;for x in xrange ( 1, 101, 1 ):
 	os.system( “move C:\file.%s.ext C:\path\file.%04d.ext” % ( x, x ) )&lt;/p&gt;
 
-&lt;h3 id=&quot;intermediate-python&quot;&gt;Intermediate Python&lt;/h3&gt;
+&lt;h2 id=&quot;intermediate-python&quot;&gt;Intermediate Python&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -428,7 +504,7 @@ Specifically the Red&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;modules&quot;&gt;Modules&lt;/h3&gt;
+&lt;h2 id=&quot;modules&quot;&gt;Modules&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -460,11 +536,11 @@ Modules: process, subprocess, xmlrpc, reds&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;advanced-python&quot;&gt;Advanced Python&lt;/h3&gt;
+&lt;h2 id=&quot;advanced-python&quot;&gt;Advanced Python&lt;/h2&gt;
 &lt;p&gt;Modules: OpenimageIO, OpenEXR, PythonMagick
 Modules: OpenColorIO, ColorPy&lt;/p&gt;
 </description>
-        <pubDate>2020-11-13</pubDate>
+        <pubDate>2020-11-17</pubDate>
         <link>http://localhost:4000/articles/2020-10/Python-Pipeline-Functions</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Python-Pipeline-Functions</guid>
         
@@ -544,7 +620,7 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
 
 &lt;p&gt;The result will be &lt;em&gt;matt&lt;/em&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-13</pubDate>
+        <pubDate>2020-11-17</pubDate>
         <link>http://localhost:4000/articles/2020-09/Python-Basics</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Python-Basics</guid>
         
@@ -575,7 +651,7 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
 
 &lt;p&gt;A great networking and Ubiquiti resource is Evan McCann’s tech blog - &lt;a href=&quot;https://evanmccann.net/&quot; target=&quot;_ blank&quot;&gt;McCann Tech&lt;/a&gt;. There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!&lt;/p&gt;
 
-&lt;h3 id=&quot;recommended-mccann-reading-list&quot;&gt;Recommended McCann reading list&lt;/h3&gt;
+&lt;h2 id=&quot;recommended-mccann-reading-list&quot;&gt;Recommended McCann reading list&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://evanmccann.net/blog/unifi-ecosystem-overview&quot; target=&quot;_ blank&quot;&gt;Ubiquiti’s UniFi Ecosystem Explained&lt;/a&gt;&lt;/li&gt;
@@ -588,16 +664,24 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
 
 &lt;p&gt;I plan to update my progress with subsequent posts, but for now I’ve made a simple diagram detailing the essential hardware required for the network setup. I’ve decided to go full Ubiquiti for my first setup because it is well documented ‘enterprise’ solution and it seems easy to put together. I won’t deny that it is overkill for a home environment but this project is too exciting to pass.&lt;/p&gt;
 
-&lt;h3 id=&quot;the-hardware-diagram&quot;&gt;The hardware diagram&lt;/h3&gt;
+&lt;h2 id=&quot;the-electrical-layout&quot;&gt;The electrical layout&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/ELECTRICAL PLAN v2.png&quot; alt=&quot;House electrical layout&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-hardware-diagram&quot;&gt;The hardware diagram&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Network_diagram.jpg&quot; alt=&quot;Network diagram&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;the-breakdown-and-costs&quot;&gt;The breakdown and costs&lt;/h3&gt;
+&lt;h2 id=&quot;the-component-breakdown&quot;&gt;The component breakdown&lt;/h2&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Commscope CAT6A CS44Z1 WHT C6A 4/23 F/UTP RL 500M&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://catalog.belden.com/techdata/EN/10GXE01_techdata.pdf&quot; target=&quot;_ blank&quot;&gt;Belden 10GXE01&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf&quot; target=&quot;_ blank&quot;&gt;Belden 10GXE02&lt;/a&gt;&lt;/li&gt;
+&lt;ol&gt;
+  &lt;li&gt;CAT6A Cable
+    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.commscope.com/product-type/networking-systems/structured-cabling/item88402455816/&quot; target=&quot;_ blank&quot;&gt;Commscope CAT6A CS44Z1 WHT C6A 4/23 F/UTP RL 500M&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://catalog.belden.com/techdata/EN/10GXE01_techdata.pdf&quot; target=&quot;_ blank&quot;&gt;Belden 10GXE01&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf&quot; target=&quot;_ blank&quot;&gt;Belden 10GXE02&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
   &lt;li&gt;12U Server Rack&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B0072JVT02/ref=emc_b_5_i&quot; target=&quot;_ blank&quot;&gt;24-Port Keystone Patch Panel&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Listed-Cable-Matters-Shielded-Keystone/dp/B00CLVAJCK/ref=sr_1_1_sspa?dchild=1&amp;amp;keywords=cat6a+shielded+keystone&amp;amp;qid=1603117867&amp;amp;sr=8-1-spons&amp;amp;psc=1&amp;amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTkRGQjNVTjQ0NzBFJmVuY3J5cHRlZElkPUEwNTE2NDAwMjRWNkVCN1FBWVZPJmVuY3J5cHRlZEFkSWQ9QVVOT0wxRFNZUEJMNSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=&quot; target=&quot;_ blank&quot;&gt;CAT6A Shielded Keystone Jack&lt;/a&gt;&lt;/li&gt;
@@ -606,9 +690,9 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
   &lt;li&gt;Ubiquiti EdgeRouter X&lt;/li&gt;
   &lt;li&gt;Unifi Switch 16 150W Gen 1&lt;/li&gt;
   &lt;li&gt;Unifi Cloud Key Gen2&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 </description>
-        <pubDate>2020-11-13</pubDate>
+        <pubDate>2020-11-17</pubDate>
         <link>http://localhost:4000/articles/2020-09/Home-Network</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Home-Network</guid>
         
@@ -657,7 +741,7 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>2020-11-13</pubDate>
+        <pubDate>2020-11-17</pubDate>
         <link>http://localhost:4000/articles/2020-07/First-Post</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-07/First-Post</guid>
         

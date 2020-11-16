@@ -11,7 +11,7 @@ share: true
 image:
   feature:
 ---
-### Basic Python
+## Basic Python
 
 * <<copy a file>>
 
@@ -30,7 +30,7 @@ import os
 for x in xrange ( 1, 101, 1 ):
 	os.system( “move C:\file.%s.ext C:\path\file.%04d.ext” % ( x, x ) )
 
-### Intermediate Python
+## Intermediate Python
 
 * <<scan directories and apply an operation on specific file types>>
 
@@ -42,7 +42,7 @@ for x in xrange ( 1, 101, 1 ):
 
 * <<resize all images above a specific resolution>>
 
-### Modules
+## Modules
 
 * argparse
 
@@ -64,6 +64,6 @@ Modules: multithreading thread, queue
 * Process control and communication
 Modules: process, subprocess, xmlrpc, reds
 
-### Advanced Python
+## Advanced Python
 Modules: OpenimageIO, OpenEXR, PythonMagick
 Modules: OpenColorIO, ColorPy

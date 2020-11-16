@@ -8,16 +8,16 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="A short post on playing film scans with FFMpeg">
+  <meta name="description" content="A short post on managing and playing scan sequences with FFmpeg">
   <meta name="keywords" content="blog, digital preservation, film preservation, and film restoration">
-  <meta name="author" content="Playing film scans with FFmpeg | Matthew Yang | Singapore">
+  <meta name="author" content="Managing film scans with FFmpeg | Matthew Yang | Singapore">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f5f5f5">
 
   <!-- Twitter Tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Playing film scans with FFmpeg | Matthew Yang | Singapore">
-  <meta name="twitter:description" content="A short post on playing film scans with FFMpeg">
+  <meta name="twitter:title" content="Managing film scans with FFmpeg | Matthew Yang | Singapore">
+  <meta name="twitter:description" content="A short post on managing and playing scan sequences with FFmpeg">
   
     <meta property="twitter:image" content="http://localhost:4000/img/leonids-logo.png">
   
@@ -25,12 +25,12 @@
   <!-- Open Graph Tags -->
   <meta property="og:type" content="blog">
   <meta property="og:url" content="http://localhost:4000/articles/2020-11/Play-Scans">
-  <meta property="og:title" content="Playing film scans with FFmpeg | Matthew Yang | Singapore">
-  <meta property="og:description" content="A short post on playing film scans with FFMpeg">
+  <meta property="og:title" content="Managing film scans with FFmpeg | Matthew Yang | Singapore">
+  <meta property="og:description" content="A short post on managing and playing scan sequences with FFmpeg">
   
     <meta property="og:image" content="http://localhost:4000/img/leonids-logo.png">
   
-  <title>Playing film scans with FFmpeg | Matthew Yang | Singapore</title>
+  <title>Managing film scans with FFmpeg | Matthew Yang | Singapore</title>
 
   <!-- CSS files -->
   <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
@@ -142,7 +142,7 @@
 
 <div id="post">
   <header class="post-header">
-    <h1 title="Playing film scans with FFmpeg">Playing film scans with FFmpeg</h1>
+    <h1 title="Managing film scans with FFmpeg">Managing film scans with FFmpeg</h1>
     <span class="post-meta">
       <span class="post-date">
         13 NOV 2020
@@ -151,7 +151,7 @@
       <span class="read-time" title="Estimated read time">
   
   
-    1 min read
+    2 mins read
   
 </span>
 
@@ -160,14 +160,90 @@
   </header>
 
   <article class="post-content">
-    <p>I have been trying to figure the best way to play film scans and learned a new trick from <a href="https://reto.ch/" target="_ blank">reto.ch</a>!</p>
+    <p>I have been trying to figure the best way to play and manage film scans and learned a bag of new tricks from <a href="https://reto.ch/" target="_ blank">reto.ch</a>!</p>
 
-<h2 id="playing-a-scan">Playing a scan</h2>
+<h2 id="playing-a-dpx-sequence">Playing a DPX sequence</h2>
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffplay</span> <span class="o">[</span><span class="nt">DIRECTORY</span><span class="o">]/</span><span class="nt">Scan_</span><span class="o">%</span><span class="nt">06d</span><span class="nc">.tif</span></code></pre></figure>
 
 <blockquote>
   <p>The regex %06d matches six digits long numbers, possibly with leading zeroes. This allows to read in ascending order, one image after the other,the full sequence inside one folder. Of course, the command must match the naming convention actually used.</p>
+</blockquote>
+
+<h2 id="make-a-prores-file-from-the-scan-sequence">Make a ProRes file from the scan sequence</h2>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffmpeg</span>
+    <span class="nt">-f</span> <span class="nt">image2</span> <span class="err">\</span>
+    <span class="nt">-framerate</span> <span class="nt">24</span> <span class="err">\</span>
+    <span class="nt">-i</span> <span class="o">[</span><span class="nt">DIRECTORY</span><span class="o">]/</span><span class="nt">Scan_</span><span class="o">%</span><span class="nt">06d</span><span class="nc">.tif</span> <span class="err">\</span>
+    <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">prores_ks</span> <span class="err">\</span>
+    <span class="nt">-profile</span><span class="nd">:v</span> <span class="nt">3</span> <span class="err">\</span>
+    <span class="nt">-filter</span><span class="nd">:v</span> <span class="s1">"scale=1440:1080:flags=lanczos, pad=1920:1080:240:0"</span> <span class="err">\</span>
+    <span class="nt">ProRes</span><span class="nc">.mov</span></code></pre></figure>
+
+<blockquote>
+  <p>Make a ProRes 422 HQ mezzanine file from the TIFF conservation files.</p>
+  <ul>
+    <li>-f image2 forces the image file de-muxer for single image files</li>
+    <li>-framerate sets the frame rate to 24
+NOTE: The previous two parameters must be before the input file, because they are applied to the input file.</li>
+    <li>-i path, name and extension of the input file
+The regex %06d matches six digits long numbers, possibly with
+leading zeroes. This allows to read in ascending order, one
+image after the other, the full sequence inside one folder.
+The command must of course match the naming convention
+actually used.</li>
+    <li>-c:v chooses the ProRes video codec</li>
+    <li>-profile:v the flavour ProRes 422 HQ has the video profile 3</li>
+    <li>-filter:v filters the video stream:
+      <ul>
+        <li>scaling to the correct size
+[we use the Lanczos scaling algorithm which is slower but
+better than the default bilinear algorithm]</li>
+        <li>padding the 4:3 format into the 16:9 HD format with pillar box</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h2 id="make-a-h264-file-from-the-scan-sequence">Make a H264 file from the scan sequence</h2>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffmpeg</span> <span class="err">\</span>
+    <span class="nt">-f</span> <span class="nt">image2</span> <span class="err">\</span>
+    <span class="nt">-framerate</span> <span class="nt">24</span> <span class="err">\</span>
+    <span class="nt">-i</span> <span class="nt">DUFAY_TIFF</span><span class="o">/</span><span class="nt">Dufay_</span><span class="o">%</span><span class="nt">06d</span><span class="nc">.tif</span> <span class="err">\</span>
+    <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">libx264</span> <span class="err">\</span>
+    <span class="nt">-preset</span> <span class="nt">veryslow</span> <span class="err">\</span>
+    <span class="nt">-qp</span> <span class="nt">18</span> <span class="err">\</span>
+    <span class="nt">-filter</span><span class="nd">:v</span> <span class="s1">"scale=1440:1080:flags=lanczos, pad=1920:1080:240:0"</span> <span class="err">\</span>
+    <span class="nt">-pix_fmt</span> <span class="nt">yuv420p</span> <span class="err">\</span>
+    <span class="nt">Scan_H264_1</span><span class="nc">.mp4</span></code></pre></figure>
+
+<blockquote>
+  <p>Make an access file H.264 directly form the conservation files TIFF.</p>
+  <ul>
+    <li>-c:v chooses the H.264 codec by using the libx264 library</li>
+    <li>-preset chooses the very slow preset which gives the best result</li>
+    <li>-qp a quantisation parameter of 18 means “visually lossless”</li>
+  </ul>
+</blockquote>
+
+<h2 id="make-a-h264-file-from-the-prores-file">Make a H264 file from the ProRes file</h2>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffmpeg</span> <span class="err">\</span>
+    <span class="nt">-i</span> <span class="nt">ProRes</span><span class="nc">.mov</span> <span class="err">\</span>
+    <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">libx264</span> <span class="err">\</span>
+    <span class="nt">-preset</span> <span class="nt">veryslow</span> <span class="err">\</span>
+    <span class="nt">-qp</span> <span class="nt">18</span> <span class="err">\</span>
+    <span class="nt">-pix_fmt</span> <span class="nt">yuv420p</span> <span class="err">\</span>
+    <span class="nt">-an</span> <span class="err">\</span>
+    <span class="nt">Scan_H264_2</span><span class="nc">.mp4</span></code></pre></figure>
+
+<blockquote>
+  <p>Make an access file H.264 from the mezzanine file ProRes 422 HQ.</p>
+  <ul>
+    <li>-an prevents an empty audio track ([a]udio [n]o)</li>
+  </ul>
 </blockquote>
 
   </article>

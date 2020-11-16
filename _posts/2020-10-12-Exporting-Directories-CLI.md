@@ -12,7 +12,7 @@ image:
   feature:
 ---
 
-I recently had to provide a list of files in a USB thumbdrive/stick and managed to learn a sweet trick via CLI. This method provides a text, *Word* or *Excel* file that lists all the files and folders inside a specific directory within your computer.
+I recently had to provide a list of files in a USB thumbdrive/stick and learned a sweet trick via CLI. This method provides a text, *Word* or *Excel* file that lists all the files and folders inside a specific directory within your computer.
 
 ## Basic command structure
 

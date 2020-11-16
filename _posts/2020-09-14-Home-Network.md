@@ -20,7 +20,7 @@ That being said, I will have to lay my own cables and design my own network infr
 
 A great networking and Ubiquiti resource is Evan McCann's tech blog - [McCann Tech](https://evanmccann.net/){:target="_ blank"}. There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!
 
-### Recommended McCann reading list
+## Recommended McCann reading list
 
 * [Ubiquiti’s UniFi Ecosystem Explained](https://evanmccann.net/blog/unifi-ecosystem-overview){:target="_ blank"}
 * [UniFi Switches Explained](https://evanmccann.net/blog/2020/6/unifi-switches-explained){:target="_ blank"}
@@ -31,20 +31,25 @@ A great networking and Ubiquiti resource is Evan McCann's tech blog - [McCann Te
 
 I plan to update my progress with subsequent posts, but for now I've made a simple diagram detailing the essential hardware required for the network setup. I've decided to go full Ubiquiti for my first setup because it is well documented 'enterprise' solution and it seems easy to put together. I won't deny that it is overkill for a home environment but this project is too exciting to pass.
 
-### The hardware diagram
+## The electrical layout
+
+![House electrical layout]({{ site.url }}/assets/originals/ELECTRICAL PLAN v2.png)
+
+## The hardware diagram
 
 ![Network diagram]({{ site.url }}/assets/originals/Network_diagram.jpg)
 
-### The breakdown and costs
+## The component breakdown
 
-* Commscope CAT6A CS44Z1 WHT C6A 4/23 F/UTP RL 500M
-* [Belden 10GXE01](https://catalog.belden.com/techdata/EN/10GXE01_techdata.pdf){:target="_ blank"}
-* [Belden 10GXE02](https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf){:target="_ blank"}
-* 12U Server Rack
-* [24-Port Keystone Patch Panel](https://www.amazon.com/dp/B0072JVT02/ref=emc_b_5_i){:target="_ blank"}
-* [CAT6A Shielded Keystone Jack](https://www.amazon.com/Listed-Cable-Matters-Shielded-Keystone/dp/B00CLVAJCK/ref=sr_1_1_sspa?dchild=1&keywords=cat6a+shielded+keystone&qid=1603117867&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTkRGQjNVTjQ0NzBFJmVuY3J5cHRlZElkPUEwNTE2NDAwMjRWNkVCN1FBWVZPJmVuY3J5cHRlZEFkSWQ9QVVOT0wxRFNZUEJMNSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=){:target="_ blank"}
-* [RJ45 Shielded Modular Plugs w strain relief boots](https://www.amazon.com/Cable-Matters-50-Pack-Shielded-Modular/dp/B00E4OCOUW/ref=pd_bxgy_img_3/142-1063064-5847132?_encoding=UTF8&pd_rd_i=B00E4OCOUW&pd_rd_r=c0dcf1bd-29a1-4ee7-94f5-e4b70786cc6f&pd_rd_w=4BiTh&pd_rd_wg=JWIZa&pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&pf_rd_r=H2TX043ZN9JE83VTSM5E&psc=1&refRID=H2TX043ZN9JE83VTSM5E){:target="_ blank"}
-* [Crimp tool](https://www.amazon.com/Cable-Matters-Crimp-Shielded-Keystone/dp/B074HLYJ4J/ref=pd_bxgy_2/142-1063064-5847132?_encoding=UTF8&pd_rd_i=B074HLYJ4J&pd_rd_r=d478e5fb-1a04-43ae-9e2c-8cd2b635284a&pd_rd_w=iPFhI&pd_rd_wg=EIqkr&pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&pf_rd_r=N3R06Y826ATAWEF8R2KP&psc=1&refRID=N3R06Y826ATAWEF8R2KP){:target="_ blank"}
-* Ubiquiti EdgeRouter X
-* Unifi Switch 16 150W Gen 1
-* Unifi Cloud Key Gen2
+1. CAT6A Cable
+    1. [Commscope CAT6A CS44Z1 WHT C6A 4/23 F/UTP RL 500M](https://www.commscope.com/product-type/networking-systems/structured-cabling/item88402455816/){:target="_ blank"}
+    2. [Belden 10GXE01](https://catalog.belden.com/techdata/EN/10GXE01_techdata.pdf){:target="_ blank"}
+    3. [Belden 10GXE02](https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf){:target="_ blank"}
+2. 12U Server Rack
+3. [24-Port Keystone Patch Panel](https://www.amazon.com/dp/B0072JVT02/ref=emc_b_5_i){:target="_ blank"}
+4. [CAT6A Shielded Keystone Jack](https://www.amazon.com/Listed-Cable-Matters-Shielded-Keystone/dp/B00CLVAJCK/ref=sr_1_1_sspa?dchild=1&keywords=cat6a+shielded+keystone&qid=1603117867&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTkRGQjNVTjQ0NzBFJmVuY3J5cHRlZElkPUEwNTE2NDAwMjRWNkVCN1FBWVZPJmVuY3J5cHRlZEFkSWQ9QVVOT0wxRFNZUEJMNSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=){:target="_ blank"}
+5. [RJ45 Shielded Modular Plugs w strain relief boots](https://www.amazon.com/Cable-Matters-50-Pack-Shielded-Modular/dp/B00E4OCOUW/ref=pd_bxgy_img_3/142-1063064-5847132?_encoding=UTF8&pd_rd_i=B00E4OCOUW&pd_rd_r=c0dcf1bd-29a1-4ee7-94f5-e4b70786cc6f&pd_rd_w=4BiTh&pd_rd_wg=JWIZa&pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&pf_rd_r=H2TX043ZN9JE83VTSM5E&psc=1&refRID=H2TX043ZN9JE83VTSM5E){:target="_ blank"}
+6. [Crimp tool](https://www.amazon.com/Cable-Matters-Crimp-Shielded-Keystone/dp/B074HLYJ4J/ref=pd_bxgy_2/142-1063064-5847132?_encoding=UTF8&pd_rd_i=B074HLYJ4J&pd_rd_r=d478e5fb-1a04-43ae-9e2c-8cd2b635284a&pd_rd_w=iPFhI&pd_rd_wg=EIqkr&pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&pf_rd_r=N3R06Y826ATAWEF8R2KP&psc=1&refRID=N3R06Y826ATAWEF8R2KP){:target="_ blank"}
+7. Ubiquiti EdgeRouter X
+8. Unifi Switch 16 150W Gen 1
+9. Unifi Cloud Key Gen2
