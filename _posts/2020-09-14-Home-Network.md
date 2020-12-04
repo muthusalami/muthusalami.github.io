@@ -41,7 +41,7 @@ I plan to update my progress with subsequent posts, but for now I've made a simp
 
 1. [Belden CAT6A 10GXE02](https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf){:target="_ blank"}
 2. 15U Wall-mount Server Rack
-3. [24-Port Keystone Patch Panel](https://www.amazon.com/dp/B0072JVT02/ref=emc_b_5_i){:target="_ blank"}
+3. [24-Port Keystone Patch Panel](https://www.amazon.com/ETS-Shielded-Tool-Less-Rackmount-Wallmount/dp/B086T6KRCH/ref=sr_1_6?dchild=1&keywords=cat6a+patch+panel&qid=1607079469&sr=8-6){:target="_ blank"}
 4. [CAT6A Shielded Keystone Jack](https://www.amazon.com/Listed-Cable-Matters-Shielded-Keystone/dp/B00CLVAJCK/ref=sr_1_1_sspa?dchild=1&keywords=cat6a+shielded+keystone&qid=1603117867&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTkRGQjNVTjQ0NzBFJmVuY3J5cHRlZElkPUEwNTE2NDAwMjRWNkVCN1FBWVZPJmVuY3J5cHRlZEFkSWQ9QVVOT0wxRFNZUEJMNSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=){:target="_ blank"}
 6. Ubiquiti EdgeRouter X
 7. Unifi Switch 16 150W Gen 1
