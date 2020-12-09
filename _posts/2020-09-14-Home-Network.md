@@ -45,3 +45,4 @@ I plan to update my progress with subsequent posts, but for now I've made a simp
 5. Ubiquiti EdgeRouter X
 6. Unifi Switch 16 150W Gen 1
 7. Unifi Cloud Key Gen2
+8. Unifi NanoHD
