@@ -34,23 +34,32 @@ for x in xrange ( 1, 101, 1 ):
 
 * <<scan directories and apply an operation on specific file types>>
 
+python scanandfixme.py -fileType .jpg -operation deleteMyFace
+
 * <<converting image from file format A to file format B>>
 
-* <<scanning for an image with specific metadata>> (geotag, exifinfo)
+python convertALLJPEGS.py -dir /dir1/dir2 .jpg .exr
+
+* <<scanning for an image with specific metadata >> (geotag, exifinfo)
+
+python chezSerge.py -dir /dir1/dir2 -ext .jpg -coord 45.3323 32.3233
 
 * <<modify Image Metadata>> (delete / edit /add)
 
+python resizeallimages.py -dir /dir1/dir2 -ext .jpg -res 2048x2048
+
 * <<resize all images above a specific resolution>>
+
 
 ## Modules
 
 * argparse
 
-* PIL -python image library
+* PIL - python image library. Basic image manipulation. Does not support 32-bit
 
-* OpenImageIO -image processing (create slates)
+* OpenImageIO - advance image processing. Can load images with multi-channels and supports 32-bit. Useful to create slates
 
-* PySide / PyQt -
+* PySide / PyQt - ???
 
 * Custom Python Classes
 Advanced User Interface
@@ -64,6 +73,53 @@ Modules: multithreading thread, queue
 * Process control and communication
 Modules: process, subprocess, xmlrpc, reds
 
-## Advanced Python
-Modules: OpenimageIO, OpenEXR, PythonMagick
-Modules: OpenColorIO, ColorPy
+## Advanced Python I
+
+* Custom Python Classes
+
+* Advanced User Interface
+  * Custom Widgets and dialogs
+  * QT applications
+  * Special Drag-and-Drop handling
+  * Gesture
+
+Modules: PySide / PyQt
+
+## Advanced Python II
+
+* Multi-threading
+  * Modules: multi-threading, thread and queue
+
+* Process control and communication
+  * Modules: process, subprocess, xmlrpc, redis
+
+* Database
+  * Modules: redis, sqlite3, mongodb
+
+* Persistence
+  * Modules: yaml, json, pickle/Cpickle
+
+## Advanced Python III
+
+* Image processing / Compositing
+  * Modules: OpenImageIO, OpenEXR, PythonMagick
+
+* Colour Science
+  * Modules: OpencolorIO, ColorPy
+
+* Computer Vision
+  * Modules: simpleCV, pycv
+
+* Math / Simulation
+ * Modules: NumPy, Matplotlib, SciPy
+
+## Advanced Python IV
+
+* Geometrical
+  * Modules: alembic / alembicgl
+
+* Volumes / Voxels
+  * Modules: pyopenvdb
+
+* Particles
+  * Modules: partio
