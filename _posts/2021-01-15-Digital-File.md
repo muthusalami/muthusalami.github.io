@@ -32,19 +32,19 @@ A set of 512 bytes is one 'sector' and 'sectors' may be grouped into 'blocks'.
 
 ## Parts of a file
 
-1. File signature
+* File signature
 
 It consists of a short section of code that defines the files format.
 
-2. File Header
+* File Header
 
 A sequence of data that instructs on how to interpret the information. Machines and software will follow the instructions in the header to process/interpete the data it contains.
 
-3. File Body
+* File Body
 
 The main bulk of information that allows the machine/program to render the file into human-understandable information. It can be stored as plain text or binary data.
 
-4. End
+* End
 
 The last section of code that signals the end of the package.
 
