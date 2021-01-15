@@ -18,7 +18,11 @@ I'll briefly lay out the keys points from the post.
 
 ## What makes a 'digital' file?
 
-A digital file comprises of bits (zeros and ones) that contain crucial information that allows the computer/software to interpret/manipulate/process/encode/decode it into human-understandable information. The digital file may represent various types of information such as text, images and audio.
+A digital file comprises of bits (zeros and ones) or plain text that contain crucial information that allows the computer/software to interpret/manipulate/process/encode/decode it into human-understandable information. The digital file may represent various types of information such as text, images and audio.
+
+Programs can read plain text data without the aid of file signatures or headers (described below). Common types of plain text data include .txt and .html files. This has wide application as it is high compatible with most computer systems and software.
+
+Binary data (zeros and ones) can represent more complex information and is read by computer programs in a linear data 'stream' or sequence of bytes. The program is required to decode the information block by block as per instructed by the file's signature and header.
 
 **Useful info**
 
