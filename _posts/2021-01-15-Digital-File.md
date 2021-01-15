@@ -20,8 +20,8 @@ I'll briefly lay out the keys points from the post.
 
 A digital file comprises of bits (zeros and ones) that contain crucial information that allows the computer/software to interpret/manipulate/process/encode/decode it into human-understandable information. The digital file may represent various types of information such as text, images and audio.
 
+**Useful info**
 Eight bits = 1 Byte
-
 A set of 512 bytes is one 'sector' and 'sectors' may be grouped into 'blocks'.
 
 ## Parts of a file
