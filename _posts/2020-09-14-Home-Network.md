@@ -3,7 +3,7 @@ layout: post
 title: Part 1&#58; My home network journal
 excerpt: "Laying out my network plan for my future Ubiquiti setup"
 modified: 2020-12-04
-tags: [network, ubiquiti, unifi, edgemax, wifi]
+tags: [network, networking, ubiquiti, unifi, edgemax, wifi]
 categories: network renovation
 comments: true
 pinned: true
@@ -42,7 +42,7 @@ I plan to update my progress with subsequent posts, but for now I've made a simp
 1. [Belden CAT6A 10GXE02](https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf){:target="_ blank"}
 2. 12U Wall-mount Server Rack
 3. [24-Port Keystone Patch Panel](https://www.amazon.com/ETS-Shielded-Tool-Less-Rackmount-Wallmount/dp/B086T6KRCH/ref=sr_1_6?dchild=1&keywords=cat6a+patch+panel&qid=1607079469&sr=8-6){:target="_ blank"}
-5. Ubiquiti EdgeRouter X
+5. Ubiquiti EdgeRouter X (ER-X)
 6. Unifi Switch 16 150W Gen 1
-7. Unifi Cloud Key Gen2
-8. Unifi NanoHD
+7. Unifi Cloud Key Gen2 Plus (UCK-G2-PLUS)
+8. Unifi NanoHD (UAP-nanoHD)
