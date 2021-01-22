@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Home Network Part&#58; II
+title: Ubiquiti Home Network Part&#58; II
 excerpt: "Setting up my Ubiquiti home network"
 modified: 2021-01-20
 tags: [networking, network, ubiquiti, unifi, edgemax, wifi]
