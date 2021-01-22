@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Part 1&#58; My home network journal
-excerpt: "Laying out my network plan for my future Ubiquiti setup"
+title: Ubiquiti Home Network Part&#58; I
+excerpt: "Network plan for my Ubiquiti home network setup"
 modified: 2020-12-04
 tags: [network, networking, ubiquiti, unifi, edgemax, wifi]
 categories: network renovation
