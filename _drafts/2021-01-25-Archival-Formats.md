@@ -1,0 +1,37 @@
+---
+layout: post
+title: Harvard CS50 journal
+excerpt: "Harvard CS50 Journal"
+modified: 2021-01-21
+tags: [learning cs50]
+categories: c python
+comments: true
+pinned: true
+share: true
+image:
+  feature:
+---
+
+## Week 1 (Basics + Scratch)
+
+## Week 2 (C)
+
+* Type casting function in C allows you to convert one datatype into another aka type-conversion. One can convert the values from one type into another explicitly using the cast operator as follows -
+
+{% highlight css %}
+(type_name) expression
+{% endhighlight css%}
+
+* '=' is for assignments, '==' is the equal sign
+
+* Use single quotations for strings and chars
+
+* || is the logical 'or' operator
+
+{% highlight css %}
+(c == 'n' || c=='N')
+{% endhighlight css%}
+
+* Abstraction
+
+* Prototype - Points to custom function at the start of the code
