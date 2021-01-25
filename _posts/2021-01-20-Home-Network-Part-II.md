@@ -12,7 +12,7 @@ image:
   feature:
 ---
 
-This post is all about setting up my ubiquiti home network and will serve as a resource/journal for the various devices.
+This post is all about setting up my ubiquiti home network and will serve as a personal resource/journal for the various devices.
 
 * EdgeRouter X (ER-X)
 
