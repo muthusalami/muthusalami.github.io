@@ -12,7 +12,11 @@ image:
   feature:
 ---
 
-This post is all about setting up my ubiquiti home network and will serve as a personal resource/journal for the various devices.
+This post is all about setting up my Ubiquiti home network and will serve as a personal resource/journal for the various devices.
+
+* The Ubiquiti Universe
+
+[Poseidwn Tech - Initial UniFi Setup for Beginners](https://www.youtube.com/watch?v=-6q-4lSBfmA){:target="_blank"}
 
 * EdgeRouter X (ER-X)
 
