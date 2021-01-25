@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Harvard CS50 journal
-excerpt: "Harvard CS50 Journal"
+title: Which digital archival master format should I choose?
+excerpt: "Investigating THE archival master"
 modified: 2021-01-21
-tags: [learning cs50]
-categories: c python
+tags: [digipres filmpres formats]
+categories: Apple ProRes DPX WAV FLAC
 comments: true
 pinned: true
 share: true
@@ -12,26 +12,4 @@ image:
   feature:
 ---
 
-## Week 1 (Basics + Scratch)
-
-## Week 2 (C)
-
-* Type casting function in C allows you to convert one datatype into another aka type-conversion. One can convert the values from one type into another explicitly using the cast operator as follows -
-
-{% highlight css %}
-(type_name) expression
-{% endhighlight css%}
-
-* '=' is for assignments, '==' is the equal sign
-
-* Use single quotations for strings and chars
-
-* || is the logical 'or' operator
-
-{% highlight css %}
-(c == 'n' || c=='N')
-{% endhighlight css%}
-
-* Abstraction
-
-* Prototype - Points to custom function at the start of the code
+I recently received an enquiry about the possible digitisation of a Singaporean film and was asked about the recommended formats for archive and delivery. It was difficult to give a recommendation since it depends on their usage as well as their ability to handle/process the data and most importantly, their budget.

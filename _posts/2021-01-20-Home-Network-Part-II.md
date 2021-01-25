@@ -16,10 +16,12 @@ This post is all about setting up my ubiquiti home network and will serve as a p
 
 * EdgeRouter X (ER-X)
 
-[EdgeRouter X First Time Setup](https://www.youtube.com/results?search_query=edgerouter+x){:target="_ blank"}
+[Toasty Answers - EdgeRouter X First Time Setup](https://www.youtube.com/watch?v=aECPxlT6Qq4){:target="_ blank"}
 
 * Unifi Switch 16 150W Gen 1 (US-16-150W)
 
 * Unifi Cloud Key Gen2 Plus (UCK-G2-PLUS)
+
+[Crosstalk Solutions - Cloud Key Gen2 Plus](https://www.youtube.com/watch?v=H_a1BCf1jH0){:target="_ blank"}
 
 * Unifi NanoHD AP (UAP-nanoHD)
