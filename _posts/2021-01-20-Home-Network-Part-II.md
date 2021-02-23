@@ -71,7 +71,7 @@ Credit to Toasty Answers for the easy to follow set-up.
 
 4) Log in again and the new version should be reflected on the dashboard.
 
-## Other functions
+**Other functions**
 
 **Smart Queue**
 
@@ -80,7 +80,7 @@ Credit to Toasty Answers for the easy to follow set-up.
 
 ## Additional resources
 
-* 'Gamer Setup'
+* 'Gamer Setup' for the ER-X
 
 [Gamer Setup - This router can save your marriage!](https://www.youtube.com/watch?v=o-g2P3R84dw){:target="_blank"}
 
@@ -88,10 +88,6 @@ Credit to Toasty Answers for the easy to follow set-up.
 
 [Poseidwn Tech - Initial UniFi Setup for Beginners](https://www.youtube.com/watch?v=-6q-4lSBfmA){:target="_blank"}
 
-* Unifi Switch 16 150W Gen 1 (US-16-150W)
-
 * Unifi Cloud Key Gen2 Plus (UCK-G2-PLUS)
 
 [Crosstalk Solutions - Cloud Key Gen2 Plus](https://www.youtube.com/watch?v=H_a1BCf1jH0){:target="_ blank"}
-
-* Unifi NanoHD AP (UAP-nanoHD)
