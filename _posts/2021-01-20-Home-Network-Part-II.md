@@ -91,3 +91,7 @@ Credit to Toasty Answers for the easy to follow set-up.
 * Unifi Cloud Key Gen2 Plus (UCK-G2-PLUS)
 
 [Crosstalk Solutions - Cloud Key Gen2 Plus](https://www.youtube.com/watch?v=H_a1BCf1jH0){:target="_ blank"}
+
+* Unifi US-16-150W
+
+[Tom Morgan - Ubiquiti UniFi Switch 16 150W setup](https://www.youtube.com/watch?v=0_wXI5minS0){:target="_blank"}
