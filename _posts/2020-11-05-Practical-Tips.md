@@ -48,7 +48,7 @@ Organise the files that you have selected by creating a file directory structure
 
 This is an example of how files can be organised and structured:
 
-![Folder Structure]({{ site.url }}/assets/originals/Folder_Structure_Example.png)
+![Folder Structure]({{ site.url }}/assets/originals/Practical_tips/Folder_Structure_Example.png)
 
 find it useful to first determine the top-level folder. I used [YEAR] in this example, and branch into sub-directories by [CATEGORY]. In the screenshot above, we see Year 2020 and the categories are AFA Work, External Projects and Personal Documents. The later directories might be projects/events based but try to keep them as consistent as possible.
 
@@ -71,7 +71,7 @@ Here are some tips on designing your own directory.
 
 Descriptive file names are imperative to quick identification and retrieval of files. Poor naming conventions are frustrating and wastes a lot of time  since they do not give useful information (“Best practices for file naming”, 2020).
 
-![File Naming Convention]({{ site.url }}/assets/originals/Naming_Convention_Example.png)
+![File Naming Convention]({{ site.url }}/assets/originals/Practical_tips/Naming_Convention_Example.png)
 
 A guiding principle for filenames is to include basic information such as object type, dates, and important remarks. These indicators can be crucial in distinguishing one file from another in the event that there are multiple variations of a given file. In essence, an effective file name should tell you what the file is without you having to open it (Antin, 2020).
 
