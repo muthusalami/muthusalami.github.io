@@ -18,11 +18,11 @@ This post is all about setting up my Ubiquiti home network and will serve as a p
 
 1) Connect computer to the Eth 0 port on the ER-X
 
-2) Set IP address to 192.168.1.2 since the IP address of the ER-X is 192.168.1.1 (also the default gateway)
+2) Open the network settings on your PC and set the IP address to 192.168.1.2 since the IP address of the ER-X is 192.168.1.1 (also the default gateway)
 
 Subnet mask: 255.255.255.0
 
-3) Log into EdgeMax GUI. usr: ubnt pwd: ubnt
+3) Log into EdgeMax Web GUI. usr: 'ubnt' pwd: 'ubnt'
 
 4) Commence basic set-up
 
@@ -43,25 +43,46 @@ Create a new user with a new password
 
 8) Change IP and DNS settings to automatic on the client
 
-9) ipconfig /release to release the old IP address. ipconfig /renew to get a new IP address
+9) 'ipconfig /release' to release the old IP address. 'ipconfig /renew' to get a new IP address
 
-10) Log back into the EdgeMax GUI.
+10) Log back into the EdgeMax Web GUI.
 
 11) Bring up the CLI on the GUI. Log in with the credentials
 
-12) type configure
+12) type 'configure'
 
-13) set system offload hwnat enable
+13) set 'system offload hwnat enable'
 
-14) set system system offload ipsec enable
+14) set 'system system offload ipsec enable'
 
-15) type commit and save
+15) type 'commit' and 'save'.
 
 Credit to Toasty Answers for the easy to follow set-up.
 
 [Toasty Answers - EdgeRouter X First Time Setup](https://www.youtube.com/watch?v=aECPxlT6Qq4){:target="_ blank"}
 
-## Resources
+**Updating the ER-X**
+
+1) Download the latest firmware from Ubiquiti.
+
+2) Access the EdgeMax Web GUI and click on system and head to upgrade system image. Click 'upload a file'.
+
+3) Upload the image and reboot and let it apply the update.
+
+4) Log in again and the new version should be reflected on the dashboard.
+
+## Other functions
+
+**Smart Queue**
+
+**UPnP**
+
+
+## Additional resources
+
+* 'Gamer Setup'
+
+[Gamer Setup - This router can save your marriage!](https://www.youtube.com/watch?v=o-g2P3R84dw){:target="_blank"}
 
 * The Ubiquiti Universe
 
