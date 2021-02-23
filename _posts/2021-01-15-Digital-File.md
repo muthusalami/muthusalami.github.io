@@ -48,4 +48,4 @@ The main bulk of information that allows the machine/program to render the file 
 
 The last section of code that signals the end of the package.
 
-![Folder Structure]({{ site.url }}/assets/originals/Anatomy.jpg)
+![Folder Structure]({{ site.url }}/assets/Digital_File/originals/Anatomy.jpg)
