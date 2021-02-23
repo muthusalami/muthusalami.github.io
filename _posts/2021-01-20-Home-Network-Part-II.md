@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubiquiti Home Network Part&#58; II
-excerpt: "Setting up my Ubiquiti home network"
+excerpt: "The setup of my home network"
 modified: 2021-01-20
 tags: [networking, network, ubiquiti, unifi, edgemax, wifi]
 categories: network renovation
@@ -14,13 +14,58 @@ image:
 
 This post is all about setting up my Ubiquiti home network and will serve as a personal resource/journal for the various devices.
 
+## Setting up the EdgeRouter X (ER-X) Router
+
+1) Connect computer to the Eth 0 port on the ER-X
+
+2) Set IP address to 192.168.1.2 since the IP address of the ER-X is 192.168.1.1 (also the default gateway)
+
+Subnet mask: 255.255.255.0
+
+3) Log into EdgeMax GUI. usr: ubnt pwd: ubnt
+
+4) Commence basic set-up
+
+5)  Settings
+
+Port: eth 0
+Internet connection type: DHCP
+Firewall: enable the default Firewall
+One Lan: *check*
+
+Leave default address and enable DHCP server
+
+Create a new user with a new password
+
+6) Apply changes and reboot the router
+
+7) Plug modem into eth 0 and move client connection to eth 1
+
+8) Change IP and DNS settings to automatic on the client
+
+9) ipconfig /release to release the old IP address. ipconfig /renew to get a new IP address
+
+10) Log back into the EdgeMax GUI.
+
+11) Bring up the CLI on the GUI. Log in with the credentials
+
+12) type configure
+
+13) set system offload hwnat enable
+
+14) set system system offload ipsec enable
+
+15) type commit and save
+
+Credit to Toasty Answers for the easy to follow set-up.
+
+[Toasty Answers - EdgeRouter X First Time Setup](https://www.youtube.com/watch?v=aECPxlT6Qq4){:target="_ blank"}
+
+## Resources
+
 * The Ubiquiti Universe
 
 [Poseidwn Tech - Initial UniFi Setup for Beginners](https://www.youtube.com/watch?v=-6q-4lSBfmA){:target="_blank"}
-
-* EdgeRouter X (ER-X)
-
-[Toasty Answers - EdgeRouter X First Time Setup](https://www.youtube.com/watch?v=aECPxlT6Qq4){:target="_ blank"}
 
 * Unifi Switch 16 150W Gen 1 (US-16-150W)
 

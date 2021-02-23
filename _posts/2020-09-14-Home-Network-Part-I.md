@@ -40,7 +40,7 @@ I plan to update my progress with subsequent posts, but for now I've made a simp
 ![Network diagram]({{ site.url }}/assets/originals/Network_diagram.jpg)
 
 1. [Belden CAT6A 10GXE02](https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf){:target="_ blank"}
-2. 12U Wall-mount Server Rack
+2. 6U wall-mount Server Rack
 3. [24-Port Keystone Patch Panel](https://www.amazon.com/ETS-Shielded-Tool-Less-Rackmount-Wallmount/dp/B086T6KRCH/ref=sr_1_6?dchild=1&keywords=cat6a+patch+panel&qid=1607079469&sr=8-6){:target="_ blank"}
 5. Ubiquiti EdgeRouter X (ER-X)
 6. Unifi Switch 16 150W Gen 1
