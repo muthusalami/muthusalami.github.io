@@ -73,9 +73,9 @@ Credit to Toasty Answers for the easy to follow set-up.
 
 **Other functions**
 
-**Smart Queue**
+*Smart Queue*
 
-**UPnP**
+*UPnP*
 
 
 ## Additional resources
