@@ -100,7 +100,7 @@ Now that your files are all in place and organised, it is time to back them up! 
 
 **The 3-2-1 strategy**
 
-![3-2-1 Diagram]({{ site.url }}/assets/originals/Diagram-1440x1018.png)
+![3-2-1 Diagram]({{ site.url }}/assets/originals/Practical_tips/Diagram-1440x1018.png)
 
 **Keep 3 copies of your data**
 
