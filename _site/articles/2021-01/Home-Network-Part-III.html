@@ -8,35 +8,35 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="How can Python be used in imaging pipelines and workflows">
+  <meta name="description" content="Relocating and installing the Fibre Termination Point (TP)">
   <meta name="keywords" content="blog, digital preservation, film preservation, and film restoration">
-  <meta name="author" content="Python in imaging workflows | Matthew Yang | Singapore">
+  <meta name="author" content="Ubiquiti Home Network Part&amp;#58; III | Matthew Yang | Singapore">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f5f5f5">
 
   <!-- Twitter Tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Python in imaging workflows | Matthew Yang | Singapore">
-  <meta name="twitter:description" content="How can Python be used in imaging pipelines and workflows">
+  <meta name="twitter:title" content="Ubiquiti Home Network Part&amp;#58; III | Matthew Yang | Singapore">
+  <meta name="twitter:description" content="Relocating and installing the Fibre Termination Point (TP)">
   
     <meta property="twitter:image" content="http://localhost:4000/img/leonids-logo.png">
   
 
   <!-- Open Graph Tags -->
   <meta property="og:type" content="blog">
-  <meta property="og:url" content="http://localhost:4000/articles/2020-10/Python-Pipeline-Functions">
-  <meta property="og:title" content="Python in imaging workflows | Matthew Yang | Singapore">
-  <meta property="og:description" content="How can Python be used in imaging pipelines and workflows">
+  <meta property="og:url" content="http://localhost:4000/articles/2021-01/Home-Network-Part-III">
+  <meta property="og:title" content="Ubiquiti Home Network Part&amp;#58; III | Matthew Yang | Singapore">
+  <meta property="og:description" content="Relocating and installing the Fibre Termination Point (TP)">
   
     <meta property="og:image" content="http://localhost:4000/img/leonids-logo.png">
   
-  <title>Python in imaging workflows | Matthew Yang | Singapore</title>
+  <title>Ubiquiti Home Network Part&#58; III | Matthew Yang | Singapore</title>
 
   <!-- CSS files -->
   <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
   <link rel="stylesheet" href="http://localhost:4000/css/main.css">
 
-  <link rel="canonical" href="http://localhost:4000/articles/2020-10/Python-Pipeline-Functions">
+  <link rel="canonical" href="http://localhost:4000/articles/2021-01/Home-Network-Part-III">
   <link rel="alternate" type="application/rss+xml" title="Matthew Yang | Singapore" href="http://localhost:4000/feed.xml" />
 
   <!-- Icons -->
@@ -142,10 +142,10 @@
 
 <div id="post">
   <header class="post-header">
-    <h1 title="Python in imaging workflows">Python in imaging workflows</h1>
+    <h1 title="Ubiquiti Home Network Part&amp;#58; III">Ubiquiti Home Network Part&#58; III</h1>
     <span class="post-meta">
       <span class="post-date">
-        1 OCT 2020
+        31 JAN 2021
       </span>
       •
       <span class="read-time" title="Estimated read time">
@@ -160,86 +160,15 @@
   </header>
 
   <article class="post-content">
-    <h2 id="basic-python">Basic Python</h2>
+    <p>Today marks another major milestone for the Ubiquiti home network with the Fibre Termination Point (TP) finally installed! The OpenNet technicians decided to come two days before our scheduled appointment, but I was more than happy to accommodate to their request. I decided to relocate the TP from the living room to the service balcony to have it close to the network rack. Most households typically have the TP close to the TV consoles as it is common to use the router-modem provided by the ISPs, whom typically are the internet TV providers as well. The relocation involved drilling a new hole from the electrical riser into the kitchen to have a short run of cable straight to the desired location. I was initially quite nervous about the drilling as I didn’t want to puncture any pipes, but thankfully it went fine. All of the work was completed within 40 minutes but I was surprised that the task required a team of five men!</p>
 
-<ul>
-  <li>«copy a file»</li>
-</ul>
+<p><img src="http://localhost:4000/assets/originals/Network_II/open_net_1.jpg" alt="OpenNet setup" /></p>
 
-<p>shut.copyfile( “C:\path\file1.ext”, “C:\path\file2.ext” )</p>
+<p><img src="http://localhost:4000/assets/originals/Network_II/open_net_2.jpg" alt="OpenNet setup" /></p>
 
-<ul>
-  <li>«rename a file»</li>
-</ul>
+<p><img src="http://localhost:4000/assets/originals/Network_II/open_net_3.jpg" alt="OpenNet setup" /></p>
 
-<p>import os</p>
-
-<p>os.system( “move \server\path\file1.ext C:\path\file2.ext” )</p>
-
-<ul>
-  <li>«re-sequence files»</li>
-</ul>
-
-<p>import os</p>
-
-<p>for x in xrange ( 1, 101, 1 ):
-	os.system( “move C:\file.%s.ext C:\path\file.%04d.ext” % ( x, x ) )</p>
-
-<h2 id="intermediate-python">Intermediate Python</h2>
-
-<ul>
-  <li>
-    <p>«scan directories and apply an operation on specific file types»</p>
-  </li>
-  <li>
-    <p>«converting image from file format A to file format B»</p>
-  </li>
-  <li>
-    <p>«scanning for an image with specific metadata» (geotag, exifinfo)</p>
-  </li>
-  <li>
-    <p>«modify Image Metadata» (delete / edit /add)</p>
-  </li>
-  <li>
-    <p>«resize all images above a specific resolution»</p>
-  </li>
-</ul>
-
-<h2 id="modules">Modules</h2>
-
-<ul>
-  <li>
-    <p>argparse</p>
-  </li>
-  <li>
-    <p>PIL -python image library</p>
-  </li>
-  <li>
-    <p>OpenImageIO -image processing (create slates)</p>
-  </li>
-  <li>
-    <p>PySide / PyQt -</p>
-  </li>
-  <li>
-    <p>Custom Python Classes
-Advanced User Interface
-  -Custom widgets and dialogs
-  -QT applications
-  -special drag-and-drop handling</p>
-  </li>
-  <li>
-    <p>Multi-threading
-Modules: multithreading thread, queue</p>
-  </li>
-  <li>
-    <p>Process control and communication
-Modules: process, subprocess, xmlrpc, reds</p>
-  </li>
-</ul>
-
-<h2 id="advanced-python">Advanced Python</h2>
-<p>Modules: OpenimageIO, OpenEXR, PythonMagick
-Modules: OpenColorIO, ColorPy</p>
+<p><img src="http://localhost:4000/assets/originals/Network_II/open_net_4.jpg" alt="OpenNet setup" /></p>
 
   </article>
 </div>
@@ -248,19 +177,19 @@ Modules: OpenColorIO, ColorPy</p>
   <h6>Share on: </h6>
   <ul>
     <li>
-      <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/articles/2020-10/Python-Pipeline-Functions" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+      <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/articles/2021-01/Home-Network-Part-III" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/articles/2020-10/Python-Pipeline-Functions" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/articles/2021-01/Home-Network-Part-III" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
     </li>
     <li>
-      <a href="https://plus.google.com/share?url=http://localhost:4000/articles/2020-10/Python-Pipeline-Functions" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+      <a href="https://plus.google.com/share?url=http://localhost:4000/articles/2021-01/Home-Network-Part-III" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
     </li>
     <li>
-      <a href="https://news.ycombinator.com/submitlink?u=http://localhost:4000/articles/2020-10/Python-Pipeline-Functions" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
+      <a href="https://news.ycombinator.com/submitlink?u=http://localhost:4000/articles/2021-01/Home-Network-Part-III" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
     </li>
     <li>
-      <a href="https://www.reddit.com/submit?url=http://localhost:4000/articles/2020-10/Python-Pipeline-Functions" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+      <a href="https://www.reddit.com/submit?url=http://localhost:4000/articles/2021-01/Home-Network-Part-III" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
     </li>
   </ul>
 </div><!-- end share-buttons -->
@@ -268,7 +197,7 @@ Modules: OpenColorIO, ColorPy</p>
 
 
         <footer>
-  &copy; 2020 Matthew Yang<p>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and made with <a href="https://github.com/renyuanz/leonids/">leonids theme</a> <i class="fa fa-heart heart-icon"></i>
+  &copy; 2021 Matthew Yang<p>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and made with <a href="https://github.com/renyuanz/leonids/">leonids theme</a> <i class="fa fa-heart heart-icon"></i>
 </footer>
 
       </div>

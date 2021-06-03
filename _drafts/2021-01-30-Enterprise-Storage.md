@@ -53,7 +53,7 @@ NAS protocols
 
 * Logical Unit Numbers (LUN)
 
-LUN is a portion of a configured set of disks that is presented to a host and mounted as a volume in the OS. The LUN can be configured as a portion of a RAID group, or be configured to use the total space available.  The LUN will be presented to the client as a mountable volume configured by the administrator, which in turns hides the remaining capacity on that RAID group. 
+LUN is a portion of a configured set of disks that is presented to a host and mounted as a volume in the OS. The LUN can be configured as a portion of a RAID group, or be configured to use the total space available.  The LUN will be presented to the client as a mountable volume configured by the administrator, which in turns hides the remaining capacity on that RAID group.
 
 * RAID
 
