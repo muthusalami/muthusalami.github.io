@@ -1,0 +1,21 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Yang;Matthew;;;
+FN:Matthew Yang
+ORG:New York Public Library
+ADR;TYPE=WORK:New York
+TITLE:Digital Archivist
+TEL;TYPE=CELL:
+TEL;TYPE=WORK:
+TEL;TYPE=HOME:
+TEL;TYPE=MSG:
+EMAIL;TYPE=WORK:matthewyang@nyu.edu
+URL;TYPE=Digital Business Card:matthewyang.io/vcard
+URL:matthewyang.io
+URL;TYPE=Website:matthewyang.io
+URL;TYPE=LinkedIn:https://linkedin.com/https://www.linkedin.com/in/matthewyang-sg/
+URL;TYPE=GitHub:https://github.com/https://github.com/muthusalami
+KEY;TYPE=PGP;ENCODING=b:
+NOTE:
+UID:EnBizCard-100733394
+END:VCARD
