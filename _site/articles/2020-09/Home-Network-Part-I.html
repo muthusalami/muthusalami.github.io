@@ -8,35 +8,35 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Laying out my network plan for my future Ubiquiti setup">
+  <meta name="description" content="Network plan for my Ubiquiti home network setup">
   <meta name="keywords" content="blog, digital preservation, film preservation, and film restoration">
-  <meta name="author" content="Part 1&amp;#58; My home network journal | Matthew Yang | Singapore">
+  <meta name="author" content="Ubiquiti Home Network Part&amp;#58; I | Matthew Yang | Singapore">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f5f5f5">
 
   <!-- Twitter Tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Part 1&amp;#58; My home network journal | Matthew Yang | Singapore">
-  <meta name="twitter:description" content="Laying out my network plan for my future Ubiquiti setup">
+  <meta name="twitter:title" content="Ubiquiti Home Network Part&amp;#58; I | Matthew Yang | Singapore">
+  <meta name="twitter:description" content="Network plan for my Ubiquiti home network setup">
   
     <meta property="twitter:image" content="http://localhost:4000/img/leonids-logo.png">
   
 
   <!-- Open Graph Tags -->
   <meta property="og:type" content="blog">
-  <meta property="og:url" content="http://localhost:4000/articles/2020-09/Home-Network">
-  <meta property="og:title" content="Part 1&amp;#58; My home network journal | Matthew Yang | Singapore">
-  <meta property="og:description" content="Laying out my network plan for my future Ubiquiti setup">
+  <meta property="og:url" content="http://localhost:4000/articles/2020-09/Home-Network-Part-I">
+  <meta property="og:title" content="Ubiquiti Home Network Part&amp;#58; I | Matthew Yang | Singapore">
+  <meta property="og:description" content="Network plan for my Ubiquiti home network setup">
   
     <meta property="og:image" content="http://localhost:4000/img/leonids-logo.png">
   
-  <title>Part 1&#58; My home network journal | Matthew Yang | Singapore</title>
+  <title>Ubiquiti Home Network Part&#58; I | Matthew Yang | Singapore</title>
 
   <!-- CSS files -->
   <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
   <link rel="stylesheet" href="http://localhost:4000/css/main.css">
 
-  <link rel="canonical" href="http://localhost:4000/articles/2020-09/Home-Network">
+  <link rel="canonical" href="http://localhost:4000/articles/2020-09/Home-Network-Part-I">
   <link rel="alternate" type="application/rss+xml" title="Matthew Yang | Singapore" href="http://localhost:4000/feed.xml" />
 
   <!-- Icons -->
@@ -142,7 +142,7 @@
 
 <div id="post">
   <header class="post-header">
-    <h1 title="Part 1&amp;#58; My home network journal">Part 1&#58; My home network journal</h1>
+    <h1 title="Ubiquiti Home Network Part&amp;#58; I">Ubiquiti Home Network Part&#58; I</h1>
     <span class="post-meta">
       <span class="post-date">
         14 SEP 2020
@@ -160,13 +160,13 @@
   </header>
 
   <article class="post-content">
-    <p>This post will be part of a series documenting the network component of my upcoming renovation of my new apartment. The apartment is over 20 years old hence a major overhaul is required and the renovation is a great opportunity to lay CAT6 to all the rooms in the house for the 1Gbps/10Gbps network 🤓.</p>
+    <p>This post will be part of a series documenting the network setup of my new apartment. The apartment is over 20 years old hence a major overhaul is required and the renovation is a great opportunity to lay CAT6A in the house for the 1Gbps/10Gbps network 🤓.</p>
 
 <p>My research began with <a href="https://www.patnotebook.com/bto-networking-singapore/" target="_ blank">this</a> article on <a href="https://patnotebook.com" target="_ blank">patnotebook.com</a> detailing the conversion of telephone points to RJ45 data points in newer BTO (Build to Order) flats in Singapore. Newer flats in Singapore have CAT6 cables already nicely laid in the house, however many of the points are terminated with a telephone jack instead of RJ45. Based on the article, it seems that BTO flats only have one point terminated as RJ45, which is definitely not enough 😁.</p>
 
-<p>That being said, I will have to lay my own cables and design my own network infrastructure since my flat is a legacy model.</p>
+<p>Older resale flats like mine do not come with any data points hence I will have to lay my own cables and design my own network infrastructure from scratch. On top of patnotebook.com, I’ve relied on many youtube videos and blogs to learn basic networking concepts and the different components required to run a network.</p>
 
-<p>A great networking and Ubiquiti resource is Evan McCann’s tech blog - <a href="https://evanmccann.net/" target="_ blank">McCann Tech</a>. There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!</p>
+<p>I’ve devoured Evan McCann’s tech <a href="https://evanmccann.net/" target="_ blank">blog</a> since I plan to purchase Ubiquti hardware for the network. There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products as well. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!</p>
 
 <h2 id="recommended-mccann-reading-list">Recommended McCann reading list</h2>
 
@@ -179,34 +179,24 @@
   <li><a href="https://evanmccann.net/blog/2020/6/ubiquiti-faq" target="_ blank">Ubiquiti FAQ</a></li>
 </ul>
 
-<p>I plan to update my progress with subsequent posts, but for now I’ve made a simple diagram detailing the essential hardware required for the network setup. I’ve decided to go full Ubiquiti for my first setup because it is well documented ‘enterprise’ solution and it seems easy to put together. I won’t deny that it is overkill for a home environment but this project is too exciting to pass.</p>
+<p>I plan to update my progress with subsequent posts, but for now I’ve made a simple diagram detailing the essential hardware required for the network setup.</p>
 
 <h2 id="the-electrical-layout">The electrical layout</h2>
 
-<p><img src="http://localhost:4000/assets/originals/ELECTRICAL PLAN v2.png" alt="House electrical layout" /></p>
+<p><img src="http://localhost:4000/assets/originals/Network_I/ELECTRICAL PLAN v2.png" alt="House electrical layout" /></p>
 
-<h2 id="the-hardware-diagram">The hardware diagram</h2>
+<h2 id="the-hardware-diagram-and-breakdown">The hardware diagram and breakdown</h2>
 
-<p><img src="http://localhost:4000/assets/originals/Network_diagram.jpg" alt="Network diagram" /></p>
-
-<h2 id="the-component-breakdown">The component breakdown</h2>
+<p><img src="http://localhost:4000/assets/originals/Network_I/Network_diagram.jpg" alt="Network diagram" /></p>
 
 <ol>
-  <li>CAT6A Cable
-    <ol>
-      <li><a href="https://www.commscope.com/product-type/networking-systems/structured-cabling/item88402455816/" target="_ blank">Commscope CAT6A CS44Z1 WHT C6A 4/23 F/UTP RL 500M</a></li>
-      <li><a href="https://catalog.belden.com/techdata/EN/10GXE01_techdata.pdf" target="_ blank">Belden 10GXE01</a></li>
-      <li><a href="https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf" target="_ blank">Belden 10GXE02</a></li>
-    </ol>
-  </li>
-  <li>12U Server Rack</li>
-  <li><a href="https://www.amazon.com/dp/B0072JVT02/ref=emc_b_5_i" target="_ blank">24-Port Keystone Patch Panel</a></li>
-  <li><a href="https://www.amazon.com/Listed-Cable-Matters-Shielded-Keystone/dp/B00CLVAJCK/ref=sr_1_1_sspa?dchild=1&amp;keywords=cat6a+shielded+keystone&amp;qid=1603117867&amp;sr=8-1-spons&amp;psc=1&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTkRGQjNVTjQ0NzBFJmVuY3J5cHRlZElkPUEwNTE2NDAwMjRWNkVCN1FBWVZPJmVuY3J5cHRlZEFkSWQ9QVVOT0wxRFNZUEJMNSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" target="_ blank">CAT6A Shielded Keystone Jack</a></li>
-  <li><a href="https://www.amazon.com/Cable-Matters-50-Pack-Shielded-Modular/dp/B00E4OCOUW/ref=pd_bxgy_img_3/142-1063064-5847132?_encoding=UTF8&amp;pd_rd_i=B00E4OCOUW&amp;pd_rd_r=c0dcf1bd-29a1-4ee7-94f5-e4b70786cc6f&amp;pd_rd_w=4BiTh&amp;pd_rd_wg=JWIZa&amp;pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&amp;pf_rd_r=H2TX043ZN9JE83VTSM5E&amp;psc=1&amp;refRID=H2TX043ZN9JE83VTSM5E" target="_ blank">RJ45 Shielded Modular Plugs w strain relief boots</a></li>
-  <li><a href="https://www.amazon.com/Cable-Matters-Crimp-Shielded-Keystone/dp/B074HLYJ4J/ref=pd_bxgy_2/142-1063064-5847132?_encoding=UTF8&amp;pd_rd_i=B074HLYJ4J&amp;pd_rd_r=d478e5fb-1a04-43ae-9e2c-8cd2b635284a&amp;pd_rd_w=iPFhI&amp;pd_rd_wg=EIqkr&amp;pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&amp;pf_rd_r=N3R06Y826ATAWEF8R2KP&amp;psc=1&amp;refRID=N3R06Y826ATAWEF8R2KP" target="_ blank">Crimp tool</a></li>
-  <li>Ubiquiti EdgeRouter X</li>
+  <li><a href="https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf" target="_ blank">Belden CAT6A 10GXE02</a></li>
+  <li>6U wall-mount Server Rack</li>
+  <li><a href="https://www.amazon.com/ETS-Shielded-Tool-Less-Rackmount-Wallmount/dp/B086T6KRCH/ref=sr_1_6?dchild=1&amp;keywords=cat6a+patch+panel&amp;qid=1607079469&amp;sr=8-6" target="_ blank">24-Port Keystone Patch Panel</a></li>
+  <li>Ubiquiti EdgeRouter X (ER-X)</li>
   <li>Unifi Switch 16 150W Gen 1</li>
-  <li>Unifi Cloud Key Gen2</li>
+  <li>Unifi Cloud Key Gen2 Plus (UCK-G2-PLUS)</li>
+  <li>Unifi NanoHD (UAP-nanoHD)</li>
 </ol>
 
   </article>
@@ -216,19 +206,19 @@
   <h6>Share on: </h6>
   <ul>
     <li>
-      <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/articles/2020-09/Home-Network" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+      <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/articles/2020-09/Home-Network-Part-I" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/articles/2020-09/Home-Network" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/articles/2020-09/Home-Network-Part-I" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
     </li>
     <li>
-      <a href="https://plus.google.com/share?url=http://localhost:4000/articles/2020-09/Home-Network" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+      <a href="https://plus.google.com/share?url=http://localhost:4000/articles/2020-09/Home-Network-Part-I" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
     </li>
     <li>
-      <a href="https://news.ycombinator.com/submitlink?u=http://localhost:4000/articles/2020-09/Home-Network" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
+      <a href="https://news.ycombinator.com/submitlink?u=http://localhost:4000/articles/2020-09/Home-Network-Part-I" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
     </li>
     <li>
-      <a href="https://www.reddit.com/submit?url=http://localhost:4000/articles/2020-09/Home-Network" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+      <a href="https://www.reddit.com/submit?url=http://localhost:4000/articles/2020-09/Home-Network-Part-I" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
     </li>
   </ul>
 </div><!-- end share-buttons -->
@@ -236,7 +226,7 @@
 
 
         <footer>
-  &copy; 2020 Matthew Yang<p>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and made with <a href="https://github.com/renyuanz/leonids/">leonids theme</a> <i class="fa fa-heart heart-icon"></i>
+  &copy; 2021 Matthew Yang<p>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and made with <a href="https://github.com/renyuanz/leonids/">leonids theme</a> <i class="fa fa-heart heart-icon"></i>
 </footer>
 
       </div>

@@ -8,35 +8,35 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="I've beaten tutorial land and created this website!">
+  <meta name="description" content="This post briefly explores what goes under the hood of digital files">
   <meta name="keywords" content="blog, digital preservation, film preservation, and film restoration">
-  <meta name="author" content="Hello World! | Matthew Yang | Singapore">
+  <meta name="author" content="The anatomy of a digital file | Matthew Yang | Singapore">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f5f5f5">
 
   <!-- Twitter Tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Hello World! | Matthew Yang | Singapore">
-  <meta name="twitter:description" content="I&#39;ve beaten tutorial land and created this website!">
+  <meta name="twitter:title" content="The anatomy of a digital file | Matthew Yang | Singapore">
+  <meta name="twitter:description" content="This post briefly explores what goes under the hood of digital files">
   
     <meta property="twitter:image" content="http://localhost:4000/img/leonids-logo.png">
   
 
   <!-- Open Graph Tags -->
   <meta property="og:type" content="blog">
-  <meta property="og:url" content="http://localhost:4000/articles/2020-07/First-Post">
-  <meta property="og:title" content="Hello World! | Matthew Yang | Singapore">
-  <meta property="og:description" content="I&#39;ve beaten tutorial land and created this website!">
+  <meta property="og:url" content="http://localhost:4000/articles/2021-01/Digital-File">
+  <meta property="og:title" content="The anatomy of a digital file | Matthew Yang | Singapore">
+  <meta property="og:description" content="This post briefly explores what goes under the hood of digital files">
   
     <meta property="og:image" content="http://localhost:4000/img/leonids-logo.png">
   
-  <title>Hello World! | Matthew Yang | Singapore</title>
+  <title>The anatomy of a digital file | Matthew Yang | Singapore</title>
 
   <!-- CSS files -->
   <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
   <link rel="stylesheet" href="http://localhost:4000/css/main.css">
 
-  <link rel="canonical" href="http://localhost:4000/articles/2020-07/First-Post">
+  <link rel="canonical" href="http://localhost:4000/articles/2021-01/Digital-File">
   <link rel="alternate" type="application/rss+xml" title="Matthew Yang | Singapore" href="http://localhost:4000/feed.xml" />
 
   <!-- Icons -->
@@ -142,10 +142,10 @@
 
 <div id="post">
   <header class="post-header">
-    <h1 title="Hello World!">Hello World!</h1>
+    <h1 title="The anatomy of a digital file">The anatomy of a digital file</h1>
     <span class="post-meta">
       <span class="post-date">
-        8 JUL 2020
+        15 JAN 2021
       </span>
       •
       <span class="read-time" title="Estimated read time">
@@ -160,31 +160,51 @@
   </header>
 
   <article class="post-content">
-    <p>The website is <em>finally</em> up and here is my first post!</p>
+    <p>I’ve always wondered what makes up a digital file and <a href="https://twobitpreservation.com/" target="_ blank">Nicole Martin</a> has wonderfully written a detailed post about the zeros and ones that make up a digital file.</p>
 
-<p>I’ve been meaning to create a work site for awhile now and I’ve finally taken up the challenge after attending GA’s Intro to Coding: HTML &amp; CSS Workshop. It was a short webinar that covered the fundamentals, which taught me enough to take the plunge.</p>
+<p>I’ll briefly lay out the keys points from the post.</p>
 
-<p>So here it is!</p>
+<h2 id="what-makes-a-digital-file">What makes a ‘digital’ file?</h2>
 
-<p>I initially considered Wordpress for its wide usage but ultimately chose a static site generator like <strong>Jekyll</strong> for its quick deployment and little complexity. Static sites can be hosted directly on <strong>GitHub</strong> through <a href="https://pages.github.com/" target="_ blank">GitHub pages</a>. That means no hosting fees (!!!) and easy management of edits, thanks to versioning (which I’m still discovering).</p>
+<p>A digital file comprises of bits (zeros and ones) or plain text that contain crucial information that allows the computer/software to interpret/manipulate/process/encode/decode it into human-understandable information. The digital file may represent various types of information such as text, images and audio.</p>
 
-<h3 id="things-ive-learned-and-done-so-far">Things I’ve learned and done so far</h3>
+<p>Programs can read plain text data without the aid of file signatures or headers (described below). Common types of plain text data include .txt and .html files. This has wide application as it is high compatible with most computer systems and software.</p>
+
+<p>Binary data (zeros and ones) can represent more complex information and is read by computer programs in a linear data ‘stream’ or sequence of bytes. The program is required to decode the information block by block as per instructed by the file’s signature and header.</p>
+
+<p><strong>Useful info</strong></p>
+
+<p>Eight bits = 1 Byte</p>
+
+<p>A set of 512 bytes is one ‘sector’ and ‘sectors’ may be grouped into ‘blocks’.</p>
+
+<h2 id="parts-of-a-file">Parts of a file</h2>
 
 <ul>
-  <li>How to purchase a domain <a href="https://namecheap.com/" target="_ blank">(namecheap)</a> and point it to the host (<strong>GitHub</strong>)</li>
-  <li>Discovered <strong>GitHub</strong> Desktop</li>
-  <li>Better understand <strong>GitHub</strong> as a platform and its functions</li>
-  <li>Set-up and create a simple <strong>Jekyll</strong> site and host it on <strong>GitHub</strong></li>
-  <li>How to host the site locally for testing</li>
-  <li>How to maintain the entire project on <strong>Atom</strong></li>
+  <li>File signature</li>
 </ul>
 
-<p>There were some issues along the way, so I wouldn’t say it was an easy ride. Fortunately, nothing is too difficult for Google &amp; Stack Overflow. I’ve learned plenty so far but there is still much to do and learn. I’ll update this page as I go along.</p>
+<p>It consists of a short section of code that defines the files format.</p>
 
-<p><strong>Note:</strong></p>
+<ul>
+  <li>File Header</li>
+</ul>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">bundle</span> <span class="nt">exec</span> <span class="nt">jekyll</span> <span class="nt">serve</span></code></pre></figure>
+<p>A sequence of data that instructs on how to interpret the information. Machines and software will follow the instructions in the header to process/interpete the data it contains.</p>
 
+<ul>
+  <li>File Body</li>
+</ul>
+
+<p>The main bulk of information that allows the machine/program to render the file into human-understandable information. It can be stored as plain text or binary data.</p>
+
+<ul>
+  <li>End</li>
+</ul>
+
+<p>The last section of code that signals the end of the package.</p>
+
+<p><img src="http://localhost:4000/assets/originals/Digital_File/Anatomy.jpg" alt="Folder Structure" /></p>
 
   </article>
 </div>
@@ -193,19 +213,19 @@
   <h6>Share on: </h6>
   <ul>
     <li>
-      <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/articles/2020-07/First-Post" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+      <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/articles/2021-01/Digital-File" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/articles/2020-07/First-Post" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/articles/2021-01/Digital-File" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
     </li>
     <li>
-      <a href="https://plus.google.com/share?url=http://localhost:4000/articles/2020-07/First-Post" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+      <a href="https://plus.google.com/share?url=http://localhost:4000/articles/2021-01/Digital-File" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
     </li>
     <li>
-      <a href="https://news.ycombinator.com/submitlink?u=http://localhost:4000/articles/2020-07/First-Post" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
+      <a href="https://news.ycombinator.com/submitlink?u=http://localhost:4000/articles/2021-01/Digital-File" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
     </li>
     <li>
-      <a href="https://www.reddit.com/submit?url=http://localhost:4000/articles/2020-07/First-Post" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+      <a href="https://www.reddit.com/submit?url=http://localhost:4000/articles/2021-01/Digital-File" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
     </li>
   </ul>
 </div><!-- end share-buttons -->

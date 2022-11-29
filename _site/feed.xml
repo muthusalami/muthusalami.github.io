@@ -5,9 +5,223 @@
     <description>Jekyll website project</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>2020-11-17</pubDate>
-    <lastBuildDate>Tue, 17 Nov 2020 01:11:20 +0800</lastBuildDate>
-    <generator>Jekyll v3.8.7</generator>
+    <pubDate>2021-06-03</pubDate>
+    <lastBuildDate>Thu, 03 Jun 2021 16:11:52 +0800</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Ubiquiti Home Network Part&amp;#58; III</title>
+        <description>&lt;p&gt;Today marks another major milestone for the Ubiquiti home network with the Fibre Termination Point (TP) finally installed! The OpenNet technicians decided to come two days before our scheduled appointment, but I was more than happy to accommodate to their request. I decided to relocate the TP from the living room to the service balcony to have it close to the network rack. Most households typically have the TP close to the TV consoles as it is common to use the router-modem provided by the ISPs, whom typically are the internet TV providers as well. The relocation involved drilling a new hole from the electrical riser into the kitchen to have a short run of cable straight to the desired location. I was initially quite nervous about the drilling as I didn’t want to puncture any pipes, but thankfully it went fine. All of the work was completed within 40 minutes but I was surprised that the task required a team of five men!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Network_II/open_net_1.jpg&quot; alt=&quot;OpenNet setup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Network_II/open_net_2.jpg&quot; alt=&quot;OpenNet setup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Network_II/open_net_3.jpg&quot; alt=&quot;OpenNet setup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Network_II/open_net_4.jpg&quot; alt=&quot;OpenNet setup&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>2021-06-03</pubDate>
+        <link>http://localhost:4000/articles/2021-01/Home-Network-Part-III</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2021-01/Home-Network-Part-III</guid>
+        
+        <category>network</category>
+        
+        <category>networking</category>
+        
+        <category>ubiquiti</category>
+        
+        <category>unifi</category>
+        
+        <category>edgemax</category>
+        
+        <category>wifi</category>
+        
+        <category>internet</category>
+        
+        
+        <category>network</category>
+        
+        <category>renovation</category>
+        
+      </item>
+    
+      <item>
+        <title>Ubiquiti Home Network Part&amp;#58; II</title>
+        <description>&lt;p&gt;This post is all about setting up my Ubiquiti home network and will serve as a personal resource/journal for the various devices.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-the-edgerouter-x-er-x-router&quot;&gt;Setting up the EdgeRouter X (ER-X) Router&lt;/h2&gt;
+
+&lt;p&gt;1) Connect computer to the Eth 0 port on the ER-X&lt;/p&gt;
+
+&lt;p&gt;2) Open the network settings on your PC and set the IP address to 192.168.1.2 since the IP address of the ER-X is 192.168.1.1 (also the default gateway)&lt;/p&gt;
+
+&lt;p&gt;Subnet mask: 255.255.255.0&lt;/p&gt;
+
+&lt;p&gt;3) Log into EdgeMax Web GUI. usr: ‘ubnt’ pwd: ‘ubnt’&lt;/p&gt;
+
+&lt;p&gt;4) Commence basic set-up&lt;/p&gt;
+
+&lt;p&gt;5)  Settings&lt;/p&gt;
+
+&lt;p&gt;Port: eth 0
+Internet connection type: DHCP
+Firewall: enable the default Firewall
+One Lan: &lt;em&gt;check&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Leave default address and enable DHCP server&lt;/p&gt;
+
+&lt;p&gt;Create a new user with a new password&lt;/p&gt;
+
+&lt;p&gt;6) Apply changes and reboot the router&lt;/p&gt;
+
+&lt;p&gt;7) Plug modem into eth 0 and move client connection to eth 1&lt;/p&gt;
+
+&lt;p&gt;8) Change IP and DNS settings to automatic on the client&lt;/p&gt;
+
+&lt;p&gt;9) ‘ipconfig /release’ to release the old IP address. ‘ipconfig /renew’ to get a new IP address&lt;/p&gt;
+
+&lt;p&gt;10) Log back into the EdgeMax Web GUI.&lt;/p&gt;
+
+&lt;p&gt;11) Bring up the CLI on the GUI. Log in with the credentials&lt;/p&gt;
+
+&lt;p&gt;12) type ‘configure’&lt;/p&gt;
+
+&lt;p&gt;13) set ‘system offload hwnat enable’&lt;/p&gt;
+
+&lt;p&gt;14) set ‘system system offload ipsec enable’&lt;/p&gt;
+
+&lt;p&gt;15) type ‘commit’ and ‘save’.&lt;/p&gt;
+
+&lt;p&gt;Credit to Toasty Answers for the easy to follow set-up.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=aECPxlT6Qq4&quot; target=&quot;_ blank&quot;&gt;Toasty Answers - EdgeRouter X First Time Setup&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Updating the ER-X&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1) Download the latest firmware from Ubiquiti.&lt;/p&gt;
+
+&lt;p&gt;2) Access the EdgeMax Web GUI and click on system and head to upgrade system image. Click ‘upload a file’.&lt;/p&gt;
+
+&lt;p&gt;3) Upload the image and reboot and let it apply the update.&lt;/p&gt;
+
+&lt;p&gt;4) Log in again and the new version should be reflected on the dashboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Other functions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Smart Queue&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;UPnP&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;additional-resources&quot;&gt;Additional resources&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;‘Gamer Setup’ for the ER-X&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=o-g2P3R84dw&quot; target=&quot;_blank&quot;&gt;Gamer Setup - This router can save your marriage!&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Ubiquiti Universe&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=-6q-4lSBfmA&quot; target=&quot;_blank&quot;&gt;Poseidwn Tech - Initial UniFi Setup for Beginners&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unifi Cloud Key Gen2 Plus (UCK-G2-PLUS)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=H_a1BCf1jH0&quot; target=&quot;_ blank&quot;&gt;Crosstalk Solutions - Cloud Key Gen2 Plus&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unifi US-16-150W&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=0_wXI5minS0&quot; target=&quot;_blank&quot;&gt;Tom Morgan - Ubiquiti UniFi Switch 16 150W setup&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>2021-06-03</pubDate>
+        <link>http://localhost:4000/articles/2021-01/Home-Network-Part-II</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2021-01/Home-Network-Part-II</guid>
+        
+        <category>networking</category>
+        
+        <category>network</category>
+        
+        <category>ubiquiti</category>
+        
+        <category>unifi</category>
+        
+        <category>edgemax</category>
+        
+        <category>wifi</category>
+        
+        
+        <category>network</category>
+        
+        <category>renovation</category>
+        
+      </item>
+    
+      <item>
+        <title>The anatomy of a digital file</title>
+        <description>&lt;p&gt;I’ve always wondered what makes up a digital file and &lt;a href=&quot;https://twobitpreservation.com/&quot; target=&quot;_ blank&quot;&gt;Nicole Martin&lt;/a&gt; has wonderfully written a detailed post about the zeros and ones that make up a digital file.&lt;/p&gt;
+
+&lt;p&gt;I’ll briefly lay out the keys points from the post.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-makes-a-digital-file&quot;&gt;What makes a ‘digital’ file?&lt;/h2&gt;
+
+&lt;p&gt;A digital file comprises of bits (zeros and ones) or plain text that contain crucial information that allows the computer/software to interpret/manipulate/process/encode/decode it into human-understandable information. The digital file may represent various types of information such as text, images and audio.&lt;/p&gt;
+
+&lt;p&gt;Programs can read plain text data without the aid of file signatures or headers (described below). Common types of plain text data include .txt and .html files. This has wide application as it is high compatible with most computer systems and software.&lt;/p&gt;
+
+&lt;p&gt;Binary data (zeros and ones) can represent more complex information and is read by computer programs in a linear data ‘stream’ or sequence of bytes. The program is required to decode the information block by block as per instructed by the file’s signature and header.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Useful info&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Eight bits = 1 Byte&lt;/p&gt;
+
+&lt;p&gt;A set of 512 bytes is one ‘sector’ and ‘sectors’ may be grouped into ‘blocks’.&lt;/p&gt;
+
+&lt;h2 id=&quot;parts-of-a-file&quot;&gt;Parts of a file&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;File signature&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It consists of a short section of code that defines the files format.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;File Header&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A sequence of data that instructs on how to interpret the information. Machines and software will follow the instructions in the header to process/interpete the data it contains.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;File Body&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The main bulk of information that allows the machine/program to render the file into human-understandable information. It can be stored as plain text or binary data.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;End&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The last section of code that signals the end of the package.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Digital_File/Anatomy.jpg&quot; alt=&quot;Folder Structure&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>2021-06-03</pubDate>
+        <link>http://localhost:4000/articles/2021-01/Digital-File</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2021-01/Digital-File</guid>
+        
+        <category>digipres digital file</category>
+        
+        
+        <category>digipres</category>
+        
+        <category>basics</category>
+        
+      </item>
     
       <item>
         <title>Managing film scans with FFmpeg</title>
@@ -15,7 +229,7 @@
 
 &lt;h2 id=&quot;playing-a-dpx-sequence&quot;&gt;Playing a DPX sequence&lt;/h2&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;ffplay&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;DIRECTORY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Scan_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;06d&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tif&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;ffplay&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;DIRECTORY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Scan_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;06&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tif&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;The regex %06d matches six digits long numbers, possibly with leading zeroes. This allows to read in ascending order, one image after the other,the full sequence inside one folder. Of course, the command must match the naming convention actually used.&lt;/p&gt;
@@ -25,10 +239,10 @@
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;ffmpeg&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;image2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-framerate&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;DIRECTORY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Scan_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;06d&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tif&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-framerate&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;DIRECTORY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Scan_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;06&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tif&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;prores_ks&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-profile&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-profile&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-filter&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;scale=1440:1080:flags=lanczos, pad=1920:1080:240:0&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;ProRes&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mov&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -61,11 +275,11 @@ better than the default bilinear algorithm]&lt;/li&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;ffmpeg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;image2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-framerate&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;DUFAY_TIFF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Dufay_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;06d&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tif&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-framerate&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;DUFAY_TIFF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;Dufay_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;06&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.tif&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;libx264&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-preset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;veryslow&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-qp&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-qp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-filter&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;scale=1440:1080:flags=lanczos, pad=1920:1080:240:0&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-pix_fmt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;yuv420p&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;Scan_H264_1&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mp4&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -85,7 +299,7 @@ better than the default bilinear algorithm]&lt;/li&gt;
     &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ProRes&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mov&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;libx264&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-preset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;veryslow&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-qp&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-qp&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-pix_fmt&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;yuv420p&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;-an&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;Scan_H264_2&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mp4&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -97,7 +311,7 @@ better than the default bilinear algorithm]&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>2020-11-17</pubDate>
+        <pubDate>2021-06-03</pubDate>
         <link>http://localhost:4000/articles/2020-11/Play-Scans</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-11/Play-Scans</guid>
         
@@ -148,7 +362,7 @@ better than the default bilinear algorithm]&lt;/li&gt;
 
 &lt;p&gt;This is an example of how files can be organised and structured:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Folder_Structure_Example.png&quot; alt=&quot;Folder Structure&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Practical_tips/Folder_Structure_Example.png&quot; alt=&quot;Folder Structure&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;find it useful to first determine the top-level folder. I used [YEAR] in this example, and branch into sub-directories by [CATEGORY]. In the screenshot above, we see Year 2020 and the categories are AFA Work, External Projects and Personal Documents. The later directories might be projects/events based but try to keep them as consistent as possible.&lt;/p&gt;
 
@@ -188,7 +402,7 @@ better than the default bilinear algorithm]&lt;/li&gt;
 
 &lt;p&gt;Descriptive file names are imperative to quick identification and retrieval of files. Poor naming conventions are frustrating and wastes a lot of time  since they do not give useful information (“Best practices for file naming”, 2020).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Naming_Convention_Example.png&quot; alt=&quot;File Naming Convention&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Practical_tips/Naming_Convention_Example.png&quot; alt=&quot;File Naming Convention&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A guiding principle for filenames is to include basic information such as object type, dates, and important remarks. These indicators can be crucial in distinguishing one file from another in the event that there are multiple variations of a given file. In essence, an effective file name should tell you what the file is without you having to open it (Antin, 2020).&lt;/p&gt;
 
@@ -236,7 +450,7 @@ better than the default bilinear algorithm]&lt;/li&gt;
 
 &lt;p&gt;&lt;strong&gt;The 3-2-1 strategy&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Diagram-1440x1018.png&quot; alt=&quot;3-2-1 Diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Practical_tips/Diagram-1440x1018.png&quot; alt=&quot;3-2-1 Diagram&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Keep 3 copies of your data&lt;/strong&gt;&lt;/p&gt;
 
@@ -319,7 +533,7 @@ better than the default bilinear algorithm]&lt;/li&gt;
 
 &lt;p&gt;What is NAS (Network Attached Storage) and Why is NAS Important for Small Businesses?, Seagate UK. Seagate.com. (2020). Retrieved 10 October 2020, from https://www.seagate.com/sg/en/tech-insights/what-is-nas-master-ti/.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-17</pubDate>
+        <pubDate>2021-06-03</pubDate>
         <link>http://localhost:4000/articles/2020-11/Practical-Tips</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-11/Practical-Tips</guid>
         
@@ -386,7 +600,7 @@ better than the default bilinear algorithm]&lt;/li&gt;
 
 &lt;p&gt;&lt;em&gt;/a&lt;/em&gt; may be used to specify alternative (&lt;em&gt;ascii&lt;/em&gt;) characters to be used to draw the tree diagram so that it can be printed by printers that do not support the line and box drawing characters.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-17</pubDate>
+        <pubDate>2021-06-03</pubDate>
         <link>http://localhost:4000/articles/2020-10/Exporting-Directories-CLI</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Exporting-Directories-CLI</guid>
         
@@ -411,7 +625,7 @@ better than the default bilinear algorithm]&lt;/li&gt;
     
       <item>
         <title>Understanding the YUV (YCbCr) colour encoding system</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/YUV.png&quot; alt=&quot;YUV chart&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/YUV/YUV.png&quot; alt=&quot;YUV chart&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-yuv&quot;&gt;What is YUV?&lt;/h2&gt;
 
@@ -442,7 +656,7 @@ Specifically the Red&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Chroma sub-sampling&lt;/strong&gt; - YUV allows the user to remove information specifically from the colour values without affecting the overall luminance of it. This is particularly useful during image compression and an effective means in processing images.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-17</pubDate>
+        <pubDate>2021-06-03</pubDate>
         <link>http://localhost:4000/articles/2020-10/Understanding-YUV</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Understanding-YUV</guid>
         
@@ -454,100 +668,6 @@ Specifically the Red&lt;/p&gt;
         
         
         <category>Video</category>
-        
-      </item>
-    
-      <item>
-        <title>Python in imaging workflows</title>
-        <description>&lt;h2 id=&quot;basic-python&quot;&gt;Basic Python&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;«copy a file»&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;shut.copyfile( “C:\path\file1.ext”, “C:\path\file2.ext” )&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;«rename a file»&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;import os&lt;/p&gt;
-
-&lt;p&gt;os.system( “move \server\path\file1.ext C:\path\file2.ext” )&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;«re-sequence files»&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;import os&lt;/p&gt;
-
-&lt;p&gt;for x in xrange ( 1, 101, 1 ):
-	os.system( “move C:\file.%s.ext C:\path\file.%04d.ext” % ( x, x ) )&lt;/p&gt;
-
-&lt;h2 id=&quot;intermediate-python&quot;&gt;Intermediate Python&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;«scan directories and apply an operation on specific file types»&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;«converting image from file format A to file format B»&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;«scanning for an image with specific metadata» (geotag, exifinfo)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;«modify Image Metadata» (delete / edit /add)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;«resize all images above a specific resolution»&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;modules&quot;&gt;Modules&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;argparse&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;PIL -python image library&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;OpenImageIO -image processing (create slates)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;PySide / PyQt -&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Custom Python Classes
-Advanced User Interface
-  -Custom widgets and dialogs
-  -QT applications
-  -special drag-and-drop handling&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Multi-threading
-Modules: multithreading thread, queue&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Process control and communication
-Modules: process, subprocess, xmlrpc, reds&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;advanced-python&quot;&gt;Advanced Python&lt;/h2&gt;
-&lt;p&gt;Modules: OpenimageIO, OpenEXR, PythonMagick
-Modules: OpenColorIO, ColorPy&lt;/p&gt;
-</description>
-        <pubDate>2020-11-17</pubDate>
-        <link>http://localhost:4000/articles/2020-10/Python-Pipeline-Functions</link>
-        <guid isPermaLink="true">http://localhost:4000/articles/2020-10/Python-Pipeline-Functions</guid>
-        
-        <category>Python</category>
-        
-        
-        <category>Python</category>
         
       </item>
     
@@ -607,7 +727,7 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'matthew'&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;nt&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;The result will be &lt;em&gt;m&lt;/em&gt;.&lt;/p&gt;
 
@@ -616,11 +736,11 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'matthew'&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;nt&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;The result will be &lt;em&gt;matt&lt;/em&gt;.&lt;/p&gt;
 </description>
-        <pubDate>2020-11-17</pubDate>
+        <pubDate>2021-06-03</pubDate>
         <link>http://localhost:4000/articles/2020-09/Python-Basics</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Python-Basics</guid>
         
@@ -642,14 +762,14 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
       </item>
     
       <item>
-        <title>Part 1&amp;#58; My home network journal</title>
-        <description>&lt;p&gt;This post will be part of a series documenting the network component of my upcoming renovation of my new apartment. The apartment is over 20 years old hence a major overhaul is required and the renovation is a great opportunity to lay CAT6 to all the rooms in the house for the 1Gbps/10Gbps network 🤓.&lt;/p&gt;
+        <title>Ubiquiti Home Network Part&amp;#58; I</title>
+        <description>&lt;p&gt;This post will be part of a series documenting the network setup of my new apartment. The apartment is over 20 years old hence a major overhaul is required and the renovation is a great opportunity to lay CAT6A in the house for the 1Gbps/10Gbps network 🤓.&lt;/p&gt;
 
 &lt;p&gt;My research began with &lt;a href=&quot;https://www.patnotebook.com/bto-networking-singapore/&quot; target=&quot;_ blank&quot;&gt;this&lt;/a&gt; article on &lt;a href=&quot;https://patnotebook.com&quot; target=&quot;_ blank&quot;&gt;patnotebook.com&lt;/a&gt; detailing the conversion of telephone points to RJ45 data points in newer BTO (Build to Order) flats in Singapore. Newer flats in Singapore have CAT6 cables already nicely laid in the house, however many of the points are terminated with a telephone jack instead of RJ45. Based on the article, it seems that BTO flats only have one point terminated as RJ45, which is definitely not enough 😁.&lt;/p&gt;
 
-&lt;p&gt;That being said, I will have to lay my own cables and design my own network infrastructure since my flat is a legacy model.&lt;/p&gt;
+&lt;p&gt;Older resale flats like mine do not come with any data points hence I will have to lay my own cables and design my own network infrastructure from scratch. On top of patnotebook.com, I’ve relied on many youtube videos and blogs to learn basic networking concepts and the different components required to run a network.&lt;/p&gt;
 
-&lt;p&gt;A great networking and Ubiquiti resource is Evan McCann’s tech blog - &lt;a href=&quot;https://evanmccann.net/&quot; target=&quot;_ blank&quot;&gt;McCann Tech&lt;/a&gt;. There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!&lt;/p&gt;
+&lt;p&gt;I’ve devoured Evan McCann’s tech &lt;a href=&quot;https://evanmccann.net/&quot; target=&quot;_ blank&quot;&gt;blog&lt;/a&gt; since I plan to purchase Ubiquti hardware for the network. There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products as well. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!&lt;/p&gt;
 
 &lt;h2 id=&quot;recommended-mccann-reading-list&quot;&gt;Recommended McCann reading list&lt;/h2&gt;
 
@@ -662,41 +782,33 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://evanmccann.net/blog/2020/6/ubiquiti-faq&quot; target=&quot;_ blank&quot;&gt;Ubiquiti FAQ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I plan to update my progress with subsequent posts, but for now I’ve made a simple diagram detailing the essential hardware required for the network setup. I’ve decided to go full Ubiquiti for my first setup because it is well documented ‘enterprise’ solution and it seems easy to put together. I won’t deny that it is overkill for a home environment but this project is too exciting to pass.&lt;/p&gt;
+&lt;p&gt;I plan to update my progress with subsequent posts, but for now I’ve made a simple diagram detailing the essential hardware required for the network setup.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-electrical-layout&quot;&gt;The electrical layout&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/ELECTRICAL PLAN v2.png&quot; alt=&quot;House electrical layout&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Network_I/ELECTRICAL PLAN v2.png&quot; alt=&quot;House electrical layout&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;the-hardware-diagram&quot;&gt;The hardware diagram&lt;/h2&gt;
+&lt;h2 id=&quot;the-hardware-diagram-and-breakdown&quot;&gt;The hardware diagram and breakdown&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Network_diagram.jpg&quot; alt=&quot;Network diagram&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;the-component-breakdown&quot;&gt;The component breakdown&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Network_I/Network_diagram.jpg&quot; alt=&quot;Network diagram&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;CAT6A Cable
-    &lt;ol&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.commscope.com/product-type/networking-systems/structured-cabling/item88402455816/&quot; target=&quot;_ blank&quot;&gt;Commscope CAT6A CS44Z1 WHT C6A 4/23 F/UTP RL 500M&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://catalog.belden.com/techdata/EN/10GXE01_techdata.pdf&quot; target=&quot;_ blank&quot;&gt;Belden 10GXE01&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf&quot; target=&quot;_ blank&quot;&gt;Belden 10GXE02&lt;/a&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;12U Server Rack&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/dp/B0072JVT02/ref=emc_b_5_i&quot; target=&quot;_ blank&quot;&gt;24-Port Keystone Patch Panel&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Listed-Cable-Matters-Shielded-Keystone/dp/B00CLVAJCK/ref=sr_1_1_sspa?dchild=1&amp;amp;keywords=cat6a+shielded+keystone&amp;amp;qid=1603117867&amp;amp;sr=8-1-spons&amp;amp;psc=1&amp;amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTkRGQjNVTjQ0NzBFJmVuY3J5cHRlZElkPUEwNTE2NDAwMjRWNkVCN1FBWVZPJmVuY3J5cHRlZEFkSWQ9QVVOT0wxRFNZUEJMNSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=&quot; target=&quot;_ blank&quot;&gt;CAT6A Shielded Keystone Jack&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Cable-Matters-50-Pack-Shielded-Modular/dp/B00E4OCOUW/ref=pd_bxgy_img_3/142-1063064-5847132?_encoding=UTF8&amp;amp;pd_rd_i=B00E4OCOUW&amp;amp;pd_rd_r=c0dcf1bd-29a1-4ee7-94f5-e4b70786cc6f&amp;amp;pd_rd_w=4BiTh&amp;amp;pd_rd_wg=JWIZa&amp;amp;pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&amp;amp;pf_rd_r=H2TX043ZN9JE83VTSM5E&amp;amp;psc=1&amp;amp;refRID=H2TX043ZN9JE83VTSM5E&quot; target=&quot;_ blank&quot;&gt;RJ45 Shielded Modular Plugs w strain relief boots&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Cable-Matters-Crimp-Shielded-Keystone/dp/B074HLYJ4J/ref=pd_bxgy_2/142-1063064-5847132?_encoding=UTF8&amp;amp;pd_rd_i=B074HLYJ4J&amp;amp;pd_rd_r=d478e5fb-1a04-43ae-9e2c-8cd2b635284a&amp;amp;pd_rd_w=iPFhI&amp;amp;pd_rd_wg=EIqkr&amp;amp;pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&amp;amp;pf_rd_r=N3R06Y826ATAWEF8R2KP&amp;amp;psc=1&amp;amp;refRID=N3R06Y826ATAWEF8R2KP&quot; target=&quot;_ blank&quot;&gt;Crimp tool&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Ubiquiti EdgeRouter X&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf&quot; target=&quot;_ blank&quot;&gt;Belden CAT6A 10GXE02&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;6U wall-mount Server Rack&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/ETS-Shielded-Tool-Less-Rackmount-Wallmount/dp/B086T6KRCH/ref=sr_1_6?dchild=1&amp;amp;keywords=cat6a+patch+panel&amp;amp;qid=1607079469&amp;amp;sr=8-6&quot; target=&quot;_ blank&quot;&gt;24-Port Keystone Patch Panel&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Ubiquiti EdgeRouter X (ER-X)&lt;/li&gt;
   &lt;li&gt;Unifi Switch 16 150W Gen 1&lt;/li&gt;
-  &lt;li&gt;Unifi Cloud Key Gen2&lt;/li&gt;
+  &lt;li&gt;Unifi Cloud Key Gen2 Plus (UCK-G2-PLUS)&lt;/li&gt;
+  &lt;li&gt;Unifi NanoHD (UAP-nanoHD)&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>2020-11-17</pubDate>
-        <link>http://localhost:4000/articles/2020-09/Home-Network</link>
-        <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Home-Network</guid>
+        <pubDate>2021-06-03</pubDate>
+        <link>http://localhost:4000/articles/2020-09/Home-Network-Part-I</link>
+        <guid isPermaLink="true">http://localhost:4000/articles/2020-09/Home-Network-Part-I</guid>
         
         <category>network</category>
+        
+        <category>networking</category>
         
         <category>ubiquiti</category>
         
@@ -741,7 +853,7 @@ Modules: OpenColorIO, ColorPy&lt;/p&gt;
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>2020-11-17</pubDate>
+        <pubDate>2021-06-03</pubDate>
         <link>http://localhost:4000/articles/2020-07/First-Post</link>
         <guid isPermaLink="true">http://localhost:4000/articles/2020-07/First-Post</guid>
         

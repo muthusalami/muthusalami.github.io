@@ -164,7 +164,7 @@
 
 <h2 id="playing-a-dpx-sequence">Playing a DPX sequence</h2>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffplay</span> <span class="o">[</span><span class="nt">DIRECTORY</span><span class="o">]/</span><span class="nt">Scan_</span><span class="o">%</span><span class="nt">06d</span><span class="nc">.tif</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffplay</span> <span class="o">[</span><span class="nt">DIRECTORY</span><span class="o">]/</span><span class="nt">Scan_</span><span class="o">%</span><span class="err">06</span><span class="nt">d</span><span class="nc">.tif</span></code></pre></figure>
 
 <blockquote>
   <p>The regex %06d matches six digits long numbers, possibly with leading zeroes. This allows to read in ascending order, one image after the other,the full sequence inside one folder. Of course, the command must match the naming convention actually used.</p>
@@ -174,10 +174,10 @@
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffmpeg</span>
     <span class="nt">-f</span> <span class="nt">image2</span> <span class="err">\</span>
-    <span class="nt">-framerate</span> <span class="nt">24</span> <span class="err">\</span>
-    <span class="nt">-i</span> <span class="o">[</span><span class="nt">DIRECTORY</span><span class="o">]/</span><span class="nt">Scan_</span><span class="o">%</span><span class="nt">06d</span><span class="nc">.tif</span> <span class="err">\</span>
+    <span class="nt">-framerate</span> <span class="err">24</span> <span class="err">\</span>
+    <span class="nt">-i</span> <span class="o">[</span><span class="nt">DIRECTORY</span><span class="o">]/</span><span class="nt">Scan_</span><span class="o">%</span><span class="err">06</span><span class="nt">d</span><span class="nc">.tif</span> <span class="err">\</span>
     <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">prores_ks</span> <span class="err">\</span>
-    <span class="nt">-profile</span><span class="nd">:v</span> <span class="nt">3</span> <span class="err">\</span>
+    <span class="nt">-profile</span><span class="nd">:v</span> <span class="err">3</span> <span class="err">\</span>
     <span class="nt">-filter</span><span class="nd">:v</span> <span class="s1">"scale=1440:1080:flags=lanczos, pad=1920:1080:240:0"</span> <span class="err">\</span>
     <span class="nt">ProRes</span><span class="nc">.mov</span></code></pre></figure>
 
@@ -210,11 +210,11 @@ better than the default bilinear algorithm]</li>
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffmpeg</span> <span class="err">\</span>
     <span class="nt">-f</span> <span class="nt">image2</span> <span class="err">\</span>
-    <span class="nt">-framerate</span> <span class="nt">24</span> <span class="err">\</span>
-    <span class="nt">-i</span> <span class="nt">DUFAY_TIFF</span><span class="o">/</span><span class="nt">Dufay_</span><span class="o">%</span><span class="nt">06d</span><span class="nc">.tif</span> <span class="err">\</span>
+    <span class="nt">-framerate</span> <span class="err">24</span> <span class="err">\</span>
+    <span class="nt">-i</span> <span class="nt">DUFAY_TIFF</span><span class="o">/</span><span class="nt">Dufay_</span><span class="o">%</span><span class="err">06</span><span class="nt">d</span><span class="nc">.tif</span> <span class="err">\</span>
     <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">libx264</span> <span class="err">\</span>
     <span class="nt">-preset</span> <span class="nt">veryslow</span> <span class="err">\</span>
-    <span class="nt">-qp</span> <span class="nt">18</span> <span class="err">\</span>
+    <span class="nt">-qp</span> <span class="err">18</span> <span class="err">\</span>
     <span class="nt">-filter</span><span class="nd">:v</span> <span class="s1">"scale=1440:1080:flags=lanczos, pad=1920:1080:240:0"</span> <span class="err">\</span>
     <span class="nt">-pix_fmt</span> <span class="nt">yuv420p</span> <span class="err">\</span>
     <span class="nt">Scan_H264_1</span><span class="nc">.mp4</span></code></pre></figure>
@@ -234,7 +234,7 @@ better than the default bilinear algorithm]</li>
     <span class="nt">-i</span> <span class="nt">ProRes</span><span class="nc">.mov</span> <span class="err">\</span>
     <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">libx264</span> <span class="err">\</span>
     <span class="nt">-preset</span> <span class="nt">veryslow</span> <span class="err">\</span>
-    <span class="nt">-qp</span> <span class="nt">18</span> <span class="err">\</span>
+    <span class="nt">-qp</span> <span class="err">18</span> <span class="err">\</span>
     <span class="nt">-pix_fmt</span> <span class="nt">yuv420p</span> <span class="err">\</span>
     <span class="nt">-an</span> <span class="err">\</span>
     <span class="nt">Scan_H264_2</span><span class="nc">.mp4</span></code></pre></figure>
@@ -273,7 +273,7 @@ better than the default bilinear algorithm]</li>
 
 
         <footer>
-  &copy; 2020 Matthew Yang<p>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and made with <a href="https://github.com/renyuanz/leonids/">leonids theme</a> <i class="fa fa-heart heart-icon"></i>
+  &copy; 2021 Matthew Yang<p>Powered by <a href="https://jekyllrb.com/">Jekyll</a> and made with <a href="https://github.com/renyuanz/leonids/">leonids theme</a> <i class="fa fa-heart heart-icon"></i>
 </footer>
 
       </div>
