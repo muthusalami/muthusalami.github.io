@@ -11,11 +11,11 @@ TEL;TYPE=HOME:
 TEL;TYPE=MSG:
 EMAIL;TYPE=WORK:matthewyang@nyu.edu
 URL;TYPE=Digital Business Card:matthewyang.io/vcard
-URL:matthewyang.io
-URL;TYPE=Website:matthewyang.io
-URL;TYPE=LinkedIn:https://linkedin.com/https://www.linkedin.com/in/matthewyang-sg/
-URL;TYPE=GitHub:https://github.com/https://github.com/muthusalami
+URL:http://matthewyang.io
+URL;TYPE=Website:http://matthewyang.io
+URL;TYPE=LinkedIn:https://linkedin.com//in/matthewyang-sg/
+URL;TYPE=GitHub:https://github.com//muthusalami
 KEY;TYPE=PGP;ENCODING=b:
 NOTE:
-UID:EnBizCard-100733394
+UID:EnBizCard-100195064
 END:VCARD
