@@ -38,3 +38,9 @@ Command to run Jekyll site locally
 {% highlight css %}
 bundle exec jekyll serve
 {% endhighlight %}
+
+Passing the --livereload option to serve will automatically refresh the page with each change to the source file.
+
+{% highlight css %}
+bundle exec jekyll serve --livereload
+{% endhighlight %}
