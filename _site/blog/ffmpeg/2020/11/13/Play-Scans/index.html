@@ -57,27 +57,22 @@
     <span class="nt">-filter</span><span class="nd">:v</span> <span class="s1">"scale=1440:1080:flags=lanczos, pad=1920:1080:240:0"</span> <span class="err">\</span>
     <span class="nt">ProRes</span><span class="nc">.mov</span></code></pre></figure>
 
-<ul>
-  <li>-f image2 forces the image file de-muxer for single image files</li>
-  <li>-framerate sets the frame rate to 24
-NOTE: The previous two parameters must be before the input file, because they are applied to the input file.</li>
-  <li>-i path, name and extension of the input file
+<p><em>f</em> image2 forces the image file de-muxer for single image files
+<em>framerate</em> sets the frame rate to 24
+NOTE: The previous two parameters must be before the input file, because they are applied to the input file.
+<em>i</em> path, name and extension of the input file
 The regex %06d matches six digits long numbers, possibly with
 leading zeroes. This allows to read in ascending order, one
 image after the other, the full sequence inside one folder.
 The command must of course match the naming convention
 actually used.
--c:v chooses the ProRes video codec
--profile:v the flavour ProRes 422 HQ has the video profile 3
--filter:v filters the video stream:
-    <ul>
-      <li>scaling to the correct size
+<em>c:v</em> chooses the ProRes video codec
+<em>profile:v</em> the flavour ProRes 422 HQ has the video profile 3
+<em>filter:v</em> filters the video stream:
+    * scaling to the correct size
 [we use the Lanczos scaling algorithm which is slower but
-better than the default bilinear algorithm]</li>
-      <li>padding the 4:3 format into the 16:9 HD format with pillar box</li>
-    </ul>
-  </li>
-</ul>
+better than the default bilinear algorithm]
+    * padding the 4:3 format into the 16:9 HD format with pillar box</p>
 
 <h2 id="make-a-h264-file-from-the-scan-sequence">Make a H264 file from the scan sequence</h2>
 
@@ -93,9 +88,9 @@ better than the default bilinear algorithm]</li>
     <span class="nt">Scan_H264_1</span><span class="nc">.mp4</span></code></pre></figure>
 
 <p>Make an access file H.264 directly form the conservation files TIFF.
--c:v chooses the H.264 codec by using the libx264 library
--preset chooses the very slow preset which gives the best result
--qp a quantisation parameter of 18 means “visually lossless”</p>
+<em>c:v</em> chooses the H.264 codec by using the libx264 library
+<em>preset</em> chooses the very slow preset which gives the best result
+<em>qp</em> a quantisation parameter of 18 means “visually lossless”</p>
 
 <h2 id="make-a-h264-file-from-the-prores-file">Make a H264 file from the ProRes file</h2>
 
@@ -108,7 +103,7 @@ better than the default bilinear algorithm]</li>
     <span class="nt">-an</span> <span class="err">\</span>
     <span class="nt">Scan_H264_2</span><span class="nc">.mp4</span></code></pre></figure>
 
-<p>-an prevents an empty audio track ([a]udio [n]o)</p>
+<p><em>an</em> prevents an empty audio track ([a]udio [n]o)</p>
 
 </article>
 
@@ -116,7 +111,7 @@ better than the default bilinear algorithm]</li>
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-01-16T20:16:47-05:00">2023</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-01-16T23:01:06-05:00">2023</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>

@@ -3,8 +3,8 @@ layout: post
 title: How to export a list of files in CLI
 excerpt: How to export a list of files in CLI
 modified: 2020-09-13
-tags: [cli, command prompt, windows, excel, word, manifest]
-categories: cli windows
+tags: [cli]
+categories: cli
 comments: true
 pinned: true
 share: true

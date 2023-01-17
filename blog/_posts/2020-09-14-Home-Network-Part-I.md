@@ -3,8 +3,8 @@ layout: post
 title: Ubiquiti Home Network Part&#58; I
 excerpt: "Network plan for my Ubiquiti home network setup"
 modified: 2020-12-04
-tags: [network, networking, ubiquiti, unifi, edgemax, wifi]
-categories: network renovation
+tags: [network]
+categories: network home
 comments: true
 pinned: true
 share: true

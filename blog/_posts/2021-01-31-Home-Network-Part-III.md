@@ -3,8 +3,8 @@ layout: post
 title: Ubiquiti Home Network Part&#58; III
 excerpt: "Relocating and installing the Fibre Termination Point (TP)"
 modified: 2021-01-30
-tags: [network, networking, ubiquiti, unifi, edgemax, wifi, internet]
-categories: network renovation
+tags: [network]
+categories: network home
 comments: true
 pinned: true
 share: true

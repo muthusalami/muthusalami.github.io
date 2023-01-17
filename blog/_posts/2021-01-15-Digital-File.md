@@ -3,8 +3,8 @@ layout: post
 title: The anatomy of a digital file
 excerpt: "This post briefly explores what goes under the hood of digital files"
 modified: 2021-01-15
-tags: [digipres digital file ]
-categories: digipres basics
+tags: [digipres]
+categories: digipres
 comments: true
 pinned: true
 share: true

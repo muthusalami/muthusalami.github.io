@@ -3,8 +3,8 @@ layout: post
 title: Practical tips on how to care for your files and data
 excerpt: "A short beginners guide on file management written for World Digital Preservation Day 2020"
 modified: 2020-11-05
-tags: [nas, ssd, hdd, file management, digital preservation,guide]
-categories: blog storage
+tags: [digipres]
+categories: blog home
 comments: true
 pinned: true
 share: true

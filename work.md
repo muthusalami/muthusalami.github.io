@@ -2,7 +2,7 @@
 layout: page
 title: work
 ---
-<h4>employment</h4>
+<h4>experience</h4>
 <br>
 <u>New York Public Library</u>
 <br>Intern (Jan. 2023 - current)
@@ -16,9 +16,11 @@ title: work
 <br>
 <h4>presentations</h4>
 <br>
-2022 *More Than Meets the Eye: Confronting the challenge of restoring non-feature length films*
+2022 *More Than Meets the Eye: Confronting the challenge of restoring non-feature length films*<br>
+FIAF Congress 2022
 
-2021 *Now or Never: Pushing for film preservation using inter-agency relations*
+2021 *Now or Never: Pushing for film preservation using inter-agency relations*<br>
+SEAPAAVA Conference 2021
 
 <br>
 <h4>awards & grants</h4>
@@ -27,11 +29,11 @@ title: work
 
 2022 Tisch School of the Arts Scholarship
 
-2022 Infocomm Media Development Authority SG:D Postgraduate Scholarship
+2022 Infocomm Media Development Authority SG:D Postgraduate Scholarship (Overseas)
 
 <br>
 <p class="message">
-  My latest CV is available upon request by email.
+  my latest cv is available upon request by email.
 </p>
 
 <!-- <p class="message">

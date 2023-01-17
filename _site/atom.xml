@@ -4,7 +4,7 @@
  <title>Matthew Yang</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2023-01-16T20:16:47-05:00</updated>
+ <updated>2023-01-16T23:01:06-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matthew Yang</name>
@@ -25,9 +25,9 @@
  
  <entry>
    <title>Ubiquiti Home Network Part&#58; III</title>
-   <link href="http://localhost:4000/blog/network/renovation/2021/01/31/Home-Network-Part-III/"/>
+   <link href="http://localhost:4000/blog/network/home/2021/01/31/Home-Network-Part-III/"/>
    <updated>2021-01-31T00:00:00-05:00</updated>
-   <id>http://localhost:4000/blog/network/renovation/2021/01/31/Home-Network-Part-III</id>
+   <id>http://localhost:4000/blog/network/home/2021/01/31/Home-Network-Part-III</id>
    <content type="html">&lt;p&gt;Today marks another major milestone for the Ubiquiti home network with the Fibre Termination Point (TP) finally installed! The OpenNet technicians decided to come two days before our scheduled appointment, but I was more than happy to accommodate to their request. I decided to relocate the TP from the living room to the service balcony to have it close to the network rack. Most households typically have the TP close to the TV consoles as it is common to use the router-modem provided by the ISPs, whom typically are the internet TV providers as well. The relocation involved drilling a new hole from the electrical riser into the kitchen to have a short run of cable straight to the desired location. I was initially quite nervous about the drilling as I didn’t want to puncture any pipes, but thankfully it went fine. All of the work was completed within 40 minutes but I was surprised that the task required a team of five men!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/Network_II/open_net_1.jpg&quot; alt=&quot;OpenNet setup&quot; /&gt;&lt;/p&gt;
@@ -42,53 +42,71 @@
  
  <entry>
    <title>Ubiquiti Home Network Part&#58; II</title>
-   <link href="http://localhost:4000/blog/network/renovation/2021/01/20/Home-Network-Part-II/"/>
+   <link href="http://localhost:4000/blog/network/home/2021/01/20/Home-Network-Part-II/"/>
    <updated>2021-01-20T00:00:00-05:00</updated>
-   <id>http://localhost:4000/blog/network/renovation/2021/01/20/Home-Network-Part-II</id>
+   <id>http://localhost:4000/blog/network/home/2021/01/20/Home-Network-Part-II</id>
    <content type="html">&lt;p&gt;This post is all about setting up my Ubiquiti home network and will serve as a personal resource/journal for the various devices.&lt;/p&gt;
 
-&lt;h2 id=&quot;setting-up-the-edgerouter-x-er-x-router&quot;&gt;Setting up the EdgeRouter X (ER-X) Router&lt;/h2&gt;
+&lt;h2 id=&quot;edgerouter-x-er-x-router-set-up&quot;&gt;EdgeRouter X (ER-X) router set up&lt;/h2&gt;
 
-&lt;p&gt;1) Connect computer to the Eth 0 port on the ER-X&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Connect computer to the Eth 0 port on the ER-X&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open the network settings on your PC and set the IP address to 192.168.1.2 since the IP address of the ER-X is 192.168.1.1 (also the default gateway)&lt;/p&gt;
 
-&lt;p&gt;2) Open the network settings on your PC and set the IP address to 192.168.1.2 since the IP address of the ER-X is 192.168.1.1 (also the default gateway)&lt;/p&gt;
+    &lt;p&gt;Subnet mask: 255.255.255.0&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Log into EdgeMax Web GUI. usr: ‘ubnt’ pwd: ‘ubnt’&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Commence basic set-up&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Settings&lt;/p&gt;
 
-&lt;p&gt;Subnet mask: 255.255.255.0&lt;/p&gt;
-
-&lt;p&gt;3) Log into EdgeMax Web GUI. usr: ‘ubnt’ pwd: ‘ubnt’&lt;/p&gt;
-
-&lt;p&gt;4) Commence basic set-up&lt;/p&gt;
-
-&lt;p&gt;5)  Settings&lt;/p&gt;
-
-&lt;p&gt;Port: eth 0
+    &lt;p&gt;Port: eth 0
 Internet connection type: DHCP
 Firewall: enable the default Firewall
 One Lan: &lt;em&gt;check&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Leave default address and enable DHCP server&lt;/p&gt;
+    &lt;p&gt;Leave default address and enable DHCP server&lt;/p&gt;
 
-&lt;p&gt;Create a new user with a new password&lt;/p&gt;
-
-&lt;p&gt;6) Apply changes and reboot the router&lt;/p&gt;
-
-&lt;p&gt;7) Plug modem into eth 0 and move client connection to eth 1&lt;/p&gt;
-
-&lt;p&gt;8) Change IP and DNS settings to automatic on the client&lt;/p&gt;
-
-&lt;p&gt;9) ‘ipconfig /release’ to release the old IP address. ‘ipconfig /renew’ to get a new IP address&lt;/p&gt;
-
-&lt;p&gt;10) Log back into the EdgeMax Web GUI.&lt;/p&gt;
-
-&lt;p&gt;11) Bring up the CLI on the GUI. Log in with the credentials&lt;/p&gt;
-
-&lt;p&gt;12) type ‘configure’&lt;/p&gt;
-
-&lt;p&gt;13) set ‘system offload hwnat enable’&lt;/p&gt;
-
-&lt;p&gt;14) set ‘system system offload ipsec enable’&lt;/p&gt;
-
-&lt;p&gt;15) type ‘commit’ and ‘save’.&lt;/p&gt;
+    &lt;p&gt;Create a new user with a new password&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apply changes and reboot the router&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Plug modem into eth 0 and move client connection to eth 1&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Change IP and DNS settings to automatic on the client&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;‘ipconfig /release’ to release the old IP address. ‘ipconfig /renew’ to get a new IP address&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Log back into the EdgeMax Web GUI.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bring up the CLI on the GUI. Log in with the credentials&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;type ‘configure’&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;set ‘system offload hwnat enable’&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;set ‘system system offload ipsec enable’&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;type ‘commit’ and ‘save’.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;Credit to Toasty Answers for the easy to follow set-up.&lt;/p&gt;
 
@@ -96,13 +114,20 @@ One Lan: &lt;em&gt;check&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Updating the ER-X&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;1) Download the latest firmware from Ubiquiti.&lt;/p&gt;
-
-&lt;p&gt;2) Access the EdgeMax Web GUI and click on system and head to upgrade system image. Click ‘upload a file’.&lt;/p&gt;
-
-&lt;p&gt;3) Upload the image and reboot and let it apply the update.&lt;/p&gt;
-
-&lt;p&gt;4) Log in again and the new version should be reflected on the dashboard.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download the latest firmware from Ubiquiti.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Access the EdgeMax Web GUI and click on system and head to upgrade system image. Click ‘upload a file’.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Upload the image and reboot and let it apply the update.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Log in again and the new version should be reflected on the dashboard.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;strong&gt;Other functions&lt;/strong&gt;&lt;/p&gt;
 
@@ -140,9 +165,9 @@ One Lan: &lt;em&gt;check&lt;/em&gt;&lt;/p&gt;
  
  <entry>
    <title>The anatomy of a digital file</title>
-   <link href="http://localhost:4000/blog/digipres/basics/2021/01/15/Digital-File/"/>
+   <link href="http://localhost:4000/blog/digipres/2021/01/15/Digital-File/"/>
    <updated>2021-01-15T00:00:00-05:00</updated>
-   <id>http://localhost:4000/blog/digipres/basics/2021/01/15/Digital-File</id>
+   <id>http://localhost:4000/blog/digipres/2021/01/15/Digital-File</id>
    <content type="html">&lt;p&gt;I’ve always wondered what makes up a digital file and &lt;a href=&quot;https://twobitpreservation.com/&quot; target=&quot;_ blank&quot;&gt;Nicole Martin&lt;/a&gt; has wonderfully written a detailed post about the zeros and ones that make up a digital file.&lt;/p&gt;
 
 &lt;p&gt;I’ll briefly lay out the keys points from the post.&lt;/p&gt;
@@ -215,27 +240,22 @@ One Lan: &lt;em&gt;check&lt;/em&gt;&lt;/p&gt;
     &lt;span class=&quot;nt&quot;&gt;-filter&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:v&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;scale=1440:1080:flags=lanczos, pad=1920:1080:240:0&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;ProRes&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mov&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;-f image2 forces the image file de-muxer for single image files&lt;/li&gt;
-  &lt;li&gt;-framerate sets the frame rate to 24
-NOTE: The previous two parameters must be before the input file, because they are applied to the input file.&lt;/li&gt;
-  &lt;li&gt;-i path, name and extension of the input file
+&lt;p&gt;&lt;em&gt;f&lt;/em&gt; image2 forces the image file de-muxer for single image files
+&lt;em&gt;framerate&lt;/em&gt; sets the frame rate to 24
+NOTE: The previous two parameters must be before the input file, because they are applied to the input file.
+&lt;em&gt;i&lt;/em&gt; path, name and extension of the input file
 The regex %06d matches six digits long numbers, possibly with
 leading zeroes. This allows to read in ascending order, one
 image after the other, the full sequence inside one folder.
 The command must of course match the naming convention
 actually used.
--c:v chooses the ProRes video codec
--profile:v the flavour ProRes 422 HQ has the video profile 3
--filter:v filters the video stream:
-    &lt;ul&gt;
-      &lt;li&gt;scaling to the correct size
+&lt;em&gt;c:v&lt;/em&gt; chooses the ProRes video codec
+&lt;em&gt;profile:v&lt;/em&gt; the flavour ProRes 422 HQ has the video profile 3
+&lt;em&gt;filter:v&lt;/em&gt; filters the video stream:
+    * scaling to the correct size
 [we use the Lanczos scaling algorithm which is slower but
-better than the default bilinear algorithm]&lt;/li&gt;
-      &lt;li&gt;padding the 4:3 format into the 16:9 HD format with pillar box&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+better than the default bilinear algorithm]
+    * padding the 4:3 format into the 16:9 HD format with pillar box&lt;/p&gt;
 
 &lt;h2 id=&quot;make-a-h264-file-from-the-scan-sequence&quot;&gt;Make a H264 file from the scan sequence&lt;/h2&gt;
 
@@ -251,9 +271,9 @@ better than the default bilinear algorithm]&lt;/li&gt;
     &lt;span class=&quot;nt&quot;&gt;Scan_H264_1&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mp4&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Make an access file H.264 directly form the conservation files TIFF.
--c:v chooses the H.264 codec by using the libx264 library
--preset chooses the very slow preset which gives the best result
--qp a quantisation parameter of 18 means “visually lossless”&lt;/p&gt;
+&lt;em&gt;c:v&lt;/em&gt; chooses the H.264 codec by using the libx264 library
+&lt;em&gt;preset&lt;/em&gt; chooses the very slow preset which gives the best result
+&lt;em&gt;qp&lt;/em&gt; a quantisation parameter of 18 means “visually lossless”&lt;/p&gt;
 
 &lt;h2 id=&quot;make-a-h264-file-from-the-prores-file&quot;&gt;Make a H264 file from the ProRes file&lt;/h2&gt;
 
@@ -266,15 +286,15 @@ better than the default bilinear algorithm]&lt;/li&gt;
     &lt;span class=&quot;nt&quot;&gt;-an&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;Scan_H264_2&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.mp4&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;-an prevents an empty audio track ([a]udio [n]o)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;an&lt;/em&gt; prevents an empty audio track ([a]udio [n]o)&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>Practical tips on how to care for your files and data</title>
-   <link href="http://localhost:4000/blog/storage/2020/11/05/Practical-Tips/"/>
+   <link href="http://localhost:4000/blog/home/2020/11/05/Practical-Tips/"/>
    <updated>2020-11-05T00:00:00-05:00</updated>
-   <id>http://localhost:4000/blog/storage/2020/11/05/Practical-Tips</id>
+   <id>http://localhost:4000/blog/home/2020/11/05/Practical-Tips</id>
    <content type="html">&lt;p&gt;Managing digital data has become increasingly challenging and can be a daunting experience with the sheer volume of what can build up in a short period.  Digital data is vulnerable and can be easily lost if not properly cared for. Hard drives fail, files get plagued by bit-rot, or it can get deleted by accident. Data loss is painful, and recovery (if even possible) is an expensive and stressful process. With the advancement of born-digital filmmaking technologies, we are generating more data than ever before and this poses a huge risk to the loss of our films if we do not start taking steps to care for the physical longevity of a work as it is being created.&lt;/p&gt;
 
 &lt;p&gt;In the film archive, many of the titles we receive in born-digital formats require our staff hours to sieve through and sort out the clutter. This is usually because the data is not properly organised or lacks sufficient documentation (for instance, poor file-naming conventions) making it difficult to know what is being filed.&lt;/p&gt;
@@ -486,9 +506,9 @@ better than the default bilinear algorithm]&lt;/li&gt;
  
  <entry>
    <title>How to export a list of files in CLI</title>
-   <link href="http://localhost:4000/blog/cli/windows/2020/10/12/Exporting-Directories-CLI/"/>
+   <link href="http://localhost:4000/blog/cli/2020/10/12/Exporting-Directories-CLI/"/>
    <updated>2020-10-12T00:00:00-04:00</updated>
-   <id>http://localhost:4000/blog/cli/windows/2020/10/12/Exporting-Directories-CLI</id>
+   <id>http://localhost:4000/blog/cli/2020/10/12/Exporting-Directories-CLI</id>
    <content type="html">&lt;p&gt;I recently had to provide a list of files in a USB thumbdrive/stick and learned a sweet trick via CLI. This method provides a text, &lt;em&gt;Word&lt;/em&gt; or &lt;em&gt;Excel&lt;/em&gt; file that lists all the files and folders inside a specific directory within your computer.&lt;/p&gt;
 
 &lt;h2 id=&quot;basic-command-structure&quot;&gt;Basic command structure&lt;/h2&gt;
@@ -573,9 +593,9 @@ Specifically the Red&lt;/p&gt;
  
  <entry>
    <title>Ubiquiti Home Network Part&#58; I</title>
-   <link href="http://localhost:4000/blog/network/renovation/2020/09/14/Home-Network-Part-I/"/>
+   <link href="http://localhost:4000/blog/network/home/2020/09/14/Home-Network-Part-I/"/>
    <updated>2020-09-14T00:00:00-04:00</updated>
-   <id>http://localhost:4000/blog/network/renovation/2020/09/14/Home-Network-Part-I</id>
+   <id>http://localhost:4000/blog/network/home/2020/09/14/Home-Network-Part-I</id>
    <content type="html">&lt;p&gt;This post will be part of a series documenting the network setup of my new apartment. The apartment is over 20 years old hence a major overhaul is required and the renovation is a great opportunity to lay CAT6A in the house for the 1Gbps/10Gbps network 🤓.&lt;/p&gt;
 
 &lt;p&gt;My research began with &lt;a href=&quot;https://www.patnotebook.com/bto-networking-singapore/&quot; target=&quot;_ blank&quot;&gt;this&lt;/a&gt; article on &lt;a href=&quot;https://patnotebook.com&quot; target=&quot;_ blank&quot;&gt;patnotebook.com&lt;/a&gt; detailing the conversion of telephone points to RJ45 data points in newer BTO (Build to Order) flats in Singapore. Newer flats in Singapore have CAT6 cables already nicely laid in the house, however many of the points are terminated with a telephone jack instead of RJ45. Based on the article, it seems that BTO flats only have one point terminated as RJ45, which is definitely not enough 😁.&lt;/p&gt;

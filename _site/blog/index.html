@@ -56,7 +56,7 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/blog/network/renovation/2021/01/31/Home-Network-Part-III/">
+      <a href="/blog/network/home/2021/01/31/Home-Network-Part-III/">
         Ubiquiti Home Network Part&#58; III
       </a>
     </h1>
@@ -79,7 +79,7 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/blog/network/renovation/2021/01/20/Home-Network-Part-II/">
+      <a href="/blog/network/home/2021/01/20/Home-Network-Part-II/">
         Ubiquiti Home Network Part&#58; II
       </a>
     </h1>
@@ -89,48 +89,66 @@
     
       <p>This post is all about setting up my Ubiquiti home network and will serve as a personal resource/journal for the various devices.</p>
 
-<h2 id="setting-up-the-edgerouter-x-er-x-router">Setting up the EdgeRouter X (ER-X) Router</h2>
+<h2 id="edgerouter-x-er-x-router-set-up">EdgeRouter X (ER-X) router set up</h2>
 
-<p>1) Connect computer to the Eth 0 port on the ER-X</p>
+<ol>
+  <li>
+    <p>Connect computer to the Eth 0 port on the ER-X</p>
+  </li>
+  <li>
+    <p>Open the network settings on your PC and set the IP address to 192.168.1.2 since the IP address of the ER-X is 192.168.1.1 (also the default gateway)</p>
 
-<p>2) Open the network settings on your PC and set the IP address to 192.168.1.2 since the IP address of the ER-X is 192.168.1.1 (also the default gateway)</p>
+    <p>Subnet mask: 255.255.255.0</p>
+  </li>
+  <li>
+    <p>Log into EdgeMax Web GUI. usr: ‘ubnt’ pwd: ‘ubnt’</p>
+  </li>
+  <li>
+    <p>Commence basic set-up</p>
+  </li>
+  <li>
+    <p>Settings</p>
 
-<p>Subnet mask: 255.255.255.0</p>
-
-<p>3) Log into EdgeMax Web GUI. usr: ‘ubnt’ pwd: ‘ubnt’</p>
-
-<p>4) Commence basic set-up</p>
-
-<p>5)  Settings</p>
-
-<p>Port: eth 0
+    <p>Port: eth 0
 Internet connection type: DHCP
 Firewall: enable the default Firewall
 One Lan: <em>check</em></p>
 
-<p>Leave default address and enable DHCP server</p>
+    <p>Leave default address and enable DHCP server</p>
 
-<p>Create a new user with a new password</p>
-
-<p>6) Apply changes and reboot the router</p>
-
-<p>7) Plug modem into eth 0 and move client connection to eth 1</p>
-
-<p>8) Change IP and DNS settings to automatic on the client</p>
-
-<p>9) ‘ipconfig /release’ to release the old IP address. ‘ipconfig /renew’ to get a new IP address</p>
-
-<p>10) Log back into the EdgeMax Web GUI.</p>
-
-<p>11) Bring up the CLI on the GUI. Log in with the credentials</p>
-
-<p>12) type ‘configure’</p>
-
-<p>13) set ‘system offload hwnat enable’</p>
-
-<p>14) set ‘system system offload ipsec enable’</p>
-
-<p>15) type ‘commit’ and ‘save’.</p>
+    <p>Create a new user with a new password</p>
+  </li>
+  <li>
+    <p>Apply changes and reboot the router</p>
+  </li>
+  <li>
+    <p>Plug modem into eth 0 and move client connection to eth 1</p>
+  </li>
+  <li>
+    <p>Change IP and DNS settings to automatic on the client</p>
+  </li>
+  <li>
+    <p>‘ipconfig /release’ to release the old IP address. ‘ipconfig /renew’ to get a new IP address</p>
+  </li>
+  <li>
+    <p>Log back into the EdgeMax Web GUI.</p>
+  </li>
+  <li>
+    <p>Bring up the CLI on the GUI. Log in with the credentials</p>
+  </li>
+  <li>
+    <p>type ‘configure’</p>
+  </li>
+  <li>
+    <p>set ‘system offload hwnat enable’</p>
+  </li>
+  <li>
+    <p>set ‘system system offload ipsec enable’</p>
+  </li>
+  <li>
+    <p>type ‘commit’ and ‘save’.</p>
+  </li>
+</ol>
 
 <p>Credit to Toasty Answers for the easy to follow set-up.</p>
 
@@ -138,13 +156,20 @@ One Lan: <em>check</em></p>
 
 <p><strong>Updating the ER-X</strong></p>
 
-<p>1) Download the latest firmware from Ubiquiti.</p>
-
-<p>2) Access the EdgeMax Web GUI and click on system and head to upgrade system image. Click ‘upload a file’.</p>
-
-<p>3) Upload the image and reboot and let it apply the update.</p>
-
-<p>4) Log in again and the new version should be reflected on the dashboard.</p>
+<ol>
+  <li>
+    <p>Download the latest firmware from Ubiquiti.</p>
+  </li>
+  <li>
+    <p>Access the EdgeMax Web GUI and click on system and head to upgrade system image. Click ‘upload a file’.</p>
+  </li>
+  <li>
+    <p>Upload the image and reboot and let it apply the update.</p>
+  </li>
+  <li>
+    <p>Log in again and the new version should be reflected on the dashboard.</p>
+  </li>
+</ol>
 
 <p><strong>Other functions</strong></p>
 
@@ -183,7 +208,7 @@ One Lan: <em>check</em></p>
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/blog/digipres/basics/2021/01/15/Digital-File/">
+      <a href="/blog/digipres/2021/01/15/Digital-File/">
         The anatomy of a digital file
       </a>
     </h1>
@@ -269,27 +294,22 @@ One Lan: <em>check</em></p>
     <span class="nt">-filter</span><span class="nd">:v</span> <span class="s1">"scale=1440:1080:flags=lanczos, pad=1920:1080:240:0"</span> <span class="err">\</span>
     <span class="nt">ProRes</span><span class="nc">.mov</span></code></pre></figure>
 
-<ul>
-  <li>-f image2 forces the image file de-muxer for single image files</li>
-  <li>-framerate sets the frame rate to 24
-NOTE: The previous two parameters must be before the input file, because they are applied to the input file.</li>
-  <li>-i path, name and extension of the input file
+<p><em>f</em> image2 forces the image file de-muxer for single image files
+<em>framerate</em> sets the frame rate to 24
+NOTE: The previous two parameters must be before the input file, because they are applied to the input file.
+<em>i</em> path, name and extension of the input file
 The regex %06d matches six digits long numbers, possibly with
 leading zeroes. This allows to read in ascending order, one
 image after the other, the full sequence inside one folder.
 The command must of course match the naming convention
 actually used.
--c:v chooses the ProRes video codec
--profile:v the flavour ProRes 422 HQ has the video profile 3
--filter:v filters the video stream:
-    <ul>
-      <li>scaling to the correct size
+<em>c:v</em> chooses the ProRes video codec
+<em>profile:v</em> the flavour ProRes 422 HQ has the video profile 3
+<em>filter:v</em> filters the video stream:
+    * scaling to the correct size
 [we use the Lanczos scaling algorithm which is slower but
-better than the default bilinear algorithm]</li>
-      <li>padding the 4:3 format into the 16:9 HD format with pillar box</li>
-    </ul>
-  </li>
-</ul>
+better than the default bilinear algorithm]
+    * padding the 4:3 format into the 16:9 HD format with pillar box</p>
 
 <h2 id="make-a-h264-file-from-the-scan-sequence">Make a H264 file from the scan sequence</h2>
 
@@ -305,9 +325,9 @@ better than the default bilinear algorithm]</li>
     <span class="nt">Scan_H264_1</span><span class="nc">.mp4</span></code></pre></figure>
 
 <p>Make an access file H.264 directly form the conservation files TIFF.
--c:v chooses the H.264 codec by using the libx264 library
--preset chooses the very slow preset which gives the best result
--qp a quantisation parameter of 18 means “visually lossless”</p>
+<em>c:v</em> chooses the H.264 codec by using the libx264 library
+<em>preset</em> chooses the very slow preset which gives the best result
+<em>qp</em> a quantisation parameter of 18 means “visually lossless”</p>
 
 <h2 id="make-a-h264-file-from-the-prores-file">Make a H264 file from the ProRes file</h2>
 
@@ -320,7 +340,7 @@ better than the default bilinear algorithm]</li>
     <span class="nt">-an</span> <span class="err">\</span>
     <span class="nt">Scan_H264_2</span><span class="nc">.mp4</span></code></pre></figure>
 
-<p>-an prevents an empty audio track ([a]udio [n]o)</p>
+<p><em>an</em> prevents an empty audio track ([a]udio [n]o)</p>
 
     
   </article>
@@ -349,7 +369,7 @@ better than the default bilinear algorithm]</li>
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-01-16T20:16:47-05:00">2023</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-01-16T23:01:06-05:00">2023</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>
