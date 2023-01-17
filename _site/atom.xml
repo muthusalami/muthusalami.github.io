@@ -4,7 +4,7 @@
  <title>Matthew Yang</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2023-01-16T23:01:06-05:00</updated>
+ <updated>2023-01-17T08:19:53-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matthew Yang</name>
@@ -24,7 +24,7 @@
  </entry>
  
  <entry>
-   <title>Ubiquiti Home Network Part&#58; III</title>
+   <title>Ubiquiti home network part&#58; III</title>
    <link href="http://localhost:4000/blog/network/home/2021/01/31/Home-Network-Part-III/"/>
    <updated>2021-01-31T00:00:00-05:00</updated>
    <id>http://localhost:4000/blog/network/home/2021/01/31/Home-Network-Part-III</id>
@@ -41,7 +41,7 @@
  </entry>
  
  <entry>
-   <title>Ubiquiti Home Network Part&#58; II</title>
+   <title>Ubiquiti home network part&#58; II</title>
    <link href="http://localhost:4000/blog/network/home/2021/01/20/Home-Network-Part-II/"/>
    <updated>2021-01-20T00:00:00-05:00</updated>
    <id>http://localhost:4000/blog/network/home/2021/01/20/Home-Network-Part-II</id>
@@ -592,7 +592,7 @@ Specifically the Red&lt;/p&gt;
  </entry>
  
  <entry>
-   <title>Ubiquiti Home Network Part&#58; I</title>
+   <title>Ubiquiti home network part&#58; I</title>
    <link href="http://localhost:4000/blog/network/home/2020/09/14/Home-Network-Part-I/"/>
    <updated>2020-09-14T00:00:00-04:00</updated>
    <id>http://localhost:4000/blog/network/home/2020/09/14/Home-Network-Part-I</id>
@@ -668,6 +668,11 @@ Specifically the Red&lt;/p&gt;
 &lt;p&gt;Command to run Jekyll site locally&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Passing the –livereload option to serve will automatically refresh the page with each change to the source file.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;serve&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--livereload&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 </content>
  </entry>
  
