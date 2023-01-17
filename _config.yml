@@ -1,3 +1,4 @@
+google_analytics:    G-WQ6JWSHQ2Q
 title:               Matthew Yang
 url:                 https://muthusalami.github.io
 baseurl:             ""
@@ -27,5 +28,3 @@ plugins:
   - jekyll-coffeescript
   - jekyll-paginate
   - jekyll-gist
-
-google_analytics: G-WQ6JWSHQ2Q
