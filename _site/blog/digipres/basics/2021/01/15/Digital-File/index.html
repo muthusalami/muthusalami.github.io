@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      The anatomy of a digital file &middot; Matthew Yang
+    
+  </title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="Matthew Yang" href="/atom.xml">
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/">home</a></li>
+        <li class="hvr-underline-reveal"><a href="/work/">work</a></li>
+        <li class="hvr-underline-reveal"><a href="/blog/">blog</a></li>
+        <li class="hvr-underline-reveal"><a href="/archive/">archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <article class="post">
+  <h1 class="post-title">The anatomy of a digital file</h1>
+  <time datetime="2021-01-15T00:00:00-05:00" class="post-date">15 Jan 2021</time>
+  <p>I’ve always wondered what makes up a digital file and <a href="https://twobitpreservation.com/" target="_ blank">Nicole Martin</a> has wonderfully written a detailed post about the zeros and ones that make up a digital file.</p>
+
+<p>I’ll briefly lay out the keys points from the post.</p>
+
+<h2 id="what-makes-a-digital-file">What makes a ‘digital’ file?</h2>
+
+<p>A digital file comprises of bits (zeros and ones) or plain text that contain crucial information that allows the computer/software to interpret/manipulate/process/encode/decode it into human-understandable information. The digital file may represent various types of information such as text, images and audio.</p>
+
+<p>Programs can read plain text data without the aid of file signatures or headers (described below). Common types of plain text data include .txt and .html files. This has wide application as it is high compatible with most computer systems and software.</p>
+
+<p>Binary data (zeros and ones) can represent more complex information and is read by computer programs in a linear data ‘stream’ or sequence of bytes. The program is required to decode the information block by block as per instructed by the file’s signature and header.</p>
+
+<p><strong>Useful info</strong></p>
+
+<p>Eight bits = 1 Byte</p>
+
+<p>A set of 512 bytes is one ‘sector’ and ‘sectors’ may be grouped into ‘blocks’.</p>
+
+<h2 id="parts-of-a-file">Parts of a file</h2>
+
+<ul>
+  <li>File signature</li>
+</ul>
+
+<p>It consists of a short section of code that defines the files format.</p>
+
+<ul>
+  <li>File Header</li>
+</ul>
+
+<p>A sequence of data that instructs on how to interpret the information. Machines and software will follow the instructions in the header to process/interpete the data it contains.</p>
+
+<ul>
+  <li>File Body</li>
+</ul>
+
+<p>The main bulk of information that allows the machine/program to render the file into human-understandable information. It can be stored as plain text or binary data.</p>
+
+<ul>
+  <li>End</li>
+</ul>
+
+<p>The last section of code that signals the end of the package.</p>
+
+<p><img src="http://localhost:4000/assets/originals/Digital_File/Anatomy.jpg" alt="Folder Structure" /></p>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-01-16T20:16:47-05:00">2023</time> Matthew Yang</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
+            <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
+        </small>
+        <div class="ftr-links">
+          <a class="social-link-item" target="_blank" href="mailto:matthewyangjiefeng@gmail.com?subject=Hello!">
+          <a href="mailto:matthewyang@nyu.edu?subject=Hello!" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
+          <a href="https://github.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+          <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+          
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

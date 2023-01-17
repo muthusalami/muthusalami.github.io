@@ -1,82 +1,29 @@
-#####################################
-# Plug-ins
-#####################################
-mini_magick:
-    thumbnail: # Preset name
-        source: assets/originals # source directory - change this to whatever you want
-        destination: img # generated destination directory
-        resize: "100x70^" # standard imagemagick options - you can chain multiple commands
-        gravity: "center"
-        extent: "100x70"
+title:               Matthew Yang
+url:                 https://muthusalami.github.io
+baseurl:             ""
 
-#
-#####################################
-# Site wide configuration
-#####################################
-#
-title: Matthew Yang | Singapore
-email: matthewyangjiefeng@gmail.com
-description: #description
-url: #base url
-keywords: ["blog", "digital preservation", "film preservation", "film restoration"]
+markdown:            kramdown
+highlighter:         rouge
 
-#
-###################################
-# Jekyll configuration
-####################################
-#
-timezone:          Asia/Singapore
-markdown:          kramdown
-highlighter:       rouge
-excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+exclude:             ['*.sublime-*', 'README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 'vendor/bundle']
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
+permalink:           pretty
+paginate:            5
+paginate_path:       /blog/:num
 
-#
-###################################
-# Site Owner configuration
-####################################
-#
-owner:
-  name: Matthew Yang
-  avatar: #leonids-logo.png
-  job: #job
-  bio: filmmaker & moving image archivist
-  email: matthewyangjiefeng@gmail.com
-  disqus-shortname:
-  twitter: muthusalami
-  facebook: #username
-  google:
-    plus: #username
-    analytics: UA-177969850-1
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: muthusalami
-  gitlab: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: matthewyang-sg
-  skype: #username
-  xing: #username
-  instagram: muthusalami
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  500px: #username
-  codepen: #username
-  reddit: #username
-  telegram: #username
+blog:
+  truncated_preview: false
+
+sass:
+  sass_dir:          _sass
+  style:             :compressed
+
+author:
+  name:              Matthew Yang
+  url:               muthusalami.github.io
+  email:             matthewyang@nyu.edu
+
+plugins:
+  - jekyll-coffeescript
+  - jekyll-paginate
+  - jekyll-gist
