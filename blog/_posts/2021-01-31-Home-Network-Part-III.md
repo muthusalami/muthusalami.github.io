@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubiquiti Home Network Part&#58; III
+title: Ubiquiti home network part&#58; III
 excerpt: "Relocating and installing the Fibre Termination Point (TP)"
 modified: 2021-01-30
 tags: [network]

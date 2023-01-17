@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubiquiti Home Network Part&#58; II
+title: Ubiquiti home network part&#58; II
 excerpt: "The setup of my home network"
 modified: 2021-01-20
 tags: [network]
