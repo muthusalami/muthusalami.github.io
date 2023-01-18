@@ -7,7 +7,7 @@
 
   <title>
     
-      Hello World! &middot; Matthew Yang
+      Blog &middot; Matthew Yang
     
   </title>
 
@@ -58,10 +58,19 @@
 
     <div class="container content">
       <main>
-        <article class="post">
-  <h1 class="post-title">Hello World!</h1>
-  <time datetime="2020-07-08T00:00:00-04:00" class="post-date">08 Jul 2020</time>
-  <p>The website is <em>finally</em> up and here is my first post!</p>
+        <div class="posts">
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/blog/website/2020/07/08/First-Post/">
+        Hello World!
+      </a>
+    </h1>
+
+    <time datetime="2020-07-08T00:00:00-04:00" class="post-date">08 Jul 2020</time>
+
+    
+      <p>The website is <em>finally</em> up and here is my first post!</p>
 
 <p>I’ve been meaning to create a work site for awhile now and I’ve finally taken up the challenge after attending GA’s Intro to Coding: HTML &amp; CSS Workshop. It was a short webinar that covered the fundamentals, which taught me enough to take the plunge.</p>
 
@@ -93,7 +102,28 @@
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">bundle</span> <span class="nt">exec</span> <span class="nt">jekyll</span> <span class="nt">serve</span> <span class="nt">--livereload</span></code></pre></figure>
 
 
-</article>
+    
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <span class="pagination-item">
+      <i class="fa fa-arrow-circle-o-left"></i> 
+      <span class="pagination-text">older posts</span>
+    </span>
+  
+
+  <!-- <a class="pagination-item" href="#">archive</a> -->
+
+  
+    <a class="pagination-item" href="/blog/2">
+      <span class="pagination-text">newer posts</span> 
+      <i class="fa fa-arrow-circle-o-right"></i>
+    </a>
+  
+</div>
 
       </main>
 

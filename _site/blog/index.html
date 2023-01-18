@@ -35,6 +35,16 @@
 
 </head>
 
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQ6JWSHQ2Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WQ6JWSHQ2Q');
+</script>
+
 
   <body>
     <nav class="nav-main">
@@ -52,8 +62,56 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/blog/2023/01/17/Google-Analytics-for-GitHub-Pages/">
+        Google Analytics for GitHub Pages
+      </a>
+    </h1>
+
+    <time datetime="2023-01-17T00:00:00-05:00" class="post-date">17 Jan 2023</time>
+
+    
+      <p>This post covers the set up of Google Analytics for GitHub Pages.</p>
+
+<ol>
+  <li>
+    <p>Go to Google Analytics and create a Google Analytics account for the site you would like to track.</p>
+  </li>
+  <li>
+    <p>Take note of the tracking ID and copy the code snippet provided that looks like the following:</p>
+  </li>
+</ol>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">async</span> <span class="na">src=</span><span class="s">"https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+      <span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span> <span class="o">||</span> <span class="p">[];</span>
+      <span class="kd">function</span> <span class="nx">gtag</span><span class="p">(){</span><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">);}</span>
+      <span class="nx">gtag</span><span class="p">(</span><span class="dl">'</span><span class="s1">js</span><span class="dl">'</span><span class="p">,</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
+
+      <span class="nx">gtag</span><span class="p">(</span><span class="dl">'</span><span class="s1">config</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">UA-XXXXXXXXX-X</span><span class="dl">'</span><span class="p">);</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>Create a new .HTML file in your <em>_includes</em> folder that contains the code snippet and name it <strong>google_analytics.html</strong>.</p>
+  </li>
+  <li>
+    <p>Add the following code to your default layout: _layouts/default.html.</p>
+  </li>
+</ol>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{% include google_analytics.html %}
+
+</code></pre></div></div>
+
+    
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/blog/2023/01/16/New-site/">
-        2023 Website refresh
+        2023 Website refresh and update
       </a>
     </h1>
 
@@ -62,7 +120,11 @@
     
       <p>Hello</p>
 
-<p>The site has undergone a noticeable refresh to reflect my renewed commitment towards writing about my work and learnings gained from my M.A.</p>
+<p>This site has undergone a noticeable refresh to include a <em>work</em> page as a reflecion of my renewed commitment towards writing more about my work and learnings gleaned from my graduate studies, which I’ve embarked on since September 2022. 2022 was a productive year of change that took me away from the maintenance of this site, hence the lack of updates. But I intend to correct his by documenting the projects I’ve embarked on and the challenges I’ve faced along the way.</p>
+
+<p>I love the new <a href="https://github.com/nicoelayda/celeste" target="_blank">theme’s</a> simple design that focuses on the site’s content. Migration of the posts from the previous theme and its visual assets was a breeze - altogether a fairly straightforward process which took less than 10 minutes.</p>
+
+<p>The set up of Google Analytics was however a pain, and I wrote a short post on its set up <a href="/blog/2023/01/17/Google-Analytics-for-GitHub-Pages/">here</a>.</p>
 
     
   </article>
@@ -278,86 +340,6 @@ One Lan: <em>check</em></p>
     
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/blog/ffmpeg/2020/11/13/Play-Scans/">
-        Managing film scans with FFmpeg
-      </a>
-    </h1>
-
-    <time datetime="2020-11-13T00:00:00-05:00" class="post-date">13 Nov 2020</time>
-
-    
-      <p>I have been trying to figure the best way to play and manage film scans and learned a bag of new tricks from <a href="https://reto.ch/" target="_ blank">reto.ch</a>!</p>
-
-<h2 id="playing-a-dpx-sequence">Playing a DPX sequence</h2>
-
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffplay</span> <span class="o">[</span><span class="nt">DIRECTORY</span><span class="o">]/</span><span class="nt">Scan_</span><span class="o">%</span><span class="err">06</span><span class="nt">d</span><span class="nc">.tif</span></code></pre></figure>
-
-<p>The regex %06d matches six digits long numbers, possibly with leading zeroes. This allows to read in ascending order, one image after the other,the full sequence inside one folder. Of course, the command must match the naming convention actually used.</p>
-
-<h2 id="make-a-prores-file-from-the-scan-sequence">Make a ProRes file from the scan sequence</h2>
-
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffmpeg</span>
-    <span class="nt">-f</span> <span class="nt">image2</span> <span class="err">\</span>
-    <span class="nt">-framerate</span> <span class="err">24</span> <span class="err">\</span>
-    <span class="nt">-i</span> <span class="o">[</span><span class="nt">DIRECTORY</span><span class="o">]/</span><span class="nt">Scan_</span><span class="o">%</span><span class="err">06</span><span class="nt">d</span><span class="nc">.tif</span> <span class="err">\</span>
-    <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">prores_ks</span> <span class="err">\</span>
-    <span class="nt">-profile</span><span class="nd">:v</span> <span class="err">3</span> <span class="err">\</span>
-    <span class="nt">-filter</span><span class="nd">:v</span> <span class="s1">"scale=1440:1080:flags=lanczos, pad=1920:1080:240:0"</span> <span class="err">\</span>
-    <span class="nt">ProRes</span><span class="nc">.mov</span></code></pre></figure>
-
-<p><em>f</em> image2 forces the image file de-muxer for single image files
-<em>framerate</em> sets the frame rate to 24
-NOTE: The previous two parameters must be before the input file, because they are applied to the input file.
-<em>i</em> path, name and extension of the input file
-The regex %06d matches six digits long numbers, possibly with
-leading zeroes. This allows to read in ascending order, one
-image after the other, the full sequence inside one folder.
-The command must of course match the naming convention
-actually used.
-<em>c:v</em> chooses the ProRes video codec
-<em>profile:v</em> the flavour ProRes 422 HQ has the video profile 3
-<em>filter:v</em> filters the video stream:
-    * scaling to the correct size
-[we use the Lanczos scaling algorithm which is slower but
-better than the default bilinear algorithm]
-    * padding the 4:3 format into the 16:9 HD format with pillar box</p>
-
-<h2 id="make-a-h264-file-from-the-scan-sequence">Make a H264 file from the scan sequence</h2>
-
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffmpeg</span> <span class="err">\</span>
-    <span class="nt">-f</span> <span class="nt">image2</span> <span class="err">\</span>
-    <span class="nt">-framerate</span> <span class="err">24</span> <span class="err">\</span>
-    <span class="nt">-i</span> <span class="nt">DUFAY_TIFF</span><span class="o">/</span><span class="nt">Dufay_</span><span class="o">%</span><span class="err">06</span><span class="nt">d</span><span class="nc">.tif</span> <span class="err">\</span>
-    <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">libx264</span> <span class="err">\</span>
-    <span class="nt">-preset</span> <span class="nt">veryslow</span> <span class="err">\</span>
-    <span class="nt">-qp</span> <span class="err">18</span> <span class="err">\</span>
-    <span class="nt">-filter</span><span class="nd">:v</span> <span class="s1">"scale=1440:1080:flags=lanczos, pad=1920:1080:240:0"</span> <span class="err">\</span>
-    <span class="nt">-pix_fmt</span> <span class="nt">yuv420p</span> <span class="err">\</span>
-    <span class="nt">Scan_H264_1</span><span class="nc">.mp4</span></code></pre></figure>
-
-<p>Make an access file H.264 directly form the conservation files TIFF.
-<em>c:v</em> chooses the H.264 codec by using the libx264 library
-<em>preset</em> chooses the very slow preset which gives the best result
-<em>qp</em> a quantisation parameter of 18 means “visually lossless”</p>
-
-<h2 id="make-a-h264-file-from-the-prores-file">Make a H264 file from the ProRes file</h2>
-
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffmpeg</span> <span class="err">\</span>
-    <span class="nt">-i</span> <span class="nt">ProRes</span><span class="nc">.mov</span> <span class="err">\</span>
-    <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">libx264</span> <span class="err">\</span>
-    <span class="nt">-preset</span> <span class="nt">veryslow</span> <span class="err">\</span>
-    <span class="nt">-qp</span> <span class="err">18</span> <span class="err">\</span>
-    <span class="nt">-pix_fmt</span> <span class="nt">yuv420p</span> <span class="err">\</span>
-    <span class="nt">-an</span> <span class="err">\</span>
-    <span class="nt">Scan_H264_2</span><span class="nc">.mp4</span></code></pre></figure>
-
-<p><em>an</em> prevents an empty audio track ([a]udio [n]o)</p>
-
-    
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -382,7 +364,7 @@ better than the default bilinear algorithm]
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-01-17T19:00:03-05:00">2023</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-01-17T21:11:17-05:00">2023</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>

@@ -4,7 +4,7 @@
  <title>Matthew Yang</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2023-01-17T19:00:03-05:00</updated>
+ <updated>2023-01-17T21:11:17-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matthew Yang</name>
@@ -13,13 +13,59 @@
 
  
  <entry>
-   <title>2023 Website refresh</title>
+   <title>Google Analytics for GitHub Pages</title>
+   <link href="http://localhost:4000/blog/2023/01/17/Google-Analytics-for-GitHub-Pages/"/>
+   <updated>2023-01-17T00:00:00-05:00</updated>
+   <id>http://localhost:4000/blog/2023/01/17/Google-Analytics-for-GitHub-Pages</id>
+   <content type="html">&lt;p&gt;This post covers the set up of Google Analytics for GitHub Pages.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to Google Analytics and create a Google Analytics account for the site you would like to track.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Take note of the tracking ID and copy the code snippet provided that looks like the following:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dataLayer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dataLayer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gtag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dataLayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;gtag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+
+      &lt;span class=&quot;nx&quot;&gt;gtag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;UA-XXXXXXXXX-X&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a new .HTML file in your &lt;em&gt;_includes&lt;/em&gt; folder that contains the code snippet and name it &lt;strong&gt;google_analytics.html&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add the following code to your default layout: _layouts/default.html.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+{% include google_analytics.html %}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2023 Website refresh and update</title>
    <link href="http://localhost:4000/blog/2023/01/16/New-site/"/>
    <updated>2023-01-16T00:00:00-05:00</updated>
    <id>http://localhost:4000/blog/2023/01/16/New-site</id>
    <content type="html">&lt;p&gt;Hello&lt;/p&gt;
 
-&lt;p&gt;The site has undergone a noticeable refresh to reflect my renewed commitment towards writing about my work and learnings gained from my M.A.&lt;/p&gt;
+&lt;p&gt;This site has undergone a noticeable refresh to include a &lt;em&gt;work&lt;/em&gt; page as a reflecion of my renewed commitment towards writing more about my work and learnings gleaned from my graduate studies, which I’ve embarked on since September 2022. 2022 was a productive year of change that took me away from the maintenance of this site, hence the lack of updates. But I intend to correct his by documenting the projects I’ve embarked on and the challenges I’ve faced along the way.&lt;/p&gt;
+
+&lt;p&gt;I love the new &lt;a href=&quot;https://github.com/nicoelayda/celeste&quot; target=&quot;_blank&quot;&gt;theme’s&lt;/a&gt; simple design that focuses on the site’s content. Migration of the posts from the previous theme and its visual assets was a breeze - altogether a fairly straightforward process which took less than 10 minutes.&lt;/p&gt;
+
+&lt;p&gt;The set up of Google Analytics was however a pain, and I wrote a short post on its set up &lt;a href=&quot;/blog/2023/01/17/Google-Analytics-for-GitHub-Pages/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
