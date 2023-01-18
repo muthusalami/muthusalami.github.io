@@ -72,16 +72,11 @@
     
       <p>This post covers the set up of Google Analytics for GitHub Pages.</p>
 
-<ol>
-  <li>
-    <p>Go to Google Analytics and create a Google Analytics account for the site you would like to track.</p>
-  </li>
-  <li>
-    <p>Take note of the tracking ID and copy the code snippet provided that looks like the following:</p>
-  </li>
-</ol>
+<p>1. Go to Google Analytics and create a Google Analytics account for the site you would like to track.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">async</span> <span class="na">src=</span><span class="s">"https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<p>2. Take note of the tracking ID and copy the code snippet provided that looks like the following:</p>
+
+<div start="3" class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">async</span> <span class="na">src=</span><span class="s">"https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"</span><span class="nt">&gt;&lt;/script&gt;</span>
     <span class="nt">&lt;script&gt;</span>
       <span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span> <span class="o">||</span> <span class="p">[];</span>
       <span class="kd">function</span> <span class="nx">gtag</span><span class="p">(){</span><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">);}</span>
@@ -90,17 +85,11 @@
       <span class="nx">gtag</span><span class="p">(</span><span class="dl">'</span><span class="s1">config</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">UA-XXXXXXXXX-X</span><span class="dl">'</span><span class="p">);</span>
 <span class="nt">&lt;/script&gt;</span>
 </code></pre></div></div>
+<p>3. Create a new .HTML file in your <em>_includes</em> folder that contains the code snippet and name it <strong>google_analytics.html</strong>.</p>
 
-<ol>
-  <li>
-    <p>Create a new .HTML file in your <em>_includes</em> folder that contains the code snippet and name it <strong>google_analytics.html</strong>.</p>
-  </li>
-  <li>
-    <p>Add the following code to your default layout: _layouts/default.html.</p>
-  </li>
-</ol>
+<p>4. Add the following code to your default layout: _layouts/default.html.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 {% include google_analytics.html %}
 
 </code></pre></div></div>
@@ -364,7 +353,7 @@ One Lan: <em>check</em></p>
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-01-17T21:11:17-05:00">2023</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-01-17T21:21:20-05:00">2023</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>
