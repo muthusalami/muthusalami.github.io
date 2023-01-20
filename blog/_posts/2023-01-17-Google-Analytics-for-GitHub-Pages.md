@@ -29,7 +29,7 @@ This post covers the set up of Google Analytics for GitHub Pages.
 </script>
 ```
 {:start="3"}
-3\. Create a new .HTML file in your *_includes* folder that contains the code snippet and name it **google_analytics.html**.
+3\. Create a new .HTML file in the *_includes* folder that contains the code snippet and name it **google_analytics.html**.
 
 4\. Add the following code to your default layout: _layouts/default.html.
 
@@ -38,3 +38,4 @@ This post covers the set up of Google Analytics for GitHub Pages.
 {% include google_analytics.html %}
 {% endraw %}
 ```
+fin
