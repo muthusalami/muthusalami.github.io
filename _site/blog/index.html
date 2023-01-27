@@ -62,6 +62,60 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/blog/2023/01/27/scrcpy/">
+        Use scrcpy to mirror android devices on your desktop
+      </a>
+    </h1>
+
+    <time datetime="2023-01-27T00:00:00-05:00" class="post-date">27 Jan 2023</time>
+
+    
+      <p><a href="https://github.com/Genymobile/scrcpy#physical-mouse-simulation-hid" target="_ blank">scrcpy</a> is a great open source application that “provides display and control of Android devices connected via USB or over TCP/IP.” In other words, one may screen-mirror and control their Android device from their desktop with scrcpy!</p>
+
+<p><strong>Platforms:</strong> Windows, Mac and Linux</p>
+
+<p><strong>Key features:</strong></p>
+
+<ul>
+  <li>Screen mirroring and recording</li>
+  <li>Copy-paste in both directions</li>
+  <li>Android device as a webcam (Linux only)</li>
+  <li>Physical keyboard simulation</li>
+  <li>Physical mouse simulation</li>
+</ul>
+
+<p><strong>Preparing your Android device</strong></p>
+
+<ol>
+  <li>Go to ‘Developer options’</li>
+  <li>Enable USB debugging</li>
+  <li>Enable USB debugging (Security settings)
+ -Allow granting permissions and simulating input via USB debugging</li>
+  <li>Enable Wireless debugging</li>
+  <li>Connect your Android device to machine via USB</li>
+  <li>Ensure your device is on the same network as your machine</li>
+</ol>
+
+<p><strong>Installatng scrcpy for Linux:</strong></p>
+
+<p>1. On Debian and Ubuntu:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install scrcpy
+</code></pre></div></div>
+<p>2. Run:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb tcpip 5555
+</code></pre></div></div>
+
+<p>3. Now run:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb connect &lt;your android's ip address&gt;:5555
+</code></pre></div></div>
+
+<p>4. Disconnect the USB connection and run <code class="language-plaintext highlighter-rouge">scrcpy</code></p>
+
+    
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/blog/2023/01/17/Google-Analytics-for-GitHub-Pages/">
         Google Analytics for GitHub Pages
       </a>
@@ -85,7 +139,7 @@
       <span class="nx">gtag</span><span class="p">(</span><span class="dl">'</span><span class="s1">config</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">UA-XXXXXXXXX-X</span><span class="dl">'</span><span class="p">);</span>
 <span class="nt">&lt;/script&gt;</span>
 </code></pre></div></div>
-<p>3. Create a new .HTML file in your <em>_includes</em> folder that contains the code snippet and name it <strong>google_analytics.html</strong>.</p>
+<p>3. Create a new .HTML file in the <em>_includes</em> folder that contains the code snippet and name it <strong>google_analytics.html</strong>.</p>
 
 <p>4. Add the following code to your default layout: _layouts/default.html.</p>
 
@@ -93,6 +147,7 @@
 {% include google_analytics.html %}
 
 </code></pre></div></div>
+<p>fin</p>
 
     
   </article>
@@ -270,65 +325,6 @@ One Lan: <em>check</em></p>
     
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/blog/digipres/2021/01/15/Digital-File/">
-        The anatomy of a digital file
-      </a>
-    </h1>
-
-    <time datetime="2021-01-15T00:00:00-05:00" class="post-date">15 Jan 2021</time>
-
-    
-      <p>I’ve always wondered what makes up a digital file and <a href="https://twobitpreservation.com/" target="_ blank">Nicole Martin</a> has wonderfully written a detailed post about the zeros and ones that make up a digital file.</p>
-
-<p>I’ll briefly lay out the keys points from the post.</p>
-
-<h2 id="what-makes-a-digital-file">What makes a ‘digital’ file?</h2>
-
-<p>A digital file comprises of bits (zeros and ones) or plain text that contain crucial information that allows the computer/software to interpret/manipulate/process/encode/decode it into human-understandable information. The digital file may represent various types of information such as text, images and audio.</p>
-
-<p>Programs can read plain text data without the aid of file signatures or headers (described below). Common types of plain text data include .txt and .html files. This has wide application as it is high compatible with most computer systems and software.</p>
-
-<p>Binary data (zeros and ones) can represent more complex information and is read by computer programs in a linear data ‘stream’ or sequence of bytes. The program is required to decode the information block by block as per instructed by the file’s signature and header.</p>
-
-<p><strong>Useful info</strong></p>
-
-<p>Eight bits = 1 Byte</p>
-
-<p>A set of 512 bytes is one ‘sector’ and ‘sectors’ may be grouped into ‘blocks’.</p>
-
-<h2 id="parts-of-a-file">Parts of a file</h2>
-
-<ul>
-  <li>File signature</li>
-</ul>
-
-<p>It consists of a short section of code that defines the files format.</p>
-
-<ul>
-  <li>File Header</li>
-</ul>
-
-<p>A sequence of data that instructs on how to interpret the information. Machines and software will follow the instructions in the header to process/interpete the data it contains.</p>
-
-<ul>
-  <li>File Body</li>
-</ul>
-
-<p>The main bulk of information that allows the machine/program to render the file into human-understandable information. It can be stored as plain text or binary data.</p>
-
-<ul>
-  <li>End</li>
-</ul>
-
-<p>The last section of code that signals the end of the package.</p>
-
-<p><img src="http://localhost:4000/assets/originals/Digital_File/Anatomy.jpg" alt="Folder Structure" /></p>
-
-    
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -353,7 +349,7 @@ One Lan: <em>check</em></p>
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-01-17T21:21:20-05:00">2023</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-01-27T18:20:58-05:00">2023</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>
