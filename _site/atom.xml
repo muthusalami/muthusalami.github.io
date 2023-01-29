@@ -4,7 +4,7 @@
  <title>Matthew Yang</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2023-01-27T18:20:58-05:00</updated>
+ <updated>2023-01-29T13:06:24-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matthew Yang</name>
@@ -17,7 +17,9 @@
    <link href="http://localhost:4000/blog/2023/01/27/scrcpy/"/>
    <updated>2023-01-27T00:00:00-05:00</updated>
    <id>http://localhost:4000/blog/2023/01/27/scrcpy</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/Genymobile/scrcpy#physical-mouse-simulation-hid&quot; target=&quot;_ blank&quot;&gt;scrcpy&lt;/a&gt; is a great open source application that “provides display and control of Android devices connected via USB or over TCP/IP.” In other words, one may screen-mirror and control their Android device from their desktop with scrcpy!&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/scrcpy/scrcpy.gif&quot; alt=&quot;scrcpy demo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Genymobile/scrcpy#physical-mouse-simulation-hid&quot; target=&quot;_ blank&quot;&gt;scrcpy&lt;/a&gt; is a great open source application that “provides display and control of Android devices connected via USB or over TCP/IP.” In other words, one may screen-mirror and control their Android device from their desktop with scrcpy!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Platforms:&lt;/strong&gt; Windows, Mac and Linux&lt;/p&gt;
 
