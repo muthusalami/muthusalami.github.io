@@ -5,7 +5,7 @@ title: work
 <h4>experience</h4>
 <br>
 <u>New York Public Library</u>
-<br>Intern (Jan. 2023 - current)
+<br>Media Preservation Intern (Jan. 2023 - current)
 
 <u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
 <br>Research Fellow (Sep. 2022 - current)
