@@ -25,7 +25,7 @@ SEAPAAVA Conference 2021
 <br>
 <h4>awards & grants</h4>
 <br>
-2023 National Endowment for the Humanities Scholarship
+2023 National Endowment for the Humanities Internship Grant
 
 2022 Tisch School of the Arts Scholarship
 
