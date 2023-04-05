@@ -16,15 +16,20 @@ title: work
 <br>
 <h4>presentations</h4>
 <br>
+2023 *From idea to execution: Learnings and reflections from Singapore’s first Home Movie Day*<br>
+27th SEAPAVAA Conference 2023, Pattaya, Thailand
+
 2022 *More Than Meets the Eye: Confronting the challenge of restoring non-feature length films*<br>
-FIAF Congress 2022
+78th FIAF Congress 2022, Budapest, Hungary
 
 2021 *Now or Never: Pushing for film preservation using inter-agency relations*<br>
-SEAPAAVA Conference 2021
+25th SEAPAAVA Conference 2021, Hanoi, Vietnam
 
 <br>
 <h4>awards & grants</h4>
 <br>
+2023 Wasserman Center Global Internship Grant
+
 2023 National Endowment for the Humanities Internship Grant
 
 2022 Tisch School of the Arts Scholarship
