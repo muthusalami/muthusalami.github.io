@@ -16,7 +16,7 @@ title: work
 <br>
 <h4>presentations</h4>
 <br>
-2023 *From idea to execution: Learnings and reflections from Singapore’s first Home Movie Day*<br>
+2023 *From Idea to Execution: Learnings and reflections from Singapore’s first Home Movie Day*<br>
 27th SEAPAVAA Conference 2023, Pattaya, Thailand
 
 2022 *More Than Meets the Eye: Confronting the challenge of restoring non-feature length films*<br>
@@ -28,9 +28,11 @@ title: work
 <br>
 <h4>awards & grants</h4>
 <br>
-2023 Wasserman Center Global Internship Grant
+2023 National Endowment for the Humanities Summer Internship Grant
 
-2023 National Endowment for the Humanities Internship Grant
+2023 Wasserman Center Global Spring Internship Grant
+
+2023 National Endowment for the Humanities Spring Internship Grant
 
 2022 Tisch School of the Arts Scholarship
 
