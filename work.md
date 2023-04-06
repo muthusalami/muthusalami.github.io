@@ -4,6 +4,12 @@ title: work
 ---
 <h4>experience</h4>
 <br>
+<u>Bay Area Video Coalition Media</u>
+<br>Video Preservation Intern (commencing Jun. 2023)
+
+<u>Prelinger Archives</u>
+<br>Media Digitization Intern (commencing Jun. 2023)
+
 <u>New York Public Library</u>
 <br>Media Preservation Intern (Jan. 2023 - current)
 
