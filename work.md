@@ -22,7 +22,7 @@ title: work
 <br>
 <h4>presentations</h4>
 <br>
-2023 *From Idea to Execution: Learnings and reflections from Singapore’s first Home Movie Day*<br>
+2023 *Communal Projections: Lessons and reflections from Singapore’s first Home Movie Day*<br>
 27th SEAPAVAA Conference 2023, Pattaya, Thailand
 
 2022 *More Than Meets the Eye: Confronting the challenge of restoring non-feature length films*<br>
