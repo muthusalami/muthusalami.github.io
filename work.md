@@ -34,6 +34,8 @@ title: work
 <br>
 <h4>awards & grants</h4>
 <br>
+2023 SAA Oliver Wendell Holmes Travel Award
+
 2023 National Endowment for the Humanities Summer Internship Grant
 
 2023 Wasserman Center Global Spring Internship Grant
