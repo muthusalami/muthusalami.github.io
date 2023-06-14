@@ -5,23 +5,26 @@ title: work
 <h4>experience</h4>
 <br>
 <u>Bay Area Video Coalition Media</u>
-<br>Video Preservation Intern (commencing Jun. 2023)
+<br>Video Preservation Intern (Jun. 2023 - present)
 
 <u>Prelinger Archives</u>
-<br>Media Digitization Intern (commencing Jun. 2023)
-
-<u>New York Public Library</u>
-<br>Media Preservation Intern (Jan. 2023 - current)
+<br>Media Digitization Intern (Jun. 2023 - present)
 
 <u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
 <br>Research Fellow (Sep. 2022 - current)
+
+<u>New York Public Library</u>
+<br>Media Preservation Intern (Jan. 2023 - May. 2023)
 
 <u>Asian Film Archive</u>
 <br>Archive Officer (Jan. 2017 - Aug. 2022)
 
 <br>
-<h4>presentations</h4>
+<h4>presentations & projects</h4>
 <br>
+2023 *Optical Media Guide for DVD Video*<br>
+Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
+
 2023 *Communal Projections: Lessons and reflections from Singapore’s first Home Movie Day*<br>
 27th SEAPAVAA Conference 2023, Pattaya, Thailand
 

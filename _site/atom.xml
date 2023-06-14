@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Matthew Yang</title>
+ <title>Matthew Yang | Audiovisual Archivist</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2023-04-04T23:39:24-04:00</updated>
+ <updated>2023-06-14T00:23:23-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matthew Yang</name>
@@ -45,7 +45,7 @@
   &lt;li&gt;Ensure your device is on the same network as your machine&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;Installatng scrcpy for Linux:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Installing scrcpy for Linux:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;1. On Debian and Ubuntu:&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install scrcpy
