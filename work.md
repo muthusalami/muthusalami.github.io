@@ -22,7 +22,7 @@ title: work
 <br>
 <h4>presentations & projects</h4>
 <br>
-2023 *Optical Media Guide for DVD Video*<br>
+2023 *APEX Optical Media Guide for DVD Video*<br>
 Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 
 2023 *Communal Projections: Lessons and reflections from Singapore’s first Home Movie Day*<br>
