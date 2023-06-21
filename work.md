@@ -2,6 +2,7 @@
 layout: page
 title: work
 ---
+
 <h4>experience</h4>
 <br>
 <u>Bay Area Video Coalition Media</u>
@@ -25,18 +26,20 @@ title: work
 2023 *APEX Optical Media Guide for DVD Video*<br>
 Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 
-2023 *Communal Projections: Lessons and reflections from Singapore’s first Home Movie Day*<br>
+2023 _Communal Projections: Lessons and reflections from Singapore’s first Home Movie Day_<br>
 27th SEAPAVAA Conference 2023, Pattaya, Thailand
 
-2022 *More Than Meets the Eye: Confronting the challenge of restoring non-feature length films*<br>
+2022 _More Than Meets the Eye: Confronting the challenge of restoring non-feature length films_<br>
 78th FIAF Congress 2022, Budapest, Hungary
 
-2021 *Now or Never: Pushing for film preservation using inter-agency relations*<br>
+2021 _Now or Never: Pushing for film preservation using inter-agency relations_<br>
 25th SEAPAAVA Conference 2021, Hanoi, Vietnam
 
 <br>
 <h4>awards & grants</h4>
 <br>
+2023 Robert Sklar Memorial Scholarship
+
 2023 SAA Oliver Wendell Holmes Travel Award
 
 2023 National Endowment for the Humanities Summer Internship Grant
@@ -71,4 +74,3 @@ Celeste is <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by [@nico
 Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/nicoelayda/celeste/issues/new) or [ask me on Twitter](https://twitter.com/nicoelayda).
 
 Thanks for reading! -->
-
