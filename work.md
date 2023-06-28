@@ -3,7 +3,7 @@ layout: page
 title: work
 ---
 
-<h4>experience</h4>
+<h4>professional experience</h4>
 <br>
 <u>Bay Area Video Coalition Media</u>
 <br>Video Preservation Intern (Jun. 2023 - present)
