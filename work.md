@@ -38,8 +38,6 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 <br>
 <h4>awards & grants</h4>
 <br>
-2023 Robert Sklar Memorial Scholarship
-
 2023 SAA Oliver Wendell Holmes Travel Award
 
 2023 National Endowment for the Humanities Summer Internship Grant
