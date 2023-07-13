@@ -40,6 +40,8 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 <br>
 2023 New York University Graduate School of Arts & Science Dean's Conference Fund
 
+2023 Robert Sklar Memorial Scholarship
+
 2023 SAA Oliver Wendell Holmes Travel Award
 
 2023 National Endowment for the Humanities Summer Internship Grant
