@@ -5,6 +5,9 @@ title: work
 
 <h4>professional experience</h4>
 <br>
+<u>Cineric Inc.</u>
+<br>Restoration Intern (Commencing Sep. 2023)
+
 <u>Bay Area Video Coalition Media</u>
 <br>Video Preservation Intern (Jun. 2023 - present)
 
