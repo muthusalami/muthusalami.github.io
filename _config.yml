@@ -1,28 +1,36 @@
-title:               Matthew Yang | Audiovisual Archivist
-url:                 https://muthusalami.github.io
-baseurl:             ""
+title: Matthew Yang | Audiovisual archivist & preservaionist
+url: https://muthusalami.github.io
+baseurl: ""
 
-markdown:            kramdown
-highlighter:         rouge
+markdown: kramdown
+highlighter: rouge
 
-exclude:             ['*.sublime-*', 'README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 'vendor/bundle']
+exclude:
+  [
+    "*.sublime-*",
+    "README.md",
+    "LICENSE",
+    "Gemfile",
+    "Gemfile.lock",
+    "vendor/bundle",
+  ]
 
-permalink:           pretty
-paginate:            5
-paginate_path:       /blog/:num
-google_analytics:    G-WQ6JWSHQ2Q
+permalink: pretty
+paginate: 5
+paginate_path: /blog/:num
+google_analytics: G-WQ6JWSHQ2Q
 
 blog:
   truncated_preview: false
 
 sass:
-  sass_dir:          _sass
-  style:             :compressed
+  sass_dir: _sass
+  style: :compressed
 
 author:
-  name:              Matthew Yang
-  url:               muthusalami.github.io
-  email:             matthewyang@nyu.edu
+  name: Matthew Yang
+  url: muthusalami.github.io
+  email: matthewyang@nyu.edu
 
 plugins:
   - jekyll-coffeescript
