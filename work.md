@@ -6,7 +6,7 @@ title: work
 <h4>professional experience</h4>
 <br>
 <u>Cineric Inc.</u>
-<br>Restoration Intern (Commencing Sep. 2023)
+<br>Restoration Intern (Sep. 2023 - present)
 
 <u>Bay Area Video Coalition Media</u>
 <br>Video Preservation Intern (Jun. 2023 - present)
@@ -41,6 +41,8 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 <br>
 <h4>awards & grants</h4>
 <br>
+2023 Lew Wasserman Scholarship
+
 2023 New York University Graduate School of Arts & Science Dean's Conference Fund
 
 2023 Robert Sklar Memorial Scholarship
