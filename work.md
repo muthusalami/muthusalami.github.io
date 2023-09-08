@@ -8,17 +8,17 @@ title: work
 <u>Cineric Inc.</u>
 <br>Restoration Intern (Sep. 2023 - present)
 
-<u>Bay Area Video Coalition Media</u>
-<br>Video Preservation Intern (Jun. 2023 - present)
-
-<u>Prelinger Archives</u>
-<br>Media Digitization Intern (Jun. 2023 - present)
-
 <u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
 <br>Research Fellow (Sep. 2022 - current)
 
+<u>Bay Area Video Coalition Media</u>
+<br>Video Preservation Intern (Jun. - Aug. 2023)
+
+<u>Prelinger Archives</u>
+<br>Media Digitization Intern (Jun. - Aug. 2023)
+
 <u>New York Public Library</u>
-<br>Media Preservation Intern (Jan. 2023 - May. 2023)
+<br>Media Preservation Intern (Jan. - May. 2023)
 
 <u>Asian Film Archive</u>
 <br>Archive Officer (Jan. 2017 - Aug. 2022)
