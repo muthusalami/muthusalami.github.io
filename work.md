@@ -26,7 +26,13 @@ title: work
 <br>
 <h4>presentations & projects</h4>
 <br>
-2023 *APEX Optical Media Guide for DVD Video*<br>
+2023 *Rip It!: A preservation workflow for DVD video discs*<br>
+Association of Moving Image Archivists Conference, Tulsa, Oklahoma, USA
+
+2023 _Lessons and reflections from Singapore’s first Home Movie Day_<br>
+Association of Moving Image Archivists Conference, Tulsa, Oklahoma, USA
+
+2023 _APEX Optical Media Guide for DVD Video_<br>
 Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 
 2023 _Communal Projections: Lessons and reflections from Singapore’s first Home Movie Day_<br>
