@@ -12,6 +12,8 @@ image:
   feature:
 ---
 
+I got crafty over the summer at the Bay Area Video Coalition (BAVC) and made these U-matic record tab earrings that were inspired by Crystal Sanchez!!
+
 ![umatic earrings]({{ site.url }}/assets/originals/umatic/umatic_1.jpg)
 ![umatic earrings]({{ site.url }}/assets/originals/umatic/umatic_2.jpg)
 ![umatic earrings]({{ site.url }}/assets/originals/umatic/umatic_3.jpg)
