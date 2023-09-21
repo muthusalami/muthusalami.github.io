@@ -26,7 +26,8 @@ title: work
 <br>
 <h4>presentations & projects</h4>
 <br>
-2023 *Rip It!: A preservation workflow for DVD video discs*<br>
+
+2023 _Rip It!: A preservation workflow for DVD video discs_<br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
 2023 _Lessons and reflections from Singapore’s first Home Movie Day_<br>
@@ -47,6 +48,8 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 <br>
 <h4>awards & grants</h4>
 <br>
+2023 NYU Center for Research & Study Student Travel Grant
+
 2023 Lew Wasserman Scholarship
 
 2023 New York University Graduate School of Arts & Science Dean's Conference Fund
