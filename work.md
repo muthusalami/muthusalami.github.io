@@ -64,7 +64,7 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 
 2023 National Endowment for the Humanities Spring Internship Grant
 
-2022 - 2023 Tisch School of the Arts Scholarship
+2022 - 2024 Tisch School of the Arts Scholarship
 
 2022 Infocomm Media Development Authority SG:D Postgraduate Scholarship (Overseas)
 
