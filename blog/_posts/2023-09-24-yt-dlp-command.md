@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting .MP4 files for yt-dlp
+title: Getting .MP4 files with yt-dlp
 excerpt: Getting .mp4 export with yt-dlp
 modified:
-tags: [blog]
+tags: [blog, yt-dlp]
 categories: blog
 comments: true
 pinned: true
