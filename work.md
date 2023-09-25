@@ -30,7 +30,7 @@ title: work
 2023 _Rip It!: A preservation workflow for DVD video discs_<br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
-2023 _Lessons and reflections from Singapore’s first Home Movie Day_<br>
+2023 _From Idea to Execution: Lessons and reflections from Singapore’s first Home Movie Day_<br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
 2023 _APEX Optical Media Guide for DVD Video_<br>
