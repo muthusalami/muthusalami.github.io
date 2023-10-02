@@ -26,7 +26,6 @@ title: work
 <br>
 <h4>presentations & projects</h4>
 <br>
-
 2023 _Rip It!: A preservation workflow for DVD video discs_<br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
