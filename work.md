@@ -48,6 +48,8 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 <br>
 <h4>awards & grants</h4>
 <br>
+2023 WGBH PBCore AMIA Travel Grant
+
 2023 New York University Center for Research & Study Student Travel Grant
 
 2023 Lew Wasserman Scholarship
