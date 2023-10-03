@@ -7,7 +7,7 @@
 
   <title>
     
-      Understanding the YUV (YCbCr) colour encoding system &middot; Matthew Yang | Audiovisual archivist & preservationist
+      Getting .MP4 files with yt-dlp &middot; Matthew Yang | Audiovisual archivist & preservationist
     
   </title>
 
@@ -59,38 +59,14 @@
     <div class="container content">
       <main>
         <article class="post">
-  <h1 class="post-title">Understanding the YUV (YCbCr) colour encoding system</h1>
-  <time datetime="2020-10-11T00:00:00-04:00" class="post-date">11 Oct 2020</time>
-  <p><img src="http://localhost:4000/assets/originals/YUV/YUV.png" alt="YUV chart" /></p>
+  <h1 class="post-title">Getting .MP4 files with yt-dlp</h1>
+  <time datetime="2023-09-24T00:00:00-04:00" class="post-date">24 Sep 2023</time>
+  <p><a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> is an excellent tool for pulling video files off YouTube, however its default file output is .webm.</p>
 
-<h2 id="what-is-yuv">What is YUV?</h2>
+<p>The following command will try to pull a native .mp4 file off YouTube and will do necessary transcoding if that fails after downloading.</p>
 
-<p>In a YUV data structure scheme, the ‘Y’ represents the luma value, and the ‘U’ &amp; ‘V’ represents two chroma values. In contrast to RGB, the values represent the intensities of red, green and blue channels in the pixel.</p>
-
-<p>Each unique ‘Y’, ‘U’ and ‘V’ value comprises of 8-bits (or one byte) of data.</p>
-
-<p><strong>Y value</strong> = Luminance value
-Overall brightness of the pixel. It is a grayscale value.</p>
-
-<p><strong>U (CB) value</strong>  = Chrominance value
-Specifically the Blue</p>
-
-<p><strong>V (CR) value</strong>  = Chrominance value
-Specifically the Red</p>
-
-<p>The <strong>U &amp; V values</strong>  are coordinates instead of brightness values with positive and negative values.</p>
-
-<h2 id="why-not-stick-to-rgb">Why not stick to RGB?</h2>
-
-<p>Colour and brightness information and combined within the three channels in RGB. i.e. Increasing the <strong>R</strong> channel will increase both the colour and brightness value in tandem. In simpler terms, both properties are combined in the same value.</p>
-
-<p>In a YUV system, the brightness information is completely separated from the colour information. In other words, more control is afforded.</p>
-
-<h2 id="practical-application">Practical application</h2>
-
-<p><strong>Backward compatibility</strong> - Black and White TVs can’t take RGB signals since the brightness value is baked into the colour values which it doesn’t understand. Whereas YUV has the Y value which can be processed by the television set, by ignoring the colour components.</p>
-
-<p><strong>Chroma sub-sampling</strong> - YUV allows the user to remove information specifically from the colour values without affecting the overall luminance of it. This is particularly useful during image compression and an effective means in processing images.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yt-dlp <span class="nt">-S</span> res,ext:mp4:m4a <span class="nt">--recode</span> mp4 https://www.youtube.com/watch?v<span class="o">=</span>dQw4w9WgXcQ
+</code></pre></div></div>
 
 </article>
 
