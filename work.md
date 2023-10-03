@@ -26,22 +26,22 @@ title: work
 <br>
 <h4>presentations & projects</h4>
 <br>
-2023 _Rip It!: A preservation workflow for DVD video discs_<br>
+<u>2023 _Rip It!: A preservation workflow for DVD video discs_</u><br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
-2023 _From Idea to Execution: Lessons and reflections from Singapore’s first Home Movie Day_<br>
+<u>2023 _From Idea to Execution: Lessons and reflections from Singapore’s first Home Movie Day_</u><br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
-2023 _APEX Optical Media Guide for DVD Video_<br>
+<u>2023 _APEX Optical Media Guide for DVD Video_</u><br>
 Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 
-2023 _Communal Projections: Lessons and reflections from Singapore’s first Home Movie Day_<br>
+<u>2023 _Communal Projections: Lessons and reflections from Singapore’s first Home Movie Day_</u><br>
 27th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2023, Pattaya, Thailand
 
-2022 _More Than Meets the Eye: Confronting the challenge of restoring non-feature length films_<br>
+<u>2022 _More Than Meets the Eye: Confronting the challenge of restoring non-feature length films_</u><br>
 78th International Federation of Film Archives (FIAF) Congress 2022, Budapest, Hungary
 
-2021 _Now or Never: Pushing for film preservation using inter-agency relations_<br>
+<u>2021 _Now or Never: Pushing for film preservation using inter-agency relations_</u><br>
 25th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAAVA) Conference 2021, Hanoi, Vietnam
 
 <br>
