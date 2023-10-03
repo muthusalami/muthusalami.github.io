@@ -32,7 +32,7 @@ Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 <u>2023 From Idea to Execution: Lessons and reflections from Singapore’s first Home Movie Day</u><br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
-<u>2023 APEX Optical Media Guide for DVD Video\_</u><br>
+<u>2023 APEX Optical Media Guide for DVD Video</u><br>
 Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 
 <u>2023 Communal Projections: Lessons and reflections from Singapore’s first Home Movie Day</u><br>
