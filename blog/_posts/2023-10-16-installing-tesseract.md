@@ -20,14 +20,20 @@ PyTesseract is a widely used open-source OCR engine for Python that read and rec
 
 2. Add _TESSDATA_PREFIX_ in the System Environment Variables:
 
+```
 Variable Name - TESSDATA_PREFIX
 Variable Value - C:\Program Files (x86)\Tesseract-OCR\tessdata
+```
 
-3. Add another environment variable _tesseract_.
+1. Add another environment variable _tesseract_.
 
+```
 Variable Name - tesseract
 Variable Value - C:\Program Files (x86)\Tesseract-OCR\tesseract.exe
+```
 
-4. Add the path in the PATH environment.
+1. Add the path in the PATH environment.
 
+```
 Variable Value –C:\Program Files (x86)\Tesseract-OCR
+```
