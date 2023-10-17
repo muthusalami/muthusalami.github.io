@@ -16,9 +16,9 @@ PyTesseract is a widely used open-source OCR engine for Python that read and rec
 
 ## Installation steps
 
-1. [Download and install Tesseract](https://github.com/UB-Mannheim/tesseract/wiki){:target="\_ blank"}
+1\. [Download and install Tesseract](https://github.com/UB-Mannheim/tesseract/wiki){:target="\_ blank"}
 
-2. Add _TESSDATA_PREFIX_ in the System Environment Variables:
+2\. Add _TESSDATA_PREFIX_ in the System Environment Variables:
 
 ```
 Variable Name - TESSDATA_PREFIX
