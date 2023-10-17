@@ -24,6 +24,8 @@ sudo apt install lynx
 lynx examplewebsite.com
 ```
 
+links2 is a similar tool and may be set up with the following commands:
+
 ```bash
 sudo apt install links2
 ```
