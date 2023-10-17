@@ -14,7 +14,7 @@ image:
 
 PyTesseract is a widely used open-source OCR engine for Python that read and recognizes text in images. It determines text lines that are fixed pitch and slices the words into characters based on the pitch. While it is known for its accuracy and versatility, it can challenging to install it in a Windows environment.
 
-_Installation steps_
+## Installation steps
 
 1. [Download and install Tesseract](https://github.com/UB-Mannheim/tesseract/wiki){:target="\_ blank"}
 
