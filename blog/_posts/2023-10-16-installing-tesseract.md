@@ -25,14 +25,14 @@ Variable Name - TESSDATA_PREFIX
 Variable Value - C:\Program Files (x86)\Tesseract-OCR\tessdata
 ```
 
-3. Add another environment variable _tesseract_.
+3\. Add another environment variable _tesseract_.
 
 ```
 Variable Name - tesseract
 Variable Value - C:\Program Files (x86)\Tesseract-OCR\tesseract.exe
 ```
 
-4. Add the path in the PATH environment.
+4\. Add the path in the PATH environment.
 
 ```
 Variable Value –C:\Program Files (x86)\Tesseract-OCR
