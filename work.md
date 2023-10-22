@@ -6,7 +6,7 @@ title: work
 <h4>professional experience</h4>
 <br>
 <u>Cineric Inc.</u>
-<br>Restoration Intern (Sep. 2023 - present)
+<br>Digital Restoration Intern (Sep. 2023 - present)
 
 <u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
 <br>Research Fellow (Sep. 2022 - current)
