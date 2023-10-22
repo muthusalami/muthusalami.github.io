@@ -27,12 +27,6 @@ title: work
 <h4>presentations & projects</h4>
 <br>
 
-| Month    | Savings |
-| -------- | ------- |
-| January  | $250    |
-| February | $80     |
-| March    | $420    |
-
 <u>2023 Rip It!: A preservation workflow for DVD video discs</u><br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
