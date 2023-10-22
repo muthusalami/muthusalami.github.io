@@ -26,6 +26,13 @@ title: work
 <br>
 <h4>presentations & projects</h4>
 <br>
+
+| Month    | Savings |
+| -------- | ------- |
+| January  | $250    |
+| February | $80     |
+| March    | $420    |
+
 <u>2023 Rip It!: A preservation workflow for DVD video discs</u><br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
@@ -45,29 +52,31 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 25th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAAVA) Conference 2021, Hanoi, Vietnam
 
 <br>
-<h4>awards & grants</h4>
+<h4>awards, grants & scholarships</h4>
 <br>
 2023 WGBH PBCore AMIA Travel Grant
 
 2023 New York University Center for Research & Study Student Travel Grant
 
-2023 Lew Wasserman Scholarship
+2023 New York University Lew Wasserman Scholarship
 
 2023 New York University Graduate School of Arts & Science Dean's Conference Fund
 
-2023 Robert Sklar Memorial Scholarship
+2023 New York University Robert Sklar Memorial Scholarship
 
-2023 SAA Oliver Wendell Holmes Travel Award
+2023 Society of American Archivists Oliver Wendell Holmes Travel Award
 
 2023 National Endowment for the Humanities Summer Internship Grant
 
-2023 Wasserman Center Global Spring Internship Grant
+2023 New York University Wasserman Center Global Spring Internship Grant
 
 2023 National Endowment for the Humanities Spring Internship Grant
 
-2022 - 2024 Tisch School of the Arts Scholarship
+2022 - 2024 New York University Tisch School of the Arts Scholarship
 
 2022 Infocomm Media Development Authority SG:D Postgraduate Scholarship (Overseas)
+
+2018 Director's List - Nanyang Technological University College of Humanities, Arts, and Social Sciences
 
 <br>
 <p class="message">
