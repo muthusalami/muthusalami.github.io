@@ -3,13 +3,15 @@ layout: page
 title: work
 ---
 
-<h4>professional experience</h4>
+<h4>employment</h4>
+<br>
+<u>Asian Film Archive</u>
+<br>Archive Officer (Jan. 2017 - Aug. 2022)
+
+<h4>apprenticeships and internships</h4>
 <br>
 <u>Cineric Inc.</u>
 <br>Digital Restoration Intern (Sep. 2023 - present)
-
-<u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
-<br>Research Fellow (Sep. 2022 - current)
 
 <u>Bay Area Video Coalition Media</u>
 <br>Video Preservation Intern (Jun. - Aug. 2023)
@@ -20,10 +22,11 @@ title: work
 <u>New York Public Library</u>
 <br>Media Preservation Intern (Jan. - May. 2023)
 
-<u>Asian Film Archive</u>
-<br>Archive Officer (Jan. 2017 - Aug. 2022)
-
+<h4>fellowships</h4>
 <br>
+<u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
+<br>Research Fellow (Sep. 2022 - current)
+
 <h4>presentations & projects</h4>
 <br>
 
