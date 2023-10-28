@@ -8,6 +8,7 @@ title: work
 <u>Asian Film Archive</u>
 <br>Archive Officer (Jan. 2017 - Aug. 2022)
 
+<br>
 <h4>apprenticeships and internships</h4>
 <br>
 <u>Cineric Inc.</u>
@@ -27,6 +28,7 @@ title: work
 <u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
 <br>Research Fellow (Sep. 2022 - current)
 
+<br>
 <h4>presentations & projects</h4>
 <br>
 
