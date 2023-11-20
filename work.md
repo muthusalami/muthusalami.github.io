@@ -27,7 +27,7 @@ title: work
 <h4>fellowships</h4>
 <br>
 <u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
-<br>Research Fellow (Sep. 2022 - current)
+<br>Research Fellow (Sep. 2022 - present)
 
 <br>
 <h4>presentations & projects</h4>
