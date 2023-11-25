@@ -12,7 +12,7 @@ image:
   feature:
 ---
 
-![YUV chart]({{ site.url }}/assets/originals/yuv/yuv.png)
+![YUV chart]({{ site.url }}/assets/originals/YUV/YUV.png)
 
 ## What is YUV?
 

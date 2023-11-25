@@ -33,11 +33,11 @@ I plan to update my progress with subsequent posts, but for now I've made a simp
 
 ## The electrical layout
 
-![House electrical layout]({{ site.url }}/assets/originals/network_i/electrical_plan_v2.png)
+![House electrical layout]({{ site.url }}/assets/originals/Network_I/electrical_plan_v2.png)
 
 ## The hardware diagram and breakdown
 
-![Network diagram]({{ site.url }}/assets/originals/network_i/network_diagram.jpg)
+![Network diagram]({{ site.url }}/assets/originals/Network_I/Network_diagram.jpg)
 
 1. [Belden CAT6A 10GXE02](https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf){:target="\_ blank"}
 2. 6U wall-mount Server Rack
