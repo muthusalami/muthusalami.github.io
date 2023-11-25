@@ -80,7 +80,7 @@ Here are some tips on designing your own directory.
 
 Descriptive file names are imperative to quick identification and retrieval of files. Poor naming conventions are frustrating and wastes a lot of time since they do not give useful information (“Best practices for file naming”, 2020).
 
-![File Naming Convention]({{ site.url }}/assets/originals/Practical_Tips/Naming_Convention_Example.png)
+![File Naming Convention]({{ site.url }}/assets/originals/Practical_tips/Naming_Convention_Example.png)
 
 A guiding principle for filenames is to include basic information such as object type, dates, and important remarks. These indicators can be crucial in distinguishing one file from another in the event that there are multiple variations of a given file. In essence, an effective file name should tell you what the file is without you having to open it (Antin, 2020).
 
@@ -116,7 +116,7 @@ Now that your files are all in place and organised, it is time to back them up! 
 
 **The 3-2-1 strategy**
 
-![3-2-1 Diagram]({{ site.url }}/assets/originals/Practical_Tips/Diagram-1440x1018.png)
+![3-2-1 Diagram]({{ site.url }}/assets/originals/Practical_tips/Diagram-1440x1018.png)
 
 **Keep 3 copies of your data**
 
