@@ -18,31 +18,31 @@ My research began with [this](https://www.patnotebook.com/bto-networking-singapo
 
 Older resale flats like mine do not come with any data points hence I will have to lay my own cables and design my own network infrastructure from scratch. On top of patnotebook.com, I've relied on many youtube videos and blogs to learn basic networking concepts and the different components required to run a network.
 
-I've devoured Evan McCann's tech [blog](https://evanmccann.net/){:target="_ blank"} since I plan to purchase Ubiquti hardware for the network. There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products as well. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!
+I've devoured Evan McCann's tech [blog](https://evanmccann.net/){:target="\_ blank"} since I plan to purchase Ubiquti hardware for the network. There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products as well. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!
 
 ## Recommended McCann reading list
 
-* [Ubiquiti’s UniFi Ecosystem Explained](https://evanmccann.net/blog/unifi-ecosystem-overview){:target="_ blank"}
-* [UniFi Switches Explained](https://evanmccann.net/blog/2020/6/unifi-switches-explained){:target="_ blank"}
-* [UniFi Switch Comparison and Buyer's Guide](https://evanmccann.net/blog/2020/6/unifi-switches-buyers-guide){:target="_ blank"}
-* [UniFi Wireless Access Point Buyer's Guide](https://evanmccann.net/blog/unifi-ap-breakdown){:target="_ blank"}
-* [Wi-fi&#58; Isn't Magic Some Tips For Planning A Home Network](https://evanmccann.net/blog/home-network-tips){:target="_ blank"}
-* [Ubiquiti FAQ](https://evanmccann.net/blog/2020/6/ubiquiti-faq){:target="_ blank"}
+- [Ubiquiti’s UniFi Ecosystem Explained](https://evanmccann.net/blog/unifi-ecosystem-overview){:target="\_ blank"}
+- [UniFi Switches Explained](https://evanmccann.net/blog/2020/6/unifi-switches-explained){:target="\_ blank"}
+- [UniFi Switch Comparison and Buyer's Guide](https://evanmccann.net/blog/2020/6/unifi-switches-buyers-guide){:target="\_ blank"}
+- [UniFi Wireless Access Point Buyer's Guide](https://evanmccann.net/blog/unifi-ap-breakdown){:target="\_ blank"}
+- [Wi-fi&#58; Isn't Magic Some Tips For Planning A Home Network](https://evanmccann.net/blog/home-network-tips){:target="\_ blank"}
+- [Ubiquiti FAQ](https://evanmccann.net/blog/2020/6/ubiquiti-faq){:target="\_ blank"}
 
 I plan to update my progress with subsequent posts, but for now I've made a simple diagram detailing the essential hardware required for the network setup.
 
 ## The electrical layout
 
-![House electrical layout]({{ site.url }}/assets/originals/Network_I/ELECTRICAL PLAN v2.png)
+![House electrical layout]({{ site.url }}/assets/originals/network_i/electrical_plan_v2.png)
 
 ## The hardware diagram and breakdown
 
-![Network diagram]({{ site.url }}/assets/originals/Network_I/Network_diagram.jpg)
+![Network diagram]({{ site.url }}/assets/originals/network_i/network_diagram.jpg)
 
-1. [Belden CAT6A 10GXE02](https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf){:target="_ blank"}
+1. [Belden CAT6A 10GXE02](https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf){:target="\_ blank"}
 2. 6U wall-mount Server Rack
-3. [24-Port Keystone Patch Panel](https://www.amazon.com/ETS-Shielded-Tool-Less-Rackmount-Wallmount/dp/B086T6KRCH/ref=sr_1_6?dchild=1&keywords=cat6a+patch+panel&qid=1607079469&sr=8-6){:target="_ blank"}
-5. Ubiquiti EdgeRouter X (ER-X)
-6. Unifi Switch 16 150W Gen 1
-7. Unifi Cloud Key Gen2 Plus (UCK-G2-PLUS)
-8. Unifi NanoHD (UAP-nanoHD)
+3. [24-Port Keystone Patch Panel](https://www.amazon.com/ETS-Shielded-Tool-Less-Rackmount-Wallmount/dp/B086T6KRCH/ref=sr_1_6?dchild=1&keywords=cat6a+patch+panel&qid=1607079469&sr=8-6){:target="\_ blank"}
+4. Ubiquiti EdgeRouter X (ER-X)
+5. Unifi Switch 16 150W Gen 1
+6. Unifi Cloud Key Gen2 Plus (UCK-G2-PLUS)
+7. Unifi NanoHD (UAP-nanoHD)

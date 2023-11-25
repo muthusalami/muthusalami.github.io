@@ -12,7 +12,7 @@ image:
   feature:
 ---
 
-![YUV chart]({{ site.url }}/assets/originals/YUV/YUV.png)
+![YUV chart]({{ site.url }}/assets/originals/yuv/yuv.png)
 
 ## What is YUV?
 
@@ -23,13 +23,13 @@ Each unique 'Y', 'U' and 'V' value comprises of 8-bits (or one byte) of data.
 **Y value** = Luminance value
 Overall brightness of the pixel. It is a grayscale value.
 
-**U (CB) value**  = Chrominance value
-Specifically the Blue  
+**U (CB) value** = Chrominance value
+Specifically the Blue
 
-**V (CR) value**  = Chrominance value
+**V (CR) value** = Chrominance value
 Specifically the Red
 
-The **U & V values**  are coordinates instead of brightness values with positive and negative values.
+The **U & V values** are coordinates instead of brightness values with positive and negative values.
 
 ## Why not stick to RGB?
 

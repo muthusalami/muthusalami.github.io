@@ -12,7 +12,7 @@ image:
   feature:
 ---
 
-I've always wondered what makes up a digital file and [Nicole Martin](https://twobitpreservation.com/){:target="_ blank"} has wonderfully written a detailed post about the zeros and ones that make up a digital file.
+I've always wondered what makes up a digital file and [Nicole Martin](https://twobitpreservation.com/){:target="\_ blank"} has wonderfully written a detailed post about the zeros and ones that make up a digital file.
 
 I'll briefly lay out the keys points from the post.
 
@@ -32,20 +32,20 @@ A set of 512 bytes is one 'sector' and 'sectors' may be grouped into 'blocks'.
 
 ## Parts of a file
 
-* File signature
+- File signature
 
 It consists of a short section of code that defines the files format.
 
-* File Header
+- File Header
 
 A sequence of data that instructs on how to interpret the information. Machines and software will follow the instructions in the header to process/interpete the data it contains.
 
-* File Body
+- File Body
 
 The main bulk of information that allows the machine/program to render the file into human-understandable information. It can be stored as plain text or binary data.
 
-* End
+- End
 
 The last section of code that signals the end of the package.
 
-![Folder Structure]({{ site.url }}/assets/originals/Digital_File/Anatomy.jpg)
+![Folder Structure]({{ site.url }}/assets/originals/digital_file/anatomy.jpg)
