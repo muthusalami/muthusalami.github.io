@@ -76,7 +76,9 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 
 2022 Infocomm Media Development Authority SG:D Postgraduate Scholarship (Overseas)
 
-2018 Director's List - Nanyang Technological University College of Humanities, Arts, and Social Sciences
+2018 Director's List - Nanyang Technological University, College of Humanities, Arts, and Social Sciences
+
+2012 2011 2010 Director's List - Ngee Ann Polytechnic, School of Film & Media Studies
 
 <br>
 <p class="message">
