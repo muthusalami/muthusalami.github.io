@@ -9,6 +9,12 @@ title: work
 <br>Archive Officer (Jan. 2017 - Aug. 2022)
 
 <br>
+<h4>fellowships</h4>
+<br>
+<u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
+<br>Research Fellow (Sep. 2022 - present)
+
+<br>
 <h4>apprenticeships and internships</h4>
 <br>
 <u>Cineric Inc.</u>
@@ -22,12 +28,6 @@ title: work
 
 <u>New York Public Library</u>
 <br>Media Preservation Intern (Jan. - May. 2023)
-
-<br>
-<h4>fellowships</h4>
-<br>
-<u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
-<br>Research Fellow (Sep. 2022 - present)
 
 <br>
 <h4>presentations & projects</h4>
@@ -76,7 +76,7 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 
 2022 Infocomm Media Development Authority SG:D Postgraduate Scholarship (Overseas)
 
-2018 Director's List - Nanyang Technological University, College of Humanities, Arts, and Social Sciences
+2018 Dean's List - Nanyang Technological University, College of Humanities, Arts, and Social Sciences
 
 2012 2011 2010 Director's List - Ngee Ann Polytechnic, School of Film & Media Studies
 
