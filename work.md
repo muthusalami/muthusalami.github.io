@@ -35,7 +35,7 @@ title: work
 
 <u>2023 <em>Hágalo Ud. Mismo: Una Guía de Preservación de Soportes Ópticos para Artistas y Videorealizadores</em></u><br>
 
-Optical preservation guide produced in collaboration with Cinemateca de Bogotá, Professor Juana Suárez, & Carlos Saldaña.
+A Spanish optical preservation guide produced in collaboration with Cinemateca de Bogotá, Professor Juana Suárez, & Carlos Saldaña.
 
 <br>
 <h4>presentations & projects</h4>
