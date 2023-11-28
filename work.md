@@ -30,6 +30,14 @@ title: work
 <br>Media Preservation Intern (Jan. - May. 2023)
 
 <br>
+<h4>writings</h4>
+<br>
+
+<u>2023 <em>Hágalo Ud. Mismo: Una Guía de Preservación de Soportes Ópticos para Artistas y Videorealizadores</em></u><br>
+
+Optical preservation guide produced in collaboration with Cinemateca de Bogotá, Professor Juana Suárez, & Carlos Saldaña.
+
+<br>
 <h4>presentations & projects</h4>
 <br>
 
