@@ -44,13 +44,13 @@ A Spanish optical preservation guide produced in collaboration with Cinemateca d
 2023 <u>Rip It!: A preservation workflow for DVD video discs</u><br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
-2023 <u>From Idea to Execution: Lessons and reflections from Singapore’s first Home Movie Day</u><br>
+2023 <u>From Idea to Realization: Lessons and reflections from Singapore’s first Home Movie Day</u><br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
 2023 <u>APEX Optical Media Guide for DVD Video</u><br>
 Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 
-2023 <u>Communal Projections: Lessons and reflections from Singapore’s first Home Movie Day</u><br>
+2023 <u>From Idea to Realization: Lessons and reflections from Singapore’s first Home Movie Day</u><br>
 27th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2023, Pattaya, Thailand
 
 2022 <u>More Than Meets the Eye: Confronting the challenge of restoring non-feature length films</u><br>
