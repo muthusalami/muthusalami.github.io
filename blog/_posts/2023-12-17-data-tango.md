@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Tango&#58; Exploring Open Source File Utility Transfer Tools
+title: Data Tango&#58; Exploring Restic
 excerpt:
 modified:
-tags: [blog, raspberry pi]
+tags: [blog, restic]
 categories: blog
 comments: true
 pinned: true
