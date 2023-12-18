@@ -25,43 +25,43 @@ Incremental Backups
 Snapshot Management
 Cross-platform Compatibility
 
-1. Create Restic repository as backup destination
+Create Restic repository as backup destination
 
 ```bash
 restic -r D:/dpx-restic init
 ```
 
-2. Initiate backup
+Initiate backup
 
 ```bash
 restic -r D:/dpx-restic backup C:/Users/MATT-THINKPAD/Documents/dpx-source/
 ```
 
-3. Check snapshots
+Check snapshots
 
 ```bash
 restic -r D:\dpx-restic snapshots
 ```
 
-4. List files in repository
+List files in repository
 
 ```bash
 restic -r D:\dpx-restic ls latest
 ```
 
-5. Verifying backups
+Verifying backups
 
 ```bash
 restic check D:\dpx-restic
 ```
 
-6. Restoring files
+Restoring files
 
 ```bash
 restic -r D:\dpx-restic\ restore "latest:/C/Users/MATT-THINKPAD/Documents/dpx-source/" --target "C:\Users\MATT-THINKPAD\OneDrive - nyu.edu\Desktop\dpx-restore"
 ```
 
-7. Restore files from a specific snapshot
+Restore files from a specific snapshot
 
 Get a list of snapshots
 
