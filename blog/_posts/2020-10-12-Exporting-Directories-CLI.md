@@ -12,54 +12,54 @@ image:
   feature:
 ---
 
-I recently had to provide a list of files in a USB thumbdrive/stick and learned a sweet trick via CLI. This method provides a text, *Word* or *Excel* file that lists all the files and folders inside a specific directory within your computer.
+I recently had to provide a list of files in a USB thumbdrive/stick and learned a sweet trick via CLI. This method provides a text, _Word_ or _Excel_ file that lists all the files and folders inside a specific directory within your computer.
 
 ## Basic command structure
 
 Syntax:
 
-{% highlight css %}
+```css
 DIR [pathname(s)] [display_format] [file_attributes] [sorted] [time] [options]
-{% endhighlight %}
+```
 
 Example:
 
-{% highlight css %}
+```css
 dir /s > output.doc
-{% endhighlight %}
+```
 
-*dir* lists all the files and folders contained in the folder
+_dir_ lists all the files and folders contained in the folder
 
-*/s* will list all the files in the subfolders as well
+_/s_ will list all the files in the subfolders as well
 
-*Output.doc* is the document file containing the entire directory and the details. It may be in another format such as a simple *.txt* file which can be edited on Notepad.
+_Output.doc_ is the document file containing the entire directory and the details. It may be in another format such as a simple _.txt_ file which can be edited on Notepad.
 
 ## Listing only certain types of files
 
 The command will be:
 
-{% highlight css %}
-dir /s *.pdf > output_pdf.doc
-{% endhighlight %}
+```css
+dir /s \*.pdf > output_pdf.doc
+```
 
-(*.pdf)* is a wildcard function that will only select *.pdf* files.
+(_.pdf)_ is a wildcard function that will only select _.pdf_ files.
 
 ## List bare format (no heading, sizes or summary)
 
-The switch */b* will list file names, however when displaying subfolders with dir /b /s, the command will return a full pathname.
+The switch _/b_ will list file names, however when displaying subfolders with dir /b /s, the command will return a full pathname.
 
-{% highlight css %}
+```css
 dir /b /s > output_pdf.doc
-{% endhighlight %}
+```
 
-## Using the *tree* command instead of *dir*
+## Using the _tree_ command instead of _dir_
 
 This command will produce a tree listing of the current directory
 
-{% highlight css %}
+```css
 tree /f > output.txt
-{% endhighlight %}
+```
 
-*/f* displays the names of the files within each directory listed.
+_/f_ displays the names of the files within each directory listed.
 
-*/a* may be used to specify alternative (*ascii*) characters to be used to draw the tree diagram so that it can be printed by printers that do not support the line and box drawing characters.
+_/a_ may be used to specify alternative (_ascii_) characters to be used to draw the tree diagram so that it can be printed by printers that do not support the line and box drawing characters.
