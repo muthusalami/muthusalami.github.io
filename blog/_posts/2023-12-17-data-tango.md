@@ -19,11 +19,17 @@ What is restic?
 [Restic](https://restic.net/){:target="\_ blank"} is a free and open source backup program available on Linux, BSD, MacOS, and Windows. It works with many different storage types (Local, Network, Cloud) and is designed to create and manage backups.
 
 Key features:
+<br>
 Deduplication
+<br>
 Encryption
+<br>
 Incremental Backups
+<br>
 Snapshot Management
+<br>
 Cross-platform Compatibility
+<br>
 
 Create Restic repository as backup destination
 
