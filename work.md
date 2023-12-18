@@ -29,8 +29,11 @@ title: work
 <u>New York Public Library</u>
 <br>Media Preservation Intern (Jan. - May. 2023)
 
+<u>Olympic Broadcasting Services</u>
+<br>Media Preservation Intern (Jul. - Sep. 2023)
+
 <br>
-<h4>writings</h4>
+<h4>writing</h4>
 <br>
 
 2023 <u><em>Hágalo Ud. Mismo: Una Guía de Preservación de Soportes Ópticos para Artistas y Videorealizadores</em></u><br>
