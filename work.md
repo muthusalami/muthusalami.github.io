@@ -30,7 +30,7 @@ title: work
 <br>Media Preservation Intern (Jan. - May. 2023)
 
 <u>Olympic Broadcasting Services</u>
-<br>Media Preservation Intern (Jul. - Sep. 2023)
+<br>Broadcast Intern (Jul. - Sep. 2023)
 
 <br>
 <h4>writing</h4>
