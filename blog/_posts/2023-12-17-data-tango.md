@@ -26,42 +26,51 @@ Snapshot Management
 Cross-platform Compatibility
 
 1. Create Restic repository as backup destination
-   {% highlight css %}
-   restic -r D:/dpx-restic init
-   {% endhighlight %}
+
+```bash
+restic -r D:/dpx-restic init
+```
 
 2. Initiate backup
-   {% highlight css %}
-   restic -r D:/dpx-restic backup C:/Users/MATT-THINKPAD/Documents/dpx-source/
-   {% endhighlight %}
+
+```bash
+restic -r D:/dpx-restic backup C:/Users/MATT-THINKPAD/Documents/dpx-source/
+```
 
 3. Check snapshots
-   {% highlight css %}
-   restic -r D:\dpx-restic snapshots
-   {% endhighlight %}
+
+```bash
+restic -r D:\dpx-restic snapshots
+```
 
 4. List files in repository
-   {% highlight css %}
-   restic -r D:\dpx-restic ls latest
-   {% endhighlight %}
+
+```bash
+restic -r D:\dpx-restic ls latest
+```
 
 5. Verifying backups
-   {% highlight css %}
-   restic check D:\dpx-restic
-   {% endhighlight %}
+
+```bash
+restic check D:\dpx-restic
+```
 
 6. Restoring files
-   {% highlight css %}
-   restic -r D:\dpx-restic\ restore "latest:/C/Users/MATT-THINKPAD/Documents/dpx-source/" --target "C:\Users\MATT-THINKPAD\OneDrive - nyu.edu\Desktop\dpx-restore"
-   {% endhighlight %}
+
+```bash
+restic -r D:\dpx-restic\ restore "latest:/C/Users/MATT-THINKPAD/Documents/dpx-source/" --target "C:\Users\MATT-THINKPAD\OneDrive - nyu.edu\Desktop\dpx-restore"
+```
 
 7. Restore files from a specific snapshot
-   Get a list of snapshots
-   {% highlight css %}
-   restic -r 'D:\dpx-restic\' snapshots
-   {% endhighlight %}
 
-   Restore from snapshot
-   {% highlight css %}
-   restic -r D:\dpx-restic restore 2297f849 --target "C:\Users\MATT-THINKPAD\OneDrive - nyu.edu\Desktop\dpx-restore"
-   {% endhighlight %}
+Get a list of snapshots
+
+```bash
+restic -r 'D:\dpx-restic\' snapshots
+```
+
+Restore from snapshot
+
+```bash
+restic -r D:\dpx-restic restore 2297f849 --target "C:\Users\MATT-THINKPAD\OneDrive - nyu.edu\Desktop\dpx-restore"
+```
