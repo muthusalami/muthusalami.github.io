@@ -56,13 +56,12 @@ Cross-platform Compatibility
    {% endhighlight %}
 
 7. Restore files from a specific snapshot
+   Get a list of snapshots
+   {% highlight css %}
+   restic -r 'D:\dpx-restic\' snapshots
+   {% endhighlight %}
 
-7.1 Get a list of snapshots
-{% highlight css %}
-restic -r 'D:\dpx-restic\' snapshots
-{% endhighlight %}
-
-7.2 Restore from snapshot
-{% highlight css %}
-restic -r D:\dpx-restic restore 2297f849 --target "C:\Users\MATT-THINKPAD\OneDrive - nyu.edu\Desktop\dpx-restore"
-{% endhighlight %}
+   Restore from snapshot
+   {% highlight css %}
+   restic -r D:\dpx-restic restore 2297f849 --target "C:\Users\MATT-THINKPAD\OneDrive - nyu.edu\Desktop\dpx-restore"
+   {% endhighlight %}
