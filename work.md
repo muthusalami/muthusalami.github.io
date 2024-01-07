@@ -18,7 +18,7 @@ title: work
 <h4>apprenticeships and internships</h4>
 <br>
 <u>Cineric Inc.</u>
-<br>Digital Restoration Intern (Sep. 2023 - present)
+<br>Digital Restoration Intern (Sep. 2023 - Jan. 2024)
 
 <u>Bay Area Video Coalition Media</u>
 <br>Video Preservation Intern (Jun. - Aug. 2023)
@@ -44,22 +44,22 @@ A Spanish optical preservation guide produced in collaboration with Cinemateca d
 <h4>presentations & projects</h4>
 <br>
 
-2023 <u>Rip It!: A preservation workflow for DVD video discs</u><br>
+2023 <u>Rip It!: A Preservation Workflow For DVD Video Discs</u><br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
-2023 <u>From Idea to Realization: Lessons and reflections from Singapore’s first Home Movie Day</u><br>
+2023 <u>From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day</u><br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 
-2023 <u>APEX Optical Media Guide for DVD Video</u><br>
+2023 <u>APEX Optical Media Guide For DVD Video</u><br>
 Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 
-2023 <u>From Idea to Realization: Lessons and reflections from Singapore’s first Home Movie Day</u><br>
+2023 <u>From Idea to Realization: Lessons and reflections From Singapore’s First Home Movie Day</u><br>
 27th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2023, Pattaya, Thailand
 
-2022 <u>More Than Meets the Eye: Confronting the challenge of restoring non-feature length films</u><br>
+2022 <u>More Than Meets the Eye: Confronting The Challenge of Restoring Non-feature Length Films</u><br>
 78th International Federation of Film Archives (FIAF) Congress 2022, Budapest, Hungary
 
-2021 <u> Now or Never: Pushing for film preservation using inter-agency relations</u><br>
+2021 <u> Now or Never: Pushing For Film Preservation Using Inter-agency Relations</u><br>
 25th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAAVA) Conference 2021, Hanoi, Vietnam
 
 <br>
