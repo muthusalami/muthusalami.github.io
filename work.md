@@ -17,6 +17,9 @@ title: work
 <br>
 <h4>apprenticeships and internships</h4>
 <br>
+<u>Research Foundation of The City University of New York</u>
+<br>Audio Preservation Intern (Jan. 2024 - present)
+
 <u>Cineric Inc.</u>
 <br>Digital Restoration Intern (Sep. 2023 - Jan. 2024)
 
