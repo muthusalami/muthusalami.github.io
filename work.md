@@ -17,7 +17,7 @@ title: work
 <br>
 <h4>apprenticeships and internships</h4>
 <br>
-<u>Research Foundation of The City University of New York</u>
+<u>CUNY TV</u>
 <br>Audio Preservation Intern (Jan. 2024 - present)
 
 <u>Cineric, Inc.</u>
