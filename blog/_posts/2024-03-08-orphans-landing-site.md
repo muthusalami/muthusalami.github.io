@@ -14,7 +14,7 @@ image:
 
 ![ofs]({{ site.url }}/assets/originals/ofs/ofs.png)
 
-Orphans Film Symposium 2024 is around the corner and I had the wonderful opportunity to assist Professor Dan Streible to create a [landing site](https://wp.nyu.edu/orphans2024/){:target="\_ blank"} for the symposium.
+[Orphans Film Symposium 2024](https://wp.nyu.edu/orphanfilm/){:target="\_ blank"} is around the corner and I had the wonderful opportunity to assist Professor Dan Streible to create a [landing site](https://wp.nyu.edu/orphans2024/){:target="\_ blank"} for the symposium.
 
 NYU uses WordPress ecosystem for its web publishing. The initial idea was to create a new page on OFS' existing website, but it would limit us to its current theme. Hence, creating a separate site altogether seemed like a more appropriate option.
 
