@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orphans 2024 Landing Site
+title: Orphans 2024 'Work & Play' Landing Site
 excerpt:
 modified:
 tags: [blog, wordpress]
