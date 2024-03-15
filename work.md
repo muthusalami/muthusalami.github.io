@@ -56,7 +56,7 @@ Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
 2023 <u>APEX Optical Media Guide For DVD Video</u><br>
 Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 
-2023 <u>From Idea to Realization: Lessons and reflections From Singapore’s First Home Movie Day</u><br>
+2023 <u>From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day</u><br>
 27th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2023, Pattaya, Thailand
 
 2022 <u>More Than Meets the Eye: Confronting The Challenge of Restoring Non-feature Length Films</u><br>
