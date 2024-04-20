@@ -12,7 +12,9 @@ image:
   feature:
 ---
 
-![ofs_final]({{ site.url }}/assets/originals/ofs/ofs.png)
+![ofs_3.0]({{ site.url }}/assets/originals/ofs/ofs_3.0.gif)
+
+![ofs_2.0]({{ site.url }}/assets/originals/ofs/ofs.png)
 
 ![ofs_mockup]({{ site.url }}/assets/originals/ofs/mock_up.png)
 
