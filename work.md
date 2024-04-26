@@ -44,6 +44,14 @@ title: work
 A Spanish optical preservation guide produced in collaboration with Cinemateca de Bogotá, Professor Juana Suárez, & Carlos Saldaña.
 
 <br>
+<h4>workshops</h4>
+<br>
+
+2022 <u><em>Super 8 Shooting & Developing Workshop</em></u><br>
+
+2-day free workshop where participants experience shooting, developing, and projecting Super 8 film. Sponsored by Kodak.
+
+<br>
 <h4>presentations & projects</h4>
 <br>
 
