@@ -47,6 +47,10 @@ A Spanish optical disc preservation guide produced in collaboration with Cinemat
 <h4>workshops</h4>
 <br>
 
+2023 <u>Optical Media Preservation Workshop</u><br>
+
+Prepared learning aids and lesson plan for a 1-day optical media preservation workshop at the Cinemateca de Bogotá, Colombia. Organized as part of the New York University's Audiovisual Preservation Exchange (APEX).
+
 2022 <u>Super 8 Shooting & Developing Workshop</u><br>
 
 2-day free workshop where participants experience shooting, developing, and projecting Super 8 film. Sponsored by Kodak.
