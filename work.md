@@ -49,7 +49,7 @@ A Spanish optical disc preservation guide produced in collaboration with Cinemat
 
 2023 <u>Optical Media Preservation Workshop</u><br>
 
-Prepared learning aids and lesson plan for a 1-day optical media preservation workshop at the Cinemateca de Bogotá, Colombia. Organized as part of the New York University's Audiovisual Preservation Exchange (APEX).
+Prepared learning aids and lesson plan for a 1-day optical media preservation workshop at the Cinemateca de Bogotá, Colombia. Organized as part of New York University's Audiovisual Preservation Exchange (APEX).
 
 2022 <u>Super 8 Shooting & Developing Workshop</u><br>
 
@@ -80,6 +80,8 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 <br>
 <h4>awards, grants & scholarships</h4>
 <br>
+2024 New York University Academic Excellence Award
+
 2023 Association of Moving Image Archivists Broadening Perspectives Scholarship
 
 2023 New York University Martin Scorsese Department of Cinema Studies Conference Travel Grant
