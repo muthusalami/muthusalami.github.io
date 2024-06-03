@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Ubiquiti home network part&#58; I
+title: Ubiquiti Home Network Part&#58; I
 excerpt: "Network plan for my Ubiquiti home network setup"
 modified: 2020-12-04
-tags: [network]
-categories: network home
+tags: [home network, ubiquiti]
+categories: blog
 comments: true
 pinned: true
 share: true

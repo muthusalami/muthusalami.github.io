@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Lynx and Links2 - Terminal web browsers
-excerpt: Terminal web browser
+title: Lynx and Links2 - Terminal Web Browsers
+excerpt:
 modified:
-tags: [blog, foss]
+tags: [tools, cli]
 categories: blog
 comments: true
 pinned: true

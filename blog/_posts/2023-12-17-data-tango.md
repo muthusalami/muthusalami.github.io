@@ -3,7 +3,7 @@ layout: post
 title: Data Tango&#58; Exploring Restic
 excerpt:
 modified:
-tags: [blog, restic]
+tags: [restic, data management]
 categories: blog
 comments: true
 pinned: true

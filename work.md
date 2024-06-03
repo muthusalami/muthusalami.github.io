@@ -12,7 +12,7 @@ title: work
 <h4>fellowships</h4>
 <br>
 <u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
-<br>Research Fellow (Sep. 2022 - present)
+<br>Research Fellow (Sep. 2022 - May 2024)
 
 <br>
 <h4>apprenticeships and internships</h4>
@@ -46,6 +46,9 @@ A Spanish optical disc preservation guide produced in collaboration with Cinemat
 <br>
 <h4>workshops</h4>
 <br>
+2024 <u>Optical Media Preservation Workshop</u><br>
+
+Conducted a collection assessment and optical media preservation workshop for the Aigaio Radio and TV Station in Greece in collaboration with Archipelago Network. Organized as part of New York University's Audiovisual Preservation Exchange (APEX).
 
 2023 <u>Optical Media Preservation Workshop</u><br>
 

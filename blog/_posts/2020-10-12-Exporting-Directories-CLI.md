@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How to export a list of files in CLI
-excerpt: How to export a list of files in CLI
+title: Creating a List of Files of a Directory With Command-line
+excerpt:
 modified: 2020-09-13
-tags: [cli]
-categories: cli
+tags: [cli, tools]
+categories: blog
 comments: true
 pinned: true
 share: true

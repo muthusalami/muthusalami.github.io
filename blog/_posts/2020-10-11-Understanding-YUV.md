@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Understanding the YUV (YCbCr) colour encoding system
-excerpt: A brief summary and explanation of the YUV format
+title: Understanding the YUV (YCbCr) Colour Encoding System
+excerpt: A brief summary and explanation of the YUV format.
 modified: 2020-10-19
-tags: [video]
-categories: video
+tags: [video, color, yuv]
+categories: blog
 comments: true
 pinned: true
 share: true

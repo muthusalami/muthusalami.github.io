@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Installing tesseract on Windows
+title: Installing Tesseract on Windows
 excerpt:
 modified:
-tags: [blog]
+tags: [tools, tesseract]
 categories: blog
 comments: true
 pinned: true

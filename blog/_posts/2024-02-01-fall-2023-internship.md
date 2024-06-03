@@ -3,7 +3,7 @@ layout: post
 title: Fall 2023 Internship @ Cineric, Inc.
 excerpt:
 modified:
-tags: [blog, internship]
+tags: [internship, grad school]
 categories: blog
 comments: true
 pinned: true

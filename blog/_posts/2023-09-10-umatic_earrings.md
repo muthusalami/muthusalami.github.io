@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Summer craft project&#58; U-matic record tab earrings
-excerpt: U-matic record tab earrings
+title: Summer Craft Project&#58; U-matic Record Tab Earrings
+excerpt:
 modified:
-tags: [blog]
+tags: [craft]
 categories: blog
 comments: true
 pinned: true

@@ -3,7 +3,7 @@ layout: post
 title: Summer 2023 Internships @ BAVC & Prelinger Archives
 excerpt:
 modified:
-tags: [blog, internship]
+tags: [internship, grad school]
 categories: blog
 comments: true
 pinned: true

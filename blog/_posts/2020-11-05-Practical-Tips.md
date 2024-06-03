@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Practical tips on how to care for your files and data
+title: Practical Tips&#58; Caring For Your Files and Data
 excerpt: "A short beginners guide on file management written for World Digital Preservation Day 2020"
 modified: 2020-11-05
-tags: [digipres]
-categories: blog home
+tags: [digipres, personal archiving]
+categories: blog
 comments: true
 pinned: true
 share: true

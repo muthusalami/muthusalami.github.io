@@ -3,7 +3,7 @@ layout: post
 title: Orphans 2024 'Work & Play' Landing Site
 excerpt:
 modified:
-tags: [blog, wordpress]
+tags: [wordpress, orphan film symposium]
 categories: blog
 comments: true
 pinned: true

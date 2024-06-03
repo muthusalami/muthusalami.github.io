@@ -3,7 +3,7 @@ layout: post
 title: Spring 2023 Internship @ the New York Public Library
 excerpt:
 modified:
-tags: [blog, internship]
+tags: [internship, grad school]
 categories: blog
 comments: true
 pinned: true

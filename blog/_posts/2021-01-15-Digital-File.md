@@ -1,10 +1,10 @@
 ---
 layout: post
-title: The anatomy of a digital file
-excerpt: "This post briefly explores what goes under the hood of digital files"
+title: The Anatomy of a Digital File
+excerpt:
 modified: 2021-01-15
 tags: [digipres]
-categories: digipres
+categories: blog
 comments: true
 pinned: true
 share: true

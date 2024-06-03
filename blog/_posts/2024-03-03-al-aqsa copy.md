@@ -1,9 +1,9 @@
 ---
 layout: post
-title: T-shirt printing in 2024
+title: T-shirt Printing 2024
 excerpt:
 modified:
-tags: [blog, printing]
+tags: [screen printing]
 categories: blog
 comments: true
 pinned: true

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Managing film scans with FFmpeg
-excerpt: "A short post on managing and playing scan sequences with FFmpeg"
+title: Managing Film Scans With FFmpeg
+excerpt:
 modified: 2020-11-13
-tags: [ffmpeg, cli]
-categories: ffmpeg
+tags: [ffmpeg, cli, tools, dpx]
+categories: blog
 comments: true
 pinned: true
 share: true
