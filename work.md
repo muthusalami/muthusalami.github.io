@@ -61,6 +61,8 @@ Prepared learning aids and lesson plan for a 1-day optical media preservation wo
 <br>
 <h4>presentations & projects</h4>
 <br>
+2024 <u>The Great Migration: Planning & Performing Migrations for Audiovisual Collections</u><br>
+28th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2024, Solo, Indonesia
 
 2023 <u>Rip It!: A Preservation Workflow For DVD Video Discs</u><br>
 Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
