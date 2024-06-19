@@ -88,6 +88,8 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 <br>
 2024 New York University Academic Excellence Award
 
+2024 New York University Service Excellence Award
+
 2023 Association of Moving Image Archivists Broadening Perspectives Scholarship
 
 2023 New York University Martin Scorsese Department of Cinema Studies Conference Travel Grant
