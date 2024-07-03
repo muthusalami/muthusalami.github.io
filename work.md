@@ -46,6 +46,10 @@ A Spanish optical disc preservation guide produced in collaboration with Cinemat
 <br>
 <h4>workshops</h4>
 <br>
+2024 <u>Super 8 Shooting & Developing Workshop</u><br>
+
+2-day workshop where participants experience shooting, developing, and projecting Super 8 film.
+
 2024 <u>Optical Media Preservation Workshop</u><br>
 
 Conducted a collection assessment and optical media preservation workshop for the Aigaio Radio and TV Station in Greece in collaboration with Archipelago Network. Organized as part of New York University's Audiovisual Preservation Exchange (APEX).
@@ -56,7 +60,7 @@ Prepared learning aids and lesson plan for a 1-day optical media preservation wo
 
 2022 <u>Super 8 Shooting & Developing Workshop</u><br>
 
-2-day free workshop where participants experience shooting, developing, and projecting Super 8 film. Sponsored by Kodak.
+2-day free workshop where participants experience shooting, developing, and projecting Super 8 film. Sponsored by Kodak as part of Singapore's first Home Movie Day.
 
 <br>
 <h4>presentations & projects</h4>
