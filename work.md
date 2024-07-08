@@ -5,6 +5,9 @@ title: work
 
 <h4>employment</h4>
 <br>
+<u>CUNY TV</u>
+<br>Audio Preservation Technician (Jul. 2024 - present)
+
 <u>Asian Film Archive</u>
 <br>Archive Officer (Jan. 2017 - Aug. 2022)
 
@@ -18,7 +21,7 @@ title: work
 <h4>apprenticeships and internships</h4>
 <br>
 <u>CUNY TV</u>
-<br>Audio Preservation Intern (Jan. 2024 - present)
+<br>Audio Preservation Intern (Jan. 2024 - Jun. 2024)
 
 <u>Cineric, Inc.</u>
 <br>Digital Restoration Intern (Sep. 2023 - Jan. 2024)
