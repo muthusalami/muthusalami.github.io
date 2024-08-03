@@ -1,5 +1,23 @@
 /* _darkmode.scss */
 
+body.darkmode .content .page-title {
+  color: #03dac6;
+}
+
+body.darkmode .page-title,
+body.darkmode .post-title,
+body.darkmode .post-title a {
+  color: #bbf6ac;
+}
+
+body.darkmode h4 {
+  color: #bbf6ac;
+}
+
+body.darkmode .message {
+  background-color: #edeced;
+}
+
 body.darkmode {
   background-color: #1e1e1e; // dark background color for the entire page
   color: #ffffff; // light text color
@@ -29,6 +47,7 @@ body.darkmode .nav-main {
 body.darkmode .container {
   background-color: #1e1e1e; // dark background for the container
   color: #ffffff; // light text color for the container
+  post-title-color: #6200ee;
 }
 
 body.darkmode .content {
