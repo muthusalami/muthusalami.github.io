@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1"
+  />
+
+  <title>
+     Managing Film Scans With FFmpeg
+    &middot; Matthew Yang | Digital Archivist & Media Preservationist 
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="/css/font-awesome.min.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="/css/style.css"
+    type="text/css"
+  />
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="/favicon.png"
+  />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link
+    rel="apple-touch-icon-precomposed"
+    sizes="152x152"
+    href="/apple-touch-icon.png"
+  />
+
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Matthew Yang | Digital Archivist & Media Preservationist"
+    href="/atom.xml"
+  />
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WQ6JWSHQ2Q"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-WQ6JWSHQ2Q");
+  </script>
+</head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQ6JWSHQ2Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WQ6JWSHQ2Q');
+</script>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/">home</a></li>
+        <li class="hvr-underline-reveal"><a href="/work/">work</a></li>
+        <li class="hvr-underline-reveal"><a href="/blog/">blog</a></li>
+        <li class="hvr-underline-reveal"><a href="/archive/">archive</a></li>
+      </ul>
+      <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+      </button>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <article class="post">
+  <h1 class="post-title">Managing Film Scans With FFmpeg</h1>
+  <time datetime="2020-11-13T00:00:00-05:00" class="post-date"
+    >13 Nov 2020</time
+  >
+  <p>I have been trying to figure the best way to play and manage film scans and learned a bag of new tricks from <a href="https://reto.ch/" target="\_ blank">reto.ch</a>!</p>
+
+<h2 id="playing-a-dpx-sequence">Playing a DPX sequence</h2>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffplay</span> <span class="o">[</span><span class="nt">DIRECTORY</span><span class="o">]/</span><span class="nt">Scan</span><span class="err">\</span><span class="nt">_</span><span class="o">%</span><span class="err">06</span><span class="nt">d</span><span class="nc">.tif</span></code></pre></figure>
+
+<p>The regex %06d matches six digits long numbers, possibly with leading zeroes. This allows to read in ascending order, one image after the other,the full sequence inside one folder. Of course, the command must match the naming convention actually used.</p>
+
+<h2 id="make-a-prores-file-from-the-scan-sequence">Make a ProRes file from the scan sequence</h2>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffmpeg</span>
+<span class="nt">-f</span> <span class="nt">image2</span> <span class="err">\</span>
+ <span class="nt">-framerate</span> <span class="err">24</span> <span class="err">\</span>
+ <span class="nt">-i</span> <span class="o">[</span><span class="nt">DIRECTORY</span><span class="o">]/</span><span class="nt">Scan</span><span class="err">\</span><span class="nt">_</span><span class="o">%</span><span class="err">06</span><span class="nt">d</span><span class="nc">.tif</span> <span class="err">\</span>
+ <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">prores_ks</span> <span class="err">\</span>
+ <span class="nt">-profile</span><span class="nd">:v</span> <span class="err">3</span> <span class="err">\</span>
+ <span class="nt">-filter</span><span class="nd">:v</span> <span class="s1">"scale=1440:1080:flags=lanczos, pad=1920:1080:240:0"</span> <span class="err">\</span>
+ <span class="nt">ProRes</span><span class="nc">.mov</span></code></pre></figure>
+
+<p><em>f</em> image2 forces the image file de-muxer for single image files
+<em>framerate</em> sets the frame rate to 24
+NOTE: The previous two parameters must be before the input file, because they are applied to the input file.
+<em>i</em> path, name and extension of the input file
+The regex %06d matches six digits long numbers, possibly with
+leading zeroes. This allows to read in ascending order, one
+image after the other, the full sequence inside one folder.
+The command must of course match the naming convention
+actually used.
+<em>c:v</em> chooses the ProRes video codec
+<em>profile:v</em> the flavour ProRes 422 HQ has the video profile 3
+<em>filter:v</em> filters the video stream:
+_ scaling to the correct size
+[we use the Lanczos scaling algorithm which is slower but
+better than the default bilinear algorithm]
+_ padding the 4:3 format into the 16:9 HD format with pillar box</p>
+
+<h2 id="make-a-h264-file-from-the-scan-sequence">Make a H264 file from the scan sequence</h2>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffmpeg</span> <span class="err">\</span>
+ <span class="nt">-f</span> <span class="nt">image2</span> <span class="err">\</span>
+ <span class="nt">-framerate</span> <span class="err">24</span> <span class="err">\</span>
+ <span class="nt">-i</span> <span class="nt">DUFAY</span><span class="o">*</span><span class="nt">TIFF</span><span class="o">/</span><span class="nt">Dufay</span><span class="o">*%</span><span class="err">06</span><span class="nt">d</span><span class="nc">.tif</span> <span class="err">\</span>
+ <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">libx264</span> <span class="err">\</span>
+ <span class="nt">-preset</span> <span class="nt">veryslow</span> <span class="err">\</span>
+ <span class="nt">-qp</span> <span class="err">18</span> <span class="err">\</span>
+ <span class="nt">-filter</span><span class="nd">:v</span> <span class="s1">"scale=1440:1080:flags=lanczos, pad=1920:1080:240:0"</span> <span class="err">\</span>
+ <span class="nt">-pix_fmt</span> <span class="nt">yuv420p</span> <span class="err">\</span>
+ <span class="nt">Scan_H264_1</span><span class="nc">.mp4</span></code></pre></figure>
+
+<p>Make an access file H.264 directly form the conservation files TIFF.
+<em>c:v</em> chooses the H.264 codec by using the libx264 library
+<em>preset</em> chooses the very slow preset which gives the best result
+<em>qp</em> a quantisation parameter of 18 means “visually lossless”</p>
+
+<h2 id="make-a-h264-file-from-the-prores-file">Make a H264 file from the ProRes file</h2>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">ffmpeg</span> <span class="err">\</span>
+ <span class="nt">-i</span> <span class="nt">ProRes</span><span class="nc">.mov</span> <span class="err">\</span>
+ <span class="nt">-c</span><span class="nd">:v</span> <span class="nt">libx264</span> <span class="err">\</span>
+ <span class="nt">-preset</span> <span class="nt">veryslow</span> <span class="err">\</span>
+ <span class="nt">-qp</span> <span class="err">18</span> <span class="err">\</span>
+ <span class="nt">-pix_fmt</span> <span class="nt">yuv420p</span> <span class="err">\</span>
+ <span class="nt">-an</span> <span class="err">\</span>
+ <span class="nt">Scan_H264_2</span><span class="nc">.mp4</span></code></pre></figure>
+
+<p><em>an</em> prevents an empty audio track ([a]udio [n]o)</p>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2024-08-02T22:49:39-04:00">2024</time> Matthew Yang</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
+            <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
+        </small>
+        <div class="ftr-links">
+          <a class="social-link-item" target="_blank" href="mailto:matthewyangjiefeng@gmail.com?subject=Hello!">
+          <a href="mailto:matthewyang@nyu.edu?subject=Hello!" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
+          <a href="https://github.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+          <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+          
+        </div>
+      </footer>
+    </div>
+
+  <script src="/scripts/darkmode.js"></script>
+  </body>
+</html>

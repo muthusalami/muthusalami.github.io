@@ -7,13 +7,39 @@
   font-size: $font-size; // override mobile media query
   text-align: center;
   margin-bottom: 4rem;
+  position: relative; // added for absolute positioning of the toggle button
 
   @media (max-width: 38em) {
     margin-bottom: 2rem;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between; // spread items evenly
+      align-items: center; // vertically center items
+      width: 100%;
+    }
+
+    li {
+      flex: 1; // ensure each list item takes equal space
+      text-align: center;
+    }
+
+    .dark-mode-toggle {
+      flex: 0; // do not expand the toggle button
+      margin-left: auto; // push it to the far right
+      padding: $nav-link-padding-y $nav-link-padding-x; // maintain padding consistency
+    }
   }
 
   ul {
     padding: 0;
+    margin: 0 auto; // center the list
+    list-style: none;
+    display: flex;
+    justify-content: center;
     border-bottom-color: $nav-bottom-border-color;
     border-bottom-width: $nav-bottom-border-width;
     border-bottom-style: solid;
@@ -40,5 +66,29 @@
     line-height: 1.6em;
     margin: 0 1rem;
     padding: 0;
+  }
+
+  .dark-mode-toggle {
+    background: none;
+    border: none;
+    color: $nav-link-color;
+    cursor: pointer;
+    position: absolute; // positioned absolutely
+    right: 20px; // adjust as needed
+    top: 50%; // center vertically
+    transform: translateY(-50%); // center vertically
+
+    @media (max-width: 38em) {
+      position: static; // position it relatively within the flex container
+      top: 0;
+      right: 0;
+      transform: none;
+      margin: 0;
+    }
+  }
+
+  .dark-mode-toggle svg {
+    width: 18px;
+    height: 18px;
   }
 }

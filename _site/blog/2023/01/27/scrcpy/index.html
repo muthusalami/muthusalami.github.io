@@ -2,37 +2,67 @@
 <html lang="en">
 
   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1"
+  />
 
   <title>
-    
-      Use scrcpy to mirror android devices on your desktop &middot; Matthew Yang | Audiovisual archivist & preservationist
-    
+     Use scrcpy to Mirror Android Devices On Your Desktop
+    &middot; Matthew Yang | Digital Archivist & Media Preservationist 
   </title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
-  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="/css/font-awesome.min.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="/css/style.css"
+    type="text/css"
+  />
 
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
-  
-  <link rel="alternate" type="application/atom+xml" title="Matthew Yang | Audiovisual archivist & preservationist" href="/atom.xml">
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="/favicon.png"
+  />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link
+    rel="apple-touch-icon-precomposed"
+    sizes="152x152"
+    href="/apple-touch-icon.png"
+  />
 
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Matthew Yang | Digital Archivist & Media Preservationist"
+    href="/atom.xml"
+  />
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQ6JWSHQ2Q"></script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WQ6JWSHQ2Q"
+  ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-WQ6JWSHQ2Q');
+    gtag("config", "G-WQ6JWSHQ2Q");
   </script>
-
-
 </head>
 
   <!-- Google tag (gtag.js) -->
@@ -54,16 +84,21 @@
         <li class="hvr-underline-reveal"><a href="/blog/">blog</a></li>
         <li class="hvr-underline-reveal"><a href="/archive/">archive</a></li>
       </ul>
+      <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+      </button>
     </nav>
 
     <div class="container content">
       <main>
         <article class="post">
-  <h1 class="post-title">Use scrcpy to mirror android devices on your desktop</h1>
-  <time datetime="2023-01-27T00:00:00-05:00" class="post-date">27 Jan 2023</time>
+  <h1 class="post-title">Use scrcpy to Mirror Android Devices On Your Desktop</h1>
+  <time datetime="2023-01-27T00:00:00-05:00" class="post-date"
+    >27 Jan 2023</time
+  >
   <p><img src="http://localhost:4000/assets/originals/scrcpy/scrcpy.gif" alt="scrcpy demo" /></p>
 
-<p><a href="https://github.com/Genymobile/scrcpy#physical-mouse-simulation-hid" target="_ blank">scrcpy</a> is a great open source application that “provides display and control of Android devices connected via USB or over TCP/IP.” In other words, one may screen-mirror and control their Android device from their desktop with scrcpy!</p>
+<p><a href="https://github.com/Genymobile/scrcpy#physical-mouse-simulation-hid" target="\_ blank">scrcpy</a> is a great open source application that “provides display and control of Android devices connected via USB or over TCP/IP.” In other words, one may screen-mirror and control their Android device from their desktop with scrcpy!</p>
 
 <p><strong>Platforms:</strong> Windows, Mac and Linux</p>
 
@@ -83,7 +118,7 @@
   <li>Go to ‘Developer options’</li>
   <li>Enable USB debugging</li>
   <li>Enable USB debugging (Security settings)
- -Allow granting permissions and simulating input via USB debugging</li>
+-Allow granting permissions and simulating input via USB debugging</li>
   <li>Enable Wireless debugging</li>
   <li>Connect your Android device to machine via USB</li>
   <li>Ensure your device is on the same network as your machine</li>
@@ -92,13 +127,17 @@
 <p><strong>Installing scrcpy for Linux:</strong></p>
 
 <p>1. On Debian and Ubuntu:</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install scrcpy
 </code></pre></div></div>
+
 <p>2. Run:</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb tcpip 5555
 </code></pre></div></div>
 
 <p>3. Now run:</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb connect &lt;your android's ip address&gt;:5555
 </code></pre></div></div>
 
@@ -110,7 +149,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2023-10-02T21:02:39-04:00">2023</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2024-08-02T22:49:39-04:00">2024</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>
@@ -125,5 +164,6 @@
       </footer>
     </div>
 
+  <script src="/scripts/darkmode.js"></script>
   </body>
 </html>

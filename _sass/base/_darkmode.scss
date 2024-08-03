@@ -1,0 +1,54 @@
+/* _darkmode.scss */
+
+body.darkmode {
+  background-color: #1e1e1e; // dark background color for the entire page
+  color: #ffffff; // light text color
+}
+
+body.darkmode .nav-main {
+  background-color: #1e1e1e; // darker background for navigation
+
+  ul {
+    border-bottom-color: #ffffff; // white border color in dark mode
+  }
+
+  li a {
+    color: #ffffff; // light link color
+  }
+
+  li.logo a {
+    color: #ffffff; // light icon color
+    background: #1e1e1e; // same background color
+  }
+
+  .dark-mode-toggle {
+    color: #ffffff; // light color for the toggle button
+  }
+}
+
+body.darkmode .container {
+  background-color: #1e1e1e; // dark background for the container
+  color: #ffffff; // light text color for the container
+}
+
+body.darkmode .content {
+  background-color: #1e1e1e; // dark background for the content area
+  color: #ffffff; // light text color for content area
+}
+
+body.darkmode .footer {
+  background-color: #1e1e1e; // dark background for the footer
+  color: #ffffff; // light text color for the footer
+}
+
+body.darkmode .footer a {
+  color: #ffffff; // light link color in the footer
+}
+
+body.darkmode img {
+  border-radius: 5px;
+}
+
+body.darkmode html {
+  color: #ffffff;
+}

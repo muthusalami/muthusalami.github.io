@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1"
+  />
+
+  <title>
+     Ubiquiti Home Network Part&#58; II
+    &middot; Matthew Yang | Digital Archivist & Media Preservationist 
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="/css/font-awesome.min.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="/css/style.css"
+    type="text/css"
+  />
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="/favicon.png"
+  />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link
+    rel="apple-touch-icon-precomposed"
+    sizes="152x152"
+    href="/apple-touch-icon.png"
+  />
+
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Matthew Yang | Digital Archivist & Media Preservationist"
+    href="/atom.xml"
+  />
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WQ6JWSHQ2Q"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-WQ6JWSHQ2Q");
+  </script>
+</head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQ6JWSHQ2Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WQ6JWSHQ2Q');
+</script>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/">home</a></li>
+        <li class="hvr-underline-reveal"><a href="/work/">work</a></li>
+        <li class="hvr-underline-reveal"><a href="/blog/">blog</a></li>
+        <li class="hvr-underline-reveal"><a href="/archive/">archive</a></li>
+      </ul>
+      <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+      </button>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <article class="post">
+  <h1 class="post-title">Ubiquiti Home Network Part&#58; II</h1>
+  <time datetime="2021-01-20T00:00:00-05:00" class="post-date"
+    >20 Jan 2021</time
+  >
+  <p>This post is all about setting up my Ubiquiti home network and will serve as a personal resource/journal for the various devices.</p>
+
+<h2 id="edgerouter-x-er-x-router-set-up">EdgeRouter X (ER-X) router set up</h2>
+
+<ol>
+  <li>
+    <p>Connect computer to the Eth 0 port on the ER-X</p>
+  </li>
+  <li>
+    <p>Open the network settings on your PC and set the IP address to 192.168.1.2 since the IP address of the ER-X is 192.168.1.1 (also the default gateway)</p>
+
+    <p>Subnet mask: 255.255.255.0</p>
+  </li>
+  <li>
+    <p>Log into EdgeMax Web GUI. usr: ‘ubnt’ pwd: ‘ubnt’</p>
+  </li>
+  <li>
+    <p>Commence basic set-up</p>
+  </li>
+  <li>
+    <p>Settings</p>
+
+    <p>Port: eth 0
+Internet connection type: DHCP
+Firewall: enable the default Firewall
+One Lan: <em>check</em></p>
+
+    <p>Leave default address and enable DHCP server</p>
+
+    <p>Create a new user with a new password</p>
+  </li>
+  <li>
+    <p>Apply changes and reboot the router</p>
+  </li>
+  <li>
+    <p>Plug modem into eth 0 and move client connection to eth 1</p>
+  </li>
+  <li>
+    <p>Change IP and DNS settings to automatic on the client</p>
+  </li>
+  <li>
+    <p>‘ipconfig /release’ to release the old IP address. ‘ipconfig /renew’ to get a new IP address</p>
+  </li>
+  <li>
+    <p>Log back into the EdgeMax Web GUI.</p>
+  </li>
+  <li>
+    <p>Bring up the CLI on the GUI. Log in with the credentials</p>
+  </li>
+  <li>
+    <p>type ‘configure’</p>
+  </li>
+  <li>
+    <p>set ‘system offload hwnat enable’</p>
+  </li>
+  <li>
+    <p>set ‘system system offload ipsec enable’</p>
+  </li>
+  <li>
+    <p>type ‘commit’ and ‘save’.</p>
+  </li>
+</ol>
+
+<p>Credit to Toasty Answers for the easy to follow set-up.</p>
+
+<p><a href="https://www.youtube.com/watch?v=aECPxlT6Qq4" target="\_ blank">Toasty Answers - EdgeRouter X First Time Setup</a></p>
+
+<p><strong>Updating the ER-X</strong></p>
+
+<ol>
+  <li>
+    <p>Download the latest firmware from Ubiquiti.</p>
+  </li>
+  <li>
+    <p>Access the EdgeMax Web GUI and click on system and head to upgrade system image. Click ‘upload a file’.</p>
+  </li>
+  <li>
+    <p>Upload the image and reboot and let it apply the update.</p>
+  </li>
+  <li>
+    <p>Log in again and the new version should be reflected on the dashboard.</p>
+  </li>
+</ol>
+
+<p><strong>Other functions</strong></p>
+
+<p><em>Smart Queue</em></p>
+
+<p><em>UPnP</em></p>
+
+<h2 id="additional-resources">Additional resources</h2>
+
+<ul>
+  <li>‘Gamer Setup’ for the ER-X</li>
+</ul>
+
+<p><a href="https://www.youtube.com/watch?v=o-g2P3R84dw" target="\_blank">Gamer Setup - This router can save your marriage!</a></p>
+
+<ul>
+  <li>The Ubiquiti Universe</li>
+</ul>
+
+<p><a href="https://www.youtube.com/watch?v=-6q-4lSBfmA" target="\_blank">Poseidwn Tech - Initial UniFi Setup for Beginners</a></p>
+
+<ul>
+  <li>Unifi Cloud Key Gen2 Plus (UCK-G2-PLUS)</li>
+</ul>
+
+<p><a href="https://www.youtube.com/watch?v=H_a1BCf1jH0" target="\_ blank">Crosstalk Solutions - Cloud Key Gen2 Plus</a></p>
+
+<ul>
+  <li>Unifi US-16-150W</li>
+</ul>
+
+<p><a href="https://www.youtube.com/watch?v=0_wXI5minS0" target="\_blank">Tom Morgan - Ubiquiti UniFi Switch 16 150W setup</a></p>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2024-08-02T22:49:39-04:00">2024</time> Matthew Yang</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
+            <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
+        </small>
+        <div class="ftr-links">
+          <a class="social-link-item" target="_blank" href="mailto:matthewyangjiefeng@gmail.com?subject=Hello!">
+          <a href="mailto:matthewyang@nyu.edu?subject=Hello!" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
+          <a href="https://github.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+          <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+          
+        </div>
+      </footer>
+    </div>
+
+  <script src="/scripts/darkmode.js"></script>
+  </body>
+</html>

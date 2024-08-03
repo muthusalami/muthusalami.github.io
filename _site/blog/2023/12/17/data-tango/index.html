@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1"
+  />
+
+  <title>
+     Data Tango&#58; Exploring Restic
+    &middot; Matthew Yang | Digital Archivist & Media Preservationist 
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="/css/font-awesome.min.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="/css/style.css"
+    type="text/css"
+  />
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="/favicon.png"
+  />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link
+    rel="apple-touch-icon-precomposed"
+    sizes="152x152"
+    href="/apple-touch-icon.png"
+  />
+
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Matthew Yang | Digital Archivist & Media Preservationist"
+    href="/atom.xml"
+  />
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WQ6JWSHQ2Q"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-WQ6JWSHQ2Q");
+  </script>
+</head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQ6JWSHQ2Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WQ6JWSHQ2Q');
+</script>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/">home</a></li>
+        <li class="hvr-underline-reveal"><a href="/work/">work</a></li>
+        <li class="hvr-underline-reveal"><a href="/blog/">blog</a></li>
+        <li class="hvr-underline-reveal"><a href="/archive/">archive</a></li>
+      </ul>
+      <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+      </button>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <article class="post">
+  <h1 class="post-title">Data Tango&#58; Exploring Restic</h1>
+  <time datetime="2023-12-17T00:00:00-05:00" class="post-date"
+    >17 Dec 2023</time
+  >
+  <p><img src="http://localhost:4000/assets/originals/file_utility/restic.gif" alt="restic" /></p>
+
+<p>What is restic?</p>
+
+<p><a href="https://restic.net/" target="\_ blank">Restic</a> is a free and open source backup program available on Linux, BSD, MacOS, and Windows. It works with many different storage types (Local, Network, Cloud) and is designed to create and manage backups.</p>
+
+<p>Key features:
+<br />
+Deduplication
+<br />
+Encryption
+<br />
+Incremental Backups
+<br />
+Snapshot Management
+<br />
+Cross-platform Compatibility
+<br /></p>
+
+<p>Create Restic repository as backup destination</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:/dpx-restic init
+</code></pre></div></div>
+
+<p>Initiate backup</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:/dpx-restic backup C:/Users/MATT-THINKPAD/Documents/dpx-source/
+</code></pre></div></div>
+
+<p>Check snapshots</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:<span class="se">\d</span>px-restic snapshots
+</code></pre></div></div>
+
+<p>List files in repository</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:<span class="se">\d</span>px-restic <span class="nb">ls </span>latest
+</code></pre></div></div>
+
+<p>Verifying backups</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic check D:<span class="se">\d</span>px-restic
+</code></pre></div></div>
+
+<p>Restoring files</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:<span class="se">\d</span>px-restic<span class="se">\ </span>restore <span class="s2">"latest:/C/Users/MATT-THINKPAD/Documents/dpx-source/"</span> <span class="nt">--target</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\M</span><span class="s2">ATT-THINKPAD</span><span class="se">\O</span><span class="s2">neDrive - nyu.edu</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\d</span><span class="s2">px-restore"</span>
+</code></pre></div></div>
+
+<p>Restore files from a specific snapshot</p>
+
+<p>Get a list of snapshots</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> <span class="s1">'D:\dpx-restic\'</span> snapshots
+</code></pre></div></div>
+
+<p>Restore from snapshot</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:<span class="se">\d</span>px-restic restore 2297f849 <span class="nt">--target</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\M</span><span class="s2">ATT-THINKPAD</span><span class="se">\O</span><span class="s2">neDrive - nyu.edu</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\d</span><span class="s2">px-restore"</span>
+</code></pre></div></div>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2024-08-02T22:49:39-04:00">2024</time> Matthew Yang</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
+            <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
+        </small>
+        <div class="ftr-links">
+          <a class="social-link-item" target="_blank" href="mailto:matthewyangjiefeng@gmail.com?subject=Hello!">
+          <a href="mailto:matthewyang@nyu.edu?subject=Hello!" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
+          <a href="https://github.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+          <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+          
+        </div>
+      </footer>
+    </div>
+
+  <script src="/scripts/darkmode.js"></script>
+  </body>
+</html>

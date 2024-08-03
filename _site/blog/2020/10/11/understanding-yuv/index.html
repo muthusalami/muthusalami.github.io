@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1"
+  />
+
+  <title>
+     Understanding the YUV (YCbCr) Colour Encoding System
+    &middot; Matthew Yang | Digital Archivist & Media Preservationist 
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="/css/font-awesome.min.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="/css/style.css"
+    type="text/css"
+  />
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="/favicon.png"
+  />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link
+    rel="apple-touch-icon-precomposed"
+    sizes="152x152"
+    href="/apple-touch-icon.png"
+  />
+
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Matthew Yang | Digital Archivist & Media Preservationist"
+    href="/atom.xml"
+  />
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-WQ6JWSHQ2Q"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-WQ6JWSHQ2Q");
+  </script>
+</head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQ6JWSHQ2Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WQ6JWSHQ2Q');
+</script>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/">home</a></li>
+        <li class="hvr-underline-reveal"><a href="/work/">work</a></li>
+        <li class="hvr-underline-reveal"><a href="/blog/">blog</a></li>
+        <li class="hvr-underline-reveal"><a href="/archive/">archive</a></li>
+      </ul>
+      <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+      </button>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <article class="post">
+  <h1 class="post-title">Understanding the YUV (YCbCr) Colour Encoding System</h1>
+  <time datetime="2020-10-11T00:00:00-04:00" class="post-date"
+    >11 Oct 2020</time
+  >
+  <p><img src="http://localhost:4000/assets/originals/YUV/YUV.png" alt="YUV chart" /></p>
+
+<h2 id="what-is-yuv">What is YUV?</h2>
+
+<p>In a YUV data structure scheme, the ‘Y’ represents the luma value, and the ‘U’ &amp; ‘V’ represents two chroma values. In contrast to RGB, the values represent the intensities of red, green and blue channels in the pixel.</p>
+
+<p>Each unique ‘Y’, ‘U’ and ‘V’ value comprises of 8-bits (or one byte) of data.</p>
+
+<p><strong>Y value</strong> = Luminance value
+Overall brightness of the pixel. It is a grayscale value.</p>
+
+<p><strong>U (CB) value</strong> = Chrominance value
+Specifically the Blue</p>
+
+<p><strong>V (CR) value</strong> = Chrominance value
+Specifically the Red</p>
+
+<p>The <strong>U &amp; V values</strong> are coordinates instead of brightness values with positive and negative values.</p>
+
+<h2 id="why-not-stick-to-rgb">Why not stick to RGB?</h2>
+
+<p>Colour and brightness information and combined within the three channels in RGB. i.e. Increasing the <strong>R</strong> channel will increase both the colour and brightness value in tandem. In simpler terms, both properties are combined in the same value.</p>
+
+<p>In a YUV system, the brightness information is completely separated from the colour information. In other words, more control is afforded.</p>
+
+<h2 id="practical-application">Practical application</h2>
+
+<p><strong>Backward compatibility</strong> - Black and White TVs can’t take RGB signals since the brightness value is baked into the colour values which it doesn’t understand. Whereas YUV has the Y value which can be processed by the television set, by ignoring the colour components.</p>
+
+<p><strong>Chroma sub-sampling</strong> - YUV allows the user to remove information specifically from the colour values without affecting the overall luminance of it. This is particularly useful during image compression and an effective means in processing images.</p>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2024-08-02T22:49:39-04:00">2024</time> Matthew Yang</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
+            <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
+        </small>
+        <div class="ftr-links">
+          <a class="social-link-item" target="_blank" href="mailto:matthewyangjiefeng@gmail.com?subject=Hello!">
+          <a href="mailto:matthewyang@nyu.edu?subject=Hello!" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
+          <a href="https://github.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+          <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+          
+        </div>
+      </footer>
+    </div>
+
+  <script src="/scripts/darkmode.js"></script>
+  </body>
+</html>
