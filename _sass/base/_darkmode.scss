@@ -1,66 +1,64 @@
 /* _darkmode.scss */
 
-body.darkmode .content .page-title {
-  color: #03dac6;
+body.darkmode .highlight {
+  background-color: #1d2f4a;
 }
 
+body.darkmode {
+  border-top: 5px solid #03dac6;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.darkmode strong,
+body.darkmode b,
+body.darkmode .bold {
+  color: #ffffff;
+}
+
+body.darkmode .content .page-title,
 body.darkmode .page-title,
 body.darkmode .post-title,
-body.darkmode .post-title a {
-  color: #bbf6ac;
-}
-
+body.darkmode .post-title a,
+body.darkmode h2,
+body.darkmode h3,
 body.darkmode h4 {
   color: #bbf6ac;
 }
 
-body.darkmode .message {
-  background-color: #edeced;
-}
-
-body.darkmode {
-  background-color: #1e1e1e; // dark background color for the entire page
-  color: #ffffff; // light text color
-}
-
+body.darkmode .message,
+body.darkmode .container,
+body.darkmode .content,
+body.darkmode .footer,
 body.darkmode .nav-main {
-  background-color: #1e1e1e; // darker background for navigation
-
-  ul {
-    border-bottom-color: #ffffff; // white border color in dark mode
-  }
-
-  li a {
-    color: #ffffff; // light link color
-  }
-
-  li.logo a {
-    color: #ffffff; // light icon color
-    background: #1e1e1e; // same background color
-  }
-
-  .dark-mode-toggle {
-    color: #ffffff; // light color for the toggle button
-  }
+  background-color: #1e1e1e;
 }
 
-body.darkmode .container {
-  background-color: #1e1e1e; // dark background for the container
-  color: #ffffff; // light text color for the container
+body.darkmode .nav-main ul {
+  border-bottom-color: #ffffff;
 }
 
+body.darkmode .nav-main li a,
+body.darkmode .nav-main li.logo a,
+body.darkmode .nav-main .dark-mode-toggle,
+body.darkmode .footer,
+body.darkmode .container,
 body.darkmode .content {
-  background-color: #1e1e1e; // dark background for the content area
-  color: #ffffff; // light text color for content area
+  color: #ffffff;
 }
 
-body.darkmode .footer {
-  background-color: #1e1e1e; // dark background for the footer
-  color: #ffffff; // light text color for the footer
+body.darkmode .footer a,
+body.darkmode .content .page-title {
+  color: #03dac6;
 }
 
-body.darkmode .footer a {
-  color: #03dac6; // light link color in the footer
+body.darkmode .hvr-underline-reveal {
+  position: relative;
+  display: inline-block;
+}
+
+body.darkmode .hvr-underline-reveal::before {
+  background-color: #bbf6ac;
 }
 
 body.darkmode img {

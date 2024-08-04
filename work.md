@@ -128,9 +128,6 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 2012 2011 2010 Director's List - Ngee Ann Polytechnic, School of Film & Media Studies
 
 <br>
-<p class="message">
-  my latest cv is available upon request by email.
-</p>
 
 <!-- <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
