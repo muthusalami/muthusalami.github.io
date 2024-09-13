@@ -6,13 +6,17 @@ title: work
 <h4>employment</h4>
 <br>
 <u>CUNY TV</u>
-<br>Media Preservation Technician (Jun. 2024 - present)
+<br>Media Preservation Technician (Jun. 2024 - Aug. 2024)
 
 <u>Asian Film Archive</u>
 <br>Archive Officer (Jan. 2017 - Aug. 2022)
 
 <br>
 <h4>fellowships</h4>
+<br>
+<u>J. Paul Getty Trust (Getty Digital)</u>
+<br>Getty Graduate Internship (Sep. 2024 - present)
+<br>
 <br>
 <u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
 <br>Research Fellow (Sep. 2022 - May 2024)
@@ -93,9 +97,8 @@ Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
 <br>
 <h4>awards, grants & scholarships</h4>
 <br>
-2024 New York University Academic Excellence Award
 
-2024 New York University Service Excellence Award
+2024 New York University Academic & Service Excellence Award
 
 2023 Association of Moving Image Archivists Broadening Perspectives Scholarship
 
