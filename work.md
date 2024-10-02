@@ -5,130 +5,88 @@ title: work
 
 <h4>employment</h4>
 <br>
-<u>CUNY TV</u>
-<br>Media Preservation Technician (Jun. 2024 - Aug. 2024)
 
-<u>Asian Film Archive</u>
-<br>Archive Officer (Jan. 2017 - Aug. 2022)
+| CUNY TV | Media Preservation Technician | Jun. 2024 - Aug. 2024 |
+| Asian Film Archive | Archive Officer | Jan. 2017 - Aug. 2022 |
 
 <br>
 <h4>fellowships</h4>
 <br>
-<u>J. Paul Getty Trust (Getty Digital)</u>
-<br>Getty Graduate Internship (Sep. 2024 - present)
-<br>
-<br>
-<u>Digital Preservation Outreach and Education Network (DPOE-N)</u>
-<br>Research Fellow (Sep. 2022 - May 2024)
+
+| J. Paul Getty Trust (Getty Digital) | Graduate Intern | Sep. 2024 - present |
+| Digital Preservation Outreach and Education Network (DPOE-N) | Research Fellow | Sep. 2022 - May 2024 |
 
 <br>
 <h4>apprenticeships and internships</h4>
 <br>
-<u>CUNY TV</u>
-<br>Audio Preservation Intern (Jan. 2024 - Jun. 2024)
 
-<u>Cineric, Inc.</u>
-<br>Digital Restoration Intern (Sep. 2023 - Jan. 2024)
-
-<u>Bay Area Video Coalition Media</u>
-<br>Video Preservation Intern (Jun. - Aug. 2023)
-
-<u>Prelinger Archives</u>
-<br>Media Digitization Intern (Jun. - Aug. 2023)
-
-<u>New York Public Library</u>
-<br>Media Preservation Intern (Jan. - May. 2023)
-
-<u>Olympic Broadcasting Services</u>
-<br>Broadcast Intern (Jul. - Sep. 2010)
+| CUNY TV | Audio Preservation Intern | Jan. 2024 - Jun. 2024 |
+| Cineric Inc. | Digital Restoration Intern | Sep. 2023 - Jan. 2024 |
+| Bay Area Video Coalition Media | Video Preservation Intern | Jun. 2023 - Aug. 2023 |
+| Prelinger Archives | Media Digitization Intern | Jun. 2023 - Aug. 2023 |
+| New York Public Library | Media Preservation Intern | Jan. 2023 - May. 2023 |
+| Olympic Broadcasting Services | Broadcast Intern | Jul. 2010 - Sep. 2010 |
 
 <br>
 <h4>writing</h4>
 <br>
 
-2023 <u><em>Hágalo Ud. Mismo: Una Guía de Preservación de Soportes Ópticos para Artistas y Videorealizadores</em></u><br>
-
-A Spanish optical disc preservation guide produced in collaboration with Cinemateca de Bogotá, Professor Juana Suárez, & Carlos Saldaña.
+| 2023 | _Hágalo Ud. Mismo: Una Guía de Preservación de Soportes Ópticos para Artistas y Videorealizadores_ |
+| | A Spanish optical disc preservation guide produced in collaboration with Cinemateca de Bogotá, Professor Juana Suárez, & Carlos Saldaña. |
 
 <br>
 <h4>workshops</h4>
 <br>
-2024 <u>Super 8 Shooting & Developing Workshop</u><br>
 
-2-day workshop where participants experience shooting, developing, and projecting Super 8 film.
-
-2024 <u>Optical Media Preservation Workshop</u><br>
-
-Conducted a collection assessment and optical media preservation workshop for the Aigaio Radio and TV Station in Greece in collaboration with Archipelago Network. Organized as part of New York University's Audiovisual Preservation Exchange (APEX).
-
-2023 <u>Optical Media Preservation Workshop</u><br>
-
-Prepared learning aids and lesson plan for a 1-day optical media preservation workshop at the Cinemateca de Bogotá, Colombia. Organized as part of New York University's Audiovisual Preservation Exchange (APEX).
-
-2022 <u>Super 8 Shooting & Developing Workshop</u><br>
-
-2-day free workshop where participants experience shooting, developing, and projecting Super 8 film. Sponsored by Kodak as part of Singapore's first Home Movie Day.
+| 2024 | _Super 8 Shooting & Developing Workshop_ |
+| | 2-day workshop where participants experience shooting, developing, and projecting Super 8 film. |
+| 2024 | _Optical Media Preservation Workshop_ |
+| | Conducted a collection assessment and optical media preservation workshop for the Aigaio Radio and TV Station in Greece in collaboration with Archipelago Network. Organized as part of New York University's Audiovisual Preservation Exchange (APEX). |
+| 2023 | _Optical Media Preservation Workshop_ |
+| | Prepared learning aids and lesson plan for a 1-day optical media preservation workshop at the Cinemateca de Bogotá, Colombia. Organized as part of New York University's Audiovisual Preservation Exchange (APEX). |
+| 2022 | _Super 8 Shooting & Developing Workshop_ |
+| | 2-day free workshop where participants experience shooting, developing, and projecting Super 8 film. Sponsored by Kodak as part of Singapore's first Home Movie Day. |
 
 <br>
 <h4>presentations & projects</h4>
 <br>
 
-2024 <u>The Great Migration: Planning & Performing Media Migrations for Audiovisual Collections</u><br>
-28th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2024, Solo, Indonesia
+| 2024 | _The Great Migration: Planning & Performing Media Migrations for Audiovisual Collections_ | 28th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2024, Solo, Indonesia |
+| 2023 | _Rip It!: A Preservation Workflow For DVD Video Discs_ | Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA |
+| 2023 | _From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day_ | Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA |
+| 2023 | _APEX Optical Media Guide For DVD Video_ | Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador |
+| 2023 | _From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day_ | 27th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2023, Pattaya, Thailand |
+| 2022 | _More Than Meets the Eye: Confronting The Challenge of Restoring Non-feature Length Films_ | 78th International Federation of Film Archives (FIAF) Congress 2022, Budapest, Hungary |
+| 2021 | _Now or Never: Pushing For Film Preservation Using Inter-agency Relations_ | 25th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAAVA) Conference 2021, Hanoi, Vietnam |
 
-2023 <u>Rip It!: A Preservation Workflow For DVD Video Discs</u><br>
-Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
+<br>
+<h4>press</h4>
+<br>
 
-2023 <u>From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day</u><br>
-Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA
-
-2023 <u>APEX Optical Media Guide For DVD Video</u><br>
-Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador
-
-2023 <u>From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day</u><br>
-27th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2023, Pattaya, Thailand
-
-2022 <u>More Than Meets the Eye: Confronting The Challenge of Restoring Non-feature Length Films</u><br>
-78th International Federation of Film Archives (FIAF) Congress 2022, Budapest, Hungary
-
-2021 <u> Now or Never: Pushing For Film Preservation Using Inter-agency Relations</u><br>
-25th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAAVA) Conference 2021, Hanoi, Vietnam
+| 2023 | [Interview with Matthew Yang of Home Movie Day Singapore](https://www.centerforhomemovies.org/interview-with-matthew-yang-of-home-movie-day-singapore/){:target="\_ blank"} | Kate Dollenmayer,<br> Center For Home Movies |
+| 2023 | [Oliver Wendell Holmes Travel Award: Matthew Yang](https://www2.archivists.org/recipients/oliver-wendell-holmes-travel-award-matthew-yang){:target="\_ blank"} | Society of American Archivists |
+| 2022 | [Communal Projections for Home Movie Networks in Singapore](https://www.sinema.sg/2022/11/03/communal-projections-for-home-movie-networks-in-singapore/){:target="\_ blank"} | Sasha Han,<br> Sinema |
 
 <br>
 <h4>awards, grants & scholarships</h4>
 <br>
 
-2024 New York University Academic & Service Excellence Award
-
-2023 Association of Moving Image Archivists Broadening Perspectives Scholarship
-
-2023 New York University Martin Scorsese Department of Cinema Studies Conference Travel Grant
-
-2023 WGBH PBCore AMIA Travel Grant
-
-2023 New York University Center for Research & Study Student Travel Grant
-
-2023 New York University Lew Wasserman Scholarship
-
-2023 New York University Graduate School of Arts & Science Dean's Conference Fund
-
-2023 New York University Robert Sklar Memorial Scholarship
-
-2023 Society of American Archivists Oliver Wendell Holmes Travel Award
-
-2023 National Endowment for the Humanities Summer Internship Grant
-
-2023 New York University Wasserman Center Global Spring Internship Grant
-
-2023 National Endowment for the Humanities Spring Internship Grant
-
-2022 New York University Tisch School of the Arts Scholarship
-
-2022 Infocomm Media Development Authority Singapore Digital Scholarship (Postgraduate - Overseas)
-
-2018 Dean's List - Nanyang Technological University, College of Humanities, Arts, and Social Sciences
-
-2012 2011 2010 Director's List - Ngee Ann Polytechnic, School of Film & Media Studies
+| 2024 | Academic & Service Excellence Award | New York University |
+| 2023 | Broadening Perspectives Scholarship | Association of Moving Image Archivists |
+| 2023 | Martin Scorsese Department of Cinema Studies Conference Travel Grant | New York University |
+| 2023 | PBCore Travel Grant | WGBH Educational Foundation |
+| 2023 | Center for Research & Study Student Travel Grant | New York University |
+| 2023 | Lew Wasserman Scholarship | New York University |
+| 2023 | Graduate School of Arts & Science Dean's Conference Fund | New York University |
+| 2023 | Robert Sklar Memorial Scholarship | New York University |
+| 2023 | Oliver Wendell Holmes Travel Award | Society of American Archivists |
+| 2023 | Summer Internship Grant | National Endowment for the Humanities |
+| 2023 | Wasserman Center Global Spring Internship Grant | New York University |
+| 2023 | Spring Internship Grant | National Endowment for the Humanities |
+| 2023 | Tisch School of the Arts Scholarship | New York University |
+| 2022 | Singapore Digital Scholarship (Postgraduate - Overseas) | Infocomm Media Development Authority |
+| 2018 | Dean's List - College of Humanities, Arts, and Social Sciences | Nanyang Technological University |
+| 2012 2011 2010 | Director's List - School of Film & Media Studies | Ngee Ann Polytechnic |
 
 <br>
 
