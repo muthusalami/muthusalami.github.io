@@ -93,7 +93,7 @@ title: work
 | 2023 | Summer Internship Grant | National Endowment for the Humanities |
 | 2023 | Wasserman Center Global Spring Internship Grant | New York University |
 | 2023 | Spring Internship Grant | National Endowment for the Humanities |
-| 2023 | Tisch School of the Arts Scholarship | New York University |
+| 2023 2022 | Tisch School of the Arts Scholarship | New York University |
 | 2022 | Singapore Digital Scholarship (Postgraduate - Overseas) | Infocomm Media Development Authority |
 | 2018 | Dean's List - College of Humanities, Arts, and Social Sciences | Nanyang Technological University |
 | 2012 2011 2010 | Director's List - School of Film & Media Studies | Ngee Ann Polytechnic |
