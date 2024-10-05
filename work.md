@@ -48,7 +48,7 @@ title: work
 | | 2-day free workshop where participants experience shooting, developing, and projecting Super 8 film. Sponsored by Kodak as part of Singapore's first Home Movie Day. |
 
 <br>
-<h4>presentations & projects</h4>
+<h4>presentations</h4>
 <br>
 
 | 2024 | _The Great Migration: Planning & Performing Media Migrations for Audiovisual Collections_ | 28th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2024, Solo, Indonesia |
@@ -58,6 +58,15 @@ title: work
 | 2023 | _From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day_ | 27th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2023, Pattaya, Thailand |
 | 2022 | _More Than Meets the Eye: Confronting The Challenge of Restoring Non-feature Length Films_ | 78th International Federation of Film Archives (FIAF) Congress 2022, Budapest, Hungary |
 | 2021 | _Now or Never: Pushing For Film Preservation Using Inter-agency Relations_ | 25th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAAVA) Conference 2021, Hanoi, Vietnam |
+
+<br>
+<h4>community projects</h4>
+<br>
+
+| 2024 | Audiovisual Preservation Exchange - Greece | Student Organizer |
+| 2023 | Audiovisual Preservation Exchange - Ecuador | Student Organizer |
+| 2023 | Home Movie Day - New York | Organizer |
+| 2022 | Home Movie Day - Singapore | Organizer |
 
 <br>
 <h4>media & press</h4>
