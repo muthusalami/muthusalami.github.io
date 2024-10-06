@@ -17,7 +17,7 @@ title: work
 | Digital Preservation Outreach and Education Network (DPOE-N) | Research Fellow | Sep. 2022 - May 2024 |
 
 <br>
-<h4>apprenticeships and internships</h4>
+<h4>internships</h4>
 <br>
 
 | CUNY TV | Audio Preservation Intern | Jan. 2024 - Jun. 2024 |
@@ -60,11 +60,18 @@ title: work
 | 2021 | _Now or Never: Pushing For Film Preservation Using Inter-agency Relations_ | 25th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAAVA) Conference 2021, Hanoi, Vietnam |
 
 <br>
+<h4>open-source projects</h4>
+<br>
+
+| 2024 | [Archive-It Leak Debugger & Inspector (ALDI)](https://github.com/muthusalami/Archive-It-Leak-Debugger-Inspector){:target="\_ blank"} |
+| | ALDI is a Google Chrome extension that performs quality assurance (QA) on Internet Archive's Archive-It replay pages. |
+
+<br>
 <h4>community projects</h4>
 <br>
 
-| 2024 | Audiovisual Preservation Exchange - Greece | Student Organizer |
-| 2023 | Audiovisual Preservation Exchange - Ecuador | Student Organizer |
+| 2024 | Audiovisual Preservation Exchange (APEX) - Greece | Student Organizer |
+| 2023 | Audiovisual Preservation Exchange (APEX) - Ecuador | Student Organizer |
 | 2023 | Home Movie Day - New York | Organizer |
 | 2022 | Home Movie Day - Singapore | Organizer |
 
@@ -72,17 +79,18 @@ title: work
 <h4>media & press</h4>
 <br>
 
-| 2024 | [CRS Conference Travel Grant: Matthew Yang](https://tisch.nyu.edu/research-study/news/crs-student-travel-grant--matthew-yang){:target="\_ blank"} | New York University |
-| 2023 | [Interview with Matthew Yang of Home Movie Day Singapore](https://www.centerforhomemovies.org/interview-with-matthew-yang-of-home-movie-day-singapore/){:target="\_ blank"} | Kate Dollenmayer,<br> Center For Home Movies |
-| 2023 | [Oliver Wendell Holmes Travel Award: Matthew Yang](https://www2.archivists.org/recipients/oliver-wendell-holmes-travel-award-matthew-yang){:target="\_ blank"} | Society of American Archivists |
-| 2022 | [Communal Projections for Home Movie Networks in Singapore](https://www.sinema.sg/2022/11/03/communal-projections-for-home-movie-networks-in-singapore/){:target="\_ blank"} | Sasha Han,<br> Sinema |
+| 2024 | [_Center for Research & Study (CRS) Conference Travel Grant: Matthew Yang_](https://tisch.nyu.edu/research-study/news/crs-student-travel-grant--matthew-yang){:target="\_ blank"} | New York University |
+| 2024 | [_When Singaporeans Study Something That Almost Nobody Else Knows About_](https://www.ricemedia.co/when-singaporeans-study-something-that-almost-nobody-else-knows-about/){:target="\_ blank"} | Daniel Peters,<br> Rice Media |
+| 2023 | [_Interview with Matthew Yang of Home Movie Day Singapore_](https://www.centerforhomemovies.org/interview-with-matthew-yang-of-home-movie-day-singapore/){:target="\_ blank"} | Kate Dollenmayer,<br> Center For Home Movies |
+| 2023 | [_Oliver Wendell Holmes Travel Award: Matthew Yang_](https://www2.archivists.org/recipients/oliver-wendell-holmes-travel-award-matthew-yang){:target="\_ blank"} | Society of American Archivists |
+| 2022 | [_Communal Projections for Home Movie Networks in Singapore_](https://www.sinema.sg/2022/11/03/communal-projections-for-home-movie-networks-in-singapore/){:target="\_ blank"} | Sasha Han,<br> Sinema |
 
 <br>
 <h4>awards, grants & scholarships</h4>
 <br>
 
 | 2024 | Academic & Service Excellence Award | New York University |
-| 2023 | Broadening Perspectives Scholarship | Association of Moving Image Archivists |
+| 2023 | George Blood Broadening Perspectives Scholarship | Association of Moving Image Archivists |
 | 2023 | Martin Scorsese Department of Cinema Studies Conference Travel Grant | New York University |
 | 2023 | PBCore Travel Grant | WGBH Educational Foundation |
 | 2023 | Center for Research & Study Student Travel Grant | New York University |

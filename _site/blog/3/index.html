@@ -95,6 +95,43 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/blog/2023/11/23/pi-player/"> Raspberry Pi As Media Player & Video Looper </a>
+    </h1>
+
+    <time datetime="2023-11-23T00:00:00-08:00" class="post-date"
+      >23 Nov 2023</time
+    >
+
+     <p><img src="http://localhost:4000/assets/originals/raspberry_pi/duck_pi.jpg" alt="ducky and pi" /></p>
+
+<p><img src="http://localhost:4000/assets/originals/raspberry_pi/bare_pi_hdmi.jpg" alt="ducky and pi" /></p>
+
+<p>I needed a simple and elegant solution to playback digital videos for Home Movie Day 2022. I simply did not have budget for <a href="https://www.brightsign.biz/" target="\_ blank">BrightSign</a> players and I also did not want to deploy laptops onsite just to loop videos. Fortunately, Rasperry Pis came in as a great alternative.</p>
+
+<p>While it was my first time using a Raspberry Pi, its set up is pretty easy. The Raspberry Pi Foundation has an easy to follow <a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2" target="\_ blank">set-up guide</a> that walks you through it. The bulk of the set-up involves loading the desired operating system into the Raspberry Pi with the help of the <a href="https://www.raspberrypi.com/software/" target="\_ blank">Raspberry Pi Imager</a>. The Raspberry Pi Imager offers numerous operating systems, but the latest Raspberry Pi OS (64-bit) release is generally a good option.</p>
+
+<p>One may utilize VLC media player in the operating system to playback media, however another option is <a href="https://github.com/adafruit/pi_video_looper" target="\_ blank">Pi video looper</a> that requires the <a href="https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2021-05-28/" target="\_ blank">‘Buster OS’</a>. The video looper will automatically loop videos (H264, .MP4) found in any USB stick that is connected to the Raspberry Pi. This makes it perfect for art installations, fairs, theatre, events, infoscreens, and advertisements etc. What I like about it is its capability to automatically detect a new USB stick and its contents when it is hot swapped. This allows change of content on the fly.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+
+<span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> git
+
+git clone https://github.com/adafruit/pi_video_looper.git
+
+<span class="nb">cd </span>pi_video_looper
+
+<span class="nb">sudo</span> ./install.sh
+</code></pre></div></div>
+
+<p>The entire screen will turn black with a prompt: <strong><em>“Insert USB drive with compatible movies. press ESC to quit”</em></strong> after installation. Now its time to plug in your USB stick with your videos! Enjoy!</p>
+
+<p>Full written guide <a href="https://core-electronics.com.au/guides/raspberry-pi-video-looper/" target="\_ blank">here</a>.
+YouTube video guide <a href="https://www.youtube.com/watch?v=tnngVPg9kuw" target="\_ blank">here</a>.</p>
+ 
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/blog/2023/10/20/pdftk/"> Tool to Combine PDF Files </a>
     </h1>
 
@@ -192,22 +229,6 @@ Variable Value - C:\Program Files (x86)\Tesseract-OCR\tesseract.exe
  
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/blog/2023/10/02/hmd/"> Home Movie Day Singapore & New York </a>
-    </h1>
-
-    <time datetime="2023-10-02T00:00:00-07:00" class="post-date"
-      >02 Oct 2023</time
-    >
-
-     <p>I had the great pleasure of organizing and producing posters for two Home Movie Day events! Check it out!</p>
-
-<p><img src="http://localhost:4000/assets/originals/hmd/hmd_sg_small.jpg" alt="hmd singapore" />
-<img src="http://localhost:4000/assets/originals/hmd/hmd_ny.jpg" alt="hmd new york" /></p>
- 
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -238,7 +259,7 @@ Variable Value - C:\Program Files (x86)\Tesseract-OCR\tesseract.exe
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2024-10-02T09:29:48-07:00">2024</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2024-10-05T17:44:11-07:00">2024</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>

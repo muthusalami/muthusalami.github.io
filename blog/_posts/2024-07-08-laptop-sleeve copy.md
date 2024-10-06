@@ -12,7 +12,9 @@ image:
   feature:
 ---
 
-My long overdue project to make a new laptop sleeve is finally complete. It was time to replace my old one that saw me through film school, undergrad, and grad school. The edges had frayed, and the corners of my computer had begun to peek out. I spent an entire Friday with Fin and Mist cutting, ironing, and sewing over lots of tea and watermelon. I learned a lot, and I am quite satisfied with the result. On to the next chapter!
+My long overdue project to make a new laptop sleeve is finally complete. It was time to replace my old one that saw me through film school, undergrad, and grad school. The edges had frayed, and the corners of my computer had begun to peek out. I spent an entire Friday with Fin and Mist cutting, ironing, and sewing over lots of tea and watermelon. I learned a lot, and I am quite satisfied with the overall result.
+
+On to the next chapter!
 
 ![busted_sleeve]({{ site.url }}/assets/originals/laptop/1.jpg)
 

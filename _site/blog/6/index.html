@@ -95,6 +95,63 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/blog/2021/01/15/digital-file/"> The Anatomy of a Digital File </a>
+    </h1>
+
+    <time datetime="2021-01-15T00:00:00-08:00" class="post-date"
+      >15 Jan 2021</time
+    >
+
+     <p>I’ve always wondered what makes up a digital file and <a href="https://twobitpreservation.com/" target="\_ blank">Nicole Martin</a> has wonderfully written a detailed post about the zeros and ones that make up a digital file.</p>
+
+<p>I’ll briefly lay out the keys points from the post.</p>
+
+<h2 id="what-makes-a-digital-file">What makes a ‘digital’ file?</h2>
+
+<p>A digital file comprises of bits (zeros and ones) or plain text that contain crucial information that allows the computer/software to interpret/manipulate/process/encode/decode it into human-understandable information. The digital file may represent various types of information such as text, images and audio.</p>
+
+<p>Programs can read plain text data without the aid of file signatures or headers (described below). Common types of plain text data include .txt and .html files. This has wide application as it is high compatible with most computer systems and software.</p>
+
+<p>Binary data (zeros and ones) can represent more complex information and is read by computer programs in a linear data ‘stream’ or sequence of bytes. The program is required to decode the information block by block as per instructed by the file’s signature and header.</p>
+
+<p><strong>Useful info</strong></p>
+
+<p>Eight bits = 1 Byte</p>
+
+<p>A set of 512 bytes is one ‘sector’ and ‘sectors’ may be grouped into ‘blocks’.</p>
+
+<h2 id="parts-of-a-file">Parts of a file</h2>
+
+<ul>
+  <li>File signature</li>
+</ul>
+
+<p>It consists of a short section of code that defines the files format.</p>
+
+<ul>
+  <li>File Header</li>
+</ul>
+
+<p>A sequence of data that instructs on how to interpret the information. Machines and software will follow the instructions in the header to process/interpete the data it contains.</p>
+
+<ul>
+  <li>File Body</li>
+</ul>
+
+<p>The main bulk of information that allows the machine/program to render the file into human-understandable information. It can be stored as plain text or binary data.</p>
+
+<ul>
+  <li>End</li>
+</ul>
+
+<p>The last section of code that signals the end of the package.</p>
+
+<p><img src="http://localhost:4000/assets/originals/Digital_File/Anatomy.jpg" alt="Folder Structure" /></p>
+ 
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/blog/2020/11/13/play-scans/"> Managing Film Scans With FFmpeg </a>
     </h1>
 
@@ -510,56 +567,6 @@ Specifically the Red</p>
  
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/blog/2020/09/14/home-network-part-i/"> Ubiquiti Home Network Part&#58; I </a>
-    </h1>
-
-    <time datetime="2020-09-14T00:00:00-07:00" class="post-date"
-      >14 Sep 2020</time
-    >
-
-     <p>This post will be part of a series documenting the network setup of my new apartment. The apartment is over 20 years old hence a major overhaul is required and the renovation is a great opportunity to lay CAT6A in the house for the 1Gbps/10Gbps network 🤓.</p>
-
-<p>My research began with <a href="https://www.patnotebook.com/bto-networking-singapore/" target="_ blank">this</a> article on <a href="https://patnotebook.com" target="_ blank">patnotebook.com</a> detailing the conversion of telephone points to RJ45 data points in newer BTO (Build to Order) flats in Singapore. Newer flats in Singapore have CAT6 cables already nicely laid in the house, however many of the points are terminated with a telephone jack instead of RJ45. Based on the article, it seems that BTO flats only have one point terminated as RJ45, which is definitely not enough 😁.</p>
-
-<p>Older resale flats like mine do not come with any data points hence I will have to lay my own cables and design my own network infrastructure from scratch. On top of patnotebook.com, I’ve relied on many youtube videos and blogs to learn basic networking concepts and the different components required to run a network.</p>
-
-<p>I’ve devoured Evan McCann’s tech <a href="https://evanmccann.net/" target="\_ blank">blog</a> since I plan to purchase Ubiquti hardware for the network. There are many nice articles that explain networking jargon in simple terms and breaks down the Ubiquiti universe in sizeable chunks. He is extremely detailed in doing breakdowns and making comparisons on the many Ubiquiti products as well. I would recommend his site as essential reading for whoever is considering putting together a Ubiquiti system!</p>
-
-<h2 id="recommended-mccann-reading-list">Recommended McCann reading list</h2>
-
-<ul>
-  <li><a href="https://evanmccann.net/blog/unifi-ecosystem-overview" target="\_ blank">Ubiquiti’s UniFi Ecosystem Explained</a></li>
-  <li><a href="https://evanmccann.net/blog/2020/6/unifi-switches-explained" target="\_ blank">UniFi Switches Explained</a></li>
-  <li><a href="https://evanmccann.net/blog/2020/6/unifi-switches-buyers-guide" target="\_ blank">UniFi Switch Comparison and Buyer’s Guide</a></li>
-  <li><a href="https://evanmccann.net/blog/unifi-ap-breakdown" target="\_ blank">UniFi Wireless Access Point Buyer’s Guide</a></li>
-  <li><a href="https://evanmccann.net/blog/home-network-tips" target="\_ blank">Wi-fi: Isn’t Magic Some Tips For Planning A Home Network</a></li>
-  <li><a href="https://evanmccann.net/blog/2020/6/ubiquiti-faq" target="\_ blank">Ubiquiti FAQ</a></li>
-</ul>
-
-<p>I plan to update my progress with subsequent posts, but for now I’ve made a simple diagram detailing the essential hardware required for the network setup.</p>
-
-<h2 id="the-electrical-layout">The electrical layout</h2>
-
-<p><img src="http://localhost:4000/assets/originals/Network_I/electrical_plan_v2.png" alt="House electrical layout" /></p>
-
-<h2 id="the-hardware-diagram-and-breakdown">The hardware diagram and breakdown</h2>
-
-<p><img src="http://localhost:4000/assets/originals/Network_I/Network_diagram.jpg" alt="Network diagram" /></p>
-
-<ol>
-  <li><a href="https://catalog.belden.com/techdata/EN/10GXE02_techdata.pdf" target="\_ blank">Belden CAT6A 10GXE02</a></li>
-  <li>6U wall-mount Server Rack</li>
-  <li><a href="https://www.amazon.com/ETS-Shielded-Tool-Less-Rackmount-Wallmount/dp/B086T6KRCH/ref=sr_1_6?dchild=1&amp;keywords=cat6a+patch+panel&amp;qid=1607079469&amp;sr=8-6" target="\_ blank">24-Port Keystone Patch Panel</a></li>
-  <li>Ubiquiti EdgeRouter X (ER-X)</li>
-  <li>Unifi Switch 16 150W Gen 1</li>
-  <li>Unifi Cloud Key Gen2 Plus (UCK-G2-PLUS)</li>
-  <li>Unifi NanoHD (UAP-nanoHD)</li>
-</ol>
- 
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -590,7 +597,7 @@ Specifically the Red</p>
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2024-10-02T09:29:48-07:00">2024</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2024-10-05T17:44:11-07:00">2024</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>

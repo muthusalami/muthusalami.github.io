@@ -4,7 +4,7 @@
  <title>Matthew Yang | Digital Archivist & Media Preservationist</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2024-10-02T09:29:48-07:00</updated>
+ <updated>2024-10-05T17:44:11-07:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matthew Yang</name>
@@ -13,13 +13,40 @@
 
  
  <entry>
+   <title>CUNY TV Internship</title>
+   <link href="http://localhost:4000/blog/2024/10/02/cuny-internship/"/>
+   <updated>2024-10-02T00:00:00-07:00</updated>
+   <id>http://localhost:4000/blog/2024/10/02/cuny-internship</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/cuny/1.jpg&quot; alt=&quot;cuny_1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/cuny/2.jpg&quot; alt=&quot;cuny_2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/cuny/3.jpg&quot; alt=&quot;cuny_3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/cuny/4.jpg&quot; alt=&quot;cuny_4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/cuny/5.jpg&quot; alt=&quot;cuny_5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What better way to conclude grad school than to finish an internship at CUNY TV? Graduate school was always in my plans, but New York was never really in the picture because it just seemed beyond financial reach. But amongst other things, reading Annie Schweikert’s &amp;amp; Dave Rice’s IASA journal paper, &lt;a href=&quot;https://journal.iasa-web.org/index.php/pubs/article/view/70&quot; target=&quot;\_ blank&quot;&gt;&lt;em&gt;Microservices in Audiovisual Archives: An Exploration of Constructing Microservices for Processing Archival Audiovisual Information&lt;/em&gt;&lt;/a&gt;, made the decision for me.&lt;/p&gt;
+
+&lt;p&gt;Most students of the program don’t typically do internships in their final semester and not gonna lie, it was brutal balancing the internship on top of my graduate thesis. But I would be kicking myself if I finished the program without doing a CUNY TV internship. Why you may ask? The paper made me rethink the possibilities of the architecture of audiovisual archival workflows, plus it also lit a path for a career that I have been intrigued about. Definitely a recommended read for anyone interested in audiovisual archiving &amp;amp; preservation.&lt;/p&gt;
+
+&lt;p&gt;But long story short, I did it and learnt a ton. While audio preservation is not necessarily my expertise, I worked on creating &amp;amp; improving audio processing workflows for the Himan Brown Collection. Most of it was carrying on Sarah Wardrop’s (previous intern) work on creating an automated way to ‘restore’ and improve the quality of digitized transcription discs. This involved creating scripts to de-noise &amp;amp; de-click these audio recordings. Bash scripts were written initially, but Python proved to be more suited for this process with the libraries it offers. This is a post for another day.&lt;/p&gt;
+
+&lt;p&gt;The greatest takeaway was witnessing and contributing to CUNY TV’s constellation of scripts. From creating access copies to extracting technical metadata, these scripts carry out the archive’s processes from ingestion to archive. Automation is beautiful since it eliminates / reduces manual processes that numbs the mind, but achieving a state of automation comes with a high technical barrier. It can help institutions with challenges like backlog and lean staffing, but creating and maintaining these scripts requires dedicated technical staff that comes with significant cost that only well resourced institutions can afford.&lt;/p&gt;
+
+&lt;p&gt;Big thanks to Dave Rice, Catriona Schlosser &amp;amp; Aida Garrido for the incredible internship!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Dark Mode</title>
    <link href="http://localhost:4000/blog/2024/08/19/dark-mode/"/>
    <updated>2024-08-19T00:00:00-07:00</updated>
    <id>http://localhost:4000/blog/2024/08/19/dark-mode</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/darkmode/darkmode.gif&quot; alt=&quot;darkmode&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I finally found some time to complete the site’s dark mode feature. As someone who uses dark mode a lot, I couldn’t put the feature off any longer. In theory, adding a dark mode feature is not complicated. However, it can be challenging in practice when integrating the feature into someone else’s code base.&lt;/p&gt;
+&lt;p&gt;I finally found some time to complete the site’s dark mode feature. As someone who uses dark mode a lot, I couldn’t put the feature off any longer. In theory, adding a dark mode feature is not complicated. However, it can be challenging in practice when integrating the feature into someone else’s code.&lt;/p&gt;
 
 &lt;p&gt;The first thing is to set up a button, which is the simplest step. It enables the visitor to toggle the site’s dark mode on &amp;amp; off.&lt;/p&gt;
 
@@ -89,7 +116,7 @@
    <link href="http://localhost:4000/blog/2024/07/16/magnet/"/>
    <updated>2024-07-16T00:00:00-07:00</updated>
    <id>http://localhost:4000/blog/2024/07/16/magnet</id>
-   <content type="html">&lt;p&gt;I was thinking of a design for a commemorative magnet and decided on a vectorscope’s signal output. For the uninitiated, a vectorscope is an instrument that measures and visualizes chrominance (color) information encoded in a video signal.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I was thinking of a design for a commemorative magnet for my MIAP cohort and decided on a vectorscope’s signal output. For the uninitiated, a vectorscope is an instrument that measures and visualizes chrominance (color) information encoded in a video signal.&lt;/p&gt;
 
 &lt;p&gt;This particular signal pattern depicts the SMPTE color bar test pattern that is widely used for video calibration, per the NTSC standard. In this instance, the lines in the vectorscope measure the hue and saturation of the colors red, magenta, blue, cyan, green, and yellow in the bars.&lt;/p&gt;
 
@@ -110,7 +137,9 @@
    <link href="http://localhost:4000/blog/2024/07/08/laptop-sleeve-copy/"/>
    <updated>2024-07-08T00:00:00-07:00</updated>
    <id>http://localhost:4000/blog/2024/07/08/laptop-sleeve copy</id>
-   <content type="html">&lt;p&gt;My long overdue project to make a new laptop sleeve is finally complete. It was time to replace my old one that saw me through film school, undergrad, and grad school. The edges had frayed, and the corners of my computer had begun to peek out. I spent an entire Friday with Fin and Mist cutting, ironing, and sewing over lots of tea and watermelon. I learned a lot, and I am quite satisfied with the result. On to the next chapter!&lt;/p&gt;
+   <content type="html">&lt;p&gt;My long overdue project to make a new laptop sleeve is finally complete. It was time to replace my old one that saw me through film school, undergrad, and grad school. The edges had frayed, and the corners of my computer had begun to peek out. I spent an entire Friday with Fin and Mist cutting, ironing, and sewing over lots of tea and watermelon. I learned a lot, and I am quite satisfied with the overall result.&lt;/p&gt;
+
+&lt;p&gt;On to the next chapter!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/laptop/1.jpg&quot; alt=&quot;busted_sleeve&quot; /&gt;&lt;/p&gt;
 
