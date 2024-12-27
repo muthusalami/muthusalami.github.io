@@ -95,6 +95,78 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/blog/2023/12/17/data-tango/"> Data Tango&#58; Exploring Restic </a>
+    </h1>
+
+    <time datetime="2023-12-17T00:00:00-08:00" class="post-date"
+      >17 Dec 2023</time
+    >
+
+     <p><img src="http://localhost:4000/assets/originals/file_utility/restic.gif" alt="restic" /></p>
+
+<p>What is restic?</p>
+
+<p><a href="https://restic.net/" target="\_ blank">Restic</a> is a free and open source backup program available on Linux, BSD, MacOS, and Windows. It works with many different storage types (Local, Network, Cloud) and is designed to create and manage backups.</p>
+
+<p>Key features:
+<br />
+Deduplication
+<br />
+Encryption
+<br />
+Incremental Backups
+<br />
+Snapshot Management
+<br />
+Cross-platform Compatibility
+<br /></p>
+
+<p>Create Restic repository as backup destination</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:/dpx-restic init
+</code></pre></div></div>
+
+<p>Initiate backup</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:/dpx-restic backup C:/Users/MATT-THINKPAD/Documents/dpx-source/
+</code></pre></div></div>
+
+<p>Check snapshots</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:<span class="se">\d</span>px-restic snapshots
+</code></pre></div></div>
+
+<p>List files in repository</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:<span class="se">\d</span>px-restic <span class="nb">ls </span>latest
+</code></pre></div></div>
+
+<p>Verifying backups</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic check D:<span class="se">\d</span>px-restic
+</code></pre></div></div>
+
+<p>Restoring files</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:<span class="se">\d</span>px-restic<span class="se">\ </span>restore <span class="s2">"latest:/C/Users/MATT-THINKPAD/Documents/dpx-source/"</span> <span class="nt">--target</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\M</span><span class="s2">ATT-THINKPAD</span><span class="se">\O</span><span class="s2">neDrive - nyu.edu</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\d</span><span class="s2">px-restore"</span>
+</code></pre></div></div>
+
+<p>Restore files from a specific snapshot</p>
+
+<p>Get a list of snapshots</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> <span class="s1">'D:\dpx-restic\'</span> snapshots
+</code></pre></div></div>
+
+<p>Restore from snapshot</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restic <span class="nt">-r</span> D:<span class="se">\d</span>px-restic restore 2297f849 <span class="nt">--target</span> <span class="s2">"C:</span><span class="se">\U</span><span class="s2">sers</span><span class="se">\M</span><span class="s2">ATT-THINKPAD</span><span class="se">\O</span><span class="s2">neDrive - nyu.edu</span><span class="se">\D</span><span class="s2">esktop</span><span class="se">\d</span><span class="s2">px-restore"</span>
+</code></pre></div></div>
+ 
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/blog/2023/11/23/pi-player/"> Raspberry Pi As Media Player & Video Looper </a>
     </h1>
 
@@ -202,35 +274,6 @@ Variable Value - C:\Program Files (x86)\Tesseract-OCR\tesseract.exe
  
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/blog/2023/10/03/browser-on-terminal-copy/"> Lynx and Links2 - Terminal Web Browsers </a>
-    </h1>
-
-    <time datetime="2023-10-03T00:00:00-07:00" class="post-date"
-      >03 Oct 2023</time
-    >
-
-     <p>Here are two simple and fun tools to browse the web with the terminal!</p>
-
-<p><img src="http://localhost:4000/assets/originals/lynx/lynx.png" alt="lynx" /></p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>lynx
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lynx examplewebsite.com
-</code></pre></div></div>
-
-<p>links2 is a similar tool and may be set up with the following commands:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>links2
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>links2 examplewebsite.com
-</code></pre></div></div>
- 
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -261,17 +304,17 @@ Variable Value - C:\Program Files (x86)\Tesseract-OCR\tesseract.exe
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2024-10-06T14:16:50-07:00">2024</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2024-12-27T09:16:06-08:00">2024</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>
         <div class="ftr-links">
           <a class="social-link-item" target="_blank" href="mailto:matthewyangjiefeng@gmail.com?subject=Hello!">
-          <a href="mailto:matthewyang@nyu.edu?subject=Hello!" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
-          <a href="https://github.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
-          <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
-          <!-- <a href="https://digipres.club/@matthew" target="_blank" rel="noopener noreferrer"><i class="fab fa-mastodon"></i></a> -->
+          <a href="mailto:matthewyang@nyu.edu?subject=Hello!" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://digipres.club/@matthew" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-mastodon"></i></a>
+          <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
 
         </div>
       </footer>

@@ -4,13 +4,39 @@
  <title>Matthew Yang | Digital Archivist & Media Preservationist</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2024-10-06T14:16:50-07:00</updated>
+ <updated>2024-12-27T09:16:06-08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matthew Yang</name>
    <email>matthewyang@nyu.edu</email>
  </author>
 
+ 
+ <entry>
+   <title>Enabling Windows File Path Limit Beyond 260 Characters</title>
+   <link href="http://localhost:4000/blog/2024/11/18/pip-error/"/>
+   <updated>2024-11-18T00:00:00-08:00</updated>
+   <id>http://localhost:4000/blog/2024/11/18/pip-error</id>
+   <content type="html">&lt;p&gt;I was trying to install a Python package when I encountered the following error:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C:\Users\MATT-THINKPAD\OneDrive - nyu.edu\Documents\fido-1.6.1\fido-1.6.1&amp;gt;pip install setuptools
+Defaulting to user installation because normal site-packages is not writeable
+Collecting setuptools
+  Using cached setuptools-75.5.0-py3-none-any.whl.metadata (6.8 kB)
+Using cached setuptools-75.5.0-py3-none-any.whl (1.2 MB)
+Installing collected packages: setuptools
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: &apos;C:\\Users\\MATT-THINKPAD\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\pkg_resources\\tests\\data\\my-test-package_unpacked-egg\\my_test_package-1.0-py3.7.egg\\EGG-INFO\\dependency_links.txt&apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It turns out that Windows 11 does not accept file paths over 260 characters by default and users may remove the character path limit by editing the registry.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open ‘Registry Editor’&lt;/li&gt;
+  &lt;li&gt;Navigate to ‘HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem’&lt;/li&gt;
+  &lt;li&gt;Edit the value date of ‘LongPathsEnabled’ from ‘0’ to ‘1’&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
  
  <entry>
    <title>CUNY TV Internship</title>

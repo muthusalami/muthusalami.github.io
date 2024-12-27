@@ -95,6 +95,48 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/blog/2020/10/11/understanding-yuv/"> Understanding the YUV (YCbCr) Colour Encoding System </a>
+    </h1>
+
+    <time datetime="2020-10-11T00:00:00-07:00" class="post-date"
+      >11 Oct 2020</time
+    >
+
+     <p><img src="http://localhost:4000/assets/originals/YUV/YUV.png" alt="YUV chart" /></p>
+
+<h2 id="what-is-yuv">What is YUV?</h2>
+
+<p>In a YUV data structure scheme, the ‘Y’ represents the luma value, and the ‘U’ &amp; ‘V’ represents two chroma values. In contrast to RGB, the values represent the intensities of red, green and blue channels in the pixel.</p>
+
+<p>Each unique ‘Y’, ‘U’ and ‘V’ value comprises of 8-bits (or one byte) of data.</p>
+
+<p><strong>Y value</strong> = Luminance value
+Overall brightness of the pixel. It is a grayscale value.</p>
+
+<p><strong>U (CB) value</strong> = Chrominance value
+Specifically the Blue</p>
+
+<p><strong>V (CR) value</strong> = Chrominance value
+Specifically the Red</p>
+
+<p>The <strong>U &amp; V values</strong> are coordinates instead of brightness values with positive and negative values.</p>
+
+<h2 id="why-not-stick-to-rgb">Why not stick to RGB?</h2>
+
+<p>Colour and brightness information and combined within the three channels in RGB. i.e. Increasing the <strong>R</strong> channel will increase both the colour and brightness value in tandem. In simpler terms, both properties are combined in the same value.</p>
+
+<p>In a YUV system, the brightness information is completely separated from the colour information. In other words, more control is afforded.</p>
+
+<h2 id="practical-application">Practical application</h2>
+
+<p><strong>Backward compatibility</strong> - Black and White TVs can’t take RGB signals since the brightness value is baked into the colour values which it doesn’t understand. Whereas YUV has the Y value which can be processed by the television set, by ignoring the colour components.</p>
+
+<p><strong>Chroma sub-sampling</strong> - YUV allows the user to remove information specifically from the colour values without affecting the overall luminance of it. This is particularly useful during image compression and an effective means in processing images.</p>
+ 
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/blog/2020/09/14/home-network-part-i/"> Ubiquiti Home Network Part&#58; I </a>
     </h1>
 
@@ -213,17 +255,17 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i><time datetime="2024-10-06T14:16:50-07:00">2024</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2024-12-27T09:16:06-08:00">2024</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>
         <div class="ftr-links">
           <a class="social-link-item" target="_blank" href="mailto:matthewyangjiefeng@gmail.com?subject=Hello!">
-          <a href="mailto:matthewyang@nyu.edu?subject=Hello!" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
-          <a href="https://github.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
-          <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
-          <!-- <a href="https://digipres.club/@matthew" target="_blank" rel="noopener noreferrer"><i class="fab fa-mastodon"></i></a> -->
+          <a href="mailto:matthewyang@nyu.edu?subject=Hello!" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://digipres.club/@matthew" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-mastodon"></i></a>
+          <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
 
         </div>
       </footer>
