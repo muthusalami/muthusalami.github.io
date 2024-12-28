@@ -4,7 +4,7 @@
  <title>Matthew Yang | Digital Archivist & Media Preservationist</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2024-12-27T09:19:08-08:00</updated>
+ <updated>2024-12-27T22:12:29-08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matthew Yang</name>
@@ -13,10 +13,34 @@
 
  
  <entry>
+   <title>Managing Python aliases on Windows</title>
+   <link href="http://localhost:4000/blog/2024/12/27/python-aliases/"/>
+   <updated>2024-12-27T00:00:00-08:00</updated>
+   <id>http://localhost:4000/blog/2024/12/27/python-aliases</id>
+   <content type="html">&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Python was not found but can be installed from the Microsoft Store: ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I kept getting the above error when calling Python in the command-line after upgrading Python, despite adding it to System Environment Variables. As it turns out, &lt;a href=&quot;https://stackoverflow.com/questions/58754860/cmd-opens-windows-store-when-i-type-python&quot; target=&quot;\_ blank&quot;&gt;Windows secretly maintains aliases&lt;/a&gt; - python.exe &amp;amp; python3.exe - in ‘%USERPROFILE%\AppData\Local\Microsoft\WindowsApps’ that encourages Python installations through its Microsoft Store. While this may streamline the installation process for new users, this causes rage to those that want more bespoke configurations.&lt;/p&gt;
+
+&lt;p&gt;Thankfully, one can easily disable these aliases once they are made aware of them.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1-locate-the-aliases&quot;&gt;Step 1: Locate the aliases&lt;/h3&gt;
+
+&lt;p&gt;Search ‘Manage App Execution Aliases’ in the Windows search bar.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2-toggle-off-pythonexe--python3exe&quot;&gt;Step 2: Toggle off ‘python.exe’ &amp;amp; ‘python3.exe’&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/originals/alias/alias.png&quot; alt=&quot;cuny_4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A further step is to put ‘%USERPROFILE%\AppData\Local\Microsoft\WindowsApps’ lower in the pecking order in Environment Variables.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Enabling Windows File Path Limit Beyond 260 Characters</title>
-   <link href="http://localhost:4000/blog/2024/11/18/pip-error/"/>
+   <link href="http://localhost:4000/blog/2024/11/18/pip-error-copy/"/>
    <updated>2024-11-18T00:00:00-08:00</updated>
-   <id>http://localhost:4000/blog/2024/11/18/pip-error</id>
+   <id>http://localhost:4000/blog/2024/11/18/pip-error copy</id>
    <content type="html">&lt;p&gt;I was trying to install a Python package when I encountered the following error:&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C:\Users\MATT-THINKPAD\OneDrive - nyu.edu\Documents\fido-1.6.1\fido-1.6.1&amp;gt;pip install setuptools

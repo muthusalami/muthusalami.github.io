@@ -95,6 +95,27 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/blog/2021/01/31/home-network-part-iii/"> Ubiquiti Home Network Part&#58; III </a>
+    </h1>
+
+    <time datetime="2021-01-31T00:00:00-08:00" class="post-date"
+      >31 Jan 2021</time
+    >
+
+     <p>Today marks another major milestone for the Ubiquiti home network with the Fibre Termination Point (TP) finally installed! The OpenNet technicians decided to come two days before our scheduled appointment, but I was more than happy to accommodate to their request. I decided to relocate the TP from the living room to the service balcony to have it close to the network rack. Most households typically have the TP close to the TV consoles as it is common to use the router-modem provided by the ISPs, whom typically are the internet TV providers as well. The relocation involved drilling a new hole from the electrical riser into the kitchen to have a short run of cable straight to the desired location. I was initially quite nervous about the drilling as I didn’t want to puncture any pipes, but thankfully it went fine. All of the work was completed within 40 minutes but I was surprised that the task required a team of five men!</p>
+
+<p><img src="http://localhost:4000/assets/originals/Network_II/open_net_1.jpg" alt="opennet setup" /></p>
+
+<p><img src="http://localhost:4000/assets/originals/Network_II/open_net_2.jpg" alt="opennet setup" /></p>
+
+<p><img src="http://localhost:4000/assets/originals/Network_II/open_net_3.jpg" alt="opennet setup" /></p>
+
+<p><img src="http://localhost:4000/assets/originals/Network_II/open_net_4.jpg" alt="opennet setup" /></p>
+ 
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/blog/2021/01/20/home-network-part-ii/"> Ubiquiti Home Network Part&#58; II </a>
     </h1>
 
@@ -594,64 +615,6 @@ _ padding the 4:3 format into the 16:9 HD format with pillar box</p>
  
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/blog/2020/10/12/exporting-directories-cli/"> Creating a List of Files of a Directory With Command-line </a>
-    </h1>
-
-    <time datetime="2020-10-12T00:00:00-07:00" class="post-date"
-      >12 Oct 2020</time
-    >
-
-     <p>I recently had to provide a list of files in a USB thumbdrive/stick and learned a sweet trick via CLI. This method provides a text, <em>Word</em> or <em>Excel</em> file that lists all the files and folders inside a specific directory within your computer.</p>
-
-<h2 id="basic-command-structure">Basic command structure</h2>
-
-<p>Syntax:</p>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">DIR</span> <span class="o">[</span><span class="nt">pathname</span><span class="o">(</span><span class="nt">s</span><span class="o">)]</span> <span class="o">[</span><span class="nt">display_format</span><span class="o">]</span> <span class="o">[</span><span class="nt">file_attributes</span><span class="o">]</span> <span class="o">[</span><span class="nt">sorted</span><span class="o">]</span> <span class="o">[</span><span class="nt">time</span><span class="o">]</span> <span class="o">[</span><span class="nt">options</span><span class="o">]</span>
-</code></pre></div></div>
-
-<p>Example:</p>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">dir</span> <span class="o">/</span><span class="nt">s</span> <span class="o">&gt;</span> <span class="nt">output</span><span class="nc">.doc</span>
-</code></pre></div></div>
-
-<p><em>dir</em> lists all the files and folders contained in the folder</p>
-
-<p><em>/s</em> will list all the files in the subfolders as well</p>
-
-<p><em>Output.doc</em> is the document file containing the entire directory and the details. It may be in another format such as a simple <em>.txt</em> file which can be edited on Notepad.</p>
-
-<h2 id="listing-only-certain-types-of-files">Listing only certain types of files</h2>
-
-<p>The command will be:</p>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">dir</span> <span class="o">/</span><span class="nt">s</span> <span class="err">\</span><span class="o">*</span><span class="nc">.pdf</span> <span class="o">&gt;</span> <span class="nt">output_pdf</span><span class="nc">.doc</span>
-</code></pre></div></div>
-
-<p>(<em>.pdf)</em> is a wildcard function that will only select <em>.pdf</em> files.</p>
-
-<h2 id="list-bare-format-no-heading-sizes-or-summary">List bare format (no heading, sizes or summary)</h2>
-
-<p>The switch <em>/b</em> will list file names, however when displaying subfolders with dir /b /s, the command will return a full pathname.</p>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">dir</span> <span class="o">/</span><span class="nt">b</span> <span class="o">/</span><span class="nt">s</span> <span class="o">&gt;</span> <span class="nt">output_pdf</span><span class="nc">.doc</span>
-</code></pre></div></div>
-
-<h2 id="using-the-tree-command-instead-of-dir">Using the <em>tree</em> command instead of <em>dir</em></h2>
-
-<p>This command will produce a tree listing of the current directory</p>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">tree</span> <span class="o">/</span><span class="nt">f</span> <span class="o">&gt;</span> <span class="nt">output</span><span class="nc">.txt</span>
-</code></pre></div></div>
-
-<p><em>/f</em> displays the names of the files within each directory listed.</p>
-
-<p><em>/a</em> may be used to specify alternative (<em>ascii</em>) characters to be used to draw the tree diagram so that it can be printed by printers that do not support the line and box drawing characters.</p>
- 
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -682,7 +645,7 @@ _ padding the 4:3 format into the 16:9 HD format with pillar box</p>
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2024-12-27T09:19:08-08:00">2024</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2024-12-27T22:12:29-08:00">2024</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>

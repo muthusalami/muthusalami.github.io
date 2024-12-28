@@ -9,7 +9,7 @@
   />
 
   <title>
-     Sony Mavica MD7
+     Enabling Windows File Path Limit Beyond 260 Characters
     &middot; Matthew Yang | Digital Archivist & Media Preservationist 
   </title>
 
@@ -92,23 +92,28 @@
     <div class="container content">
       <main>
         <article class="post">
-  <h1 class="post-title">Sony Mavica MD7</h1>
-  <time datetime="2024-06-19T00:00:00-07:00" class="post-date"
-    >19 Jun 2024</time
+  <h1 class="post-title">Enabling Windows File Path Limit Beyond 260 Characters</h1>
+  <time datetime="2024-11-18T00:00:00-08:00" class="post-date"
+    >18 Nov 2024</time
   >
-  <p>I am gushing over my ‘new’ Sony Mavica FD7 camera that I recently got off Facebook Marketplace. It is one of the earlier digital cameras from Sony’s discontinued Mavica (Magnetic Video Camera) line that saves digital images on 3.5” 1.4 MiB 2HD floppy diskettes in DOS FAT12 format. AFAIK, the FD7 was released in 1997 with the FD5 model where the former boasts 10x optical zoom, while the later has a fixed focal length.</p>
+  <p>I was trying to install a Python package when I encountered the following error:</p>
 
-<p>The camera produces .JPG images in 640x480 resolution with its 0.38 megapixel 1/4” CCD sensor. In terms of optics, it has a focal length range of 4.2 - 42mm, which is impressive for a camera of its size. The diskettes hold up to 40 .JPG images in its ‘normal’ setting and 20 images in its ‘fine’ setting. Each image takes up to 10 seconds to be recorded on the media and the process is accompanied by the sounds of the diskette’s whirring. Fun and amusing piece of technology.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\MATT-THINKPAD\OneDrive - nyu.edu\Documents\fido-1.6.1\fido-1.6.1&gt;pip install setuptools
+Defaulting to user installation because normal site-packages is not writeable
+Collecting setuptools
+  Using cached setuptools-75.5.0-py3-none-any.whl.metadata (6.8 kB)
+Using cached setuptools-75.5.0-py3-none-any.whl (1.2 MB)
+Installing collected packages: setuptools
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: 'C:\\Users\\MATT-THINKPAD\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\pkg_resources\\tests\\data\\my-test-package_unpacked-egg\\my_test_package-1.0-py3.7.egg\\EGG-INFO\\dependency_links.txt'
+</code></pre></div></div>
 
-<p><img src="http://localhost:4000/assets/originals/mavica/mavica_leaf.JPG" alt="leaf" /></p>
+<p>It turns out that Windows 11 does not accept file paths over 260 characters by default and users may remove the character path limit by editing the registry.</p>
 
-<p><img src="http://localhost:4000/assets/originals/mavica/mavica_ducky.JPG" alt="ducky" /></p>
-
-<p><img src="http://localhost:4000/assets/originals/mavica/mavica_wsq.JPG" alt="wsq" /></p>
-
-<p><img src="http://localhost:4000/assets/originals/mavica/mavica_bobst.JPG" alt="bobst" /></p>
-
-<p><img src="http://localhost:4000/assets/originals/mavica/mavica_8st.JPG" alt="8street" /></p>
+<ol>
+  <li>Open ‘Registry Editor’</li>
+  <li>Navigate to ‘HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem’</li>
+  <li>Edit the value date of ‘LongPathsEnabled’ from ‘0’ to ‘1’</li>
+</ol>
 
 </article>
 
