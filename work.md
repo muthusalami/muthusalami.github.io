@@ -20,7 +20,7 @@ title: work
 <h4>internships</h4>
 <br>
 
-| Internet Archive | Archive & Data Services Intern | June. 2024 - present |
+| Internet Archive | Archive & Data Services Intern | Jun. 2024 - present |
 | CUNY TV | Audio Preservation Intern | Jan. 2024 - Jun. 2024 |
 | Cineric Inc. | Digital Restoration Intern | Sep. 2023 - Jan. 2024 |
 | Bay Area Video Coalition Media | Video Preservation Intern | Jun. 2023 - Aug. 2023 |
