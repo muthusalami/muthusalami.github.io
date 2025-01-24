@@ -23,7 +23,7 @@ title: work
 | Internet Archive | Archive & Data Services Intern | Jun. 2024 - present |
 | CUNY TV | Audio Preservation Intern | Jan. 2024 - Jun. 2024 |
 | Cineric Inc. | Digital Restoration Intern | Sep. 2023 - Jan. 2024 |
-| Bay Area Video Coalition Media | Video Preservation Intern | Jun. 2023 - Aug. 2023 |
+| Bay Area Video Coalition | Video Preservation Intern | Jun. 2023 - Aug. 2023 |
 | Prelinger Archives | Media Digitization Intern | Jun. 2023 - Aug. 2023 |
 | New York Public Library | Media Preservation Intern | Jan. 2023 - May. 2023 |
 | Olympic Broadcasting Services | Broadcast Intern | Jul. 2010 - Sep. 2010 |
