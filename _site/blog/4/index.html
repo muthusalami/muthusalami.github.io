@@ -95,6 +95,26 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/blog/2023/10/17/ocr/"> OCR to produce .srt subtitles </a>
+    </h1>
+
+    <time datetime="2023-10-17T00:00:00-07:00" class="post-date"
+      >17 Oct 2023</time
+    >
+
+     <p><img src="http://localhost:4000/assets/originals/ocr/ocr.gif" alt="ocr" /></p>
+
+<p>I recently tinkered with Torbjørn Pedersen’s (National Library of Norway) Python script <a href="https://github.com/UB-Mannheim/tesseract/wiki" target="\_ blank">video-ocr2srt</a> to extract burnt-in English subtitles from a digital video. The script performs optical character recognition (OCR) on video files and generates a .srt subtitle file with a detailed JSON file.</p>
+
+<p>The script leverages on the EAST text detector model for text detection and the Pytesseract library for OCR. I achieved decent results with it, which may improve with a better quality video file. I suspect the extremely poor transfer of the film may be the cause of numerous duplicate lines and inclusion of stray special characters in the subtitles. But what it does so well is the heavy lifting creating the in and out points for the subtitle lines ╰(<em>°▽°</em>)╯! It processed a 110 minute video under 40 minutes, however users will need to ‘clean’ the .srt file for spelling, grammar, punctuation, and timing after.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">video</span><span class="o">-</span><span class="n">ocr2srt</span><span class="p">.</span><span class="n">py</span> <span class="o">-</span><span class="n">v</span> <span class="nb">input</span> <span class="o">-</span><span class="n">m</span> <span class="n">frozen_east_text_detection</span><span class="p">.</span><span class="n">pb</span> <span class="o">-</span><span class="n">l</span> <span class="n">eng</span> <span class="o">-</span><span class="n">f</span> <span class="mi">10</span> <span class="o">-</span><span class="n">p</span>
+</code></pre></div></div>
+ 
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/blog/2023/10/16/installing-tesseract/"> Installing Tesseract on Windows </a>
     </h1>
 
@@ -190,25 +210,6 @@ Variable Value - C:\Program Files (x86)\Tesseract-OCR\tesseract.exe
  
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/blog/2023/09/10/umatic_earrings/"> Summer Craft Project&#58; U-matic Record Tab Earrings </a>
-    </h1>
-
-    <time datetime="2023-09-10T00:00:00-07:00" class="post-date"
-      >10 Sep 2023</time
-    >
-
-     <p>I got crafty over the summer at the Bay Area Video Coalition (BAVC) and made these U-matic record tab earrings that were inspired by Crystal Sanchez!!</p>
-
-<p><img src="http://localhost:4000/assets/originals/umatic/umatic_1.jpg" alt="umatic earrings" />
-<img src="http://localhost:4000/assets/originals/umatic/umatic_2.jpg" alt="umatic earrings" />
-<img src="http://localhost:4000/assets/originals/umatic/umatic_3.jpg" alt="umatic earrings" />
-<img src="http://localhost:4000/assets/originals/umatic/umatic_4.jpg" alt="umatic earrings" />
-<img src="http://localhost:4000/assets/originals/umatic/umatic_5.jpg" alt="umatic earrings" /></p>
- 
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -239,7 +240,7 @@ Variable Value - C:\Program Files (x86)\Tesseract-OCR\tesseract.exe
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2025-01-31T11:36:31-08:00">2025</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2025-02-04T13:14:11-08:00">2025</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>
@@ -249,7 +250,7 @@ Variable Value - C:\Program Files (x86)\Tesseract-OCR\tesseract.exe
           <a href="https://github.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://digipres.club/@matthew" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-mastodon"></i></a>
-          <a href="https://bsky.app/profile/muthusalami.bsky.social" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky"></i></a>
+          <a href="https://bsky.app/profile/datatango.bsky.social" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky"></i></a>
           <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
 
         </div>

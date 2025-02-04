@@ -9,7 +9,7 @@
   />
 
   <title>
-     Introduction to FFprobe
+     Mounting USB drives in WSL
     &middot; Matthew Yang | Digital Archivist & Media Preservationist 
   </title>
 
@@ -92,11 +92,25 @@
     <div class="container content">
       <main>
         <article class="post">
-  <h1 class="post-title">Introduction to FFprobe</h1>
-  <time datetime="" class="post-date"
-    ></time
+  <h1 class="post-title">Mounting USB drives in WSL</h1>
+  <time datetime="2025-02-04T00:00:00-08:00" class="post-date"
+    >04 Feb 2025</time
   >
-  <p>Anyone that has worked with FFmpeg would be familiar with FFprobe. For those uninitiated, FFprobe is a command-line tool that analyzes and gathers information from multimedia streams and prints it in human- and machine- readable fashion.</p>
+  <p>I never realized WSL does not natively allow Windows users to access a USB drive in the system for reasons unknown to me.</p>
+
+<p>However, it can be configured.</p>
+
+<p>1. Create a mount point:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir /mnt/a
+</code></pre></div></div>
+
+<p>The directory’s name does not matter.</p>
+
+<p>2. Mount the desired drive letter to the newly created directory.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mount -t drvfs A: /mnt/a
+</code></pre></div></div>
 
 </article>
 

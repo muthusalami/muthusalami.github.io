@@ -4,13 +4,36 @@
  <title>Matthew Yang | Digital Archivist & Media Preservationist</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2025-01-31T11:36:31-08:00</updated>
+ <updated>2025-02-04T13:14:11-08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matthew Yang</name>
    <email>matthewyang@nyu.edu</email>
  </author>
 
+ 
+ <entry>
+   <title>Mounting USB drives in WSL</title>
+   <link href="http://localhost:4000/blog/2025/02/04/mount-usb/"/>
+   <updated>2025-02-04T00:00:00-08:00</updated>
+   <id>http://localhost:4000/blog/2025/02/04/mount-usb</id>
+   <content type="html">&lt;p&gt;I never realized WSL does not natively allow Windows users to access a USB drive in the system for reasons unknown to me.&lt;/p&gt;
+
+&lt;p&gt;However, it can be configured.&lt;/p&gt;
+
+&lt;p&gt;1. Create a mount point:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir /mnt/a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The directory’s name does not matter.&lt;/p&gt;
+
+&lt;p&gt;2. Mount the desired drive letter to the newly created directory.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo mount -t drvfs A: /mnt/a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Managing Python aliases on Windows</title>

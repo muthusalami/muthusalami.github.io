@@ -95,6 +95,33 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/blog/2025/02/04/mount-usb/"> Mounting USB drives in WSL </a>
+    </h1>
+
+    <time datetime="2025-02-04T00:00:00-08:00" class="post-date"
+      >04 Feb 2025</time
+    >
+
+     <p>I never realized WSL does not natively allow Windows users to access a USB drive in the system for reasons unknown to me.</p>
+
+<p>However, it can be configured.</p>
+
+<p>1. Create a mount point:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir /mnt/a
+</code></pre></div></div>
+
+<p>The directory’s name does not matter.</p>
+
+<p>2. Mount the desired drive letter to the newly created directory.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mount -t drvfs A: /mnt/a
+</code></pre></div></div>
+ 
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/blog/2024/12/27/python-aliases/"> Managing Python aliases on Windows </a>
     </h1>
 
@@ -258,31 +285,6 @@ ERROR: Could not install packages due to an OSError: [Errno 2] No such file or d
  
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/blog/2024/07/16/magnet/"> NYU MIAP Magnet </a>
-    </h1>
-
-    <time datetime="2024-07-16T00:00:00-07:00" class="post-date"
-      >16 Jul 2024</time
-    >
-
-     <p>I was thinking of a design for a commemorative magnet for my MIAP cohort and decided on a vectorscope’s signal output. For the uninitiated, a vectorscope is an instrument that measures and visualizes chrominance (color) information encoded in a video signal.</p>
-
-<p>This particular signal pattern depicts the SMPTE color bar test pattern that is widely used for video calibration, per the NTSC standard. In this instance, the lines in the vectorscope measure the hue and saturation of the colors red, magenta, blue, cyan, green, and yellow in the bars.</p>
-
-<p>I made slight modifications to the vectorscope’s graticules to commemorate (probably) the program’s most international cohort 🥳 watch out world!</p>
-
-<p>🇨🇳 🇮🇩 🇲🇽 🇸🇬 🇪🇸 🇹🇼 🇺🇸</p>
-
-<p><img src="http://localhost:4000/assets/originals/magnet/1.jpg" alt="magnet_1" /></p>
-
-<p><img src="http://localhost:4000/assets/originals/magnet/2.jpg" alt="magnet_2" /></p>
-
-<p><img src="http://localhost:4000/assets/originals/magnet/4.jpg" alt="magnet_4" /></p>
- 
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -310,7 +312,7 @@ ERROR: Could not install packages due to an OSError: [Errno 2] No such file or d
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2025-01-31T11:36:31-08:00">2025</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2025-02-04T13:14:11-08:00">2025</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>
@@ -320,7 +322,7 @@ ERROR: Could not install packages due to an OSError: [Errno 2] No such file or d
           <a href="https://github.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://digipres.club/@matthew" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-mastodon"></i></a>
-          <a href="https://bsky.app/profile/muthusalami.bsky.social" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky"></i></a>
+          <a href="https://bsky.app/profile/datatango.bsky.social" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky"></i></a>
           <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
 
         </div>
