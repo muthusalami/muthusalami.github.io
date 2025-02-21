@@ -95,6 +95,94 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/blog/2025/02/13/MOV-atoms/"> Apple QuickTime MOV&#58; The Atomic File Format </a>
+    </h1>
+
+    <time datetime="2025-02-13T00:00:00-08:00" class="post-date"
+      >13 Feb 2025</time
+    >
+
+     <p>A recent analysis of a Apple QuickTime .MOV file I conducted at work compelled me to write this post to discuss its file structure.</p>
+
+<p>Released in 1991, Apple QuickTime .MOV files are structured by hierarchical atoms that store media data and metadata. A typical .MOV file may consist of the following atoms:</p>
+
+<p>1. <code>ftyp</code> (file type)</p>
+
+<p>The <code>ftyp</code> atom specifies the file format type. For example, ‘qt’ for QuickTime.</p>
+
+<p>2. <code>moov</code> (movie) aka ‘the meat’</p>
+
+<p>The <code>moov</code> atom defines the .MOV file since it carries crucial technical metadata like duration and display specifications.</p>
+
+<p>It may have other types of sub-atoms, with at least one of the following three: mvhd (movie header), cmov (compressed movie) &amp; rmra (reference movie). Several other sub-atoms like clip (clipping), trak (track), ctab (color table), and udta (user data) may exist in the <code>moov</code> atom.</p>
+
+<p>The layout of a <code>moov</code> atom:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Size</td>
+      <td>4 bytes</td>
+    </tr>
+    <tr>
+      <td>Type='moov'</td>
+      <td>4 bytes</td>
+    </tr>
+    <tr>
+      <td>Profile atom</td>
+      <td>'prfl'</td>
+    </tr>
+    <tr>
+      <td>Movie Header atom (REQUIRED)</td>
+      <td>'mvhd'</td>
+    </tr>
+    <tr>
+      <td>Movie Clipping atom</td>
+      <td>'clip'</td>
+    </tr>
+    <tr>
+      <td>Track atom</td>
+      <td>'trak'</td>
+    </tr>
+    <tr>
+      <td>User Data atom</td>
+      <td>'udta'</td>
+    </tr>
+    <tr>
+      <td>Color Table atom</td>
+      <td>'ctab'</td>
+    </tr>
+    <tr>
+      <td>Compressed Movie atom</td>
+      <td>'cmov'</td>
+    </tr>
+    <tr>
+      <td>Reference Movie atom</td>
+      <td>'rmra'</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>3. <code>mdat</code> (media data)</p>
+
+<p>As suggested, <code>mdat</code> contains the files audio &amp; video data.</p>
+
+<p>4. <code>free/skip</code> (padding) [optional]</p>
+
+<p>5. <code>uuid</code> (user defined) [optional]</p>
+
+<p>Interestingly, the file that landed on my desk came without its <code>ftyp</code> atom, which I learnt was only required after the establishment of the ISO Base Media File Format (ISO BMFF) standard. It is also likely that legacy tools and software at the time may omit the atom, relying completely on players like QuickTime player to smartly defer to the <code>moov</code> atom. Hence it is plausible that legacy .MOV files may come without the <code>ftyp</code> atom, hence failing to play in some players and file format identification checks.</p>
+ 
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/blog/2025/02/04/mount-usb/"> Mounting USB drives in WSL </a>
     </h1>
 
@@ -209,82 +297,6 @@ ERROR: Could not install packages due to an OSError: [Errno 2] No such file or d
  
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/blog/2024/08/19/dark-mode/"> Dark Mode </a>
-    </h1>
-
-    <time datetime="2024-08-19T00:00:00-07:00" class="post-date"
-      >19 Aug 2024</time
-    >
-
-     <p><img src="http://localhost:4000/assets/originals/darkmode/darkmode.gif" alt="darkmode" /></p>
-
-<p>I finally found some time to complete the site’s dark mode feature. As someone who uses dark mode a lot, I couldn’t put the feature off any longer. In theory, adding a dark mode feature is not complicated. However, it can be challenging in practice when integrating the feature into someone else’s code.</p>
-
-<p>The first thing is to set up a button, which is the simplest step. It enables the visitor to toggle the site’s dark mode on &amp; off.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span>
-  <span class="na">id=</span><span class="s">"dark-mode-toggle"</span>
-  <span class="na">class=</span><span class="s">"dark-mode-toggle"</span>
-  <span class="na">aria-label=</span><span class="s">"toggle dark mode"</span>
-<span class="nt">&gt;</span>
-  <span class="nt">&lt;svg</span> <span class="na">width=</span><span class="s">"100%"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">viewBox=</span><span class="s">"0 0 496 496"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;path</span>
-      <span class="na">fill=</span><span class="s">"currentColor"</span>
-      <span class="na">d=</span><span class="s">"M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"</span>
-      <span class="na">transform=</span><span class="s">"translate(-8 -8)"</span>
-    <span class="nt">/&gt;</span>
-  <span class="nt">&lt;/svg&gt;</span>
-<span class="nt">&lt;/button&gt;</span>
-</code></pre></div></div>
-
-<p>The next thing is to set up a script to listen for the user’s action and to save their preference locally with ‘localStorage’.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">DOMContentLoaded</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-  <span class="kd">let</span> <span class="nx">darkMode</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkMode</span><span class="dl">"</span><span class="p">);</span>
-  <span class="kd">const</span> <span class="nx">darkModeToggle</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">#dark-mode-toggle</span><span class="dl">"</span><span class="p">);</span>
-
-  <span class="kd">const</span> <span class="nx">enableDarkMode</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="c1">// add class dark mode to the body</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkmode</span><span class="dl">"</span><span class="p">);</span>
-    <span class="c1">// update dark mode in the local storage</span>
-    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkMode</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">enabled</span><span class="dl">"</span><span class="p">);</span>
-  <span class="p">};</span>
-
-  <span class="kd">const</span> <span class="nx">disableDarkMode</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="c1">// remove class dark mode from the body</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkmode</span><span class="dl">"</span><span class="p">);</span>
-    <span class="c1">// update dark mode in the local storage</span>
-    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkMode</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">disabled</span><span class="dl">"</span><span class="p">);</span>
-  <span class="p">};</span>
-
-  <span class="k">if</span> <span class="p">(</span><span class="nx">darkMode</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">enabled</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">enableDarkMode</span><span class="p">();</span>
-  <span class="p">}</span>
-
-  <span class="nx">darkModeToggle</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="nx">darkMode</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkMode</span><span class="dl">"</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">darkMode</span> <span class="o">!==</span> <span class="dl">"</span><span class="s2">enabled</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">enableDarkMode</span><span class="p">();</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Dark mode enabled</span><span class="dl">"</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="nx">disableDarkMode</span><span class="p">();</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Dark mode disabled</span><span class="dl">"</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">});</span>
-
-  <span class="c1">// set the initial state based on local storage</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">darkMode</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">enabled</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">enableDarkMode</span><span class="p">();</span>
-  <span class="p">}</span>
-<span class="p">});</span>
-</code></pre></div></div>
-
-<p>This logic will ultimately toggle the CSS dark mode in the site’s &lt;body&gt; element, which can be configured on a separate stylesheet. There are some suggested color themes for dark mode online that I found useful as a starting point in deciding the dark mode theme color palette.</p>
- 
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -312,7 +324,7 @@ ERROR: Could not install packages due to an OSError: [Errno 2] No such file or d
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2025-02-04T13:14:11-08:00">2025</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2025-02-20T21:24:45-08:00">2025</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>
@@ -323,7 +335,7 @@ ERROR: Could not install packages due to an OSError: [Errno 2] No such file or d
           <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://digipres.club/@matthew" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-mastodon"></i></a>
           <a href="https://bsky.app/profile/datatango.bsky.social" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky"></i></a>
-          <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+          <!-- <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a> -->
 
         </div>
       </footer>

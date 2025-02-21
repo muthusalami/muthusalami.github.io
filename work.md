@@ -13,20 +13,27 @@ title: work
 <h4>fellowships</h4>
 <br>
 
-| J. Paul Getty Trust - Getty Digital | Graduate Intern | Sep. 2024 - present |
+| J. Paul Getty Trust (Getty Digital) | Collection & Content Management Systems Graduate Intern | Sep. 2024 - present |
 | Digital Preservation Outreach and Education Network (DPOE-N) | Research Fellow | Sep. 2022 - May 2024 |
 
 <br>
 <h4>internships</h4>
 <br>
 
-| Internet Archive | Archive & Data Services Intern | Jun. 2024 - present |
+| Internet Archive | Software Engineering Intern | Jun. 2024 - present |
 | CUNY TV | Audio Preservation Intern | Jan. 2024 - Jun. 2024 |
 | Cineric Inc. | Digital Restoration Intern | Sep. 2023 - Jan. 2024 |
 | Bay Area Video Coalition | Video Preservation Intern | Jun. 2023 - Aug. 2023 |
 | Prelinger Archives | Media Digitization Intern | Jun. 2023 - Aug. 2023 |
 | New York Public Library | Media Preservation Intern | Jan. 2023 - May. 2023 |
 | Olympic Broadcasting Services | Broadcast Intern | Jul. 2010 - Sep. 2010 |
+
+<br>
+<h4>open-source projects</h4>
+<br>
+
+| 2024 | [Archive-It Leak Debugger & Inspector (ALDI)](https://github.com/muthusalami/Archive-It-Leak-Debugger-Inspector){:target="\_ blank"} |
+| | ALDI is a Google Chrome extension that performs quality assurance on Internet Archive's Archive-It replay pages. |
 
 <br>
 <h4>writing</h4>
@@ -62,13 +69,6 @@ title: work
 | 2021 | _Now or Never: Pushing For Film Preservation Using Inter-agency Relations_ | 25th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAAVA) Conference 2021, Hanoi, Vietnam |
 
 <br>
-<h4>open-source projects</h4>
-<br>
-
-| 2024 | [Archive-It Leak Debugger & Inspector (ALDI)](https://github.com/muthusalami/Archive-It-Leak-Debugger-Inspector){:target="\_ blank"} |
-| | ALDI is a Google Chrome extension that performs quality assurance (QA) on Internet Archive's Archive-It replay pages. |
-
-<br>
 <h4>community projects</h4>
 <br>
 
@@ -81,6 +81,7 @@ title: work
 <h4>media & press</h4>
 <br>
 
+| 2024 | [_2023 AMIA Scholarships_](https://vimeo.com/895680304?share=copy#t=166.89){:target="\_ blank"} | Association of Moving Image Archivists (AMIA) |
 | 2024 | [_Center for Research & Study (CRS) Conference Travel Grant: Matthew Yang_](https://tisch.nyu.edu/research-study/news/crs-student-travel-grant--matthew-yang){:target="\_ blank"} | New York University |
 | 2024 | [_When Singaporeans Study Something That Almost Nobody Else Knows About_](https://www.ricemedia.co/when-singaporeans-study-something-that-almost-nobody-else-knows-about/){:target="\_ blank"} | Daniel Peters,<br> Rice Media |
 | 2023 | [_Interview with Matthew Yang of Home Movie Day Singapore_](https://www.centerforhomemovies.org/interview-with-matthew-yang-of-home-movie-day-singapore/){:target="\_ blank"} | Kate Dollenmayer,<br> Center For Home Movies |

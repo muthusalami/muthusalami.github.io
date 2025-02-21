@@ -95,6 +95,82 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/blog/2024/08/19/dark-mode/"> Dark Mode </a>
+    </h1>
+
+    <time datetime="2024-08-19T00:00:00-07:00" class="post-date"
+      >19 Aug 2024</time
+    >
+
+     <p><img src="http://localhost:4000/assets/originals/darkmode/darkmode.gif" alt="darkmode" /></p>
+
+<p>I finally found some time to complete the site’s dark mode feature. As someone who uses dark mode a lot, I couldn’t put the feature off any longer. In theory, adding a dark mode feature is not complicated. However, it can be challenging in practice when integrating the feature into someone else’s code.</p>
+
+<p>The first thing is to set up a button, which is the simplest step. It enables the visitor to toggle the site’s dark mode on &amp; off.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span>
+  <span class="na">id=</span><span class="s">"dark-mode-toggle"</span>
+  <span class="na">class=</span><span class="s">"dark-mode-toggle"</span>
+  <span class="na">aria-label=</span><span class="s">"toggle dark mode"</span>
+<span class="nt">&gt;</span>
+  <span class="nt">&lt;svg</span> <span class="na">width=</span><span class="s">"100%"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">viewBox=</span><span class="s">"0 0 496 496"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;path</span>
+      <span class="na">fill=</span><span class="s">"currentColor"</span>
+      <span class="na">d=</span><span class="s">"M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"</span>
+      <span class="na">transform=</span><span class="s">"translate(-8 -8)"</span>
+    <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/svg&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<p>The next thing is to set up a script to listen for the user’s action and to save their preference locally with ‘localStorage’.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">DOMContentLoaded</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">darkMode</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkMode</span><span class="dl">"</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">darkModeToggle</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">#dark-mode-toggle</span><span class="dl">"</span><span class="p">);</span>
+
+  <span class="kd">const</span> <span class="nx">enableDarkMode</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// add class dark mode to the body</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkmode</span><span class="dl">"</span><span class="p">);</span>
+    <span class="c1">// update dark mode in the local storage</span>
+    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkMode</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">enabled</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kd">const</span> <span class="nx">disableDarkMode</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// remove class dark mode from the body</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkmode</span><span class="dl">"</span><span class="p">);</span>
+    <span class="c1">// update dark mode in the local storage</span>
+    <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkMode</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">disabled</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">darkMode</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">enabled</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">enableDarkMode</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="nx">darkModeToggle</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">darkMode</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="dl">"</span><span class="s2">darkMode</span><span class="dl">"</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">darkMode</span> <span class="o">!==</span> <span class="dl">"</span><span class="s2">enabled</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">enableDarkMode</span><span class="p">();</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Dark mode enabled</span><span class="dl">"</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">disableDarkMode</span><span class="p">();</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Dark mode disabled</span><span class="dl">"</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+
+  <span class="c1">// set the initial state based on local storage</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">darkMode</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">enabled</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">enableDarkMode</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>This logic will ultimately toggle the CSS dark mode in the site’s &lt;body&gt; element, which can be configured on a separate stylesheet. There are some suggested color themes for dark mode online that I found useful as a starting point in deciding the dark mode theme color palette.</p>
+ 
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/blog/2024/07/16/magnet/"> NYU MIAP Magnet </a>
     </h1>
 
@@ -197,29 +273,6 @@
  
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/blog/2024/03/08/orphans-landing-site/"> Orphans 2024 'Work & Play' Landing Site </a>
-    </h1>
-
-    <time datetime="2024-03-08T00:00:00-08:00" class="post-date"
-      >08 Mar 2024</time
-    >
-
-     <p><img src="http://localhost:4000/assets/originals/ofs/ofs_4.1.gif" alt="ofs_3.0" /></p>
-
-<p><img src="http://localhost:4000/assets/originals/ofs/ofs.png" alt="ofs_2.0" /></p>
-
-<p><img src="http://localhost:4000/assets/originals/ofs/mock_up.png" alt="ofs_mockup" /></p>
-
-<p><a href="https://wp.nyu.edu/orphanfilm/" target="\_ blank">Orphans Film Symposium 2024</a> is around the corner and I had the wonderful opportunity to assist Professor Dan Streible to create a <a href="https://wp.nyu.edu/orphans2024/" target="\_ blank">landing site</a> for the symposium.</p>
-
-<p>The initial idea was to create a new page on the existing OFS website, but it would limit us to its current theme. Hence, creating a separate site altogether seemed like a more appropriate option.</p>
-
-<p>NYU uses a customized WordPress ecosystem for its web publishing. It does not have the full suite of WordPress features hence we had to pick from NYU’s offerings of stock themes. While the landing site is suppose to be simple, doing it with stock themes made it more difficult. The ‘Twenty Twenty’ theme was the closest to what we want and with a little CSS magic, we could remove unwanted elements that came with the theme.</p>
- 
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -250,7 +303,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2025-02-04T13:14:11-08:00">2025</time> Matthew Yang</span> &middot;
+            <span class="copyright"><i class="fa-regular fa-copyright"></i><time datetime="2025-02-20T21:24:45-08:00">2025</time> Matthew Yang</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a></span>
             <span>and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
         </small>
@@ -261,7 +314,7 @@
           <a href="https://www.linkedin.com/in/matthewyang-sg/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://digipres.club/@matthew" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-mastodon"></i></a>
           <a href="https://bsky.app/profile/datatango.bsky.social" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky"></i></a>
-          <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+          <!-- <a href="https://twitter.com/muthusalami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a> -->
 
         </div>
       </footer>

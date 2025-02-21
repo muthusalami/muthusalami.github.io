@@ -4,13 +4,97 @@
  <title>Matthew Yang | Digital Archivist & Media Preservationist</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2025-02-04T13:14:11-08:00</updated>
+ <updated>2025-02-20T21:24:45-08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Matthew Yang</name>
    <email>matthewyang@nyu.edu</email>
  </author>
 
+ 
+ <entry>
+   <title>Apple QuickTime MOV&#58; The Atomic File Format</title>
+   <link href="http://localhost:4000/blog/2025/02/13/MOV-atoms/"/>
+   <updated>2025-02-13T00:00:00-08:00</updated>
+   <id>http://localhost:4000/blog/2025/02/13/MOV-atoms</id>
+   <content type="html">&lt;p&gt;A recent analysis of a Apple QuickTime .MOV file I conducted at work compelled me to write this post to discuss its file structure.&lt;/p&gt;
+
+&lt;p&gt;Released in 1991, Apple QuickTime .MOV files are structured by hierarchical atoms that store media data and metadata. A typical .MOV file may consist of the following atoms:&lt;/p&gt;
+
+&lt;p&gt;1. &lt;code&gt;ftyp&lt;/code&gt; (file type)&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;ftyp&lt;/code&gt; atom specifies the file format type. For example, ‘qt’ for QuickTime.&lt;/p&gt;
+
+&lt;p&gt;2. &lt;code&gt;moov&lt;/code&gt; (movie) aka ‘the meat’&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;moov&lt;/code&gt; atom defines the .MOV file since it carries crucial technical metadata like duration and display specifications.&lt;/p&gt;
+
+&lt;p&gt;It may have other types of sub-atoms, with at least one of the following three: mvhd (movie header), cmov (compressed movie) &amp;amp; rmra (reference movie). Several other sub-atoms like clip (clipping), trak (track), ctab (color table), and udta (user data) may exist in the &lt;code&gt;moov&lt;/code&gt; atom.&lt;/p&gt;
+
+&lt;p&gt;The layout of a &lt;code&gt;moov&lt;/code&gt; atom:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Data&lt;/th&gt;
+      &lt;th&gt;Type&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Size&lt;/td&gt;
+      &lt;td&gt;4 bytes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Type=&apos;moov&apos;&lt;/td&gt;
+      &lt;td&gt;4 bytes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Profile atom&lt;/td&gt;
+      &lt;td&gt;&apos;prfl&apos;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Movie Header atom (REQUIRED)&lt;/td&gt;
+      &lt;td&gt;&apos;mvhd&apos;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Movie Clipping atom&lt;/td&gt;
+      &lt;td&gt;&apos;clip&apos;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Track atom&lt;/td&gt;
+      &lt;td&gt;&apos;trak&apos;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;User Data atom&lt;/td&gt;
+      &lt;td&gt;&apos;udta&apos;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Color Table atom&lt;/td&gt;
+      &lt;td&gt;&apos;ctab&apos;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Compressed Movie atom&lt;/td&gt;
+      &lt;td&gt;&apos;cmov&apos;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Reference Movie atom&lt;/td&gt;
+      &lt;td&gt;&apos;rmra&apos;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;3. &lt;code&gt;mdat&lt;/code&gt; (media data)&lt;/p&gt;
+
+&lt;p&gt;As suggested, &lt;code&gt;mdat&lt;/code&gt; contains the files audio &amp;amp; video data.&lt;/p&gt;
+
+&lt;p&gt;4. &lt;code&gt;free/skip&lt;/code&gt; (padding) [optional]&lt;/p&gt;
+
+&lt;p&gt;5. &lt;code&gt;uuid&lt;/code&gt; (user defined) [optional]&lt;/p&gt;
+
+&lt;p&gt;Interestingly, the file that landed on my desk came without its &lt;code&gt;ftyp&lt;/code&gt; atom, which I learnt was only required after the establishment of the ISO Base Media File Format (ISO BMFF) standard. It is also likely that legacy tools and software at the time may omit the atom, relying completely on players like QuickTime player to smartly defer to the &lt;code&gt;moov&lt;/code&gt; atom. Hence it is plausible that legacy .MOV files may come without the &lt;code&gt;ftyp&lt;/code&gt; atom, hence failing to play in some players and file format identification checks.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Mounting USB drives in WSL</title>
