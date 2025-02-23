@@ -32,8 +32,8 @@ title: work
 <h4>open-source projects</h4>
 <br>
 
-| 2024 | [Archive-It Leak Debugger & Inspector (ALDI)](https://github.com/muthusalami/Archive-It-Leak-Debugger-Inspector){:target="\_ blank"} |
-| | ALDI is a Google Chrome extension that performs quality assurance on Internet Archive's Archive-It replay pages. |
+| 2024 | [Archive-It Replay Debugger & Inspector (ARDI)](https://github.com/muthusalami/Archive-It-Replay-Debugger-Inspector){:target="\_ blank"} |
+| | ARDI is a Google Chrome extension that performs quality assurance on Internet Archive's Archive-It replay pages. |
 
 <br>
 <h4>writing</h4>
