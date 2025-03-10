@@ -43,7 +43,7 @@ title: work
 | | A Spanish optical disc preservation guide produced in collaboration with Cinemateca de Bogotá, Professor Juana Suárez, & Carlos Saldaña. |
 
 <br>
-<h4>workshops</h4>
+<h4>workshops organized</h4>
 <br>
 
 | 2024 | _Super 8 Shooting & Developing Workshop_ |
@@ -61,10 +61,10 @@ title: work
 
 | 2024 | _The Great Migration: Planning & Performing Media Migrations for Audiovisual Collections_ | FIAT/IFTA World Conference 2024, Bucharest, Romania |
 | 2024 | _The Great Migration: Planning & Performing Media Migrations for Audiovisual Collections_ | 28th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2024, Solo, Indonesia |
-| 2023 | _Rip It!: A Preservation Workflow For DVD Video Discs_ | Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA |
-| 2023 | _From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day_ | Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA |
+| 2023 | _Rip It!: A Preservation Workflow For DVD Video Discs_ (poster) | Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA |
+| 2023 | _From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day_ (poster) | Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA |
 | 2023 | _APEX Optical Media Guide For DVD Video_ | Audiovisual Preservation Exchange (APEX) 2023, Quito, Ecuador |
-| 2023 | _From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day_ | 27th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2023, Pattaya, Thailand |
+| 2023 | _From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day_ (poster) | 27th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2023, Pattaya, Thailand |
 | 2022 | _More Than Meets the Eye: Confronting The Challenge of Restoring Non-feature Length Films_ | 78th International Federation of Film Archives (FIAF) Congress 2022, Budapest, Hungary |
 | 2021 | _Now or Never: Pushing For Film Preservation Using Inter-agency Relations_ | 25th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAAVA) Conference 2021, Hanoi, Vietnam |
 
