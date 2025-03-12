@@ -6,7 +6,7 @@ title: work
 <h4>employment</h4>
 <br>
 
-| CUNY TV | Media Preservation Technician | Jun. 2024 - Aug. 2024 |
+| The City University of New York Television (CUNY TV) | Media Preservation Technician | Jun. 2024 - Aug. 2024 |
 | Asian Film Archive | Archive Officer | Jan. 2017 - Aug. 2022 |
 
 <br>
@@ -21,7 +21,7 @@ title: work
 <br>
 
 | Internet Archive | Software Engineering Intern | Jun. 2024 - present |
-| CUNY TV | Audio Preservation Intern | Jan. 2024 - Jun. 2024 |
+| The City University of New York Television (CUNY TV) | Audio Preservation Intern | Jan. 2024 - Jun. 2024 |
 | Cineric Inc. | Digital Restoration Intern | Sep. 2023 - Jan. 2024 |
 | Bay Area Video Coalition | Video Preservation Intern | Jun. 2023 - Aug. 2023 |
 | Prelinger Archives | Media Digitization Intern | Jun. 2023 - Aug. 2023 |
