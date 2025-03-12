@@ -81,6 +81,7 @@ title: work
 <h4>media & press</h4>
 <br>
 
+| 2025 | [_2024 MIAP Graduates Awarded Prestigious Fellowships_](https://tisch.nyu.edu/cinema-studies/news/2024-miap-graduates-awarded-prestigious-fellowships){:target="\_ blank"} | New York University |
 | 2024 | [_2023 AMIA Scholarships_](https://vimeo.com/895680304?share=copy#t=166.89){:target="\_ blank"} | Association of Moving Image Archivists (AMIA) |
 | 2024 | [_Center for Research & Study (CRS) Conference Travel Grant: Matthew Yang_](https://tisch.nyu.edu/research-study/news/crs-student-travel-grant--matthew-yang){:target="\_ blank"} | New York University |
 | 2024 | [_When Singaporeans Study Something That Almost Nobody Else Knows About_](https://www.ricemedia.co/when-singaporeans-study-something-that-almost-nobody-else-knows-about/){:target="\_ blank"} | Daniel Peters,<br> Rice Media |
