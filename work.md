@@ -93,6 +93,7 @@ title: work
 <h4>awards, grants & scholarships</h4>
 <br>
 
+| 2025 | IIIF Conference Travel Scholarship | International Image Interoperability Framework Consortium |
 | 2024 | Academic & Service Excellence Award | New York University |
 | 2023 | George Blood Broadening Perspectives Scholarship | Association of Moving Image Archivists |
 | 2023 | Martin Scorsese Department of Cinema Studies Conference Travel Grant | New York University |
