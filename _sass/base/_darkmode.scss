@@ -69,12 +69,17 @@ body.darkmode html {
   color: #ffffff;
 }
 
-/* Set color for the right circle icon */
-.fa-regular.fa-circle-right {
+/* Set color for the right circle icon in dark mode */
+body.darkmode .fa-regular.fa-circle-right {
   color: #03dac6;
 }
 
-/* Set color for the left circle icon */
-.fa-regular.fa-circle-left {
+/* Set color for the left circle icon in dark mode */
+body.darkmode .fa-regular.fa-circle-left {
+  color: #03dac6;
+}
+
+/* Set color for the "older posts" text in dark mode */
+body.darkmode .pagination-text {
   color: #03dac6;
 }
