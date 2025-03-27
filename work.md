@@ -58,8 +58,9 @@ title: work
 <br>
 <h4>presentations</h4>
 <br>
-| 2025 | _A Click in Time:  Approaches to Web Archiving at Getty Digital_ | Getty Digital Share 2025, Los Angeles, USA |
-| 2024 | _The Great Migration: Planning & Performing Media Migrations for Audiovisual Collections_ | FIAT/IFTA World Conference 2024, Bucharest, Romania |
+
+| 2024 | A Click in Time: Approaches to Web Archiving at Getty Digital* | Getty Digital Share 2025, Los Angeles, USA |
+| 2024 | \_The Great Migration: Planning & Performing Media Migrations for Audiovisual Collections* | FIAT/IFTA World Conference 2024, Bucharest, Romania |
 | 2024 | _The Great Migration: Planning & Performing Media Migrations for Audiovisual Collections_ | 28th Southeast Asia-Pacific Audiovisual Archive Association (SEAPAVAA) Conference 2024, Solo, Indonesia |
 | 2023 | _Rip It!: A Preservation Workflow For DVD Video Discs_ (poster) | Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA |
 | 2023 | _From Idea to Realization: Lessons and Reflections From Singapore’s First Home Movie Day_ (poster) | Association of Moving Image Archivists (AMIA) Conference, Tulsa, Oklahoma, USA |
